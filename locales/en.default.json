@@ -217,7 +217,8 @@
     },
     "404": {
       "title": "Page not found",
-      "subtext": "404"
+      "subtext": "404",
+      "des_text" : "Sorry! The page you're looking for clocked out!"
     }
   },
   "sections": {
