@@ -1,60 +1,47 @@
 {
   "sections": {
-    "16611610589326ec19": {
-      "type": "multicolumn",
+    "166116152195c6e261": {
+      "type": "collage",
       "blocks": {
-        "1661161058210cf39c-0": {
-          "type": "column",
+        "16611615214622161d-0": {
+          "type": "video",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
           }
         },
-        "1661161058210cf39c-1": {
-          "type": "column",
+        "16611615214622161d-1": {
+          "type": "product",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "product": "",
+            "second_image": false
           }
         },
-        "1661161058210cf39c-2": {
-          "type": "column",
+        "16611615214622161d-2": {
+          "type": "collection",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "1661161058210cf39c-0",
-        "1661161058210cf39c-1",
-        "1661161058210cf39c-2"
+        "16611615214622161d-0",
+        "16611615214622161d-1",
+        "16611615214622161d-2"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "heading": "Multimedia collage",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
         "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "16611610589326ec19"
+    "166116152195c6e261"
   ]
 }

@@ -147,13 +147,6 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "d2d2e96b-3357-4d10-b4d2-a65c9178bc68": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Other Pages",
-              "menu": "others-page"
-            }
-          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -167,12 +160,19 @@
               "heading": "Main Menu",
               "menu": "main-menu"
             }
+          },
+          "d2d2e96b-3357-4d10-b4d2-a65c9178bc68": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Other Pages",
+              "menu": ""
+            }
           }
         },
         "block_order": [
-          "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
           "footer-0",
-          "footer-1"
+          "footer-1",
+          "d2d2e96b-3357-4d10-b4d2-a65c9178bc68"
         ],
         "settings": {
           "color_scheme": "none",
