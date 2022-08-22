@@ -2224,6 +2224,9 @@ input[type='checkbox'] {
     text-transform: uppercase;
 }
 
+.announcement-bar-item:last-child {
+    text-align: right;
+}
 
 /* section-header */
 
