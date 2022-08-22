@@ -26,8 +26,7 @@
 {% schema %}
 {
   "name": "t:sections.announcement-bar.name",
-  "max_blocks": 3,
-  "tag": "section",
+  "max_blocks": 12,
   "settings": [
     {
       "type": "select",
@@ -56,6 +55,11 @@
       ],
       "default": "accent-1",
       "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "text",
+      "id": "mod_class",
+      "label": "Module Class Suffix"
     }
   ],
   "blocks": [
