@@ -11,14 +11,13 @@
             "image_padding": false
           }
         },
-        "16611615214622161d-1": {
-          "type": "product",
+        "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e": {
+          "type": "image",
           "settings": {
-            "product": "",
-            "second_image": false
+            "image_padding": false
           }
         },
-        "16611615214622161d-2": {
+        "e73ff27e-a541-4bdf-addc-9533f9f8f95f": {
           "type": "collection",
           "settings": {
             "collection": ""
@@ -27,8 +26,8 @@
       },
       "block_order": [
         "16611615214622161d-0",
-        "16611615214622161d-1",
-        "16611615214622161d-2"
+        "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e",
+        "e73ff27e-a541-4bdf-addc-9533f9f8f95f"
       ],
       "settings": {
         "heading": "",
