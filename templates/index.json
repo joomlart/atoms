@@ -1,0 +1,383 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Multipurpose Joomla template for eCommerce",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "A professional eCommerce Joomla template offering Virtuemart eCommerce system integration designed for Fashion, Digital, Furniture online shop.",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Get the template",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-landing.jpg",
+        "image_2": "shopify:\/\/shop_images\/pic-1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ultimate Solution<br\/>      <\/p>"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Build A Complete & Full Featured Online Shopping Website Fast & Easy<\/strong><\/p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "heading"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "image": "shopify:\/\/shop_images\/mask-map.png",
+        "full_width": true,
+        "padding_top": 96,
+        "padding_bottom": 0
+      }
+    },
+    "1660787354ffdd5c5c": {
+      "type": "multicolumn",
+      "blocks": {
+        "16607873543dda92e6-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-1.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16607873543dda92e6-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-2.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16607873543dda92e6-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/home-3.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "b306e2f4-d159-4341-bdec-b3e4bb1db476": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Listing-2.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "073b9c89-d667-4eb0-b954-0c46420dd632": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Listing-style-2.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "cbcddca2-464e-4e62-8cec-4809025da1fb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Slider.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "0958b76d-baca-4987-8c5e-58fd35f19c79": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cart.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "d7ca0011-0f64-4102-80f2-2372c3e4369f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Virtuemart.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "979a7403-a74c-4e7a-9018-9c9e1d5c8267": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Virtuemart-default.jpg",
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16607873543dda92e6-0",
+        "16607873543dda92e6-1",
+        "16607873543dda92e6-2",
+        "b306e2f4-d159-4341-bdec-b3e4bb1db476",
+        "073b9c89-d667-4eb0-b954-0c46420dd632",
+        "cbcddca2-464e-4e62-8cec-4809025da1fb",
+        "0958b76d-baca-4987-8c5e-58fd35f19c79",
+        "d7ca0011-0f64-4102-80f2-2372c3e4369f",
+        "979a7403-a74c-4e7a-9018-9c9e1d5c8267"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "166078788927bb46bf": {
+      "type": "multicolumn2",
+      "blocks": {
+        "16607878887cf7dbe8-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/virtuemart.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16607878887cf7dbe8-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/multipurpose.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "16607878887cf7dbe8-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/product_list.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "31a04e10-685b-4b04-8722-e2304da0b22e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/product_detail.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "8bcf1838-8638-4a99-ad46-85a99717c903": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/megafilter.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "d19abcda-b3cc-4a57-932e-53dd07dc9906": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/responsive.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "224b6ae6-eee6-4331-8d0b-fb956fce6bee": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/performance.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "224ed133-f9e9-478a-a36d-1cb3d6945d0f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/framework.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "27389eb4-c9b7-47af-968b-73d10c3a3db0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/more.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16607878887cf7dbe8-0",
+        "16607878887cf7dbe8-1",
+        "16607878887cf7dbe8-2",
+        "31a04e10-685b-4b04-8722-e2304da0b22e",
+        "8bcf1838-8638-4a99-ad46-85a99717c903",
+        "d19abcda-b3cc-4a57-932e-53dd07dc9906",
+        "224b6ae6-eee6-4331-8d0b-fb956fce6bee",
+        "224ed133-f9e9-478a-a36d-1cb3d6945d0f",
+        "27389eb4-c9b7-47af-968b-73d10c3a3db0"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 96,
+        "padding_bottom": 96
+      }
+    },
+    "1660790341a719206c": {
+      "type": "image-banner",
+      "blocks": {
+        "16607903417932c7a7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Download JA Atoms",
+            "heading_size": "h1"
+          }
+        },
+        "16607903417932c7a7-1": {
+          "type": "text",
+          "settings": {
+            "text": "Get the best Joomla eCommerce template and 150+ more professional Joomla templates now for only $89\/year",
+            "text_style": "body"
+          }
+        },
+        "16607903417932c7a7-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Download Now",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16607903417932c7a7-0",
+        "16607903417932c7a7-1",
+        "16607903417932c7a7-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bg_2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "rich_text",
+    "1660787354ffdd5c5c",
+    "166078788927bb46bf",
+    "1660790341a719206c"
+  ]
+}
