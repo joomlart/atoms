@@ -105,7 +105,13 @@
         "blocks": {
           "announcement-bar-0": {
             "type": "announcement",
-            "disabled": true,
+            "settings": {
+              "text": "P: +1 800 123 6891 M: no-reply@gmail.com",
+              "link": ""
+            }
+          },
+          "b95a1f90-2421-4b71-9d55-777ae9982d3b": {
+            "type": "announcement",
             "settings": {
               "text": "Welcome to our store",
               "link": ""
@@ -113,9 +119,11 @@
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "b95a1f90-2421-4b71-9d55-777ae9982d3b"
         ],
         "settings": {
+          "color_scheme": "background-2"
         }
       },
       "header": {
@@ -123,6 +131,7 @@
         "settings": {
           "color_scheme": "background-1",
           "logo_text": "Atoms",
+          "logo_font": "helvetica_n4",
           "logo_width": 80,
           "logo_position": "middle-left",
           "menu": "main-menu",
@@ -141,7 +150,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "menu": "quick-links"
+              "menu": ""
             }
           },
           "footer-1": {
@@ -155,7 +164,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Other Pages",
-              "menu": "quick-links"
+              "menu": ""
             }
           }
         },
