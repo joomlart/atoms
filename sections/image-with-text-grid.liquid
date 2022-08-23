@@ -1,4 +1,4 @@
-{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+{{ 'section-image-with-text-grid.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -22,7 +22,7 @@
   endif
 -%}
 
-<div class="image-with-text image-with-text-list {% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="image-with-text image-with-text-grid {% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width section-{{ section.id }}-padding isolate">
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
@@ -38,7 +38,7 @@
       {%- for block in section.blocks -%}
         <div class="grid__item">
           {%- if block.settings.image != blank -%}
-          <div class="{% if block.settings.image == blank %} placeholder{% endif %}">
+          <div class="media media--34 media--transparent media--square{% if block.settings.image == blank %} placeholder{% endif %}">
             {%-liquid
               assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
             -%}
