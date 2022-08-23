@@ -549,6 +549,9 @@
       "name": "Contact Form",
       "presets": {
         "name": "Contact form"
+      },
+      "blocks": {
+        "name": "Contact Information"
       }
     },
     "custom-liquid": {
