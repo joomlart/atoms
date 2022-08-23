@@ -1419,6 +1419,12 @@
         "name": "Image with text"
       }
     },
+    "image-with-text": {
+      "name": "Image with text",
+      "presets": {
+        "name": "Image with text"
+      }
+    },
     "main-article": {
       "name": "Blog post",
       "blocks": {
