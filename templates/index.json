@@ -17,62 +17,11 @@
             "image": "shopify:\/\/shop_images\/banner-1.png",
             "image_padding": false
           }
-        },
-        "3b0b5e16-ebe3-463e-8af0-138d83c1ed25": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner-2.jpg",
-            "height": "adapt",
-            "desktop_image_width": "medium",
-            "layout": "image_first",
-            "desktop_content_position": "top",
-            "desktop_content_alignment": "left",
-            "content_layout": "no-overlap",
-            "color_scheme": "background-1",
-            "mobile_content_alignment": "left",
-            "padding_top": 36,
-            "padding_bottom": 36
-          }
-        },
-        "53f2512e-0707-4cbf-a1d1-ed9ebff54337": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner-3.jpg",
-            "height": "adapt",
-            "desktop_image_width": "medium",
-            "layout": "image_first",
-            "desktop_content_position": "top",
-            "desktop_content_alignment": "left",
-            "content_layout": "no-overlap",
-            "color_scheme": "background-1",
-            "mobile_content_alignment": "left",
-            "padding_top": 36,
-            "padding_bottom": 36
-          }
-        },
-        "588feee7-1dd7-44d7-b06e-c19dbccb463f": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner-4.jpg",
-            "height": "adapt",
-            "desktop_image_width": "medium",
-            "layout": "image_first",
-            "desktop_content_position": "top",
-            "desktop_content_alignment": "left",
-            "content_layout": "no-overlap",
-            "color_scheme": "background-1",
-            "mobile_content_alignment": "left",
-            "padding_top": 36,
-            "padding_bottom": 36
-          }
         }
       },
       "block_order": [
         "16611615214622161d-0",
-        "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e",
-        "3b0b5e16-ebe3-463e-8af0-138d83c1ed25",
-        "53f2512e-0707-4cbf-a1d1-ed9ebff54337",
-        "588feee7-1dd7-44d7-b06e-c19dbccb463f"
+        "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e"
       ],
       "settings": {
         "heading": "",
