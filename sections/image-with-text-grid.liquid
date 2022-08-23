@@ -53,6 +53,12 @@
             }}
           </div>
           {%- endif -%}
+
+          <div class="content">
+          {%- if block.settings.title != blank -%}
+            <h3>{{ block.settings.title | escape }}</h3>
+          {%- endif -%}
+          </div>
         </div>
       {%- endfor -%}
     </ul>

@@ -1,3 +1,11 @@
+.image-with-text-grid .grid__item {
+  --color-foreground: 255, 255, 255;
+  --color-button: 255, 255, 255;
+  --color-button-text: 0, 0, 0;
+  --font-heading-scale:  1.7;
+  position: relative;
+}
+
 .image-with-text-grid .grid__item img {
   max-width: 100%;
   object-fit: cover;
@@ -7,4 +15,22 @@
 
 .image-with-text-grid .grid__item .media--34 {
   padding-bottom: 133.333%;
+}
+
+.image-with-text-grid .grid__item .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:  0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding:  var(--grid-desktop-horizontal-spacing);
+}
+
+.image-with-text-grid .grid__item .content h3 {
+  color: rgb(var(--color-foreground));
+  font-weight: 700;
 }
