@@ -14,20 +14,14 @@
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/banner-1.png",
             "image_padding": false
-          }
-        },
-        "e73ff27e-a541-4bdf-addc-9533f9f8f95f": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
           }
         }
       },
       "block_order": [
         "16611615214622161d-0",
-        "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e",
-        "e73ff27e-a541-4bdf-addc-9533f9f8f95f"
+        "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e"
       ],
       "settings": {
         "heading": "",
