@@ -13,10 +13,11 @@
         "59dea0b6-a68d-4ee7-8b72-e6ebf879f73e": {
           "type": "misc",
           "settings": {
-            "description": "",
-            "phone-1": "",
-            "phone-2": "",
-            "web-address": ""
+            "image": "shopify:\/\/shop_images\/banner-4.jpg",
+            "description": "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+            "phone-1": "(+49) 30 880911 0",
+            "phone-2": "(+49) 30 880911 0",
+            "web-address": "https:\/\/joomlart.com"
           }
         }
       },
