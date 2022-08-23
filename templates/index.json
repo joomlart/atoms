@@ -79,10 +79,65 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "1661246556b905fdde": {
+      "type": "multicolumn",
+      "blocks": {
+        "1661246556ab0fcc05-0": {
+          "type": "column",
+          "settings": {
+            "title": "Free Shipping Orders $60+",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1661246556ab0fcc05-1": {
+          "type": "column",
+          "settings": {
+            "title": "30-days free return policy",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1661246556ab0fcc05-2": {
+          "type": "column",
+          "settings": {
+            "title": "100% Secure Payments",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661246556ab0fcc05-0",
+        "1661246556ab0fcc05-1",
+        "1661246556ab0fcc05-2"
+      ],
+      "settings": {
+        "title": "",
+        "mod_class": "border-darker",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "166116152195c6e261",
-    "166123731426fbd8a6"
+    "166123731426fbd8a6",
+    "1661246556b905fdde"
   ]
 }
