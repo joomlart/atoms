@@ -461,13 +461,13 @@ h1,
 @media only screen and (min-width: 750px) {
     h1,
     .h1 {
-        font-size: calc(var(--font-heading-scale) * 4rem);
+        font-size: calc(var(--font-heading-scale) * 5rem);
     }
 }
 
 h2,
 .h2 {
-    font-size: calc(var(--font-heading-scale) * 2rem);
+    font-size: calc(var(--font-heading-scale) * 3rem);
 }
 
 @media only screen and (min-width: 750px) {
@@ -500,7 +500,6 @@ h5,
 .h5 {
     font-size: calc(var(--font-heading-scale) * 1.2rem);
 }
-
 
 @media only screen and (min-width: 750px) {
     h5,
@@ -2202,7 +2201,7 @@ input[type='checkbox'] {
 }
 
 .announcement-bar.color-background-1 {
-  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+    border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
 .announcement-bar__link {
@@ -2238,6 +2237,7 @@ input[type='checkbox'] {
 .announcement-bar-item:last-child {
     text-align: right;
 }
+
 
 /* section-header */
 
