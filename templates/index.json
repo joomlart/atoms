@@ -32,9 +32,66 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "166123731426fbd8a6": {
+      "type": "image-with-text-grid",
+      "blocks": {
+        "166123731380862203-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-4.jpg",
+            "title": "Final Clearance Up to 80% Off",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "166123731380862203-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-3.jpg",
+            "title": "Spring\/Winter Collections",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "166123731380862203-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner-2.jpg",
+            "title": "Mid Season Sale! Up to -50%",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166123731380862203-0",
+        "166123731380862203-1",
+        "166123731380862203-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "166116152195c6e261"
+    "166116152195c6e261",
+    "166123731426fbd8a6"
   ]
 }
