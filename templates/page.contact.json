@@ -9,10 +9,24 @@
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "59dea0b6-a68d-4ee7-8b72-e6ebf879f73e": {
+          "type": "misc",
+          "settings": {
+            "description": "",
+            "phone-1": "",
+            "phone-2": "",
+            "web-address": ""
+          }
+        }
+      },
+      "block_order": [
+        "59dea0b6-a68d-4ee7-8b72-e6ebf879f73e"
+      ],
       "settings": {
-        "heading": "",
+        "heading": "Get In Touch",
         "heading_size": "h1",
-        "color_scheme": "accent-1",
+        "color_scheme": "background-1",
         "padding_top": 36,
         "padding_bottom": 36
       }
