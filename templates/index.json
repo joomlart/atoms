@@ -72,7 +72,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "item_ratio": "adapt",
+        "item_ratio": "34",
         "columns_desktop": 3,
         "column_alignment": "left",
         "columns_mobile": "1",
