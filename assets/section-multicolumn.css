@@ -251,3 +251,17 @@
     display: list-item;
   }
 }
+
+/* Border Darker for Item */
+.multicolumn.border-darker {
+  --text-boxes-border-width:  1px;
+  --text-boxes-border-opacity: 0.1;
+}
+
+.multicolumn.border-darker .multicolumn-card {
+  border: var(--text-boxes-border-width) solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
+}
+
+.multicolumn.border-darker h3 {
+  font-weight: 700;
+}

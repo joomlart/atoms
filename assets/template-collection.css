@@ -78,3 +78,34 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+.collection__title .inner .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.collection__title .inner {
+  border-top: 2px solid #212121;
+  border-bottom: 1px solid rgba(52,58,64,.12);
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.collection__title .inner:not(:only-child) {
+  margin-bottom: 1rem;
+}
+
+.collection__title .inner .link {
+  text-decoration: none;
+}
