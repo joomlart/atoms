@@ -238,6 +238,7 @@
         },
         "1661315842627cf75e-2": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Column",
             "link_label": "",
