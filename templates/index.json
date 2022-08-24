@@ -222,9 +222,9 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-5.jpg",
-            "title": "Column",
-            "link_label": "",
-            "link": ""
+            "title": "Final Sale. Up to 80%!",
+            "link_label": "Shop now",
+            "link": "shopify:\/\/collections\/bracelet"
           }
         },
         "1661315842627cf75e-1": {
