@@ -1478,12 +1478,10 @@
           "name": "Masthead",
           "settings": {
             "title": {
-              "label": "Masthead Title",
-              "default": "Blogs"
+              "label": "Masthead Title"
             },
             "description": {
-              "label": "Description",
-              "default": "Cursus elit, iaculis platea integer nisl sapien egestas. Itae donec ornare iaculis mauris nec ultrices ullamcorper tempus dignissim."
+              "label": "Description"
             }
           }
         }
