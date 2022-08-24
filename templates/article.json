@@ -6,8 +6,8 @@
         "3d43cea5-6fd1-422f-8935-fe576ab72db8": {
           "type": "masthead",
           "settings": {
-            "masthead-title": "This is Blogs",
-            "descrription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+            "masthead-title": "",
+            "description": "t:sections.main-article.blocks.masthead.settings.description.default"
           }
         },
         "title": {
