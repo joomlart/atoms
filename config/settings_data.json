@@ -165,7 +165,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Other Pages",
-              "menu": ""
+              "menu": "others-page"
             }
           }
         },
