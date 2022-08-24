@@ -34,11 +34,11 @@
         {%- endif -%}
       </div>
     {%- endunless -%}
-    <div class="grid grid--1-col grid--2-col grid--3-col-tablet">
+    <div class="grid grid--1-col grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop">
       {%- for block in section.blocks -%}
         <div class="grid__item">
           {%- if block.settings.image != blank -%}
-          <div class="media media--34 media--transparent media--square{% if block.settings.image == blank %} placeholder{% endif %}">
+          <div class="media media--{{ section.settings.item_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
             {%-liquid
               assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
             -%}
