@@ -1676,16 +1676,16 @@ details[open]>.share-button__fallback {
     appearance: none;
     background-color: rgb(var(--color-background));
     color: rgb(var(--color-foreground));
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     width: 100%;
     box-sizing: border-box;
     transition: box-shadow var(--duration-short) ease;
     border-radius: var(--inputs-radius);
-    height: 4.5rem;
+    height: 5.6rem;
     min-height: calc(var(--inputs-border-width) * 2);
     min-width: calc(7rem + (var(--inputs-border-width) * 2));
     position: relative;
-    border: 0;
+    border: 1px solid #eee;
 }
 
 .field:before,
@@ -1818,7 +1818,7 @@ details[open]>.share-button__fallback {
 .customer .field input {
     flex-grow: 1;
     text-align: left;
-    padding: 1.5rem;
+    padding: 1.6rem 2rem;
     margin: var(--inputs-border-width);
     transition: box-shadow var(--duration-short) ease;
 }
