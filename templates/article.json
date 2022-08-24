@@ -6,11 +6,11 @@
         "3d43cea5-6fd1-422f-8935-fe576ab72db8": {
           "type": "masthead",
           "settings": {
-            "masthead-title": "This is Blog",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
+            "masthead-title": "Blogs",
+            "description": "Cursus elit, iaculis platea integer nisl sapien egestas. Itae donec ornare iaculis mauris nec ultrices ullamcorper tempus dignissim."
           }
         },
-        "title": {
+        "bb646369-fa26-4a54-9523-51fa8da87946": {
           "type": "title",
           "settings": {
             "blog_show_date": true,
@@ -37,7 +37,7 @@
       },
       "block_order": [
         "3d43cea5-6fd1-422f-8935-fe576ab72db8",
-        "title",
+        "bb646369-fa26-4a54-9523-51fa8da87946",
         "featured_image",
         "content",
         "share"
