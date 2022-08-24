@@ -48,6 +48,12 @@
 
 .article-card .card__heading {
   margin-bottom: 0.6rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.article-card .h4 {
+  font-size: 1.8rem;
 }
 
 .blog-articles .article-card .card__information,
@@ -57,7 +63,7 @@
 }
 
 .article-card__info {
-  padding-top: 0.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .article-card__footer {
