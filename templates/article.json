@@ -7,7 +7,7 @@
           "type": "masthead",
           "settings": {
             "masthead-title": "",
-            "description": "t:sections.main-article.blocks.masthead.settings.description.default"
+            "description": ""
           }
         },
         "title": {
