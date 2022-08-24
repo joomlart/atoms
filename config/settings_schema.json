@@ -43,12 +43,6 @@
                 "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
             },
             {
-                "type": "color",
-                "id": "colors_badge_sales",
-                "default": "#F86D70",
-                "label": "t:settings_schema.colors.settings.colors_badge_sales.label"
-            },
-            {
                 "type": "header",
                 "content": "t:settings_schema.colors.settings.header__2.content"
             },
