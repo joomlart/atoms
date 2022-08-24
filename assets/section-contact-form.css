@@ -18,7 +18,6 @@
 /* Layout */
 .contact-form {
     width: 100%;
-    padding-left: 1.2rem
 }
 
 @media screen and (min-width: 990px){
@@ -28,6 +27,7 @@
 
   .contact-form {
     width: calc(66.667% - var(--grid-desktop-horizontal-spacing));
+    padding-left: 1.2rem;
   }
 }
 
@@ -73,6 +73,10 @@
 
 .contact__button {
   margin-top: 3rem;
+}
+
+.contact .text-area.field__input {
+  min-height: 27rem;
 }
 
 @media screen and (min-width: 750px) {
