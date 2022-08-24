@@ -2282,10 +2282,10 @@
             "label": "Full width of column"
           }
         },
-        "image_ratio": {
+        "item_ratio": {
           "label": "Image ratio",
           "options__1": {
-            "label": "Adapt to image"
+            "label": "Width/Height : 4/3"
           },
           "options__2": {
             "label": "Portrait"
@@ -2294,7 +2294,7 @@
             "label": "Square"
           },
           "options__4": {
-            "label": "Circle"
+            "label": "Width/Height : 3/4"
           }
         },
         "columns_desktop": {

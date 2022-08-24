@@ -17,6 +17,10 @@
   padding-bottom: 133.333%;
 }
 
+.image-with-text-grid .grid__item .media--43 {
+  padding-bottom: 33.333%;
+}
+
 .image-with-text-grid .grid__item .content {
   padding:  var(--grid-desktop-horizontal-spacing);
   position: absolute;
