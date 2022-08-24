@@ -1,6 +1,8 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+
+
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}
@@ -370,6 +372,24 @@
         {
           "type": "paragraph",
           "content": "t:sections.main-article.blocks.share.settings.title_info.content"
+        }
+      ]
+    },
+    {
+      "type": "masthead",
+      "name":   "masthead",
+      "settings": [
+        {
+          "type": "text",
+          "id": "masthead-title",
+          "label": "t:sections.main-article.blocks.masthead.settings.title.label",
+          "default": "t:sections.main-article.blocks.masthead.settings.title.default"
+        },
+        {
+          "type": "text",
+          "id": "descrription",
+          "label": "t:sections.main-article.blocks.masthead.settings.description.label",
+          "default": "t:sections.main-article.blocks.masthead.settings.description.default"
         }
       ]
     }
