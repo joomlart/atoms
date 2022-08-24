@@ -44,9 +44,9 @@
             },
             {
                 "type": "color",
-                "id": "colors_accent_3",
+                "id": "colors_badge_sales",
                 "default": "#F86D70",
-                "label": "t:settings_schema.colors.settings.colors_accent_3.label"
+                "label": "t:settings_schema.colors.settings.colors_badge_sales.label"
             },
             {
                 "type": "header",
