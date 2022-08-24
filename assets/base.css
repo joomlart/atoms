@@ -1018,7 +1018,7 @@ summary::-webkit-details-marker {
     margin-top: 0;
 }
 
-.title-wrapper--no-top-margin >.title {
+.title-wrapper--no-top-margin>.title {
     margin-top: 0;
 }
 
@@ -2760,18 +2760,19 @@ details-disclosure>details {
 }
 
 .badge {
-    border: 1px solid transparent;
     border-radius: var(--badge-corner-radius);
     display: inline-block;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
-    line-height: 1;
-    padding: 0.5rem 1.3rem 0.6rem 1.3rem;
+    line-height: 1.33;
+    padding: 9px 10px;
     text-align: center;
     background-color: rgb(var(--color-badge-background));
     border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
     color: rgb(var(--color-foreground));
     word-break: break-word;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .gradient {
