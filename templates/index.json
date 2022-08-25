@@ -3,11 +3,10 @@
     "166116152195c6e261": {
       "type": "collage",
       "blocks": {
-        "16611615214622161d-0": {
-          "type": "video",
+        "ff81bf73-6e22-4eb4-86de-f514ff72e29a": {
+          "type": "image",
           "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
+            "image": "shopify:\/\/shop_images\/banner-5.jpg",
             "image_padding": false
           }
         },
@@ -20,7 +19,7 @@
         }
       },
       "block_order": [
-        "16611615214622161d-0",
+        "ff81bf73-6e22-4eb4-86de-f514ff72e29a",
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e"
       ],
       "settings": {
