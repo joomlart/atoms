@@ -40,10 +40,16 @@
 
 .contact-more {
   margin: 0 0 1.2rem;
+  display: flex;
+  align-items: center;
 }
 
 .contact-more span {
   margin-right: 1rem;
+}
+
+.contact-more span svg {
+  width: 1.6rem
 }
 
 /* Title */

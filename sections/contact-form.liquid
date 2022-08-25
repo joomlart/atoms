@@ -45,23 +45,24 @@
             {%- endif -%}
 
             {%- if block.settings.description -%}
-              <p class="contact-description">{{block.settings.description | escape}}</p>
+              <p class="contact-description">{{ block.settings.description | escape }}</p>
             {%- endif -%}
 
             {%- if block.settings.address -%}
-              <p class="contact-more"><span><i class="fas fa-map-marker-alt"></i></span>{{block.settings.address | escape}}</p>
+              <p class="contact-more"><span><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M18 7.261V17.5c0 .841-.672 1.5-1.5 1.5h-2c-.828 0-1.5-.659-1.5-1.5V13H7v4.477C7 18.318 6.328 19 5.5 19h-2c-.828 0-1.5-.682-1.5-1.523V7.261a1.5 1.5 0 01.615-1.21l6.59-4.82a1.481 1.481 0 011.59 0l6.59 4.82A1.5 1.5 0 0118 7.26z" fill="#5C5F62"/></svg>
+            </span>{{ block.settings.address | escape }}</p>
             {%- endif -%}
 
             {%- if block.settings.phone-1 -%}
-              <p class="contact-more"><span><i class="fas fa-phone"></i></span>{{block.settings.phone-1 | escape}}</p>
+              <p class="contact-more"><span><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.876 6.976l-.534-2.67A1.5 1.5 0 005.871 3.1H2.638c-.86 0-1.576.727-1.537 1.586.461 10.161 5.499 14.025 14.415 14.413.859.037 1.584-.676 1.584-1.535v-3.235a1.5 1.5 0 00-1.206-1.471l-2.67-.534a1.5 1.5 0 00-1.636.8l-.488.975c-2 0-5-3-5-5l.975-.488c.606-.302.934-.972.801-1.635z" fill="#5C5F62"/></svg></span>{{ block.settings.phone-1 | escape }}</p>
             {%- endif -%}
 
             {%- if block.settings.phone-2 -%}
-              <p class="contact-more"><span><i class="fas fa-mobile-alt"></i></span>{{block.settings.phone-2 | escape}}</p>
+              <p class="contact-more"><span><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 1.5C3 .7 3.7 0 4.5 0h11c.8 0 1.5.7 1.5 1.5v17c0 .8-.7 1.5-1.5 1.5h-11c-.8 0-1.5-.7-1.5-1.5v-17zM5 2h10v14H5V2zm4 15a1 1 0 100 2h2a1 1 0 100-2H9z" fill="#5C5F62"/></svg></span>{{ block.settings.phone-2 | escape }}</p>
             {%- endif -%}
 
             {%- if block.settings.web-address -%}
-              <p class="contact-more"><span><i class="fas fa-globe"></i></span>{{block.settings.web-address | escape}}</p>
+              <p class="contact-more"><span><svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.07 6a8.025 8.025 0 014.262-3.544A12.802 12.802 0 005.595 6H3.07zm-.818 2A8.015 8.015 0 002 10c0 .69.088 1.36.252 2h2.89A13.886 13.886 0 015 10c0-.704.051-1.371.143-2H2.252zm4.916 0C7.06 8.62 7 9.286 7 10c0 .713.061 1.38.168 2h5.664c.107-.62.168-1.287.168-2 0-.714-.061-1.38-.168-2H7.168zm7.69 0c.09.629.142 1.296.142 2s-.051 1.371-.143 2h2.891c.165-.64.252-1.31.252-2s-.087-1.36-.252-2h-2.89zm2.072-2h-2.525a12.805 12.805 0 00-1.737-3.544A8.025 8.025 0 0116.93 6zm-4.638 0H7.708c.324-.865.725-1.596 1.124-2.195.422-.633.842-1.117 1.168-1.452.326.335.746.82 1.168 1.452.4.599.8 1.33 1.124 2.195zm-1.124 10.195c.4-.599.8-1.33 1.124-2.195H7.708c.324.865.725 1.596 1.124 2.195.422.633.842 1.117 1.168 1.452.326-.335.746-.82 1.168-1.452zM3.07 14h2.525a12.802 12.802 0 001.737 3.544A8.025 8.025 0 013.07 14zm9.762 3.305a12.9 12.9 0 01-.164.24A8.025 8.025 0 0016.93 14h-2.525a12.805 12.805 0 01-1.573 3.305zM20 10c0 5.52-4.472 9.994-9.99 10h-.022C4.47 19.994 0 15.519 0 10 0 4.477 4.477 0 10 0s10 4.477 10 10z" fill="#5C5F62"/></svg></span>{{ block.settings.web-address | escape }}</p>
             {%- endif -%}
           </div>
 
@@ -232,11 +233,6 @@
       "default": 36
     }
   ],
-  "presets": [
-    {
-      "name": "t:sections.contact-form.presets.name"
-    }
-  ],
   "blocks": [
     {
       "name": "t:sections.contact-form.blocks.name",
@@ -249,33 +245,36 @@
         },
         {
           "type": "text",
-          "id" : "description",
+          "id": "description",
           "label": "Description"
         },
         {
           "type": "text",
-          "id" : "address",
+          "id": "address",
           "label": "Address"
         },
         {
           "type": "text",
-          "id" : "phone-1",
+          "id": "phone-1",
           "label": "Phone Number"
         },
         {
           "type": "text",
-          "id" : "phone-2",
+          "id": "phone-2",
           "label": "Mobile Number"
         },
         {
           "type": "text",
-          "id" : "web-address",
+          "id": "web-address",
           "label": "Website Address"
         }
-
       ]
     }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
   ]
-
 }
 {% endschema %}
