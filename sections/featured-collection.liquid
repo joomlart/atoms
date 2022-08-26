@@ -78,7 +78,7 @@
         assign columns_desktop = section.settings.columns_desktop
         assign columns_mobile = section.settings.columns_mobile
       -%}
-      {% if show_card_collection == true %}
+      {% if section.settings.show_card_collection %}
       <div class="product-grid-wrap product-grid-wrap--{{ section.settings.desktop_layout }}">
         <div class="collection-item">
           {% render 'card-collection',
@@ -112,7 +112,7 @@
               {%- endfor -%}
             {%- endfor -%}
           </ul>
-      {% if show_card_collection == true %}
+      {% if section.settings.show_card_collection %}
         </div>
       </div>
       {%- endif -%}
