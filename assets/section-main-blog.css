@@ -94,12 +94,12 @@
 
   .blog-articles--collage > * .article-card__image--medium .ratio::before,
   .blog-articles--collage > * .article-card__image--medium .ratio::before {
-    padding-bottom: 44rem;
+    padding-bottom: 35rem;
   }
 
   .blog-articles--collage > * .article-card__image--large .ratio::before,
   .blog-articles--collage > * :last-child .article-card__image--large .ratio::before {
-    padding-bottom: 66rem;
+    padding-bottom: 40rem;
   }
 }
 
