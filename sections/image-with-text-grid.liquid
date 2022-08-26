@@ -41,6 +41,8 @@
           <div class="media media--{{ section.settings.item_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
             {%-liquid
               assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+              assign image_class = ""
+              assign sizes = "100%"
             -%}
             {{ block.settings.image | image_url: width: 1500 | image_tag:
               loading: 'lazy',
@@ -72,7 +74,7 @@
 
 {% schema %}
 {
-  "name": "A Banner List",
+  "name": "t:sections.image-banner-text-grid.name",
   "class": "section",
   "tag": "section",
   "settings": [
