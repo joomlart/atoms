@@ -611,6 +611,9 @@
         "show_description": {
           "label": "Show collection description from the admin"
         },
+        "show_card_collection": {
+          "label": "Show Card collection"
+        },
         "description_style": {
           "label": "Description style",
           "options__1": {
