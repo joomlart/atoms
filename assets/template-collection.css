@@ -175,5 +175,5 @@
 .product-grid-wrap .collection-item .card__content .card__description {
   color: rgb(var(--color-foreground));
   font-weight: 700;
-  font-size: 3.06rem;
+  font-size: 3.06;
 }
