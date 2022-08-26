@@ -1,5 +1,8 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
+<div class="page-width masthead">
+  {%- render 'breadcrumb' -%}
+</div>
 <div class="customer login">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
@@ -55,6 +58,7 @@
   <h1 id="login" tabindex="-1">
     {{ 'customer.login_page.title' | t }}
   </h1>
+
   <div>
     {%- if recover_success == true -%}
       <h3 class="form__message" tabindex="-1" autofocus>
@@ -122,7 +126,7 @@
         </a>
       {%- endif -%}
 
-      <button>
+      <button class="btn-signin">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
