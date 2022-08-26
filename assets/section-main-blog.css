@@ -73,3 +73,7 @@
 .blog-articles .article:first-child .card:not(.ratio) .card__content {
   padding: var(--grid-desktop-vertical-spacing);
 }
+
+.main-blog .breadcrumbs {
+  padding: 0;
+}
