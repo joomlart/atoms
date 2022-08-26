@@ -294,7 +294,7 @@
         "show_description": false,
         "description_style": "uppercase",
         "collection": "clothing",
-        "show_card_collection": false,
+        "show_card_collection": true,
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
