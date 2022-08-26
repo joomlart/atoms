@@ -75,8 +75,8 @@
         assign columns_desktop = section.settings.columns_desktop
         assign columns_mobile = section.settings.columns_mobile
       -%}
-      <div class="grid product-grid-wrap grid--2-col-desktop grid--2-col-tablet-down">
-        <div class="grid__item">
+      <div class="product-grid-wrap product-grid-wrap--{{ section.settings.desktop_layout }}">
+        <div class="collection-item">
           {% render 'card-collection',
             card_collection: section.settings.collection,
             media_aspect_ratio: 'portrait',
@@ -85,7 +85,7 @@
             description: true
           %}
         </div>
-        <div class="grid__item">
+        <div class="product-items">
           <ul id="Slider-{{ section.id }}" class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}" role="list" aria-label="{{ 'sections.featured_collection.slider' | t }}">
             {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
               <li id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
@@ -277,6 +277,22 @@
       "default": "background-1",
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info"
+    },
+    {
+      "type": "select",
+      "id": "desktop_layout",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.collage.settings.desktop_layout.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.collage.settings.desktop_layout.options__2.label"
+        }
+      ],
+      "default": "left",
+      "label": "t:sections.collage.settings.desktop_layout.label"
     },
     {
       "type": "header",
