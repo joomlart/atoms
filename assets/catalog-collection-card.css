@@ -1,9 +1,68 @@
 .collection__banner {}
 
 .collection__banner__media {
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
     height: 0;
     padding-bottom: 127.27%;
     position: relative;
+}
+
+.collection__banner__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    left: 0;
+    max-width: 50%;
+    padding-right: 32px;
+    padding: 64px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    width: 100%;
+}
+
+.collection__banner__content .link-wrap {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.collection__banner__content h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.collection__banner__content .description {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.collection__banner__content .link-uppercase {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 500ms all;
+    z-index: 2;
+    display: flex;
+}
+
+.collection__banner__content .link-uppercase svg {
+    width: 16px;
+}
+
+.collection__banner__content .link-uppercase:hover {
+    letter-spacing: 1px;
 }
