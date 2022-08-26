@@ -21,7 +21,14 @@
     {%- render 'breadcrumb'- %}
     
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
-    <p class="description"></p>
+
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'description' %}
+          <p class="description{{ block.shopify_attributes }}">{{ block.settings.des-masthead | escape }}</p>
+      {% endcase %}
+    {% endfor %}
+
     <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
       {%- for article in blog.articles -%}
         <div class="blog-articles__article article">
