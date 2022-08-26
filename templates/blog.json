@@ -2,6 +2,17 @@
   "sections": {
     "main": {
       "type": "main-blog",
+      "blocks": {
+        "95a36706-c326-4bfc-b6ed-6c7f7c364090": {
+          "type": "description",
+          "settings": {
+            "des-masthead": "Cursus elit, iaculis platea integer nisl sapien egestas. Itae donec ornare iaculis mauris nec ultrices ullamcorper tempus dignissim."
+          }
+        }
+      },
+      "block_order": [
+        "95a36706-c326-4bfc-b6ed-6c7f7c364090"
+      ],
       "settings": {
         "layout": "grid",
         "show_image": true,
