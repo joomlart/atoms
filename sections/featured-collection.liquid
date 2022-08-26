@@ -78,7 +78,7 @@
         assign columns_desktop = section.settings.columns_desktop
         assign columns_mobile = section.settings.columns_mobile
       -%}
-      {% if show_card_sections %}
+      {% if show_card_collection == true %}
       <div class="product-grid-wrap product-grid-wrap--{{ section.settings.desktop_layout }}">
         <div class="collection-item">
           {% render 'card-collection',
@@ -112,7 +112,7 @@
               {%- endfor -%}
             {%- endfor -%}
           </ul>
-      {% if show_card_sections %}
+      {% if show_card_collection == true %}
         </div>
       </div>
       {%- endif -%}
@@ -202,8 +202,8 @@
     },
     {
       "type": "checkbox",
-      "id": "show_card_sections",
-      "label": "t:sections.featured-collection.settings.show_card_sections.label",
+      "id": "show_card_collection",
+      "label": "t:sections.featured-collection.settings.show_card_collection.label",
       "default": false
     },
     {
