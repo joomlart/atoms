@@ -54,25 +54,38 @@
 -%}
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-      <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-        <div class="inner">
-        {%- if section.settings.title != blank -%}
-          <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
-        {%- endif -%}
-
-        {%- if section.settings.show_view_all and more_in_collection -%}
-          <div class="center collection__view-all">
-            <a href="{{ section.settings.collection.url }}"
-              class="{% if section.settings.view_all_style == 'link' %}link hightlight-link{% elsif section.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
-              aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
-            >
-              {{ 'sections.featured_collection.view_all' | t }}
-            </a>
+    <div class="page-width">
+      <div class="grid product-grid contains-card contains-card--standard grid--4-col-desktop grid--2-col-tablet-down">
+      {%- for block in section.blocks -%}
+        {%- assign empty_column = '' -%}
+        <div class="grid__item">
+          <div class="collection__title title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+            <div class="inner">
+            {%- if block.collection.title != blank -%}
+              <h2 class="title">{{ block.collection.title| escape }}</h2>
+            {%- endif -%}
+            </div>
           </div>
-        {%- endif -%}
-        </div>
-      </div>
 
+          <ul>
+            {%- for product in section.blocks.collection.products limit: section.settings.products_to_show -%}
+            <li>
+              {% render 'card-product',
+                card_product: product,
+                media_aspect_ratio: section.settings.image_ratio,
+                show_secondary_image: section.settings.show_secondary_image,
+                show_vendor: section.settings.show_vendor,
+                show_rating: section.settings.show_rating,
+                show_quick_add: section.settings.enable_quick_add,
+                section_id: section.id
+              %}
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endfor -%}
+      </div>
+    </div>
     <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %}{% if show_mobile_slider == false %} page-width{% endif %}{% if show_desktop_slider == false and section.settings.full_width == false %} page-width-desktop{% endif %}{% if show_desktop_slider %} slider-component-desktop{% endif %}">
       {%-liquid
         assign columns_desktop = section.settings.columns_desktop
