@@ -706,7 +706,7 @@
       }
     },
     "featured-collection-list": {
-      "name": "Featured collection",
+      "name": "Featured Collection List",
       "settings": {
         "collection": {
           "label": "Collection"
@@ -784,10 +784,12 @@
         }
       },
       "blocks": {
-        "name": "Add Collection"
+        "column": {
+          "name": "Add Collection"
+        }
       },
       "presets": {
-        "name": "Featured collection"
+        "name": "Featured Collection List"
       }
     },
     "featured-product": {
