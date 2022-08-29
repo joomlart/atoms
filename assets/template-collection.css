@@ -178,7 +178,8 @@
   font-size: 3.06rem;
 }
 
-.collection-product-list .card {
+.collection-product-list .card,
+.collection-product-list .card:not(.ratio) {
   column-gap: var(--grid-desktop-horizontal-spacing)/2;
   row-gap: var(--grid-desktop-vertical-spacing)/2;
   display: flex;
