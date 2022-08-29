@@ -277,7 +277,7 @@
           "settings": {
             "collection": "earrings",
             "products_to_show": 5,
-            "show_view_all": true,
+            "show_view_all": false,
             "view_all_style": "link"
           }
         },
