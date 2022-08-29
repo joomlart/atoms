@@ -53,7 +53,7 @@
   endif
 -%}
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
-  <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+  <div class="collection-product-list collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="page-width">
       <div class="grid product-grid contains-card contains-card--standard grid--3-col-desktop grid--1-col-tablet-down">
       {%- for block in section.blocks -%}
@@ -67,9 +67,9 @@
             </div>
           </div>
 
-          <div>
+          <div class="collection-products">
             {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
-            <div>
+            <div class="collection-product">
               {% render 'card-product',
                 card_product: product,
                 media_aspect_ratio: section.settings.image_ratio,
