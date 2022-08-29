@@ -297,6 +297,7 @@
         "90f844b0-cf2e-4cb4-a4f2-e03d6522e79a"
       ],
       "settings": {
+        "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
