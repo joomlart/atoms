@@ -276,21 +276,27 @@
           "type": "column",
           "settings": {
             "collection": "earrings",
-            "products_to_show": 5
+            "products_to_show": 5,
+            "show_view_all": true,
+            "view_all_style": "link"
           }
         },
         "d7836411-2b14-4093-8746-427e56b28804": {
           "type": "column",
           "settings": {
             "collection": "best-seller",
-            "products_to_show": 5
+            "products_to_show": 5,
+            "show_view_all": false,
+            "view_all_style": "link"
           }
         },
         "90f844b0-cf2e-4cb4-a4f2-e03d6522e79a": {
           "type": "column",
           "settings": {
             "collection": "clothing",
-            "products_to_show": 5
+            "products_to_show": 5,
+            "show_view_all": true,
+            "view_all_style": "link"
           }
         }
       },
@@ -303,8 +309,6 @@
         "heading_size": "h2",
         "columns_desktop": 3,
         "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "desktop_layout": "left",
