@@ -275,19 +275,22 @@
         "c0c352b6-f98b-489e-b2ee-379ef60ee895": {
           "type": "column",
           "settings": {
-            "collection": "earrings"
+            "collection": "earrings",
+            "products_to_show": 5
           }
         },
         "d7836411-2b14-4093-8746-427e56b28804": {
           "type": "column",
           "settings": {
-            "collection": "best-seller"
+            "collection": "best-seller",
+            "products_to_show": 5
           }
         },
         "90f844b0-cf2e-4cb4-a4f2-e03d6522e79a": {
           "type": "column",
           "settings": {
-            "collection": "clothing"
+            "collection": "clothing",
+            "products_to_show": 5
           }
         }
       },
@@ -298,7 +301,6 @@
       ],
       "settings": {
         "heading_size": "h2",
-        "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
