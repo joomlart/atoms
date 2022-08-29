@@ -286,7 +286,7 @@
           "settings": {
             "collection": "best-seller",
             "products_to_show": 5,
-            "show_view_all": false,
+            "show_view_all": true,
             "view_all_style": "link"
           }
         },
