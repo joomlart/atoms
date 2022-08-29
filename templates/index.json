@@ -1,98 +1,5 @@
 {
   "sections": {
-    "1661480760f133c93b": {
-      "type": "slideshow",
-      "disabled": true,
-      "blocks": {
-        "1661480760c725fa59-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/h2-item-1.jpg",
-            "heading": "",
-            "heading_size": "h2",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "1661480760c725fa59-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner-6.jpg",
-            "heading": "Gucci",
-            "heading_size": "h1",
-            "subheading": "Gucci is the best fashion",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 10,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "1db1b266-934c-44eb-9c5a-57b6561f8410": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/banner-5.jpg",
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "ceae388d-1eb5-406f-aa0d-9b8a967eacb7": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/detail-1.jpg",
-            "heading": "shoes",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "1661480760c725fa59-0",
-        "1661480760c725fa59-1",
-        "1db1b266-934c-44eb-9c5a-57b6561f8410",
-        "ceae388d-1eb5-406f-aa0d-9b8a967eacb7"
-      ],
-      "settings": {
-        "layout": "grid",
-        "slide_height": "small",
-        "slider_visual": "dots",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "166116152195c6e261": {
       "type": "collage",
       "blocks": {
@@ -460,7 +367,6 @@
     }
   },
   "order": [
-    "1661480760f133c93b",
     "166116152195c6e261",
     "166123731426fbd8a6",
     "1661246556b905fdde",
