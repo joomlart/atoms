@@ -26,13 +26,6 @@
 {%- endstyle -%}
 
 {%- liquid
-  assign products_to_display = section.settings.collection.all_products_count
-
-  if section.settings.collection.all_products_count > section.settings.products_to_show
-    assign products_to_display = section.settings.products_to_show
-    assign more_in_collection = true
-  endif
-
   assign columns_mobile_int = section.settings.columns_mobile | plus: 0
   assign show_mobile_slider = false
   if section.settings.swipe_on_mobile and products_to_display > columns_mobile_int
@@ -68,7 +61,16 @@
           </div>
 
           <div class="collection-products">
-            {%- for product in block.settings.collection.products limit: section.settings.products_to_show -%}
+            {%- liquid
+              assign products_to_display = blocks.settings.collection.all_products_count
+
+              if blocks.settings.collection.all_products_count > blocks.settings.products_to_show
+                assign products_to_display = section.settings.products_to_show
+                assign more_in_collection = true
+              endif
+            -%}
+
+            {%- for product in block.settings.collection.products limit: blocks.settings.products_to_show -%}
             <div class="collection-product">
               {% render 'card-product',
                 card_product: product,
@@ -114,15 +116,6 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
-    },
-    {
-      "type": "range",
-      "id": "products_to_show",
-      "min": 2,
-      "max": 12,
-      "step": 1,
-      "default": 4,
-      "label": "t:sections.featured-collection-list.settings.products_to_show.label"
     },
     {
       "type": "range",
@@ -325,6 +318,15 @@
           "type": "collection",
           "id": "collection",
           "label": "t:sections.featured-collection-list.settings.collection.label"
+        },
+        {
+          "type": "range",
+          "id": "products_to_show",
+          "min": 2,
+          "max": 12,
+          "step": 1,
+          "default": 4,
+          "label": "t:sections.featured-collection-list.settings.products_to_show.label"
         }
       ]
     }
