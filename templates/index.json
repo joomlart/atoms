@@ -275,7 +275,7 @@
         "c0c352b6-f98b-489e-b2ee-379ef60ee895": {
           "type": "column",
           "settings": {
-            "collection": "earrings",
+            "collection": "latest-products",
             "products_to_show": 5,
             "show_view_all": false,
             "view_all_style": "link"
