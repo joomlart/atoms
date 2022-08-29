@@ -48,7 +48,11 @@
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection-product-list collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="page-width">
-      <div class="grid product-grid contains-card contains-card--standard grid--3-col-desktop grid--1-col-tablet-down">
+      {%-liquid
+        assign columns_desktop = section.settings.columns_desktop
+        assign columns_mobile = section.settings.columns_mobile
+      -%}
+      <div class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ columns_desktop }}-col-desktop{% if section.settings.collection == blank %} grid--2-col-tablet-down{% else %} grid--{{ columns_mobile }}-col-tablet-down{% endif %}{% if show_mobile_slider or show_desktop_slider %} slider{% if show_desktop_slider %} slider--desktop{% endif %}{% if show_mobile_slider %} slider--tablet grid--peek{% endif %}{% endif %}" role="list" aria-label="{{ 'sections.featured_collection.slider' | t }}">
       {%- for block in section.blocks -%}
         {%- assign empty_column = '' -%}
         <div class="grid__item">
@@ -57,20 +61,31 @@
             {%- if block.settings.collection.title != blank -%}
               <h2 class="title {{ section.settings.heading_size }}">{{ block.settings.collection.title| escape }}</h2>
             {%- endif -%}
+
+            {%- if block.settings.show_view_all and more_in_collection -%}
+              <div class="center collection__view-all">
+                <a href="{{ block.settings.collection.url }}"
+                  class="{% if block.settings.view_all_style == 'link' %}link hightlight-link{% elsif block.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+                  aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: block.settings.collection.title }}"
+                >
+                  {{ 'sections.featured_collection.view_all' | t }}
+                </a>
+              </div>
+            {%- endif -%}
             </div>
           </div>
 
           <div class="collection-products">
             {%- liquid
-              assign products_to_display = blocks.settings.collection.all_products_count
+              assign products_to_display = block.settings.collection.all_products_count
 
-              if blocks.settings.collection.all_products_count > blocks.settings.products_to_show
+              if block.settings.collection.all_products_count > block.settings.products_to_show
                 assign products_to_display = section.settings.products_to_show
                 assign more_in_collection = true
               endif
             -%}
 
-            {%- for product in block.settings.collection.products limit: blocks.settings.products_to_show -%}
+            {%- for product in block.settings.collection.products limit: block.settings.products_to_show -%}
             <div class="collection-product">
               {% render 'card-product',
                 card_product: product,
@@ -131,32 +146,6 @@
       "id": "full_width",
       "label": "t:sections.featured-collection-list.settings.full_width.label",
       "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_view_all",
-      "default": true,
-      "label": "t:sections.featured-collection-list.settings.show_view_all.label"
-    },
-    {
-      "type": "select",
-      "id": "view_all_style",
-      "label": "t:sections.featured-collection-list.settings.view_all_style.label",
-      "options": [
-        {
-          "value": "link",
-          "label": "t:sections.featured-collection-list.settings.view_all_style.options__1.label"
-        },
-        {
-          "value": "outline",
-          "label": "t:sections.featured-collection-list.settings.view_all_style.options__2.label"
-        },
-        {
-          "value": "solid",
-          "label": "t:sections.featured-collection-list.settings.view_all_style.options__3.label"
-        }
-      ],
-      "default": "solid"
     },
     {
       "type": "checkbox",
@@ -327,6 +316,32 @@
           "step": 1,
           "default": 4,
           "label": "t:sections.featured-collection-list.settings.products_to_show.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_view_all",
+          "default": true,
+          "label": "t:sections.featured-collection-list.settings.show_view_all.label"
+        },
+        {
+          "type": "select",
+          "id": "view_all_style",
+          "label": "t:sections.featured-collection-list.settings.view_all_style.label",
+          "options": [
+            {
+              "value": "link",
+              "label": "t:sections.featured-collection-list.settings.view_all_style.options__1.label"
+            },
+            {
+              "value": "outline",
+              "label": "t:sections.featured-collection-list.settings.view_all_style.options__2.label"
+            },
+            {
+              "value": "solid",
+              "label": "t:sections.featured-collection-list.settings.view_all_style.options__3.label"
+            }
+          ],
+          "default": "solid"
         }
       ]
     }
