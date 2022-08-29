@@ -16,9 +16,15 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .contact-heading h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 4.8rem;
+  }
 {%- endstyle -%}
 
-<div class="page-width page-width--narrow section-{{ section.id }}-padding">
+<div class="page-width page-width--narrow section-{{ section.id }}-padding {{ section.settings.suffix-class }}">
   <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>

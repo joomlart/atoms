@@ -1,22 +1,22 @@
 .customer:not(.account):not(.order) {
   margin: 6rem auto 9rem;
-  max-width: 33.4rem;
+  max-width: 40rem;
   padding: 0 1.5rem;
   text-align: center;
 }
 
 @media screen and (min-width: 750px) {
   .customer:not(.account):not(.order) {
-    max-width: 47.8rem;
+    max-width: 50rem;
   }
 }
 
 .customer form {
-  margin-top: 4rem;
+  margin-top: 4.8rem;
 }
 
 .customer button {
-  margin: 4rem 0 1.5rem;
+  margin: 3.2rem 0 1.6rem;
 }
 
 .customer ul {
@@ -322,7 +322,8 @@
   background-color: currentColor;
 }
 
-/* Login */
+/* ===== Login
+========================= */
 .login a {
   display: block;
   margin: 0 auto;
@@ -352,6 +353,14 @@
   margin-top: 0;
 }
 
+.btn-signin {
+  width: 100%;
+}
+
+
+/* ===== Reset Password
+========================= */
+
 #recover,
 #recover + div {
   display: none;
@@ -379,7 +388,7 @@
   margin-bottom: 0;
 }
 
-.btn-signin {
+.customer.login form > button {
   width: 100%;
 }
 
@@ -758,8 +767,14 @@ li[data-address] > h2 {
  padding: 0;
 }
 
-h1#login, h1#register {
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 6rem;
+h1#login, h1#register, h1#recover {
+  font-weight: 600;
+  font-size: calc(var(--font-body-scale) * 4.8rem);
+  line-height: 1.25;
+}
+
+@media screen and (max-width: 550px) {
+  h1#login, h1#register, h1#recover {
+  font-size: calc(var(--font-body-scale) * 3.2rem);
+  }
 }
