@@ -30,8 +30,7 @@
 
   .footer__content-top {
     padding-bottom: 3rem;
-    padding-left: calc(4rem / var(--font-body-scale));
-    padding-right: calc(4rem / var(--font-body-scale));
+    padding-top: 3rem;
   }
 }
 
@@ -126,6 +125,12 @@
 
 .footer__blocks-wrapper .footer-block--newsletter {
   width: calc(33.333% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+}
+
+@media screen and (max-width: 749px) {
+  .footer__blocks-wrapper .footer-block--newsletter {
+    width: 100%;
+  }
 }
 
 .footer-block--newsletter:only-child {
