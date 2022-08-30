@@ -29,22 +29,29 @@
       {% endcase %}
     {% endfor %}
 
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
-      {%- for article in blog.articles -%}
-        <div class="blog-articles__article article">
-          {%- render 'article-card',
-            article: article,
-            media_height: section.settings.image_height,
-            media_aspect_ratio: article.image.aspect_ratio,
-            show_image: section.settings.show_image,
-            show_date: section.settings.show_date,
-            show_author: section.settings.show_author,
-            show_excerpt: true 
-          -%}
+    <div class="wrap-inner">
+      {%- if show_sidebar -%}
+        <div class="sidebar">
+          This is Sidebar
         </div>
-      {%- endfor -%}
+      {% endif %}
+      </div>
+      <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+        {%- for article in blog.articles -%}
+          <div class="blog-articles__article article">
+            {%- render 'article-card',
+              article: article,
+              media_height: section.settings.image_height,
+              media_aspect_ratio: article.image.aspect_ratio,
+              show_image: section.settings.show_image,
+              show_date: section.settings.show_date,
+              show_author: section.settings.show_author,
+              show_excerpt: true 
+            -%}
+          </div>
+        {%- endfor -%}
+      </div>
     </div>
-
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
@@ -148,6 +155,12 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sidebar",
+      "default": false,
+      "label": "Show Sidebar"
     }
   ],
   "blocks": [

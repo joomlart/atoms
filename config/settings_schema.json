@@ -45,6 +45,13 @@
         "label": "t:settings_schema.colors.settings.gradient_accent_2.label"
       },
       {
+        "type": "color",
+        "id": "colors_accent_3",
+        "default": "#c1ab7c",
+        "label": "t:settings_schema.colors.settings.colors_accent_3.label",
+        "info": "t:settings_schema.colors.settings.colors_accent_3.info"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.colors.settings.header__2.content"
       },

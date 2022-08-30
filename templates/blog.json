@@ -18,15 +18,16 @@
         "show_image": true,
         "image_height": "medium",
         "show_date": true,
-        "show_author": false,
+        "show_author": true,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "show_sidebar": true
       }
     },
     "1661825839ba8282b0": {
       "type": "more-article",
       "settings": {
-        "heading": "More Artcle",
+        "heading": "More Article",
         "heading_size": "h2",
         "blog": "news",
         "post_limit": 4,

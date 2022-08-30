@@ -10,17 +10,17 @@
             "description": "Cursus elit, iaculis platea integer nisl sapien egestas. Itae donec ornare iaculis mauris nec ultrices ullamcorper tempus dignissim."
           }
         },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
         "bb646369-fa26-4a54-9523-51fa8da87946": {
           "type": "title",
           "settings": {
             "blog_show_date": true,
             "blog_show_author": false
-          }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
           }
         },
         "content": {
@@ -43,6 +43,8 @@
         "share"
       ],
       "settings": {
+        "show_previous_next_buttons": true,
+        "show_social_media": true
       }
     }
   },
