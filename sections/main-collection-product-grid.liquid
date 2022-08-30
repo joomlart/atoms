@@ -34,80 +34,82 @@
         {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
           {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
         {%- endif -%}
-        {{ 'flickity.css' | asset_url | stylesheet_tag }}
-        {{ 'sidebar-carousels.css' | asset_url | stylesheet_tag }}
-        {{ 'flickity.js' | asset_url | script_tag }}
-        <div class="cards-sidebar-carousels">
-          <div class="carousel">
-            {%- for product in collection.products -%}
-              {% assign lazy_load = false %}
-                {%- if forloop.index > 2 -%}
-                  {%- assign lazy_load = true -%}
-                {%- endif -%}
-                {% render 'collection-sidebar-carousels',
-                  card_product: product,
-                  media_aspect_ratio: section.settings.image_ratio,
-                  show_secondary_image: section.settings.show_secondary_image,
-                  show_vendor: section.settings.show_vendor,
-                  show_rating: section.settings.show_rating,
-                  lazy_load: lazy_load,
-                  show_quick_add: section.settings.enable_quick_add,
-                  section_id: section.id
+        {%- if section.settings.enable_sidebar_top_seller -%}
+          {{ 'flickity.css' | asset_url | stylesheet_tag }}
+          {{ 'sidebar-carousels.css' | asset_url | stylesheet_tag }}
+          {{ 'flickity.js' | asset_url | script_tag }}
+          <div class="cards-sidebar-carousels">
+            <div class="carousel">
+              {%- for product in collection.products -%}
+                {% assign lazy_load = false %}
+                  {%- if forloop.index > 2 -%}
+                    {%- assign lazy_load = true -%}
+                  {%- endif -%}
+                  {% render 'collection-sidebar-carousels',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    lazy_load: lazy_load,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id
 
-                %}
-              {%- endfor -%}
-            </div>
-        </div>
-        {% assign card_sidebar_nav_range = section.settings.navigation_amount %}
-        {% style %}
-        @media only screen and ( min-width: 1201px ) { 
-          {% if card_sidebar_nav_range == 1 %}
-          .cards-sidebar-carousels .carousel-cell {
-            width: calc(100% -10px );
+                  %}
+                {%- endfor -%}
+              </div>
+          </div>
+          {% assign card_sidebar_nav_range = section.settings.navigation_amount %}
+          {% style %}
+          @media only screen and ( min-width: 1201px ) { 
+            {% if card_sidebar_nav_range == 1 %}
+            .cards-sidebar-carousels .carousel-cell {
+              width: calc(100% -10px );
+            }
+            {% elsif card_sidebar_nav_range == 2 %}
+            .cards-sidebar-carousels .carousel-cell {
+              width: calc(49% - 10px);
+            }
+            {% elsif card_sidebar_nav_range == 3 %}
+            .cards-sidebar-carousels .carousel-cell {
+              width: calc(32% - 10px);
+            }
+            {% elsif card_sidebar_nav_range == 4 %}
+            .cards-sidebar-carousels .carousel-cell {
+              width: calc(24% - 10px);
+            }
+            {% endif %}
           }
-          {% elsif card_sidebar_nav_range == 2 %}
-          .cards-sidebar-carousels .carousel-cell {
-            width: calc(49% - 10px);
+          .flickity-page-dots .dot {
+            background: {{ section.settings.navigation_color }};
           }
-          {% elsif card_sidebar_nav_range == 3 %}
-          .cards-sidebar-carousels .carousel-cell {
-            width: calc(32% - 10px);
+          .flickity-button-icon {
+            color: {{ section.settings.navigation_color }};
           }
-          {% elsif card_sidebar_nav_range == 4 %}
-          .cards-sidebar-carousels .carousel-cell {
-            width: calc(24% - 10px);
-          }
-          {% endif %}
-        }
-        .flickity-page-dots .dot {
-          background: {{ section.settings.navigation_color }};
-        }
-        .flickity-button-icon {
-          color: {{ section.settings.navigation_color }};
-        }
-        {% endstyle %}
-        <script>
-          var elem = document.querySelector('.cards-sidebar-carousels .carousel');
-          var flkty = new Flickity( elem, {
-            contain: true,
-            imagesLoaded: true,
-            lazyLoad: 2,
-            wrapAround: true,
-            pageDots: false,
-          });
-          {% if request.design_mode %}
-          document.addEventListener("shopify:section:load", function(event) {
+          {% endstyle %}
+          <script>
             var elem = document.querySelector('.cards-sidebar-carousels .carousel');
             var flkty = new Flickity( elem, {
-            contain: true,
-            imagesLoaded: true,
-            lazyLoad: 2,
-            wrapAround: true,
-            pageDots: false,
+              contain: true,
+              imagesLoaded: true,
+              lazyLoad: 2,
+              wrapAround: true,
+              pageDots: false,
             });
-          });
-          {% endif %}
-        </script>
+            {% if request.design_mode %}
+            document.addEventListener("shopify:section:load", function(event) {
+              var elem = document.querySelector('.cards-sidebar-carousels .carousel');
+              var flkty = new Flickity( elem, {
+              contain: true,
+              imagesLoaded: true,
+              lazyLoad: 2,
+              wrapAround: true,
+              pageDots: false,
+              });
+            });
+            {% endif %}
+          </script>
+        {% endif %}
       </aside>
     <div class="product-grid-container" id="ProductGridContainer">
       {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
