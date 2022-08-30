@@ -29,7 +29,7 @@
       {% endcase %}
     {% endfor %}
 
-    <div class="wrap-inner grid {% if section.settings.show_sidebar %}has-sidebar{% endif %}">
+    <div class="wrap-inner {% if section.settings.show_sidebar %}grid has-sidebar{% endif %}">
       <div class="list-blogs">
         <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
           {%- for article in blog.articles -%}
