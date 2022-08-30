@@ -212,3 +212,33 @@
   text-decoration: none;
 }
 
+.has-sidebar .latest-blog-posts-list {
+
+}
+
+.has-sidebar .latest-blog-posts-list img {
+  object-fit: cover;
+  margin-right: 1.6rem;
+}
+
+.has-sidebar .latest-blog-posts-list .post-item {
+  display: flex;
+  align-items: center;
+  padding: calc(var(--grid-desktop-vertical-spacing) / 4) 0;
+}
+
+.has-sidebar .latest-blog-posts-list .post-item h5 {
+  margin: 0;
+}
+
+.has-sidebar .latest-blog-posts-list .post-item h5 a{
+  color: #212121;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.has-sidebar .latest-blog-posts-list .post-item h5 a:hover{
+  text-decoration: underline;
+}
+
