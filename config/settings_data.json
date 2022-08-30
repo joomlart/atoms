@@ -179,7 +179,7 @@
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
           "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products.",
-          "show_social": true,
+          "show_social": false,
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true,
