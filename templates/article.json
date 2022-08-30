@@ -44,7 +44,7 @@
       ],
       "settings": {
         "show_previous_next_buttons": true,
-        "show_social_media": false
+        "show_social_media": true
       }
     }
   },
