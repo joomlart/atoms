@@ -27,7 +27,7 @@
       "type": "more-article",
       "settings": {
         "heading": "More Artcle",
-        "heading_size": "h2",
+        "heading_size": "h0",
         "blog": "news",
         "post_limit": 3,
         "padding_top": 36,
