@@ -1540,6 +1540,12 @@
         "enable_sorting": {
           "label": "Enable sorting"
         },
+        "enable_sidebar_top_seller": {
+          "label": "Enable Sidebar Block - Top Seller"
+        },
+        "enable_carousel_page_dots": {
+          "label": "Enable Page Dots"
+        },
         "image_ratio": {
           "label": "Image ratio",
           "options__1": {
@@ -1564,6 +1570,9 @@
         },
         "header__1": {
           "content": "Filtering and sorting"
+        },
+        "header__2": {
+          "content": "Card and Sidebar"
         },
         "header__3": {
           "content": "Product card"
