@@ -1568,6 +1568,9 @@
                 "header__1": {
                     "content": "Filtering and sorting"
                 },
+                "header__2": {
+                    "content": "Card and Sidebar"
+                },
                 "header__3": {
                     "content": "Product card"
                 },
