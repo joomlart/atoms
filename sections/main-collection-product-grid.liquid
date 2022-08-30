@@ -34,7 +34,10 @@
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
           {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
         {%- endif -%}
-        TuonNV
+        {{ 'flickity.css' | asset_url | stylesheet_tag }}
+        {{ 'sidebar-carousels.css' | asset_url | stylesheet_tag }}
+        {{ 'flickity.js' | asset_url | script_tag }}
+        {%- render 'catalog-collection-sidebar-carousels' -%}
       </aside>
     <div class="product-grid-container" id="ProductGridContainer">
       {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
