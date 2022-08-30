@@ -1,0 +1,17 @@
+
+{% comment %} 
+Edit the 2 values right below: what's your blog handle and how many articles do you want to show?
+{% endcomment %}
+
+{% assign your_blog_handle_here = 'news' %}
+{% assign how_many_articles_to_show = 5 %}
+
+<!-- START OF LATEST BLOG POSTS -->
+<div class="lastest-posts">
+    <h3>Lastest Posts</h3>
+    <ul class="latest-blog-posts-list">
+      {% for article in blogs[your_blog_handle_here].articles limit: how_many_articles_to_show %}
+        <li>{{ article.title | link_to: article.url }}</li>
+      {% endfor %}
+      </ul>
+</div>

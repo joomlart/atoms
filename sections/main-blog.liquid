@@ -50,14 +50,20 @@
       {%- if section.settings.show_sidebar -%}
         <div class="sidebar">
           {%- if section.settings.blog_show_tags -%}
-            <h3>Tags</h3>
-            <ul>
-              <li>
+            <div class="list-tag">
+              <h3 class="mod-title">Tags</h3>
+              <ul>
                 {%- for tag in blog.all_tags -%}
-                  <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+                  <li>
+                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %} {% endunless %}
+                  </li>
                 {%- endfor -%}
-              </li>
-            </ul>
+              </ul>
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.blog_show_lastest_post -%}
+            {% render 'latest-blog-posts' %}
           {%- endif -%}
         </div>
       {% endif %}
@@ -176,6 +182,12 @@
       "type": "checkbox",
       "id": "blog_show_tags",
       "label": "Show Tags",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_lastest_post",
+      "label": "Show Lastest Posts",
       "default": true
     }
   ],

@@ -178,6 +178,37 @@
 }
 
 .has-sidebar .sidebar {
-  background-color: aqua;
-  height: 2000px;
+  padding: var(--grid-desktop-vertical-spacing);
 }
+
+.has-sidebar .list-tag {
+
+}
+
+.has-sidebar .mod-title{
+  margin: 0 0 1rem 0;
+  padding: 0;
+  text-transform: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.has-sidebar .list-tag ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.has-sidebar .list-tag ul li {
+  list-style-type: none;
+  margin-right: .4rem;
+  margin-bottom: .8rem;
+}
+
+.has-sidebar .list-tag ul li a{
+  padding: .4rem .8rem;
+  background-color: #eee;
+  color: #212121;
+  text-decoration: none;
+}
+
