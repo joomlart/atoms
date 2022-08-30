@@ -204,3 +204,12 @@
 .collection-product-list .collection-products .collection-product + .collection-product {
   margin-top: calc(var(--grid-desktop-vertical-spacing) / 2);
 }
+
+.collection-product-list .card__badge .badge {
+  padding: 2px 4px;
+  font-size: 1.1rem;
+}
+
+.collection-product-list .card--media .card__inner .card__content {
+  padding: 0.8rem;
+}
