@@ -1543,6 +1543,9 @@
                 "enable_sidebar_top_seller": {
                     "label": "Enable Sidebar Block - Top Seller"
                 },
+                "enable_carousel_page_dots": {
+                    "label": "Enable Page Dots"
+                },
                 "image_ratio": {
                     "label": "Image ratio",
                     "options__1": {

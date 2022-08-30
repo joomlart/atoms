@@ -90,21 +90,21 @@
           <script>
             var elem = document.querySelector('.cards-sidebar-carousels .carousel');
             var flkty = new Flickity( elem, {
-              contain: true,
-              imagesLoaded: true,
-              lazyLoad: 2,
-              wrapAround: true,
-              pageDots: false,
+                contain: true,
+                imagesLoaded: true,
+                lazyLoad: 2,
+                wrapAround: false,
+                pageDots: {{section.settings.enable_carousel_page_dots }},
             });
             {% if request.design_mode %}
             document.addEventListener("shopify:section:load", function(event) {
               var elem = document.querySelector('.cards-sidebar-carousels .carousel');
               var flkty = new Flickity( elem, {
-              contain: true,
-              imagesLoaded: true,
-              lazyLoad: 2,
-              wrapAround: true,
-              pageDots: false,
+                contain: true,
+                imagesLoaded: true,
+                lazyLoad: 2,
+                wrapAround: false,
+                pageDots: {{section.settings.enable_carousel_page_dots }},
               });
             });
             {% endif %}
@@ -370,6 +370,12 @@
       "id": "enable_sidebar_top_seller",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sidebar_top_seller.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_carousel_page_dots",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_carousel_page_dots.label"
     },
     {
       "type": "range",
