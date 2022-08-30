@@ -15,9 +15,9 @@
     height: 100%;
     justify-content: space-around;
     left: 0;
-    max-width: 50%;
+    max-width: 100%;
     padding-right: 32px;
-    padding: 64px;
+    padding: 32px;
     position: absolute;
     text-align: left;
     top: 0;
@@ -36,7 +36,7 @@
     color: #fff;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     margin-top: 0;
     position: relative;
     z-index: 2;
@@ -65,4 +65,41 @@
 
 .collection__banner__content .link-uppercase:hover {
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 639px) {
+    div.collection__banner__content {
+        max-width: 100%;
+        padding: 16px;
+    }
+    .collection__banner__content .description {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .collection__banner__content {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .collection__banner__content {
+        max-width: 100%;
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .collection__banner__content {
+        max-width: 70%;
+        padding: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .collection__banner__content {
+        max-width: 60%;
+        padding: 64px;
+    }
 }
