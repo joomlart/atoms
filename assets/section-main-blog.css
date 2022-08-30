@@ -242,3 +242,8 @@
   text-decoration: underline;
 }
 
+.has-sidebar .sidebar-image {
+  max-width: 100%;
+  height: auto;
+}
+
