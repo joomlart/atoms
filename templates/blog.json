@@ -26,8 +26,8 @@
     "1661825839ba8282b0": {
       "type": "more-article",
       "settings": {
-        "heading": "More Artcle",
-        "heading_size": "h0",
+        "heading": "More Article",
+        "heading_size": "h2",
         "blog": "news",
         "post_limit": 3,
         "padding_top": 36,
