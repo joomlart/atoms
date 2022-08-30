@@ -14,14 +14,14 @@
         "95a36706-c326-4bfc-b6ed-6c7f7c364090"
       ],
       "settings": {
-        "layout": "grid",
+        "layout": "collage",
         "show_image": true,
         "image_height": "medium",
         "show_date": true,
         "show_author": true,
         "padding_top": 36,
         "padding_bottom": 36,
-        "show_sidebar": true
+        "show_sidebar": false
       }
     },
     "1661825839ba8282b0": {
