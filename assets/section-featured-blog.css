@@ -57,6 +57,11 @@
   .blog__post.article {
     width: calc(100% - 3rem);
   }
+
+  .blog .page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .background-secondary .blog-placeholder__content {
