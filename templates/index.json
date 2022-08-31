@@ -326,7 +326,7 @@
       "settings": {
         "heading": "From our Blog",
         "heading_size": "h2",
-        "blog": "news",
+        "blog": "featured-articles",
         "post_limit": 4,
         "columns_desktop": 4,
         "color_scheme": "background-1",
