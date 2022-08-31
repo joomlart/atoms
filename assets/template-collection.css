@@ -52,6 +52,11 @@
   margin-bottom: 2.5rem;
 }
 
+.collection-product-list .title-wrapper--self-padded-tablet-down, 
+.collection-product-list .title-wrapper--self-padded-mobile {
+  padding: 0;
+}
+
 .collection__title .title:not(:only-child) {
   margin-bottom: 1rem;
 }
@@ -63,6 +68,10 @@
 
   .collection__title.title-wrapper--self-padded-tablet-down {
     padding: 0 5rem;
+  }
+
+  .collection-product-list .collection__title.title-wrapper--self-padded-tablet-down {
+    padding: 0;
   }
 
   .collection slider-component:not(.page-width-desktop) {
