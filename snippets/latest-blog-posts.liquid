@@ -8,7 +8,9 @@ Edit the 2 values right below: what's your blog handle and how many articles do 
 
 <!-- START OF LATEST BLOG POSTS -->
 <div class="lastest-posts">
-    <h3 class="mod-title">Lastest Posts</h3>
+    {% if section.settings.blog_show_lastest_post %}
+      <h3 class="mod-title">Lastest Posts</h3>
+    {% endif %}
     <div class="latest-blog-posts-list">
       {% for article in blogs[your_blog_handle_here].articles limit: how_many_articles_to_show %}
         <div class="post-item">
