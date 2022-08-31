@@ -683,11 +683,11 @@ h6:empty {
 }
 
 .link--text {
-    color: rgb(var(--color-foreground));
+    color: var(--color-foreground);
 }
 
 .link--text:hover {
-    color: rgba(var(--color-base-accent-3));
+    color: var(--color-base-accent-3);
 }
 
 .link-with-icon {
