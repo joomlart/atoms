@@ -2658,13 +2658,13 @@ details[open]>.header__submenu {
 .header__menu-item {
     padding: 1.2rem;
     text-decoration: none;
-    color: rgba(var(--color-foreground), 0.75);
+    color: var(--color-foreground);
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .header__menu-item:hover {
-    color: rgb(var(--color-foreground));
+    color: var(--color-base-accent-3);
 }
 
 .header__menu-item span {
@@ -2690,12 +2690,12 @@ details[open]>.header__menu-item .icon-caret {
 
 .header__active-menu-item {
     transition: text-decoration-thickness var(--duration-short) ease;
-    color: rgb(var(--color-button));
+    color: var(--color-base-accent-3);
 }
 
 .header__menu-item:hover .header__active-menu-item {
     transition: text-decoration-thickness var(--duration-short) ease;
-    color: rgb(var(--color-button));
+    color: var(--color-base-accent-3);
 }
 
 .header__submenu {
