@@ -1367,13 +1367,15 @@ button.shopify-payment-button__button--unbranded {
     padding: 0 3rem;
     cursor: pointer;
     font: inherit;
-    font-size: 1.4rem;
+    font-size: inherit;
+    line-height: inherit;
+    font-size: 1.5rem;
     text-decoration: none;
     color: rgb(var(--color-button-text));
     transition: box-shadow var(--duration-short) ease;
     -webkit-appearance: none;
     appearance: none;
-    background-color: rgba(var(--color-button), var(--alpha-button-background));
+    background-color: rgba(var(--color-button),var(--alpha-button-background));
 }
 
 .button:before,
@@ -1381,12 +1383,27 @@ button.shopify-payment-button__button--unbranded {
 .customer button:before,
 .shopify-payment-button__button--unbranded:before,
 .shopify-payment-button [role="button"]:before,
-.cart__dynamic-checkout-buttons [role='button']:before {}
+.cart__dynamic-checkout-buttons [role='button']:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: var(--buttons-radius-outset);
+    box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow),var(--shadow-opacity));
+}
 
 .button:after,
 .shopify-challenge__button:after,
 .customer button:after,
-.shopify-payment-button__button--unbranded:after {}
+.shopify-payment-button__button--unbranded:after {
+    content: "";
+    position: absolute;
+    inset: var(--buttons-border-width);
+    z-index: 1;
+    border-radius: var(--buttons-radius);
+    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text),var(--border-opacity)),0 0 0 var(--buttons-border-width) rgba(var(--color-button),var(--alpha-button-background));
+    transition: box-shadow var(--duration-short) ease;
+}
 
 .button:not([disabled]):hover::after,
 .shopify-challenge__button:hover::after,
