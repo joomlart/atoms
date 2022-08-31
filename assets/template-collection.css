@@ -222,3 +222,10 @@
 .collection-product-list .card--media .card__inner .card__content {
   padding: 0.8rem;
 }
+
+@media screen and (max-width: 749px) {
+  .collection-product-list slider-component.page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
