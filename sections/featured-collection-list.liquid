@@ -84,7 +84,10 @@
           </div>
 
           <div class="collection-products">
-            {%- for product in block.settings.collection.products limit: block.settings.products_to_show -%}
+            {%- liquid
+              assign products = block.settings.collection.products
+            -%}
+            {%- for product in products limit: block.settings.products_to_show -%}
             <div class="collection-product">
               {% render 'card-product',
                 card_product: product,
