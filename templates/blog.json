@@ -23,7 +23,8 @@
         "padding_bottom": 36,
         "show_sidebar": false,
         "blog_show_tags": false,
-        "blog_show_lastest_post": false
+        "blog_show_lastest_post": false,
+        "blog_categories": ""
       }
     },
     "1661825839ba8282b0": {
