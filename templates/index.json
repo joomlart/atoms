@@ -309,7 +309,6 @@
         "heading_size": "h2",
         "columns_desktop": 3,
         "full_width": false,
-        "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "show_secondary_image": false,
@@ -327,7 +326,7 @@
       "settings": {
         "heading": "From our Blog",
         "heading_size": "h2",
-        "blog": "news",
+        "blog": "category-blog",
         "post_limit": 4,
         "columns_desktop": 4,
         "color_scheme": "background-1",
