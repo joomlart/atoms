@@ -1513,13 +1513,13 @@
                     "label": "Show full width image"
                 },
                 "hero_align_content": {
-                    "options__1": {
+                    "left": {
                         "label": "Left"
                     },
-                    "options__2": {
+                    "center": {
                         "label": "Center"
                     },
-                    "options__3": {
+                    "right": {
                         "label": "Right"
                     },
                     "label": "Hero align content"
