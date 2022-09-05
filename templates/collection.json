@@ -26,7 +26,7 @@
         "padding_bottom": 36,
         "enable_sidebar_top_seller": true,
         "enable_carousel_page_dots": true,
-        "navigation_amount": 1,
+        "navigation_amount": 3,
         "navigation_color": "#000000"
       }
     }
