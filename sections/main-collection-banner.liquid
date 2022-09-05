@@ -9,7 +9,7 @@
   }
 {%- endstyle -%}
 
-<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}{% if section.settings.show_collection_full_width and collection.image %} collection-hero--full-with{% endif %} color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.show_collection_full_width.true and collection.image -%} style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover; "{%- endif -%}>
+<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}{% if section.settings.show_collection_full_width and collection.image %} collection-hero--full-with{% endif %} color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.show_collection_full_width and collection.image -%} style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover; "{%- endif -%}>
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title">
@@ -69,8 +69,7 @@
       "type": "checkbox",
       "id": "show_collection_full_width",
       "default": true,
-      "label": "t:sections.main-collection-banner.settings.show_collection_full_width.label",
-      "info": "t:sections.main-collection-banner.settings.show_collection_full_width.info"
+      "label": "t:sections.main-collection-banner.settings.show_collection_full_width.label"
     },
     {
       "type": "select",
