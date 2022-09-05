@@ -24,7 +24,7 @@
         "show_sidebar": true,
         "blog_show_tags": true,
         "blog_show_lastest_post": true,
-        "blog_categories": "category-blog,featured-article"
+        "blog_categories": "category-blog,featured-articles"
       }
     },
     "1661825839ba8282b0": {

@@ -3,50 +3,56 @@
 Edit the 2 values right below: what's your blog handle and how many articles do you want to show?
 {% endcomment %}
 
-{% assign categories_handles = "category-blog,featured-article" | split: "," %}
-{% assign how_many_articles_to_show = 4 %}
+{% comment %} {% assign categories_handles = section.settings.blog_categories | reverse | split: "," %} {% endcomment %}
+{% comment %} {% assign how_many_articles_to_show = 4 %} {% endcomment %}
+{% comment %} {% assign list_categories = "" | split: ',' %} {% endcomment %}
+
+{% comment %} {% for category in categories_handles %}
+  {% for article in blogs[category].articles limit: how_many_articles_to_show %}
+    {% assign list_categories = list_categories | push: article %}
+  {% endfor %}
+{% endfor %} {% endcomment %}
 
 <!-- START OF LATEST BLOG POSTS -->
 <div class="lastest-posts">
-    {% if section.settings.blog_show_lastest_post %}
-      <h3 class="mod-title">Lastest Posts</h3>
-    {% endif %}
+    {% comment %} {% if section.settings.blog_show_lastest_post %}
+
+    {% endif %} {% endcomment %}
+
+    <h3 class="mod-title">Lastest Posts</h3>
 
     <div class="latest-blog-posts-list">
-    {% for var in categories_handles %}
-        {% for category in categories_handles %}
-          {% if blogs[category].articles.size > 0 %}
-            {% for article in blogs[category].articles limit: how_many_articles_to_show %}
-              <div class="post-item">
-                <img
-                  srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
-                    {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
-                    {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
-                    {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
-                    {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
-                    {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
-                    {{ article.image | image_url }} {{ article.image.width }}w"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
-                  src="{{ article.image | image_url: width: 64 }}"
-                  loading="lazy"
-                  width="64"
-                  height="64"
-                  alt="{{ article.image.alt | escape }}">
-                <h5>{{ article.title | link_to: article.url }}</h5>
-              </div>
-            {% endfor %}
-  
-          {% else %}
+          {% for article in blog.articles %}
             <div class="post-item">
-                <h5>
-                  GHHHHHHHHHH
-                </h5>
+              <img
+                srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+                  {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+                  {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+                  {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+                  {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+                  {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+                  {{ article.image | image_url }} {{ article.image.width }}w"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+                src="{{ article.image | image_url: width: 64 }}"
+                loading="lazy"
+                width="64"
+                height="64"
+                alt="{{ article.image.alt | escape }}">
+              <h5>{{ article.title | link_to: article.url }}</h5>
             </div>
-          {% endif %}
+            
+          {% endfor %}
+        {% comment %} 
+        {% else %}
+          <div class="post-item">
+              <h5>
+                GHHHHHHHHHH
+              </h5>
+          </div>
+        {% endif %} 
+        {% endcomment %}
 
-        {% endfor %}
 
-      {% endfor %}
-    </div>
+  </div>
 
 </div>

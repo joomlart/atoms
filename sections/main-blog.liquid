@@ -74,6 +74,8 @@
           {%- if section.settings.blog_show_lastest_post -%}
             {% render 'latest-blog-posts' %}
           {%- endif -%}
+
+          {% render 'blog-categories' %}
         </div>
       {% endif %}
     </div>
