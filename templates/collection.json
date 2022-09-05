@@ -7,7 +7,7 @@
         "show_collection_image": true,
         "show_collection_full_width": true,
         "color_scheme": "background-1",
-        "hero_align_content": "left"
+        "hero_align_content": "center"
       }
     },
     "product-grid": {
