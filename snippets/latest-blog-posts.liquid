@@ -3,15 +3,7 @@
 Edit the 2 values right below: what's your blog handle and how many articles do you want to show?
 {% endcomment %}
 
-{% comment %} {% assign categories_handles = section.settings.blog_categories | reverse | split: "," %} {% endcomment %}
-{% comment %} {% assign how_many_articles_to_show = 4 %} {% endcomment %}
-{% comment %} {% assign list_categories = "" | split: ',' %} {% endcomment %}
-
-{% comment %} {% for category in categories_handles %}
-  {% for article in blogs[category].articles limit: how_many_articles_to_show %}
-    {% assign list_categories = list_categories | push: article %}
-  {% endfor %}
-{% endfor %} {% endcomment %}
+{% assign how_many_articles_to_show = 4 %}
 
 <!-- START OF LATEST BLOG POSTS -->
 <div class="lastest-posts">
@@ -22,7 +14,9 @@ Edit the 2 values right below: what's your blog handle and how many articles do 
     <h3 class="mod-title">Lastest Posts</h3>
 
     <div class="latest-blog-posts-list">
-          {% for article in blog.articles %}
+
+        {%- if blog.articles.size >= 1 -%}
+          {% for article in blog.articles limit: how_many_articles_to_show %}
             <div class="post-item">
               <img
                 srcset="{% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
@@ -40,17 +34,15 @@ Edit the 2 values right below: what's your blog handle and how many articles do 
                 alt="{{ article.image.alt | escape }}">
               <h5>{{ article.title | link_to: article.url }}</h5>
             </div>
-            
           {% endfor %}
-        {% comment %} 
-        {% else %}
-          <div class="post-item">
-              <h5>
-                GHHHHHHHHHH
-              </h5>
+        {%- elsif blog.articles.size == 0 -%}
+          <div class="blog-placeholder">
+            <div class="placeholder media media--landscape">
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+            <h5>{{ 'sections.featured_blog.onboarding_title' | t }}</h5>
           </div>
-        {% endif %} 
-        {% endcomment %}
+        {%- endif -%} 
 
 
   </div>

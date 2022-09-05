@@ -147,12 +147,16 @@
   margin-bottom: 1.6rem;
 }
 
-/*=== Show Sidebarr
+/*=== Show Sidebar
 
 ========================*/
 
 .has-sidebar {
   display: grid;
+}
+
+.has-sidebar .sidebar > div {
+  margin-bottom: 2rem;
 }
 
 .has-sidebar .blog-articles--collage {
@@ -252,5 +256,12 @@
   font-weight: 700;
   padding: .4rem .8rem;
   background-color: #eee;
+}
+
+/* lastest Blog PlaceHolder */
+.has-sidebar .blog-placeholder {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
 }
 

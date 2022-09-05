@@ -67,12 +67,13 @@
               alt="{{ article.image.alt | escape }}">
           {%- endif -%}
 
-          {%- if section.settings.blog_show_tags -%}
-            {% render 'tags' %}
-          {%- endif -%}
-
           {%- if section.settings.blog_show_lastest_post -%}
             {% render 'latest-blog-posts' %}
+          {%- endif -%}
+
+          
+          {%- if section.settings.blog_show_tags -%}
+            {% render 'tags' %}
           {%- endif -%}
 
           {% render 'blog-categories' %}
