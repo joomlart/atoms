@@ -41,6 +41,7 @@
           <div class="cards-sidebar-carousels">
             <div class="carousel">
               {%- for product in collection.products limit: section.settings.carousels_total_products -%}
+                {% assign sort_by: 'best-selling' %}
                 {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
