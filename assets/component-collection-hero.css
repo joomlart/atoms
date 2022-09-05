@@ -16,6 +16,9 @@
     .collection-hero--with-image .collection-hero__inner {
         padding-bottom: 0;
     }
+    .collection-hero--with-image.collection-hero--full-with {
+        padding: 0;
+    }
 }
 
 .collection-hero__text-wrapper {
