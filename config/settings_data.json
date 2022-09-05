@@ -177,9 +177,9 @@
         "settings": {
           "color_scheme": "none",
           "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
-          "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products.",
-          "show_social": false,
+          "newsletter_heading": "Stay in touch.",
+          "newsletter_intro": "Sign up for our newsletter to stay up-to-date on the latest fashion trends, receive special offers and get exclusive early access to new products.",
+          "show_social": true,
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true,
