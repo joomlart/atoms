@@ -3,10 +3,15 @@
 {% assign categories = section.settings.blog_categories | split: ',' %}
 
 <div class="blog-categories">
-  <h3 class="mod-title">Categories</h3>
-  {% for category in categories %} 
-    {% if section.settings.blog_categories %}
-    {% endif %}
-    <li>{{ category }}</li>
-{% endfor %} 
-</iv>
+  {% if section.settings.blog_categories != "" %}
+    <h3 class="mod-title">Categories</h3>
+    {% for category in categories %} 
+      <li>            
+      <span>
+        {% render 'icon-doc' %}
+      </span>
+      {{ category }}
+      </li>
+    {% endfor %} 
+  {% endif %}
+</div>

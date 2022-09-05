@@ -265,3 +265,20 @@
   grid-template-columns: 3fr 7fr;
 }
 
+/* Bog Categories */
+
+.has-sidebar .blog-categories li {
+  text-transform: capitalize;
+}
+
+.has-sidebar .blog-categories span{
+  width: 20px;
+  height: inherit;
+  line-height: inherit;
+  display: inline-block;
+}
+
+.has-sidebar .blog-categories span svg{
+  margin-top: .8rem;
+}
+
