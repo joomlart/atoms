@@ -12,9 +12,14 @@
     .collection-hero.collection-hero--with-image {
         overflow: hidden;
         padding: 0;
+        min-height: 385px;
+        align-items: center;
+        display: flex;
+        width: 100%;
     }
     .collection-hero--with-image .collection-hero__inner {
         padding-bottom: 0;
+        width: 100%;
     }
 }
 
