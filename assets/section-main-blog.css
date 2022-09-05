@@ -222,13 +222,20 @@
 
 .has-sidebar .latest-blog-posts-list img {
   object-fit: cover;
-  margin-right: 1.6rem;
+
 }
 
 .has-sidebar .latest-blog-posts-list .post-item {
   display: flex;
   align-items: center;
   padding: calc(var(--grid-desktop-vertical-spacing) / 4) 0;
+}
+
+.has-sidebar .latest-blog-posts-list .post-item .thumbnail-article {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: inline-block;
+  margin-right: 1.6rem;
 }
 
 .has-sidebar .latest-blog-posts-list .post-item h5 {
