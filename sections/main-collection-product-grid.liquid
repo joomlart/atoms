@@ -40,7 +40,7 @@
           {{ 'flickity.js' | asset_url | script_tag }}
           <div class="cards-sidebar-carousels">
             <div class="carousel">
-              {%- for product in collection.products -%}
+              {%- for product in collection.products limit: section.settings.navigation_amount -%}
                 {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
