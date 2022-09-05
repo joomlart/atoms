@@ -9,37 +9,24 @@
   }
 {%- endstyle -%}
 
-<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}{% if section.settings.show_collection_full_width and collection.image %} collection-hero--full-with{% endif %} color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.show_collection_full_width and collection.image -%} style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover; "{%- endif -%}>
+<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}{% if section.settings.show_collection_full_width and collection.image %} collection-hero--full-with{% endif %} color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.show_collection_full_width == true and collection.image -%} style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover;"{%- endif -%}>
   <div class="collection-hero__inner page-width">
-    <div class="collection-hero__text-wrapper">
-      <h1 class="collection-hero__title">
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
-      </h1>
-
-      {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
-      {%- endif -%}
-    </div>
-
-    {%- if section.settings.show_collection_image and collection.image and section.settings.show_collection_full_width.false -%}
-      <div class="collection-hero__image-container media gradient">
-        <img
-          srcset="{%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
-            {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
-            {%- if collection.image.width >= 535 -%}{{ collection.image | image_url: width: 535 }} 535w,{%- endif -%}
-            {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
-            {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
-            {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-            {{ collection.image | image_url }} {{ collection.image.width }}w"
-          src="{{ collection.image | image_url: width: 750 }}"
-          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-          alt=""
-          width="{{ collection.image.width }}"
-          height="{{ collection.image.height }}"
-        >
-      </div>
+    {%- if section.settings.show_collection_image and collection.image and section.settings.show_collection_full_width == false -%} 
+      <div style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover; min-height: 385px; align-items: center; display: flex; width: 100%;"> 
     {%- endif -%}
+      <div class="collection-hero__text-wrapper">
+        <h1 class="collection-hero__title">
+          <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+          {{- collection.title | escape -}}
+        </h1>
+
+        {%- if section.settings.show_collection_description -%}
+          <div class="collection-hero__description rte">{{ collection.description }}</div>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.show_collection_image and collection.image and section.settings.show_collection_full_width == false -%} 
+        </div>
+      {%- endif -%}    
   </div>
 </div>
 
@@ -98,6 +85,26 @@
       ],
       "default": "background-1",
       "label": "t:sections.all.colors.label"
+    }
+    {
+      "type": "select",
+      "id": "hero_align_content",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.main-collection-banner.hero_align_content.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.main-collection-banner.hero_align_content.center.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.main-collection-banner.hero_align_content.right.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.main-collection-banner.hero_align_content.label"
     }
   ]
 }
