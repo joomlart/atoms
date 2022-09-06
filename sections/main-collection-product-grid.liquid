@@ -40,8 +40,7 @@
           {{ 'flickity.js' | asset_url | script_tag }}
           <div class="cards-sidebar-carousels">
             <div class="carousel">
-              {%- for product in collection.products limit: section.settings.carousels_total_products -%}
-                {% assign sort_by: 'best-selling' %}
+              {% for product in collection.products limit: section.settings.carousels_total_products %}
                 {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
@@ -57,7 +56,7 @@
                     section_id: section.id
 
                   %}
-                {%- endfor -%}
+                {% endfor %}
               </div>
           </div>
           {% assign card_sidebar_nav_range = section.settings.navigation_amount %}
@@ -95,7 +94,7 @@
                 imagesLoaded: true,
                 lazyLoad: 2,
                 wrapAround: false,
-                pageDots: {{section.settings.enable_carousel_page_dots }},
+                pageDots: {{ section.settings.enable_carousel_page_dots }},
             });
             {% if request.design_mode %}
             document.addEventListener("shopify:section:load", function(event) {
@@ -105,7 +104,7 @@
                 imagesLoaded: true,
                 lazyLoad: 2,
                 wrapAround: false,
-                pageDots: {{section.settings.enable_carousel_page_dots }},
+                pageDots: {{ section.settings.enable_carousel_page_dots }},
               });
             });
             {% endif %}
@@ -157,7 +156,19 @@
           </form>
         </facet-filters-form>
       {%- endif -%}
-      {%- render 'catalog-collection-card' -%}
+      
+      {{ 'catalog-collection-card.css' | asset_url | stylesheet_tag }}
+      <div id="banner-{{ section.id }}" class="collection__banner">
+          <div class="collection__banner__media" style="padding-bottom: 50%;background-image: url('{{ 'lt1-item-1.jpg' | file_url }}')">
+              <div class="collection__banner__content">
+                  <a class="link-wrap" href="#"></a>
+                  <h3>Winter/Spring Clothing 2022 Collections</h3>
+                  <div class="description">Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.</div>
+                  <a class="link-uppercase " href="#">Shop Collection{%- render 'icon-chevron-right' -%}</a>
+              </div>
+          </div>
+      </div>
+
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
@@ -364,6 +375,34 @@
     },
     {
       "type": "header",
+      "content": "t:sections.main-collection-product-grid.settings.header__4.content"
+    },
+    {
+      "type": "select",
+      "id": "banner_title_heading",
+      "default": "h2",
+      "label": "t:sections.main-collection-product-grid.settings.banner_title_heading.label",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.main-collection-product-grid.settings.banner_title_heading.h1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.main-collection-product-grid.settings.banner_title_heading.h2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.main-collection-product-grid.settings.banner_title_heading.h3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.main-collection-product-grid.settings.banner_title_heading.h4.label"
+        },
+      ]
+    },
+    {
+      "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header__2.content"
     },
     {
@@ -382,9 +421,9 @@
       "type": "range",
       "id": "carousels_total_products",
       "min": 1,
-      "max": 100,
+      "max": 10,
       "step": 1,
-      "default": 2,
+      "default": 1,
       "label": "Total Products To Show"
     },
     {

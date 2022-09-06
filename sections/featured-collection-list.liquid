@@ -31,14 +31,6 @@
   if section.settings.swipe_on_mobile and columns_to_display > columns_mobile_int
     assign show_mobile_slider = true
   endif
-
-  if section.settings.description != blank or section.settings.show_description and section.settings.collection.description != empty 
-    if section.settings.show_description
-      assign collection_description = section.settings.collection.description
-    else
-      assign collection_description = section.settings.description
-    endif
-  endif
 -%}
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection-product-list collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
@@ -62,7 +54,7 @@
           <div class="collection__title title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}">
             <div class="inner">
             {%- if block.settings.collection.title != blank -%}
-              <h2 class="title {{ section.settings.heading_size }}">{{ block.settings.collection.title| escape }}</h2>
+              <h2 class="title {{ section.settings.heading_size }}">{{ block.settings.collection.title | escape }}</h2>
             {%- endif -%}
 
             {%- if block.settings.show_view_all and more_in_collection -%}

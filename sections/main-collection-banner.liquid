@@ -12,7 +12,7 @@
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}{% if section.settings.show_collection_full_width and collection.image %} collection-hero--full-with{% endif %} color-{{ section.settings.color_scheme }} gradient" style="{%- if section.settings.show_collection_full_width == true and collection.image -%} background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover;{%- endif -%} text-align: {{ section.settings.hero_align_content }}; ">
   <div class="collection-hero__inner page-width">
     {%- if section.settings.show_collection_image and collection.image and section.settings.show_collection_full_width == false -%} 
-      <div style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover; min-height: 385px; align-items: center; display: flex; width: 100%;"> 
+      <div style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover; min-height: 385px; align-items: center; display: flex; width: 100%; margin-top: 40px;"> 
     {%- endif -%}
       <div class="collection-hero__text-wrapper">
         <h1 class="collection-hero__title">
