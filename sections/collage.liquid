@@ -344,7 +344,7 @@
                             {%- if img_width >= 2000 -%}{{ img_width_2000 }} 2000w,{%- endif -%}
                             {%- if img_width >= 3000 -%}{{ img_width_3000 }} 3000w,{%- endif -%}
                             {%- if img_width >= 3840 -%}{{ img_width_3840 }} 3840w,{%- endif -%}
-                            {{ img_url }} {{ width }}w"
+                            {{ img_url }} {{ img_width }}w"
                                sizes="100vw"
                                src="{{ img_width_1500 }}"
                                loading="lazy"
