@@ -1316,9 +1316,16 @@ deferred-media {
     display: block;
 }
 
+/* Icon */
+.icon-svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: .8rem;
+  float: left;
+}
+
 
 /* component-button */
-
 
 /* Button - default */
 
