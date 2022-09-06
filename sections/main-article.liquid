@@ -86,7 +86,7 @@
   {%- endfor -%}
 
   {%- if section.settings.show_social_media -%}
-    <div class="page-width social-media">
+    <div class="page-width page-width--narrow social-media">
       {%- if settings.social_facebook_link != blank -%}
         <li>
           <a class="social-icons__link" href="{{ settings.social_facebook_link | escape }}" aria-describedby="a11y-external-message">
@@ -118,7 +118,7 @@
 
   
   {%- if section.settings.show_previous_next_buttons -%}
-    <div class="page-width previous_next_buttons">
+    <div class="page-width page-width--narrow previous_next_buttons">
       <a href="{{ blog.previous_article }}" class="btn">
         Previous Post     
       </a>
@@ -135,7 +135,7 @@
     </a>
   </div>
   {%- if blog.comments_enabled? -%}
-    <div class="article-template__comment-wrapper background-secondary">
+    <div class="article-template__comment-wrapper">
       <div id="comments" class="page-width page-width--narrow">
         {%- if article.comments_count > 0 -%}
           {%- assign anchorId = '#Comments-' | append: article.id -%}
@@ -159,7 +159,7 @@
                   </div>
                   {{ comment.content }}
                 </article>
-                
+
               {%- endfor -%}
               {% render 'pagination', paginate: paginate, anchor: anchorId %}
             </div>
