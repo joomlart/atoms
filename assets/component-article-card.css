@@ -47,13 +47,14 @@
 }
 
 .article-card .card__heading {
-  margin-bottom: 0.6rem;
-  margin-top: 0.5rem;
-  font-weight: 500;
+  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-weight: 600;
+  line-height: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
-.article-card .h4 {
-  font-size: 1.8rem;
+.article-card .card__heading:hover {
+  color: var(--color-base-accent-3);
 }
 
 .blog-articles .article-card .card__information,
@@ -63,12 +64,17 @@
 }
 
 .article-card__info {
-  margin-bottom: 0.5rem;
+  color: #9E9E9E;
+  margin-bottom: .8rem;
+  font-size: calc(var(--font-heading-scale) * 1.1rem);
+  letter-spacing: 0;
 }
 
 .article-card__footer {
   letter-spacing: 0.1rem;
   font-size: 1.4rem;
+  display: flex;
+  align-items: center;
 }
 
 .article-card__footer:not(:last-child) {
