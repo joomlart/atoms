@@ -1586,12 +1586,6 @@
                 "header__1": {
                     "content": "Filtering and sorting"
                 },
-                "header__2": {
-                    "content": "Card and Sidebar"
-                },
-                "header__3": {
-                    "content": "Product card"
-                },
                 "header__4": {
                     "content": "Collection Grid/List Banner"
                 },
@@ -1610,6 +1604,13 @@
                         "label": "H4"
                     }
                 },
+                "header__2": {
+                    "content": "Card and Sidebar"
+                },
+                "header__3": {
+                    "content": "Product card"
+                },
+
                 "enable_tags": {
                     "label": "Enable filtering",
                     "info": "[Customize filters](\/admin\/menus)"
