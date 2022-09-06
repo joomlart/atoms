@@ -3117,6 +3117,68 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "custom": {
+      "name": "Custom section",
+      "settings": {
+      },
+      "blocks": {
+        "img1": {
+          "name": "1st Image",
+          "settings": {
+            "img1": {
+              "label": "1st Image"
+            }
+          }
+        },
+        "img2": {
+          "name": "2nd Image",
+          "settings": {
+            "img2": {
+              "label": "2nd Image"
+            }
+          }
+        },
+        "img3": {
+          "name": "3rd Image",
+          "settings": {
+            "img3": {
+              "label": "3rd Image"
+            }
+          }
+        },
+        "img4": {
+          "name": "4th Image",
+          "settings": {
+            "img3": {
+              "label": "4th Image"
+            }
+          }
+        },
+        "img5": {
+          "name": "5th Image",
+          "settings": {
+            "img3": {
+              "label": "5th Image"
+            }
+          }
+        },
+        "total_img": {
+          "name": "Total images",
+          "settings": {
+            "total_img": {
+              "label": "Total images",
+              "info": "Number of images use"
+            }
+          }
+        },
+        "config_img": {
+          "name": "Choose Images"
+        }
+      },
+      "preset": {
+        "name": "Custom section"
+      }
     }
   }
 }
