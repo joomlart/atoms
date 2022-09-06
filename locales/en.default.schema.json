@@ -1604,6 +1604,10 @@
                         "label": "H4"
                     }
                 },
+                "banner_title_heading_content": {
+                    "label": "Title content",
+                    "info": "Winter/Spring Clothing 2022 Collections"
+                },
                 "header__2": {
                     "content": "Card and Sidebar"
                 },
