@@ -27,12 +27,12 @@
         "blog_categories": "category-blog,featured-articles"
       }
     },
-    "1661825839ba8282b0": {
+    "1662455979a980e6f7": {
       "type": "more-article",
       "settings": {
         "heading": "More Article",
         "heading_size": "h2",
-        "blog": "featured-articles",
+        "blog": "category-blog",
         "post_limit": 4,
         "padding_top": 64,
         "padding_bottom": 64
@@ -41,6 +41,6 @@
   },
   "order": [
     "main",
-    "1661825839ba8282b0"
+    "1662455979a980e6f7"
   ]
 }
