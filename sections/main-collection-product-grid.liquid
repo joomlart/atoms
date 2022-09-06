@@ -162,12 +162,13 @@
           <div class="collection__banner__media" style="padding-bottom: 50%;background-image: url('{{ 'lt1-item-1.jpg' | file_url }}')">
               <div class="collection__banner__content">
                   <a class="link-wrap" href="#"></a>
-                  <h3>Winter/Spring Clothing 2022 Collections</h3>
+                  <{{ section.settings.banner_title_heading }} class="heading">{{ section.settings.banner_title_heading_content }}</{{ section.settings.banner_title_heading }}>
                   <div class="description">Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.</div>
                   <a class="link-uppercase " href="#">Shop Collection{%- render 'icon-chevron-right' -%}</a>
               </div>
           </div>
       </div>
+      
 
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
@@ -380,7 +381,7 @@
     {
       "type": "select",
       "id": "banner_title_heading",
-      "default": "h2",
+      "default": "h1",
       "label": "t:sections.main-collection-product-grid.settings.banner_title_heading.label",
       "options": [
         {
@@ -400,6 +401,11 @@
           "label": "t:sections.main-collection-product-grid.settings.banner_title_heading.h4.label"
         }
       ]
+    },
+    {
+      "type": "text",
+      "id": "banner_title_heading_content",
+      "label": "t:sections.main-collection-product-grid.settings.banner_title_heading_content.label"
     },
     {
       "type": "header",
