@@ -26,6 +26,8 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36,
+        "banner_title_heading": "h1",
+        "banner_title_heading_content": "Winter\/Spring Clothing 2022 Collections",
         "enable_sidebar_top_seller": true,
         "enable_carousel_page_dots": true,
         "carousels_total_products": 8,
