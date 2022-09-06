@@ -1606,8 +1606,8 @@
                 },
                 "banner_title_heading_content": {
                     "label": "Title content",
-                    "content": "Winter/Spring Clothing 2022 Collections",
-                    "info": "Winter/Spring Clothing 2022 Collections"
+                    "default": "Winter/Spring Clothing 2022 Collections",
+                    "info": "Input title for heading"
                 },
                 "header__2": {
                     "content": "Card and Sidebar"
