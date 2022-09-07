@@ -1590,7 +1590,7 @@
                     "content": "Collection Grid\/List Banner"
                 },
                 "banner_image": {
-                    "content": "Banner image"
+                    "label": "Banner image"
                 },
                 "banner_title_heading": {
                     "label": "Heading",
