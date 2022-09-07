@@ -1,8 +1,9 @@
 .customer:not(.account):not(.order) {
-  margin: 6rem auto 9rem;
+  margin: auto;
   max-width: 40rem;
-  padding: 0 1.5rem;
+  padding: 3.6rem;
   text-align: center;
+  background-color: var(--gradient-base-background-2);
 }
 
 @media screen and (min-width: 750px) {
@@ -330,6 +331,11 @@
 
 /* ===== Login
 ========================= */
+
+#login {
+  margin: 0;
+}
+
 .login a {
   display: block;
   margin: 0 auto;
@@ -361,6 +367,33 @@
 
 .btn-signin {
   width: 100%;
+}
+
+.action-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+}
+#forgot_password {
+  text-decoration: none;
+  margin: auto;
+}
+
+#forgot_password:hover {
+  text-decoration: underline;
+}
+
+#create_account {
+  width: unset;
+  margin-top: 1.6rem;
+  text-decoration: none;
+  transition: all .35s;
+  opacity: 1;
+}
+
+#create_account:hover {
+  background-color: var(--gradient-base-accent-1);
+  color: var(--gradient-base-background-1);
 }
 
 
@@ -782,7 +815,7 @@ li[data-address] > h2 {
 
 .customer h1 {
   font-weight: 600;
-  font-size: calc(var(--font-body-scale) * 4.8rem);
+  font-size: calc(var(--font-body-scale) * 4.2rem);
   line-height: 1.25;
 }
 
