@@ -143,10 +143,6 @@
                 </modal-dialog>
               </div>
             {%- when 'slideshow' -%}
-            <h3 style="color:red">{{ blogs.settings }}</h3>
-            {% for article in blogs.news.articles %}
-            {{- article.title | link_to: article.url }}
-            {% endfor %}
               {% assign slide = block.settings %}
 
             <!-- handle image title -->
