@@ -222,16 +222,22 @@
 
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', (event) => {
-    var btn1 = document.getElementById('btn-1');
-    var btn2 = document.getElementById('btn-2');
+    const btn1 = document.getElementById('btn-1');
+    const btn2 = document.getElementById('btn-2');
+    const productGrid = document.getElementById('product-grid');
+
     if (btn1){
       btn1.addEventListener('click', function () {
-        console.log('click btn 1');
-        btn1.classList.add('classA');
+        productGrid.classList.add('classA');
+        if (productGrid.classList.contains('classB')){
+          productGrid.classList.remove('classB');
+        }
       })
       btn2.addEventListener('click', function () {
-        console.log('click btn 2');
-        btn2.classList.add('classB');
+        productGrid.classList.add('classB');
+        if (productGrid.classList.contains('classA')){
+          productGrid.classList.remove('classA');
+        }
       })
     }
   });
