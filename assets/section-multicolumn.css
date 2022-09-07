@@ -96,6 +96,11 @@
 .multicolumn-list__item.center .media--adapt img {
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0.8;
+}
+
+.multicolumn-list__item.center .media--adapt:hover img {
+  opacity: 1;
 }
 
 @media screen and (max-width: 749px) {
