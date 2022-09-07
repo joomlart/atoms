@@ -2378,7 +2378,7 @@ input[type='checkbox'] {
 
 .header__heading-link .h2 {
     line-height: 1;
-    color: var(--color-foreground);
+    color: rgb(var(--color-base-accent-1));
     font-weight: bold;
     text-transform: uppercase;
 }
