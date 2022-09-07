@@ -29,9 +29,14 @@
   margin-bottom: 4rem;
 }
 
-.customer.login ul {
-  padding: 0 16.4rem;
+.customer.login .errors ul {
+  padding: 0;
   text-align: center;
+  margin: 1.6rem 0;
+}
+
+.customer.login .errors ul li {
+  list-style-type: none;
 }
 
 .customer ul a {
@@ -46,12 +51,6 @@
 .customer h2.form__message {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
   justify-content: center;
-}
-
-@media only screen and (min-width: 750px) {
-  .customer h2.form__message {
-    font-size: calc(var(--font-heading-scale) * 2.2rem);
-  }
 }
 
 .customer .field {
