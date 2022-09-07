@@ -1,3 +1,6 @@
+.btn-signin:hover, .btn-register:hover {
+  opacity: 0.85;
+}
 .customer:not(.account):not(.order) {
   margin: auto;
   max-width: 40rem;
@@ -817,6 +820,7 @@ li[data-address] > h2 {
   font-weight: 600;
   font-size: calc(var(--font-body-scale) * 4.2rem);
   line-height: 1.25;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 550px) {

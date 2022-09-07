@@ -1718,7 +1718,7 @@ details[open]>.share-button__fallback {
     appearance: none;
     background-color: rgb(var(--color-background));
     color: rgb(var(--color-foreground));
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     width: 100%;
     box-sizing: border-box;
     transition: box-shadow var(--duration-short) ease;
@@ -1867,7 +1867,7 @@ details[open]>.share-button__fallback {
 
 .field__label,
 .customer .field label {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     left: calc(var(--inputs-border-width) + 2rem);
     top: calc(1rem + var(--inputs-border-width));
     margin-bottom: 0;
@@ -1875,8 +1875,8 @@ details[open]>.share-button__fallback {
     position: absolute;
     transition: top var(--duration-short) ease, font-size var(--duration-short) ease;
     color: rgba(var(--color-foreground), 0.75);
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
+    letter-spacing: 0;
+    line-height: 1.6;
 }
 
 .field__input:focus~.field__label,
