@@ -1612,6 +1612,11 @@
                     "default": "Winter\/Spring Clothing 2022 Collections",
                     "info": "Input title for heading"
                 },
+                "banner_desc_heading_content": {
+                    "label": "Description",
+                    "default": "Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.",
+                    "info": "Input title for description"
+                },
                 "header__2": {
                     "content": "Card and Sidebar"
                 },

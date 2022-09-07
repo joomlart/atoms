@@ -163,7 +163,7 @@
               <div class="collection__banner__content">
                   <a class="link-wrap" href="#"></a>
                   <{{ section.settings.banner_title_heading }} class="heading">{{ section.settings.banner_title_heading_content }}</{{ section.settings.banner_title_heading }}>
-                  <div class="description">Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.</div>
+                  <div class="description">{{ section.settings.banner_desc_heading_content }}</div>
                   <a class="link-uppercase " href="#">Shop Collection{%- render 'icon-chevron-right' -%}</a>
               </div>
           </div>
@@ -411,6 +411,11 @@
       "type": "text",
       "id": "banner_title_heading_content",
       "label": "t:sections.main-collection-product-grid.settings.banner_title_heading_content.label"
+    },
+    {
+      "type": "text",
+      "id": "banner_desc_heading_content",
+      "label": "t:sections.main-collection-product-grid.settings.banner_desc_heading_content.label"
     },
     {
       "type": "header",
