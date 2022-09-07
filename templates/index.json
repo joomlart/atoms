@@ -3,11 +3,20 @@
     "166116152195c6e261": {
       "type": "collage",
       "blocks": {
-        "329de660-4c35-44fc-a3b5-0fe7633a1c89": {
-          "type": "image",
+        "f1736cff-6b2d-468e-8bd8-808f4e841240": {
+          "type": "slideshow",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner-5.jpg",
-            "image_padding": false
+            "layout": "full_bleed",
+            "slide_height": "adapt_image",
+            "slider_visual": "numbers",
+            "auto_rotate": true,
+            "slide_control": true,
+            "change_slides_speed": 3,
+            "show_text_below": true,
+            "accessibility_info": "Slideshow about our brand",
+            "img1": "shopify:\/\/shop_images\/clothing-on-a-shop-rack-with-flowers-in-the-background.jpg",
+            "img2": "shopify:\/\/shop_images\/lt1-item-1_fea4e016-4948-490a-9151-f9fecbae87c1.jpg",
+            "img3": "shopify:\/\/shop_images\/woman-holding-coffee-mug.jpg"
           }
         },
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e": {
@@ -19,7 +28,7 @@
         }
       },
       "block_order": [
-        "329de660-4c35-44fc-a3b5-0fe7633a1c89",
+        "f1736cff-6b2d-468e-8bd8-808f4e841240",
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e"
       ],
       "settings": {
