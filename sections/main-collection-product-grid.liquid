@@ -168,7 +168,6 @@
               </div>
           </div>
       </div>
-      
 
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
@@ -377,6 +376,12 @@
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header__4.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_grid_list_banner_collection",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_grid_list_banner_collection.label"
     },
     {
       "type": "image_picker",
