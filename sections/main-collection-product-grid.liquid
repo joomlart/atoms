@@ -156,7 +156,7 @@
           </form>
         </facet-filters-form>
       {%- endif -%}
-      
+      {%- if section.settings.enable_grid_list_banner_collection -%}
       {{ 'catalog-collection-card.css' | asset_url | stylesheet_tag }}
       <div id="banner-{{ section.id }}" class="collection__banner">
           <div class="collection__banner__media" style="padding-bottom: 50%;background-image: url('{{ 'lt1-item-1.jpg' | file_url }}')">
@@ -168,7 +168,7 @@
               </div>
           </div>
       </div>
-
+      {%- endif -%}
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
