@@ -308,6 +308,21 @@
                                height="{{ img_width | divided_by: img_aspect_ratio | round }}"
                           >
                         </div>
+                        <div class="content">
+                          <div class="inner">
+                            <!-- {%- if block.settings.title != blank -%}
+                              <h3>{{ block.settings.title | escape }}</h3>
+                            {%- endif -%}
+                            {%- if block.settings.link_label != blank -%}
+                              <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                            {%- endif -%}-->
+                            <h3>This is a title</h3>
+                            <a class="link animate-arrow"
+                              role="link" aria-disabled="true">
+                              Shop men<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     {%- else -%}
                       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -962,16 +977,6 @@
           "type": "image_picker",
           "id": "img3",
           "label": "t:sections.custom.blocks.img3.name"
-        },
-        {
-          "type": "image_picker",
-          "id": "img4",
-          "label": "t:sections.custom.blocks.img4.name"
-        },
-        {
-          "type": "image_picker",
-          "id": "img5",
-          "label": "t:sections.custom.blocks.img5.name"
         }
       ]
     }

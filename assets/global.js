@@ -664,8 +664,10 @@ class SlideshowComponent extends SliderComponent {
       link.classList.remove('slider-counter__link--active');
       link.removeAttribute('aria-current');
     });
-    this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
-    this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
+    if (this.sliderControlButtons) {
+      this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
+      this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
+    }
   }
 
   autoPlayToggle() {
