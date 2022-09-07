@@ -1,6 +1,6 @@
-.collection__banner {}
+.collection__boxed__banner {}
 
-.collection__banner__media {
+.collection__boxed__banner__media {
     background-position: center center;
     background-size: cover;
     height: 0;
@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.collection__banner__content {
+.collection__boxed__banner__content {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
     width: 100%;
 }
 
-.collection__banner__content .link-wrap {
+.collection__boxed__banner__content .link-wrap {
     height: 100%;
     left: 0;
     position: absolute;
@@ -32,8 +32,8 @@
     width: 100%;
 }
 
-.collection__banner__content .heading {
-    color: #fff;
+.collection__boxed__banner__content .heading {
+    color: var(--color-base-background-1);
     font-weight: 700;
     margin-bottom: 16px;
     margin-top: 0;
@@ -41,13 +41,13 @@
     z-index: 2;
 }
 
-.collection__banner__content .description {
-    color: #fff;
+.collection__boxed__banner__content .description {
+    color: var(--color-base-background-1);
     margin-bottom: 1rem;
 }
 
-.collection__banner__content .link-uppercase {
-    color: #fff;
+.collection__boxed__banner__content .link-uppercase {
+    color: var(--color-base-background-1);
     font-size: 14px;
     font-weight: 700;
     position: relative;
@@ -58,46 +58,46 @@
     display: flex;
 }
 
-.collection__banner__content .link-uppercase svg {
+.collection__boxed__banner__content .link-uppercase svg {
     width: 16px;
 }
 
-.collection__banner__content .link-uppercase:hover {
+.collection__boxed__banner__content .link-uppercase:hover {
     letter-spacing: 1px;
 }
 
 @media screen and (max-width: 639px) {
-    div.collection__banner__content {
+    div.collection__boxed__banner__content {
         max-width: 100%;
         padding: 16px;
     }
-    .collection__banner__content .description {
+    .collection__boxed__banner__content .description {
         display: none;
     }
 }
 
 @media screen and (max-width: 749px) {
-    .collection__banner__content {
+    .collection__boxed__banner__content {
         max-width: 60%;
     }
 }
 
 @media screen and (min-width: 750px) {
-    .collection__banner__content {
+    .collection__boxed__banner__content {
         max-width: 100%;
         padding: 16px;
     }
 }
 
 @media screen and (min-width: 980px) {
-    .collection__banner__content {
+    .collection__boxed__banner__content {
         max-width: 70%;
         padding: 32px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .collection__banner__content {
+    .collection__boxed__banner__content {
         max-width: 60%;
         padding: 64px;
     }

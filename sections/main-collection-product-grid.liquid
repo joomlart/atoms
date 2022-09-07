@@ -24,6 +24,7 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
@@ -116,6 +117,10 @@
       {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
         <facet-filters-form class="facets facets-vertical-sort small-hide no-js-hidden">
           <form class="facets-vertical-form" id="FacetSortForm">
+            <div class="product-mode">
+              <span><button id="btn-1" type="button">a</button></span>
+              <span><button id="btn-2" type="button">b</button></span>
+            </div>
             <div class="product-count-vertical light" role="status">
               <h2 class="product-count__text text-body">
                 <span id="ProductCountDesktop">
@@ -127,8 +132,6 @@
                     {{ 'products.facets.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
                   {%- endif -%}
                 </span>
-                <span><button id="btn-1" type="button">a</button></span>
-                <span><button id="btn-2" type="button">b</button></span>
               </h2>
               <div class="loading-overlay__spinner">
                 <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -160,16 +163,16 @@
       {%- endif -%}
       {%- if section.settings.enable_grid_list_banner_collection -%}
       {{ 'catalog-collection-card.css' | asset_url | stylesheet_tag }}
-      <div id="banner-{{ section.id }}" class="collection__banner">
-          <div class="collection__banner__media" style="padding-bottom: 50%;background-image: url('{{ 'lt1-item-1.jpg' | file_url }}')">
-              <div class="collection__banner__content">
+      <div id="banner-{{ section.id }}" class="collection__boxed__banner">
+          <div class="collection__boxed__banner__media" style="padding-bottom: 50%;background-image: url('{{ section.settings.banner_image | file_url }}')">
+              <div class="collection__boxed__banner__content">
                   <a class="link-wrap" href="{{ section.settings.banner_link_text }}"></a>
                   <{{ section.settings.banner_title_heading }} class="heading">{{ section.settings.banner_title_heading_content }}</{{ section.settings.banner_title_heading }}>
-                  <div class="description">{{ section.settings.banner_desc_heading_content }}</div>
+                  <p class="description">{{ section.settings.banner_desc_heading_content }}</p>
                   <a class="link-uppercase " href="{{ section.settings.banner_link_text }}">{{ section.settings.banner_link_text }}{%- render 'icon-chevron-right' -%}</a>
               </div>
           </div>
-      </div>
+      </div>      
       {%- endif -%}
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
@@ -438,15 +441,15 @@
       ]
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "banner_title_heading_content",
-      "default": "Winter\/Spring Clothing 2022 Collections",
+      "default": "<p>Winter/Spring Clothing 2022 Collections</p>",
       "label": "t:sections.main-collection-product-grid.settings.banner_title_heading_content.label"
     },
     {
-      "type": "text",
+      "type": "richtext",
       "id": "banner_desc_heading_content",
-      "default": "Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.",
+      "default": "<p>Cursus elit iaculis platea integer nisl sapien egestas  Bitae donec ornare iaculis mauris nec.</p>",
       "label": "t:sections.main-collection-product-grid.settings.banner_desc_heading_content.label"
     },
     {
