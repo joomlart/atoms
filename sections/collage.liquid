@@ -143,7 +143,7 @@
                 </modal-dialog>
               </div>
             {%- when 'slideshow' -%}
-            <h3 style="color:red">{{ blogs }}</h3>
+            <h3 style="color:red">{{ blogs.news.articles }}</h3>
             {% for article in blogs.news.articles %}
             {{- article.title | link_to: article.url }}
             {% endfor %}
