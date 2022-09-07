@@ -3,21 +3,11 @@
     "166116152195c6e261": {
       "type": "collage",
       "blocks": {
-        "b8c4e9b3-b79c-421a-8a5a-86513e2fe5ab": {
-          "type": "slideshow",
+        "329de660-4c35-44fc-a3b5-0fe7633a1c89": {
+          "type": "image",
           "settings": {
-            "layout": "full_bleed",
-            "slide_height": "adapt_image",
-            "slider_visual": "counter",
-            "auto_rotate": true,
-            "slide_control": false,
-            "change_slides_speed": 3,
-            "show_text_below": true,
-            "accessibility_info": "Slideshow about our brand",
-            "img1": "shopify:\/\/shop_images\/banner-5.jpg",
-            "img2": "shopify:\/\/shop_images\/lt1-item-1.jpg",
-            "img3": "shopify:\/\/shop_images\/cross-table-hand-shake.jpg",
-            "img4": "shopify:\/\/shop_images\/detail-4_01721f03-9de1-4ead-83ac-82deb9368048.jpg"
+            "image": "shopify:\/\/shop_images\/banner-5.jpg",
+            "image_padding": false
           }
         },
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e": {
@@ -29,7 +19,7 @@
         }
       },
       "block_order": [
-        "b8c4e9b3-b79c-421a-8a5a-86513e2fe5ab",
+        "329de660-4c35-44fc-a3b5-0fe7633a1c89",
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e"
       ],
       "settings": {
