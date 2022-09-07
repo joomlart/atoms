@@ -13,7 +13,7 @@
         "featured_image": {
           "type": "featured_image",
           "settings": {
-            "image_height": "adapt"
+            "image_height": "medium"
           }
         },
         "bb646369-fa26-4a54-9523-51fa8da87946": {
