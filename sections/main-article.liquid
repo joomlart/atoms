@@ -65,7 +65,7 @@
         {%- endif -%}
 
       {%- when 'title'-%}
-        <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
+        <header class="page-width" {{ block.shopify_attributes }}>
           <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
           {%- if block.settings.blog_show_date -%}
             <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -78,7 +78,7 @@
         </header>
 
       {%- when 'content'-%}
-        <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+        <div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }}>
             {{ article.content }}
         </div>
 
@@ -86,7 +86,7 @@
   {%- endfor -%}
 
   {%- if section.settings.show_social_media -%}
-    <div class="page-width page-width--narrow social-media">
+    <div class="page-width social-media">
       {%- if settings.social_facebook_link != blank -%}
         <li>
           <a class="social-icons__link" href="{{ settings.social_facebook_link | escape }}" aria-describedby="a11y-external-message">
@@ -118,7 +118,7 @@
 
   
   {%- if section.settings.show_previous_next_buttons -%}
-    <div class="page-width page-width--narrow previous_next_buttons">
+    <div class="page-width previous_next_buttons">
       <a href="{{ blog.previous_article }}" class="btn">
         Previous Post     
       </a>
@@ -136,7 +136,7 @@
   </div>
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper">
-      <div id="comments" class="page-width page-width--narrow">
+      <div id="comments" class="page-width">
         {%- if article.comments_count > 0 -%}
           {%- assign anchorId = '#Comments-' | append: article.id -%}
 
