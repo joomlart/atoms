@@ -10,7 +10,7 @@
             "slide_height": "adapt_image",
             "slider_visual": "numbers",
             "auto_rotate": true,
-            "slide_control": true,
+            "slide_control": false,
             "change_slides_speed": 3,
             "show_text_below": true,
             "accessibility_info": "Slideshow about our brand",
