@@ -145,6 +145,24 @@
             {%- when 'slideshow' -%}
               {% assign slide = block.settings %}
 
+            <!-- handle image title -->
+            {%- capture img_titles -%}
+              {{ slide.img_title1 }}, {{ slide.img_title2 }}, {{ slide.img_title3 }}
+            {%-endcapture-%}
+            {%- assign img_titles = img_title | split: ", " -%}
+
+            <!-- handle label link for image-->
+            {%- capture img_link_labels -%}
+              {{ slide.img_link_label1 }}, {{ slide.img_link_label2 }}, {{ slide.img_link_label3 }}
+            {%-endcapture-%}
+            {%- assign img_link_labels = img_link_labels | split: ", " -%}
+
+            <!-- handle image link -->
+            {%- capture img_links -%}
+              {{ slide.img_link1 }}, {{ slide.img_link2 }}, {{ slide.img_link3 }}
+            {%-endcapture-%}
+            {%- assign img_links = img_links | split: ", " -%}
+
               <!-- clone some image fields to an array -->
               <!-- init an image array -->
               {%- capture images -%}
