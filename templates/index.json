@@ -11,7 +11,7 @@
             "slider_visual": "numbers",
             "auto_rotate": true,
             "slide_control": false,
-            "change_slides_speed": 3,
+            "change_slides_speed": 5,
             "show_text_below": true,
             "accessibility_info": "Slideshow about our brand",
             "img1": "shopify:\/\/shop_images\/clothing-on-a-shop-rack-with-flowers-in-the-background.jpg",
