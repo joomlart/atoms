@@ -3193,7 +3193,10 @@
           }
         },
         "config_img": {
-          "name": "Choose Images"
+          "name": "Choose Images and Config text"
+        },
+        "empty": {
+          "name": " "
         },
         "slide_control": {
           "name": "Show slide control"
