@@ -161,10 +161,10 @@
       <div id="banner-{{ section.id }}" class="collection__banner">
           <div class="collection__banner__media" style="padding-bottom: 50%;background-image: url('{{ 'lt1-item-1.jpg' | file_url }}')">
               <div class="collection__banner__content">
-                  <a class="link-wrap" href="#"></a>
+                  <a class="link-wrap" href="{{ section.settings.banner_link_text }}"></a>
                   <{{ section.settings.banner_title_heading }} class="heading">{{ section.settings.banner_title_heading_content }}</{{ section.settings.banner_title_heading }}>
                   <div class="description">{{ section.settings.banner_desc_heading_content }}</div>
-                  <a class="link-uppercase " href="#">Shop Collection{%- render 'icon-chevron-right' -%}</a>
+                  <a class="link-uppercase " href="{{ section.settings.banner_link_text }}">{{ section.settings.banner_link_text }}{%- render 'icon-chevron-right' -%}</a>
               </div>
           </div>
       </div>
