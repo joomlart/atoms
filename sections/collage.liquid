@@ -144,9 +144,9 @@
               </div>
             {%- when 'slideshow' -%}
             <h3 style="color:red">{{ blogs }}</h3>
-            {% for article in blogs.potion-notions.articles %}
-  {{- article.title | link_to: article.url }}
-{% endfor %}
+            {% for article in blogs.news.articles %}
+            {{- article.title | link_to: article.url }}
+            {% endfor %}
               {% assign slide = block.settings %}
 
             <!-- handle image title -->
