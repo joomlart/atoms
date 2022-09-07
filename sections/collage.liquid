@@ -316,7 +316,7 @@
                 </div>
 
                 <!-- handle button next & back for auto slide -->
-                {%- if slide.auto_rotate and total_img > 1 -%}
+                {%- if slide.auto_rotate and total_img > 1 and slide.slide_control == false -%}
                   <div class="slideshow__controls ja-image-slide auto-slide slideshow__controls--top slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
                     <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">
                       {% render 'icon-caret' %}</button>
@@ -361,7 +361,7 @@
                 {%-endif-%}
 
                 <!-- handle button next & back for no auto-slide -->
-                {%- if total_img > 1 and slide.auto_rotate == false -%}
+                {%- if total_img > 1 and slide.auto_rotate == false and slide.slide_control == false -%}
                   <div class="slideshow__controls ja-image-slide slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
                     <button type="button" class="slider-button slider-button--prev" name="previous"
                             aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
@@ -890,6 +890,12 @@
           "id": "auto_rotate",
           "label": "t:sections.slideshow.settings.auto_rotate.label",
           "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "slide_control",
+          "label": "t:sections.custom.blocks.slide_control.name",
+          "default": true
         },
         {
           "type": "range",

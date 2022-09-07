@@ -3179,6 +3179,9 @@
         },
         "config_img": {
           "name": "Choose Images"
+        },
+        "slide_control": {
+          "name": "Show slide control"
         }
       },
       "preset": {
