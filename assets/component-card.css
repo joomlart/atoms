@@ -310,12 +310,12 @@
     color: rgb(var(--color-foreground));
 }
 
-.card-information>.rating {
-    margin-top: 0.4rem;
+.card-information > .rating {
+    margin-top: 0.75rem;
 }
 
 .card-information>*:not(.visually-hidden:first-child)+*:not(.rating) {
-    margin-top: 0.7rem;
+    margin-top: 0.75rem;
 }
 
 .card-information .caption {
