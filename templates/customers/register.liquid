@@ -1,7 +1,9 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width masthead">
-  {%- render 'breadcrumb' -%}
+  <div class="customer-page-name">
+    {%- render 'breadcrumb' -%}
+  </div>
 </div>
 
 <div class="customer register">

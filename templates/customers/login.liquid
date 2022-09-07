@@ -1,12 +1,17 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
+
+
 <div class="page-width masthead">
-  {%- render 'breadcrumb' -%}
+  <div class="customer-page-name">
+    {%- render 'breadcrumb' -%}
+  </div>
 </div>
 <div class="customer login">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
+
   <div>
     <p>
       {{ 'customer.recover_password.subtext' | t }}
@@ -33,6 +38,7 @@
           {{ 'customer.login_page.email' | t }}
         </label>
       </div>
+
       {%- if form.errors -%}
         <small id="RecoverEmail-email-error" class="form__message">
           <svg aria-hidden="true" focusable="false" role="presentation" viewBox="0 0 13 13">
