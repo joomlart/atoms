@@ -316,8 +316,8 @@
                 </div>
 
                 <!-- handle button next & back for auto slide -->
-                {%- if slide.auto_rotate and total_img > 1 and slide.slide_control == true -%}
-                  <div class="slideshow__controls ja-image-slide auto-slide slideshow__controls--top slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+                {%- if slide.auto_rotate and total_img > 1 -%}
+                  <div id="auto-slide-control" class="slideshow__controls ja-image-slide auto-slide slideshow__controls--top slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
                     <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">
                       {% render 'icon-caret' %}</button>
                     <div class="slider-counter slider-counter--{{ block.settings.slider_visual }}{% if block.settings.slider_visual == 'counter' or block.settings.slider_visual == 'numbers' %} caption{% endif %}">
@@ -361,8 +361,8 @@
                 {%-endif-%}
 
                 <!-- handle button next & back for no auto-slide -->
-                {%- if total_img > 1 and slide.auto_rotate == false and slide.slide_control == true -%}
-                  <div class="slideshow__controls ja-image-slide slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+                {%- if total_img > 1 and slide.auto_rotate == false-%}
+                  <div id="slide-control" class="slideshow__controls ja-image-slide slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
                     <button type="button" class="slider-button slider-button--prev" name="previous"
                             aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
                             aria-controls="Slider-{{ section.id }}">{% render 'icon-caret' %}</button>
@@ -411,6 +411,22 @@
                   </noscript>
                 {% endif %}
               </slideshow-component>
+            <script>
+              window.addEventListener('DOMContentLoaded', (event) => {
+                var slideControl = document.getElementById('slide-control');
+                var autoSlideControl = document.getElementById('auto-slide-control');
+                var slide = {{ slide.slide_control }};
+
+                if(!slide){
+                  if (slideControl){
+                    slideControl.style.display = 'none';
+                  }
+                  if (autoSlideControl){
+                    autoSlideControl.style.display = 'none';
+                  }
+                }
+              })
+            </script>
           {%- endcase -%}
         </div>
       {%- endfor -%}
