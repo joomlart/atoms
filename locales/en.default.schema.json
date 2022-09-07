@@ -1615,6 +1615,12 @@
                     "label": "Description",
                     "info": "Input title for description"
                 },
+                "banner_link_text": {
+                    "label": "Banner link text"
+                },
+                "banner_link": {
+                    "label": "Banner Link"
+                },
                 "header__2": {
                     "content": "Card and Sidebar"
                 },
