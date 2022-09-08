@@ -180,7 +180,7 @@
               <!-- clone some image fields to an array -->
               <!-- init an image array -->
               {%- capture images -%}
-                {{ slide.img1 }}, {{ slide.img2 }}, {{ slide.img3 }}, {{ slide.img4 }}, {{ slide.img5 }}
+                {{ slide.img1 }}, {{ slide.img2 }}, {{ slide.img3 }}
               {%-endcapture-%}
               {% assign images = images | split: ", " %}
               <h3 style="color:red">{{ images }}</h3>
@@ -194,68 +194,68 @@
 
               <!-- init an image width array -->
               {%- capture imgs_width -%}
-                {{ slide.img1.width }}, {{ slide.img2.width }}, {{ slide.img3.width }}, {{ slide.img4.width }}, {{ slide.img5.width }}
+                {{ slide.img1.width }}, {{ slide.img2.width }}, {{ slide.img3.width }}
               {%-endcapture-%}
               {%- assign imgs_width = imgs_width | split: ", " -%}
               <!-- init an image aspect_ratio-->
               {%- capture imgs_aspect_ratio -%}
-                {{ slide.img1.aspect_ratio }}, {{ slide.img2.aspect_ratio }}, {{ slide.img3.aspect_ratio }}, {{ slide.img4.aspect_ratio }}, {{ slide.img5.aspect_ratio }}
+                {{ slide.img1.aspect_ratio }}, {{ slide.img2.aspect_ratio }}, {{ slide.img3.aspect_ratio }}
               {%-endcapture-%}
               {%- assign imgs_aspect_ratio = imgs_aspect_ratio | split: ", " -%}
               <!-- init an image alt -->
               {%- capture imgs_alt -%}
-                {{ slide.img1.alt }}, {{ slide.img2.alt }}, {{ slide.img3.alt }}, {{ slide.img4.alt }}, {{ slide.img5.alt }}
+                {{ slide.img1.alt }}, {{ slide.img2.alt }}, {{ slide.img3.alt }}
               {%-endcapture-%}
               {%- assign imgs_alt = imgs_alt | split: ", " -%}
 
               <!-- init image url -->
               {%- capture imgs_url -%}
-                {{ slide.img1 | image_url }}, {{ slide.img2 | image_url }}, {{ slide.img3 | image_url }}, {{ slide.img4 | image_url }}, {{ slide.img5 | image_url }}
+                {{ slide.img1 | image_url }}, {{ slide.img2 | image_url }}, {{ slide.img3 | image_url }}
               {%-endcapture-%}
               {%- assign imgs_url = imgs_url | split: ", " -%}
 
               {%- capture imgs_width_550 -%}
-                {{ slide.img1 | image_url: width: 550 }}, {{ slide.img2 | image_url: width: 550 }}, {{ slide.img3 | image_url: width: 550 }}, {{ slide.img4 | image_url: width: 550 }}, {{ slide.img5 | image_url: width: 550 }}
+                {{ slide.img1 | image_url: width: 550 }}, {{ slide.img2 | image_url: width: 550 }}, {{ slide.img3 | image_url: width: 550 }}
               {%-endcapture-%}
               {%- assign imgs_width_550 = imgs_width_550 | split: ", " -%}
 
               {%- capture imgs_width_375 -%}
-                {{ slide.img1 | image_url: width: 375 }}, {{ slide.img2 | image_url: width: 375 }}, {{ slide.img3 | image_url: width: 375 }}, {{ slide.img4 | image_url: width: 375 }}, {{ slide.img5 | image_url: width: 375 }}
+                {{ slide.img1 | image_url: width: 375 }}, {{ slide.img2 | image_url: width: 375 }}, {{ slide.img3 | image_url: width: 375 }}
               {%-endcapture-%}
               {%- assign imgs_width_375 = imgs_width_375 | split: ", " -%}
 
               {%- capture imgs_width_750 -%}
-                {{ slide.img1 | image_url: width: 750 }}, {{ slide.img2 | image_url: width: 750 }}, {{ slide.img3 | image_url: width: 750 }}, {{ slide.img4 | image_url: width: 750 }}, {{ slide.img5 | image_url: width: 750 }}
+                {{ slide.img1 | image_url: width: 750 }}, {{ slide.img2 | image_url: width: 750 }}, {{ slide.img3 | image_url: width: 750 }}
               {%-endcapture-%}
               {%- assign imgs_width_750 = imgs_width_750 | split: ", " -%}
 
               {%- capture imgs_width_1100 -%}
-                {{ slide.img1 | image_url: width: 1100 }}, {{ slide.img2 | image_url: width: 1100 }}, {{ slide.img3 | image_url: width: 1100 }}, {{ slide.img4 | image_url: width: 1100 }}, {{ slide.img5 | image_url: width: 1100 }}
+                {{ slide.img1 | image_url: width: 1100 }}, {{ slide.img2 | image_url: width: 1100 }}, {{ slide.img3 | image_url: width: 1100 }}
               {%-endcapture-%}
               {%- assign imgs_width_1100 = imgs_width_1100 | split: ", " -%}
 
               {%- capture imgs_width_1500 -%}
-                {{ slide.img1 | image_url: width: 1500 }}, {{ slide.img2 | image_url: width: 1500 }}, {{ slide.img3 | image_url: width: 1500 }}, {{ slide.img4 | image_url: width: 1500 }}, {{ slide.img5 | image_url: width: 1500 }}
+                {{ slide.img1 | image_url: width: 1500 }}, {{ slide.img2 | image_url: width: 1500 }}, {{ slide.img3 | image_url: width: 1500 }}
               {%-endcapture-%}
               {%- assign imgs_width_1500 = imgs_width_1500 | split: ", " -%}
 
               {%- capture imgs_width_1780 -%}
-                {{ slide.img1 | image_url: width: 1780 }}, {{ slide.img2 | image_url: width: 1780 }}, {{ slide.img3 | image_url: width: 1780 }}, {{ slide.img4 | image_url: width: 1780 }}, {{ slide.img5 | image_url: width: 1780 }}
+                {{ slide.img1 | image_url: width: 1780 }}, {{ slide.img2 | image_url: width: 1780 }}, {{ slide.img3 | image_url: width: 1780 }}
               {%-endcapture-%}
               {%- assign imgs_width_1780 = imgs_width_1780 | split: ", " -%}
 
               {%- capture imgs_width_2000 -%}
-                {{ slide.img1 | image_url: width: 2000 }}, {{ slide.img2 | image_url: width: 2000 }}, {{ slide.img3 | image_url: width: 2000 }}, {{ slide.img4 | image_url: width: 2000 }}, {{ slide.img5 | image_url: width: 2000 }}
+                {{ slide.img1 | image_url: width: 2000 }}, {{ slide.img2 | image_url: width: 2000 }}, {{ slide.img3 | image_url: width: 2000 }}
               {%-endcapture-%}
               {%- assign imgs_width_2000 = imgs_width_2000 | split: ", " -%}
 
               {%- capture imgs_width_3000 -%}
-                {{ slide.img1 | image_url: width: 3000 }}, {{ slide.img2 | image_url: width: 3000 }}, {{ slide.img3 | image_url: width: 3000 }}, {{ slide.img4 | image_url: width: 3000 }}, {{ slide.img5 | image_url: width: 3000 }}
+                {{ slide.img1 | image_url: width: 3000 }}, {{ slide.img2 | image_url: width: 3000 }}, {{ slide.img3 | image_url: width: 3000 }}
               {%-endcapture-%}
               {%- assign imgs_width_3000 = imgs_width_3000 | split: ", " -%}
 
               {%- capture imgs_width_3840 -%}
-                {{ slide.img1 | image_url: width: 3840 }}, {{ slide.img2 | image_url: width: 3840 }}, {{ slide.img3 | image_url: width: 3840 }}, {{ slide.img4 | image_url: width: 3840 }}, {{ slide.img5 | image_url: width: 3840 }}
+                {{ slide.img1 | image_url: width: 3840 }}, {{ slide.img2 | image_url: width: 3840 }}, {{ slide.img3 | image_url: width: 3840 }}
               {%-endcapture-%}
               {%- assign imgs_width_3840 = imgs_width_3840 | split: ", " -%}
 
@@ -377,7 +377,7 @@
                        aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                        tabindex="-1"
                   >
-                    <div class="slideshow__media banner__media media placeholder">
+                    <div class="slideshow__media banner__media placeholder">
                       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
                     </div>
                   </div>
