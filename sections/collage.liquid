@@ -143,7 +143,8 @@
                 </modal-dialog>
               </div>
             {%- when 'slideshow' -%}
-              {% assign slide = block.settings %}
+            {% assign slide = block.settings %}
+            {% assign slide_height = 'adapt_image' %}
 
             <!-- handle image title -->
             {%- capture img_titles -%}
@@ -244,7 +245,7 @@
               {%-endcapture-%}
               {%- assign imgs_width_3840 = imgs_width_3840 | split: ", " -%}
 
-              {%- if slide.slide_height == 'adapt_image' and slide.img1 != blank -%}
+              {%- if slide_height == 'adapt_image' and slide.img1 != blank -%}
                 {%- style -%}
                   @media screen and (max-width: 749px) {
                   #Slider-{{ section.id }}::before,
@@ -270,7 +271,7 @@
                                    role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
                                    aria-label="{{ block.settings.accessibility_info | escape }}">
                 <!-- handle image -->
-                <div class="slideshow banner banner--{{ slide.slide_height }} grid grid--1-col slider slider--everywhere{% if slide.show_text_below %} banner--mobile-bottom{% endif %} {% if slide.img1 == blank %} slideshow--placeholder{% endif %}"
+                <div class="slideshow banner banner--{{ slide_height }} grid grid--1-col slider slider--everywhere{% if slide.show_text_below %} banner--mobile-bottom{% endif %} {% if slide.img1 == blank %} slideshow--placeholder{% endif %}"
                      id="Slider-{{ section.id }}"
                      aria-live="polite"
                      aria-atomic="true"
@@ -329,13 +330,13 @@
                                height="{{ img_width | divided_by: img_aspect_ratio | round }}"
                           >
                         </div>
-                        <div class="content">
-                          <div class="inner">
+                        <div class="content ja-content">
+                          <div class="inner ja-content-inner">
                             {%- if img_title != blank -%}
-                              <h3>{{ img_title | escape }}</h3>
+                              <h3 class="ja-img-title">{{ img_title | escape }}</h3>
                             {%- endif -%}
                             {%- if img_link_label != blank -%}
-                              <a class="link animate-arrow"
+                              <a class="link animate-arrow ja-link-label"
                               {% if img_link == blank %}role="link" aria-disabled="true"
                                  {% else %}href="{{ img_link }}"{% endif %}>
                                   {{ img_link_label | escape }}
@@ -373,13 +374,6 @@
                       {%- endif -%}
                     </div>
                     <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'sections.slideshow.next_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-caret' %}</button>
-
-                    {%- if block.settings.auto_rotate -%}
-                      <button type="button" class="slideshow__autoplay slider-button no-js-hidden{% if block.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}" aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}">
-                        {%- render 'icon-pause' -%}
-                        {%- render 'icon-play' -%}
-                      </button>
-                    {%- endif -%}
                   </div>
                   <noscript>
                     <div class="slider-buttons">
@@ -691,30 +685,6 @@
           ],
           "default": "full_bleed",
           "label": "t:sections.slideshow.settings.layout.label"
-        },
-        {
-          "type": "select",
-          "id": "slide_height",
-          "options": [
-            {
-              "value": "adapt_image",
-              "label": "t:sections.slideshow.settings.slide_height.options__1.label"
-            },
-            {
-              "value": "small",
-              "label": "t:sections.slideshow.settings.slide_height.options__2.label"
-            },
-            {
-              "value": "medium",
-              "label": "t:sections.slideshow.settings.slide_height.options__3.label"
-            },
-            {
-              "value": "large",
-              "label": "t:sections.slideshow.settings.slide_height.options__4.label"
-            }
-          ],
-          "default": "adapt_image",
-          "label": "t:sections.slideshow.settings.slide_height.label"
         },
         {
           "type": "select",
