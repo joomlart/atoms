@@ -149,7 +149,7 @@
             {%- capture img_titles -%}
               {{ slide.img_title1 }}, {{ slide.img_title2 }}, {{ slide.img_title3 }}
             {%-endcapture-%}
-            {%- assign img_titles = img_title | split: ", " -%}
+            {%- assign img_titles = img_titles | split: ", " -%}
 
             <!-- handle label link for image-->
             {%- capture img_link_labels -%}
@@ -162,11 +162,6 @@
               {{ slide.img_link1 }}, {{ slide.img_link2 }}, {{ slide.img_link3 }}
             {%-endcapture-%}
             {%- assign img_links = img_links | split: ", " -%}
-              {{ img_titles }}
-              </br>
-              {{ img_link_labels }}
-              </br>
-              {{ img_links }}
 
               <!-- clone some image fields to an array -->
               <!-- init an image array -->
@@ -339,7 +334,7 @@
                             {%- if img_title != blank -%}
                               <h3>{{ img_title | escape }}</h3>
                             {%- endif -%}
-                            {%- if img_label != blank -%}
+                            {%- if img_link_label != blank -%}
                               <a class="link animate-arrow"
                               {% if img_link == blank %}role="link" aria-disabled="true"
                                  {% else %}href="{{ img_link }}"{% endif %}>
