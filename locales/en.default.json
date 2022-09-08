@@ -317,7 +317,7 @@
       "cancel": "Decline invitation"
     },
     "addresses": {
-      "title": "Addresses",
+      "title": "My Addresses",
       "default": "Default",
       "add_new": "Add a new address",
       "edit_address": "Edit address",

@@ -3,7 +3,12 @@
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
 
 {%- paginate customer.addresses by 5 -%}
-  <div class="customer addresses" data-customer-addresses>
+<div class="page-width masthead-address ">
+  <div class="customer-page-name">
+    {%- render 'breadcrumb' -%}
+  </div>
+  </div>
+  <div class="page-width customer addresses" data-customer-addresses>
     <svg style="display: none">
       <symbol id="icon-caret" viewBox="0 0 10 6">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
@@ -106,7 +111,41 @@
           {%- if address == customer.default_address -%}
             <h2>{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
-          {{ address | format_address }}
+
+          <ul class="customer-address-default">
+            <li>
+              <span>My Name</span>
+              <span>{{ address.first_name }}{{ address.last_name }}</span>
+            </li>
+            <li>
+              <span>Company</span>
+              <span>{{ address.company }}</span>
+            </li>
+            <li>
+              <span>Address1</span>
+              <span>{{ address.address1 }}</span>
+            </li>
+            <li>
+              <span>Address2</span>
+              <span>{{ address.address2 }}</span>
+            </li>
+            <li>
+              <span>City</span>
+              <span>{{ address.city }}</span>
+            </li>
+            <li>
+              <span>Postal/Zip Code</span>
+              <span>{{ address.zip }}</span>
+            </li>
+            <li>
+              <span>Phone</span>
+              <span>{{ address.phone }}</span>
+            </li>
+            <li>
+              <span>Country</span>
+              <span>{{ address.country }}</span>
+            </li>
+          </ul>
           <button
             type="button"
             id="EditFormButton_{{ address.id }}"
@@ -125,7 +164,7 @@
           >
             {{ 'customer.addresses.delete' | t }}
           </button>
-          <div id="EditAddress_{{ address.id }}">
+          <div id="EditAddress_{{ address.id }}" class="edit-address">
             <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
               <div class="field">
