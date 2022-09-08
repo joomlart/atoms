@@ -50,7 +50,7 @@
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                   {%- endif -%}
                 </div>
-                <div class="content ja-content">
+                <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
                   <div class="inner ja-content-inner">
                     {%- if block.settings.static_img_title != blank -%}
                       <h3 class="ja-img-title">{{ block.settings.static_img_title | escape }}</h3>
@@ -355,7 +355,7 @@
                             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
                           {%- endif -%}
                         </div>
-                        <div class="content ja-content">
+                        <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
                           <div class="inner ja-content-inner">
                             {%- if img_title != blank -%}
                               <h3 class="ja-img-title">{{ img_title | escape }}</h3>
