@@ -7,10 +7,10 @@
           "type": "slideshow",
           "settings": {
             "layout": "full_bleed",
-            "slider_visual": "counter",
+            "slider_visual": "dots",
             "auto_rotate": false,
-            "slide_control": true,
-            "change_slides_speed": 5,
+            "slide_control": false,
+            "change_slides_speed": 3,
             "show_text_below": true,
             "accessibility_info": "Slideshow about our brand",
             "img1": "shopify:\/\/shop_images\/banner-5.jpg",
