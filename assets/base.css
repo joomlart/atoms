@@ -1447,12 +1447,11 @@ button.shopify-payment-button__button--unbranded {
 .button,
 .button-label,
 .shopify-challenge__button,
-.customer button,
-.button:hover {
+.customer button {
     font-size: 1.4rem;
     letter-spacing: normal;
     line-height: 1.714;
-    padding: 16px 32px;
+    padding: 1.6rem 3.2rem;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -2701,8 +2700,8 @@ details[open]>.header__submenu {
     color: rgb(var(--color-foreground));
 }
 
-details[open]>.header__menu-item {
-    text-decoration: underline;
+details[open] > .header__menu-item {
+    text-decoration: none;
 }
 
 details[open]:hover>.header__menu-item {
@@ -2737,7 +2736,7 @@ details[open]>.header__menu-item .icon-caret {
 }
 
 .header__submenu.list-menu {
-    padding: 2.4rem 0;
+    padding: 0;
 }
 
 .header__submenu .header__submenu {
@@ -2752,7 +2751,13 @@ details[open]>.header__menu-item .icon-caret {
 
 .header__submenu .header__menu-item {
     justify-content: space-between;
-    padding: 0.8rem 2.4rem;
+    padding: 1rem 2.4rem;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.header__submenu .header__menu-item:hover {
+    background-color: var(--gradient-base-background-2);
 }
 
 .header__submenu .header__submenu .header__menu-item {

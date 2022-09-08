@@ -3,40 +3,47 @@
     "166116152195c6e261": {
       "type": "collage",
       "blocks": {
-        "f1736cff-6b2d-468e-8bd8-808f4e841240": {
+        "7b8a977f-7274-4cb4-8e20-7141b1325a98": {
           "type": "slideshow",
           "settings": {
             "layout": "full_bleed",
             "slider_visual": "dots",
-            "auto_rotate": true,
-            "slide_control": false,
-            "change_slides_speed": 5,
+            "auto_rotate": false,
+            "slide_control": true,
+            "change_slides_speed": 3,
             "show_text_below": true,
             "accessibility_info": "Slideshow about our brand",
-            "img1": "shopify:\/\/shop_images\/clothing-on-a-shop-rack-with-flowers-in-the-background.jpg",
+            "img1": "shopify:\/\/shop_images\/banner-5.jpg",
             "img_title1": "Winter\/Spring Clothing 2020 Collections",
+            "img_desc1": "Description 1",
             "img_link_label1": "Shop Collection",
-            "img_link1": "shopify:\/\/collections",
-            "img2": "shopify:\/\/shop_images\/lt1-item-1_fea4e016-4948-490a-9151-f9fecbae87c1.jpg",
-            "img_title2": "Final Clearance Up to 80% Off",
-            "img_link_label2": "Shop Mens",
-            "img_link2": "shopify:\/\/collections\/shop-mens",
-            "img3": "shopify:\/\/shop_images\/woman-holding-coffee-mug.jpg",
-            "img_title3": "Mid Season Sale! Up to -50%",
-            "img_link_label3": "Shop Women",
-            "img_link3": "shopify:\/\/collections\/shop-women"
+            "img_link1": "shopify:\/\/collections\/shop-mens",
+            "img2": "shopify:\/\/shop_images\/banner-9.jpg",
+            "img_title2": "Winter\/Spring Clothing 2020 Collections",
+            "img_desc2": "Description 2",
+            "img_link_label2": "Shop Collection",
+            "img_link2": "shopify:\/\/collections\/shop-women",
+            "img3": "shopify:\/\/shop_images\/banner-10.jpg",
+            "img_title3": "Winter\/Spring Clothing 2020 Collections",
+            "img_desc3": "Description 3",
+            "img_link_label3": "Shop Collection",
+            "img_link3": "shopify:\/\/collections\/best-seller"
           }
         },
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-1.png",
-            "image_padding": false
+            "image_padding": false,
+            "static_img_title": "Final Clearance Up to 80% Off",
+            "static_img_desc": "Final Clearance Up to 80% Off",
+            "static_img_link_label": "Shop men",
+            "static_img_link": "shopify:\/\/collections\/shop-mens"
           }
         }
       },
       "block_order": [
-        "f1736cff-6b2d-468e-8bd8-808f4e841240",
+        "7b8a977f-7274-4cb4-8e20-7141b1325a98",
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e"
       ],
       "settings": {

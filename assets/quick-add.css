@@ -190,13 +190,14 @@ quick-add-modal .product-form__buttons {
 }
 
 .quick-add__submit {
-    padding: 16px 24px;
+    padding: 1.6rem 2.4rem;
     min-width: 100%;
     box-sizing: border-box;
-    background: #212121;
-    color: #fff;
 }
 
 .quick-add__submit:hover {
-    padding: 16px 24px;
+    --border-offset: 0;
+    --buttons-border-width: 0;
+    --buttons-border-opacity: 0;
+    padding: 1.6rem 2.4rem;
 }
