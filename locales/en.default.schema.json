@@ -1592,6 +1592,9 @@
                 "enable_boxed_banner": {
                     "label": "Enable/Disable"
                 },
+                "boxed_banner_color_scheme": {
+                    "label": "Content Color"
+                },
                 "boxed_banner_image": {
                     "label": "Image"
                 },
@@ -3207,7 +3210,8 @@
         } <<
         <<
         <<
-        < HEAD ===
+        <
+        HEAD ===
         ===
         =
     },
