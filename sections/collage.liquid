@@ -183,7 +183,6 @@
                 {{ slide.img1 }}, {{ slide.img2 }}, {{ slide.img3 }}
               {%-endcapture-%}
               {% assign images = images | split: ", " %}
-              <h3 style="color:red">{{ images }}</h3>
 
               {%- assign total_img = 0 -%}
               {%- for img in images -%}
