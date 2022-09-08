@@ -292,7 +292,6 @@
                      data-speed="{{ slide.change_slides_speed }}">
 
                   {%- for img in images -%}
-                    {% if img != blank %}
                       <style>
                         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
                           opacity: {{ slide.image_overlay_opacity | divided_by: 100.0 }};
@@ -307,6 +306,7 @@
                            tabindex="-1"
                       >
                         <div class="slideshow__media banner__media media{% if img == blank %} placeholder{% endif %}">
+                      {% if img != blank %}
                           {%- assign idx = forloop.index | minus: 1 -%}
                           {%- assign img_width = imgs_width[idx] | plus: 0 -%}
                           {%- assign img_aspect_ratio = imgs_aspect_ratio[idx] | plus: 0 -%}
@@ -342,6 +342,9 @@
                                width="{{ img_width }}"
                                height="{{ img_width | divided_by: img_aspect_ratio | round }}"
                           >
+                      {%- else -%}
+                        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                      {%- endif -%}
                         </div>
                         <div class="content ja-content">
                           <div class="inner ja-content-inner">
@@ -359,11 +362,12 @@
                           </div>
                         </div>
                       </div>
-                    {%- else -%}
+                    <!-- {%- else -%}
+
                     <div class="slideshow__media banner__media media placeholder">
                       {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
                     </div>
-                    {%- endif -%}
+                    {%- endif -%}-->
                   {%- endfor -%}
                 </div>
 
