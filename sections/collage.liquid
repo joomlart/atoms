@@ -50,6 +50,19 @@
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                   {%- endif -%}
                 </div>
+                <div class="content ja-content">
+                  <div class="inner ja-content-inner">
+                    {%- if block.settings.static_img_title != blank -%}
+                      <h3 class="ja-img-title">{{ block.settings.static_img_title | escape }}</h3>
+                    {%- endif -%}
+                    {%- if block.settings.static_img_link_label != blank -%}
+                      <a class="link animate-arrow ja-link-label" {% if block.settings.static_img_link == blank %}
+                        role="link" aria-disabled="true"{% else %} href="{{ block.settings.static_img_link }}"{% endif %}>
+                        {{ block.settings.static_img_link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                      </a>
+                    {%- endif -%}
+                  </div>
+                </div>
               </div>
             {%- when 'product' -%}
               {% render 'card-product',
@@ -598,6 +611,26 @@
           "default": false,
           "label": "t:sections.collage.blocks.image.settings.image_padding.label",
           "info": "t:sections.collage.blocks.image.settings.image_padding.info"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.custom.blocks.empty.name"
+        },
+        {
+          "type": "text",
+          "id": "static_img_title",
+          "default": "Column",
+          "label": "t:sections.image-banner-text-grid.blocks.column.settings.title.label"
+        },
+        {
+          "type": "text",
+          "id": "static_img_link_label",
+          "label": "t:sections.image-banner-text-grid.blocks.column.settings.link_label.label"
+        },
+        {
+          "type": "url",
+          "id": "static_img_link",
+          "label": "t:sections.image-banner-text-grid.blocks.column.settings.link.label"
         }
       ]
     },
