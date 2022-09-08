@@ -3201,6 +3201,9 @@
         "empty": {
           "name": " "
         },
+        "desc": {
+          "name": "Description"
+        },
         "slide_control": {
           "name": "Show slide control"
         }
