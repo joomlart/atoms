@@ -161,15 +161,15 @@
           </form>
         </facet-filters-form>
       {%- endif -%}
-      {%- if section.settings.enable_grid_list_banner_collection -%}
+      {%- if section.settings.enable_boxed_banner -%}
       {{ 'catalog-collection-card.css' | asset_url | stylesheet_tag }}
       <div id="banner-{{ section.id }}" class="collection__boxed__banner">
-          <div class="collection__boxed__banner__media" style="padding-bottom: 50%;background-image: url('{{ section.settings.banner_image | image_url }}')">
+          <div class="collection__boxed__banner__media" style="padding-bottom: 50%;background-image: url('{{ section.settings.boxed_banner_image | image_url }}')">
               <div class="collection__boxed__banner__content">
                   <a class="link-wrap" href="{{ section.settings.banner_link_text }}"></a>
-                  <{{ section.settings.banner_title_heading }} class="heading">{{ section.settings.banner_title_heading_content }}</{{ section.settings.banner_title_heading }}>
-                  <p class="description">{{ section.settings.banner_desc_heading_content }}</p>
-                  <a class="link-uppercase " href="{{ section.settings.banner_link_text }}">{{ section.settings.banner_link_text }}{%- render 'icon-chevron-right' -%}</a>
+                  <{{ section.settings.boxed_banner_heading }} class="heading">{{ section.settings.boxed_banner_title }}</{{ section.settings.banner_title_heading }}>
+                  <p class="description">{{ section.settings.boxed_banner_content }}</p>
+                  <a class="link-uppercase " href="{{ section.settings.boxed_banner_link_text }}">{{ section.settings.boxed_banner_link_text }}{%- render 'icon-chevron-right' -%}</a>
               </div>
           </div>
       </div>      
@@ -409,20 +409,48 @@
     },
     {
       "type": "checkbox",
-      "id": "enable_grid_list_banner_collection",
+      "id": "enable_boxed_banner",
       "default": true,
-      "label": "t:sections.main-collection-product-grid.settings.enable_grid_list_banner_collection.label"
+      "label": "t:sections.main-collection-product-grid.settings.enable_boxed_banner.label"
     },
     {
       "type": "image_picker",
-      "id": "banner_image",
-      "label": "t:sections.main-collection-product-grid.settings.banner_image.label"
+      "id": "boxed_banner_image",
+      "label": "t:sections.main-collection-product-grid.settings.boxed_banner_image.label"
     },
     {
       "type": "select",
-      "id": "banner_title_heading",
+      "id": "boxed_banner_color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-2",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "select",
+      "id": "boxed_banner_heading",
       "default": "h1",
-      "label": "t:sections.main-collection-product-grid.settings.banner_title_heading.label",
+      "label": "t:sections.main-collection-product-grid.settings.boxed_banner_heading.label",
       "options": [
         {
           "value": "h1",
@@ -444,26 +472,26 @@
     },
     {
       "type": "text",
-      "id": "banner_title_heading_content",
+      "id": "boxed_banner_title",
       "default": "Winter/Spring Clothing 2022 Collections",
-      "label": "t:sections.main-collection-product-grid.settings.banner_title_heading_content.label"
+      "label": "t:sections.main-collection-product-grid.settings.boxed_banner_title.label"
     },
     {
       "type": "text",
-      "id": "banner_desc_heading_content",
+      "id": "boxed_banner_content",
       "default": "Cursus elit iaculis platea integer nisl sapien egestas  Bitae donec ornare iaculis mauris nec.",
-      "label": "t:sections.main-collection-product-grid.settings.banner_desc_heading_content.label"
+      "label": "t:sections.main-collection-product-grid.settings.boxed_banner_content.label"
     },
     {
       "type": "text",
-      "id": "banner_link_text",
+      "id": "boxed_banner_link_text",
       "default": "Shop Collection",
-      "label": "t:sections.main-collection-product-grid.settings.banner_link_text.label"
+      "label": "t:sections.main-collection-product-grid.settings.boxed_banner_link_text.label"
     },
     {
       "type": "url",
-      "id": "banner_link",
-      "label": "t:sections.main-collection-product-grid.settings.banner_link.label"
+      "id": "boxed_banner_link",
+      "label": "t:sections.main-collection-product-grid.settings.boxed_banner_link.label"
     },
     {
       "type": "header",

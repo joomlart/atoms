@@ -33,7 +33,7 @@
 }
 
 .collection__boxed__banner__content .heading {
-    color: var(--color-base-background-1);
+    color: var(--color-foreground);
     font-weight: 700;
     margin-bottom: 16px;
     margin-top: 0;
@@ -42,12 +42,12 @@
 }
 
 .collection__boxed__banner__content .description {
-    color: var(--color-base-background-1);
+    color: var(--color-foreground);
     margin-bottom: 1rem;
 }
 
 .collection__boxed__banner__content .link-uppercase {
-    color: var(--color-base-background-1);
+    color: var(--color-foreground);
     font-size: 14px;
     font-weight: 700;
     position: relative;
