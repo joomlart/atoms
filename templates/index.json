@@ -7,7 +7,6 @@
           "type": "slideshow",
           "settings": {
             "layout": "full_bleed",
-            "slide_height": "adapt_image",
             "slider_visual": "dots",
             "auto_rotate": true,
             "slide_control": false,
@@ -25,7 +24,7 @@
             "img3": "shopify:\/\/shop_images\/woman-holding-coffee-mug.jpg",
             "img_title3": "Mid Season Sale! Up to -50%",
             "img_link_label3": "Shop Women",
-            "img_link3": "shopify:\/\/collections\/clothing"
+            "img_link3": "shopify:\/\/collections\/shop-women"
           }
         },
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e": {
@@ -68,7 +67,7 @@
             "image": "shopify:\/\/shop_images\/banner-3.jpg",
             "title": "Spring\/Winter Collections",
             "link_label": "Shop women",
-            "link": "shopify:\/\/collections\/clothing"
+            "link": "shopify:\/\/collections\/shop-women"
           }
         },
         "166123731380862203-2": {
@@ -218,7 +217,7 @@
         "description": "<p>Final Clearance Up to 80% Off\t<\/p>",
         "show_description": false,
         "description_style": "uppercase",
-        "collection": "clothing",
+        "collection": "shop-women",
         "show_card_collection": true,
         "products_to_show": 3,
         "columns_desktop": 3,
@@ -257,7 +256,7 @@
             "image": "shopify:\/\/shop_images\/banner-6.jpg",
             "title": "Final Sale. Up to 80%!",
             "link_label": "Shop now",
-            "link": "shopify:\/\/collections\/clothing"
+            "link": "shopify:\/\/collections\/shop-women"
           }
         },
         "1661315842627cf75e-2": {
@@ -311,7 +310,7 @@
         "90f844b0-cf2e-4cb4-a4f2-e03d6522e79a": {
           "type": "column",
           "settings": {
-            "collection": "clothing",
+            "collection": "shop-women",
             "products_to_show": 5,
             "show_view_all": true,
             "view_all_style": "link"
