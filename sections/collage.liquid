@@ -162,6 +162,9 @@
               {{ slide.img_link1 }}, {{ slide.img_link2 }}, {{ slide.img_link3 }}
             {%-endcapture-%}
             {%- assign img_links = img_links | split: ", " -%}
+              {{ img_titles }}
+              {{ img_link_labels }}
+              {{ img_links }}
 
               <!-- clone some image fields to an array -->
               <!-- init an image array -->
