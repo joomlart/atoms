@@ -34,7 +34,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-1.png",
-            "image_padding": false,
+            "image_padding": true,
             "static_img_title": "",
             "static_img_desc": "",
             "static_img_link_label": "",
