@@ -1,6 +1,5 @@
 .customer {
   color: rgba(var(--color-foreground),1);
-  margin: 32px;
 }
 .btn-signin:hover, .btn-register:hover {
   opacity: 0.85;
