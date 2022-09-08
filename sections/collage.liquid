@@ -182,12 +182,12 @@
                 {{ slide.img1.width }}, {{ slide.img2.width }}, {{ slide.img3.width }}, {{ slide.img4.width }}, {{ slide.img5.width }}
               {%-endcapture-%}
               {%- assign imgs_width = imgs_width | split: ", " -%}
-              <!-- in an image aspect_ratio-->
+              <!-- init an image aspect_ratio-->
               {%- capture imgs_aspect_ratio -%}
                 {{ slide.img1.aspect_ratio }}, {{ slide.img2.aspect_ratio }}, {{ slide.img3.aspect_ratio }}, {{ slide.img4.aspect_ratio }}, {{ slide.img5.aspect_ratio }}
               {%-endcapture-%}
               {%- assign imgs_aspect_ratio = imgs_aspect_ratio | split: ", " -%}
-              <!-- in an image alt -->
+              <!-- init an image alt -->
               {%- capture imgs_alt -%}
                 {{ slide.img1.alt }}, {{ slide.img2.alt }}, {{ slide.img3.alt }}, {{ slide.img4.alt }}, {{ slide.img5.alt }}
               {%-endcapture-%}
@@ -198,47 +198,47 @@
                 {{ slide.img1 | image_url }}, {{ slide.img2 | image_url }}, {{ slide.img3 | image_url }}, {{ slide.img4 | image_url }}, {{ slide.img5 | image_url }}
               {%-endcapture-%}
               {%- assign imgs_url = imgs_url | split: ", " -%}
-              <!-- init image width 550 -->
+
               {%- capture imgs_width_550 -%}
                 {{ slide.img1 | image_url: width: 550 }}, {{ slide.img2 | image_url: width: 550 }}, {{ slide.img3 | image_url: width: 550 }}, {{ slide.img4 | image_url: width: 550 }}, {{ slide.img5 | image_url: width: 550 }}
               {%-endcapture-%}
               {%- assign imgs_width_550 = imgs_width_550 | split: ", " -%}
-              <!-- init image width 375 -->
+
               {%- capture imgs_width_375 -%}
                 {{ slide.img1 | image_url: width: 375 }}, {{ slide.img2 | image_url: width: 375 }}, {{ slide.img3 | image_url: width: 375 }}, {{ slide.img4 | image_url: width: 375 }}, {{ slide.img5 | image_url: width: 375 }}
               {%-endcapture-%}
               {%- assign imgs_width_375 = imgs_width_375 | split: ", " -%}
-              <!-- init image width 750 -->
+
               {%- capture imgs_width_750 -%}
                 {{ slide.img1 | image_url: width: 750 }}, {{ slide.img2 | image_url: width: 750 }}, {{ slide.img3 | image_url: width: 750 }}, {{ slide.img4 | image_url: width: 750 }}, {{ slide.img5 | image_url: width: 750 }}
               {%-endcapture-%}
               {%- assign imgs_width_750 = imgs_width_750 | split: ", " -%}
-              <!-- init image width 1100 -->
+
               {%- capture imgs_width_1100 -%}
                 {{ slide.img1 | image_url: width: 1100 }}, {{ slide.img2 | image_url: width: 1100 }}, {{ slide.img3 | image_url: width: 1100 }}, {{ slide.img4 | image_url: width: 1100 }}, {{ slide.img5 | image_url: width: 1100 }}
               {%-endcapture-%}
               {%- assign imgs_width_1100 = imgs_width_1100 | split: ", " -%}
-              <!-- init image width 1500 -->
+
               {%- capture imgs_width_1500 -%}
                 {{ slide.img1 | image_url: width: 1500 }}, {{ slide.img2 | image_url: width: 1500 }}, {{ slide.img3 | image_url: width: 1500 }}, {{ slide.img4 | image_url: width: 1500 }}, {{ slide.img5 | image_url: width: 1500 }}
               {%-endcapture-%}
               {%- assign imgs_width_1500 = imgs_width_1500 | split: ", " -%}
-              <!-- init image width 1780 -->
+
               {%- capture imgs_width_1780 -%}
                 {{ slide.img1 | image_url: width: 1780 }}, {{ slide.img2 | image_url: width: 1780 }}, {{ slide.img3 | image_url: width: 1780 }}, {{ slide.img4 | image_url: width: 1780 }}, {{ slide.img5 | image_url: width: 1780 }}
               {%-endcapture-%}
               {%- assign imgs_width_1780 = imgs_width_1780 | split: ", " -%}
-              <!-- init image width 2000 -->
+
               {%- capture imgs_width_2000 -%}
                 {{ slide.img1 | image_url: width: 2000 }}, {{ slide.img2 | image_url: width: 2000 }}, {{ slide.img3 | image_url: width: 2000 }}, {{ slide.img4 | image_url: width: 2000 }}, {{ slide.img5 | image_url: width: 2000 }}
               {%-endcapture-%}
               {%- assign imgs_width_2000 = imgs_width_2000 | split: ", " -%}
-              <!-- init image width 3000 -->
+
               {%- capture imgs_width_3000 -%}
                 {{ slide.img1 | image_url: width: 3000 }}, {{ slide.img2 | image_url: width: 3000 }}, {{ slide.img3 | image_url: width: 3000 }}, {{ slide.img4 | image_url: width: 3000 }}, {{ slide.img5 | image_url: width: 3000 }}
               {%-endcapture-%}
               {%- assign imgs_width_3000 = imgs_width_3000 | split: ", " -%}
-              <!-- init image width 3840 -->
+
               {%- capture imgs_width_3840 -%}
                 {{ slide.img1 | image_url: width: 3840 }}, {{ slide.img2 | image_url: width: 3840 }}, {{ slide.img3 | image_url: width: 3840 }}, {{ slide.img4 | image_url: width: 3840 }}, {{ slide.img5 | image_url: width: 3840 }}
               {%-endcapture-%}
@@ -307,6 +307,9 @@
                           {%- assign img_width_2000 = imgs_width_2000[idx] -%}
                           {%- assign img_width_3000 = imgs_width_3000[idx] -%}
                           {%- assign img_width_3840 = imgs_width_3840[idx] -%}
+                          {%- assign img_title = img_titles[idx] -%}
+                            {%- assign img_link_label = img_link_labels[idx] -%}
+                            {%- assign img_link = img_links[idx] -%}
 
                           <img srcset="{%- if img_width >= 375 -%}{{ img_width_375 }} 375w,{%- endif -%}
                             {%- if img_width >= 550 -%}{{ img_width_550 }} 550w,{%- endif -%}
@@ -328,17 +331,12 @@
                         </div>
                         <div class="content">
                           <div class="inner">
-                            <!-- {%- if block.settings.title != blank -%}
+                            {%- if block.settings.title != blank -%}
                               <h3>{{ block.settings.title | escape }}</h3>
                             {%- endif -%}
                             {%- if block.settings.link_label != blank -%}
                               <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
-                            {%- endif -%}-->
-                            <h3>This is a title</h3>
-                            <a class="link animate-arrow"
-                              role="link" aria-disabled="true">
-                              Shop men<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
-                            </a>
+                            {%- endif -%}
                           </div>
                         </div>
                       </div>
