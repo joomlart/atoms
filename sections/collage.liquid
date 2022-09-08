@@ -331,11 +331,16 @@
                         </div>
                         <div class="content">
                           <div class="inner">
-                            {%- if block.settings.title != blank -%}
-                              <h3>{{ block.settings.title | escape }}</h3>
+                            {%- if img_title != blank -%}
+                              <h3>{{ img_title | escape }}</h3>
                             {%- endif -%}
-                            {%- if block.settings.link_label != blank -%}
-                              <a class="link animate-arrow" {% if block.settings.link == blank %}role="link" aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a>
+                            {%- if img_label != blank -%}
+                              <a class="link animate-arrow"
+                              {% if img_link == blank %}role="link" aria-disabled="true"
+                                 {% else %}href="{{ img_link }}"{% endif %}>
+                                  {{ img_link_label | escape }}
+                                  <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                              </a>
                             {%- endif -%}
                           </div>
                         </div>
