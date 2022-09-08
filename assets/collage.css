@@ -191,3 +191,15 @@
 .collage__item--slideshow .slideshow__controls .slider-button {
   display: none;
 }
+
+.slider.slider--everywhere .slider__slide {
+  --color-foreground: 255, 255, 255;
+  --color-button: 255, 255, 255;
+  --color-button-text: 0, 0, 0;
+  --font-heading-scale: 1.7;
+}
+
+.slider.slider--everywhere .slider__slide h3 {
+  color: rgb(var(--color-foreground));
+  font-weight: 700;
+}
