@@ -53,14 +53,11 @@
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                   {%- endif -%}
                 </div>
-                <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
-                  <div class="inner ja-content-inner">
-                    {%- if block.settings.static_img_title != blank -%}
+                {% if block.settings.static_img_title != blank and block.settings.static_img_desc != blank %}
+                  <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
+                    <div class="inner ja-content-inner">
                       <h3 class="ja-img-title">{{ block.settings.static_img_title | escape }}</h3>
-                    {%- endif -%}
-                    {%- if block.settings.static_img_desc != blank -%}
                       <p class="ja-img-desc">{{ block.settings.static_img_desc | escape }}</p>
-                    {%- endif -%}
                     {%- if block.settings.static_img_link_label != blank -%}
                       <a class="link animate-arrow ja-link-label" {% if block.settings.static_img_link == blank %}
                         role="link" aria-disabled="true"{% else %} href="{{ block.settings.static_img_link }}"{% endif %}>
@@ -68,7 +65,8 @@
                       </a>
                     {%- endif -%}
                   </div>
-                </div>
+                  </div>
+                {% endif %}
               </div>
             {%- when 'product' -%}
               {% render 'card-product',
@@ -358,14 +356,11 @@
                             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
                           {%- endif -%}
                         </div>
-                        <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
+                        {% if img_title != blank and img_desc != blank %}
+                        <div class="content ja-content">
                           <div class="inner ja-content-inner">
-                            {%- if img_title != blank -%}
                               <h3 class="ja-img-title">{{ img_title | escape }}</h3>
-                            {%- endif -%}
-                            {%- if img_desc != blank -%}
                               <p class="ja-img-desc">{{ img_desc | escape }}</p>
-                            {%- endif -%}
                             {%- if img_link_label != blank -%}
                               <a class="link animate-arrow ja-link-label"
                               {% if img_link == blank %}role="link" aria-disabled="true"
@@ -376,6 +371,7 @@
                             {%- endif -%}
                           </div>
                         </div>
+                        {% endif %}
                       </div>
                   {%- else -%}
                   <style>
