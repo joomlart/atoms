@@ -20,7 +20,7 @@
             "img2": "shopify:\/\/shop_images\/lt1-item-1_fea4e016-4948-490a-9151-f9fecbae87c1.jpg",
             "img_title2": "Final Clearance Up to 80% Off",
             "img_link_label2": "Shop Mens",
-            "img_link2": "shopify:\/\/collections\/earrings",
+            "img_link2": "shopify:\/\/collections\/shop-mens",
             "img3": "shopify:\/\/shop_images\/woman-holding-coffee-mug.jpg",
             "img_title3": "Mid Season Sale! Up to -50%",
             "img_link_label3": "Shop Women",
@@ -58,7 +58,7 @@
             "image": "shopify:\/\/shop_images\/banner-4.jpg",
             "title": "Final Clearance Up to 80% Off",
             "link_label": "Shop men",
-            "link": "shopify:\/\/collections\/earrings"
+            "link": "shopify:\/\/collections\/shop-mens"
           }
         },
         "166123731380862203-1": {
@@ -188,7 +188,7 @@
         "description": "<p>Final Clearance Up to 80% Off\t<\/p>",
         "show_description": false,
         "description_style": "uppercase",
-        "collection": "earrings",
+        "collection": "shop-mens",
         "show_card_collection": true,
         "products_to_show": 3,
         "columns_desktop": 3,
