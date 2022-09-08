@@ -164,7 +164,7 @@
       {%- if section.settings.enable_grid_list_banner_collection -%}
       {{ 'catalog-collection-card.css' | asset_url | stylesheet_tag }}
       <div id="banner-{{ section.id }}" class="collection__boxed__banner">
-          <div class="collection__boxed__banner__media" style="padding-bottom: 50%;background-image: url('{{ section.settings.banner_image | file_url }}')">
+          <div class="collection__boxed__banner__media" style="padding-bottom: 50%;background-image: url('{{ section.settings.banner_image | image_url }}')">
               <div class="collection__boxed__banner__content">
                   <a class="link-wrap" href="{{ section.settings.banner_link_text }}"></a>
                   <{{ section.settings.banner_title_heading }} class="heading">{{ section.settings.banner_title_heading_content }}</{{ section.settings.banner_title_heading }}>
@@ -443,15 +443,15 @@
       ]
     },
     {
-      "type": "richtext",
+      "type": "text",
       "id": "banner_title_heading_content",
-      "default": "<p>Winter/Spring Clothing 2022 Collections</p>",
+      "default": "Winter/Spring Clothing 2022 Collections",
       "label": "t:sections.main-collection-product-grid.settings.banner_title_heading_content.label"
     },
     {
-      "type": "richtext",
+      "type": "text",
       "id": "banner_desc_heading_content",
-      "default": "<p>Cursus elit iaculis platea integer nisl sapien egestas  Bitae donec ornare iaculis mauris nec.</p>",
+      "default": "Cursus elit iaculis platea integer nisl sapien egestas  Bitae donec ornare iaculis mauris nec.",
       "label": "t:sections.main-collection-product-grid.settings.banner_desc_heading_content.label"
     },
     {
