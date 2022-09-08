@@ -35,9 +35,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-1.png",
             "image_padding": false,
-            "static_img_title": "",
-            "static_img_desc": "",
-            "static_img_link_label": "",
+            "static_img_title": "Final Clearance Up to 80% Off",
+            "static_img_desc": "Final Clearance Up to 80% Off",
+            "static_img_link_label": "Shop men",
             "static_img_link": "shopify:\/\/collections\/shop-mens"
           }
         }
