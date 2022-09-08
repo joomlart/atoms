@@ -1,3 +1,6 @@
+.customer {
+  color: rgba(var(--color-foreground),1);
+}
 .btn-signin:hover, .btn-register:hover {
   opacity: 0.85;
 }
@@ -68,7 +71,7 @@
   border-bottom: 0.01rem solid rgba(var(--color-foreground), 0.08);
   box-shadow: none;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   position: relative;
 }
 
@@ -93,7 +96,7 @@
 .customer th,
 .customer td {
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   border: none;
   padding: 0;
 }
@@ -114,8 +117,9 @@
 }
 
 .customer thead th {
-  font-size: 1.2rem;
-  letter-spacing: 0.07rem;
+  color: var(--gradient-base-accent-1);
+  font-size: 1.4rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -445,7 +449,7 @@
 
 /* Account/Order */
 :is(.account, .order) {
-  margin: 6rem auto 9rem;
+  margin: 0 auto 9rem;
   max-width: var(--page-width);
   padding: 0 2rem;
 }
@@ -492,11 +496,14 @@
 :is(.account, .order) h2 {
   margin-top: 4rem;
   margin-bottom: 1rem;
+  font-size: calc(var(--font-body-scale) * 3rem);
+  font-weight: 600;
 }
 
 @media screen and (min-width: 990px) {
   :is(.account, .order) h2 {
     margin-top: 0;
+    font-size: calc(var(--font-body-scale) * 3.6rem);
   }
 }
 
@@ -537,9 +544,22 @@
 
 .account .btn-logout {
   padding: 1.6rem 3.2rem;
-  background-color: #212121;
-  color: #fff;
+  background-color: var(--gradient-base-accent-1);
+  color: var(--gradient-base-background-1);
   text-decoration: none;
+}
+
+.account .btn-logout:hover {
+  color: var(--gradient-base-background-1);
+  opacity: .85;
+}
+
+.account .customer-address-default {
+  padding: 0;
+}
+
+.account .customer-address-default li {
+  padding: 1.4rem 0;
 }
 
 .order td:first-of-type {
@@ -740,8 +760,11 @@ label[for='AddressProvinceNew'] {
   text-align: left;
 }
 
-.addresses ul[role="list"] {
-  max-width: 50%;
+@media screen and (min-width: 990px) {
+  .addresses ul[role="list"] {
+    max-width: 50%;
+  }
+  
 }
 
 .addresses ul {
@@ -824,6 +847,7 @@ li[data-address] > h2, .edit-address > h2 {
 }
 
 .customer-address-default li span:first-child {
+  color: var(--gradient-base-accent-1);
   width: 15rem;
   font-weight: 700;
 }

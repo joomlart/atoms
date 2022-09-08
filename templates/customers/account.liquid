@@ -1,6 +1,14 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
-<div class="customer account">
+{% comment %} Breadcrumb {% endcomment %}
+<div class="page-width masthead-address ">
+  <div class="customer-page-name">
+    {%- render 'breadcrumb' -%}
+  </div>
+</div>
+
+<div class="page-width customer account">
+  {% comment %} Title {% endcomment %}
   <div>
     <h1>{{ 'customer.account.title' | t }}</h1>
     <a href="{{ routes.account_logout_url }}" class="btn-logout">
@@ -12,6 +20,7 @@
   </div>
 
   <div>
+    {% comment %} Order {% endcomment %}
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
 
@@ -104,11 +113,63 @@
       {% endpaginate %}
     </div>
 
+
+    {% comment %} Default Address {% endcomment %}
     <div>
       <h2>{{ 'customer.account.details' | t }}</h2>
+      {% if customer.default_address %}
+      <ul class="customer-address-default">
+          <li>
+            <span>My Name</span>
+            <span>{{ customer.default_address.first_name }}{{ customer.default_address.last_name }}</span>
+          </li>
 
-      {{ customer.default_address | format_address }}
+        {% if customer.default_address.company != blank %}
+          <li>
+            <span>Company</span>
+            <span>{{ customer.default_address.company }}</span>
+          </li>
+        {% endif %}
+        {% if customer.default_address.address1 != blank %}
+          <li>
+            <span>Address1</span>
+            <span>{{ customer.default_address.address1 }}</span>
+          </li>
+        {% endif %}
+        {% if customer.default_address.address2 != blank %}
+          <li>
+            <span>Address2</span>
+            <span>{{ customer.default_address.address2 }}</span>
+          </li>
+        {% endif %}
+        {% if customer.default_address.city != blank %}
+          <li>
+            <span>City</span>
+            <span>{{ customer.default_address.city }}</span>
+          </li>
+        {% endif %}
+        {% if customer.default_address.zip != blank %}
+          <li>
+            <span>Postal/Zip Code</span>
+            <span>{{ customer.default_address.zip }}</span>
+          </li>
+        {% endif %}
+        {% if customer.default_address.phone != blank %}
+          <li>
+            <span>Phone</span>
+            <span>{{ customer.default_address.phone }}</span>
+          </li>
+        {% endif %}
+        {% if customer.default_address.country != blank %}
+          <li>
+            <span>Country</span>
+            <span>{{ customer.default_address.country }}</span>
+          </li>
+        {% endif %}
+      </ul>
+      {% endif %}
 
+      {% comment %} View Address {% endcomment %}
       <a href="{{ routes.account_addresses_url }}">
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
