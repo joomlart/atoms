@@ -187,3 +187,7 @@
 .collage .collage-card-spacing img {
   object-fit: contain;
 }
+
+.collage__item--slideshow .slideshow__controls .slider-button {
+  display: none;
+}
