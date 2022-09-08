@@ -664,7 +664,7 @@ class SlideshowComponent extends SliderComponent {
       link.classList.remove('slider-counter__link--active');
       link.removeAttribute('aria-current');
     });
-    if (this.sliderControlButtons) {
+    if (this.sliderControlButtons[this.currentPage - 1]) {
       this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
       this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
     }
