@@ -3200,6 +3200,9 @@
         },
         "slide_control": {
           "name": "Show slide control"
+        },
+        "desc": {
+          "name": "Description"
         }
       },
       "preset": {
