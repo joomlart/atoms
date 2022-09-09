@@ -3,6 +3,15 @@
 {% assign categories = section.settings.blog_categories | split: ',' %}
 
 <div class="blog-categories">
+  {%- for blog in blogs -%}
+    {{ blog.title | link_to: blog.url }}
+    {% for article in blog.articles %}
+      {{ article.title }}
+    {% endfor %} 
+  {%- endfor -%}
+  {% comment %} {%- for title in blogs.category-blog.title -%}
+    {{- title }}
+  {%- endfor -%} {% endcomment %}
   {% if section.settings.blog_categories != "" %}
     <h3 class="mod-title">Categories</h3>
     {% for category in categories %} 
