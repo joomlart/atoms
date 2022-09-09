@@ -951,8 +951,11 @@ input.mobile-facets__checkbox {
         padding-bottom: 1.5rem;
     }
     .facets__heading--vertical {
-        margin: 0 0 1.5rem 0;
+        color: rgba(var(--color-base-accent-1));
         font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 0 1.5rem 0;
+        text-transform: uppercase;
     }
     .facets__header-vertical {
         padding: 1.5rem 2rem 1.5rem 0;
@@ -977,6 +980,18 @@ input.mobile-facets__checkbox {
         display: flex;
         justify-content: space-between;
         margin-bottom: 16px;
+    }
+    .product-mode {
+        display: flex;
+        justify-content: space-between;
+        line-height: 35px;
+        gap: 10px;
+    }
+    .product-mode .mode {
+        margin: 10px 0;
+        width: 16px;
+        height: 16px;
+        display: flex;
     }
     .product-count-vertical {
         margin-left: 0;

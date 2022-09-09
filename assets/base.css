@@ -530,26 +530,25 @@ blockquote {
 }
 
 blockquote p:first-child {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 blockquote p:last-child {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  margin-top: .8rem;
-  line-height: 2;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: .8rem;
+    line-height: 2;
 }
 
 blockquote p:last-child::before {
-  content: '';
-  display: inline-block;
-  width: .8rem;
-  height: .1rem;
-  background-color: rgba(0,0,0,.5);
-  margin-right: .8rem 
+    content: '';
+    display: inline-block;
+    width: .8rem;
+    height: .1rem;
+    background-color: rgba(0, 0, 0, .5);
+    margin-right: .8rem
 }
-
 
 .caption {
     font-size: 1rem;
@@ -1088,10 +1087,41 @@ summary::-webkit-details-marker {
     flex-shrink: 0;
 }
 
+.product-list-mode .grid__item {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
 @media screen and (min-width: 750px) {
     .grid__item {
         width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
         max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    }
+    .product-list-mode .grid__item .card {
+        column-gap: var(--grid-desktop-horizontal-spacing);
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-between;
+        row-gap: var(--grid-desktop-vertical-spacing);
+    }
+    .product-list-mode .grid__item .card__inner {
+        max-width: 25%;
+        width: 25%;
+    }
+    .product-list-mode .grid__item .card__inner .card__content {
+        width: 100%;
+        max-width: 100%;
+    }
+    .product-list-mode .grid__item .card__content {
+        max-width: 70%;
+        width: 70%;
+    }
+    .product-list-mode .grid__item .card__information {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -1316,16 +1346,19 @@ deferred-media {
     display: block;
 }
 
+
 /* Icon */
+
 .icon-svg {
-  width: 2rem;
-  height: 2rem;
-  margin-right: .8rem;
-  float: left;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .8rem;
+    float: left;
 }
 
 
 /* component-button */
+
 
 /* Button - default */
 
@@ -1382,7 +1415,7 @@ button.shopify-payment-button__button--unbranded {
     transition: box-shadow var(--duration-short) ease;
     -webkit-appearance: none;
     appearance: none;
-    background-color: rgba(var(--color-button),var(--alpha-button-background));
+    background-color: rgba(var(--color-button), var(--alpha-button-background));
 }
 
 .button:before,
@@ -1396,7 +1429,7 @@ button.shopify-payment-button__button--unbranded {
     inset: 0;
     z-index: -1;
     border-radius: var(--buttons-radius-outset);
-    box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow),var(--shadow-opacity));
+    box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
 .button:after,
@@ -1408,7 +1441,7 @@ button.shopify-payment-button__button--unbranded {
     inset: var(--buttons-border-width);
     z-index: 1;
     border-radius: var(--buttons-radius);
-    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text),var(--border-opacity)),0 0 0 var(--buttons-border-width) rgba(var(--color-button),var(--alpha-button-background));
+    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)), 0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
     transition: box-shadow var(--duration-short) ease;
 }
 
@@ -2329,7 +2362,7 @@ input[type='checkbox'] {
 @media screen and (min-width: 990px) {
     .header--top-left,
     .header--middle-left:not(.header--has-menu) {
-        grid-template-areas: 'heading icons' 'navigation navigation';
+        grid-template-areas: 'heading icons''navigation navigation';
         grid-template-columns: 1fr auto;
     }
     .header--middle-left {
@@ -2338,7 +2371,7 @@ input[type='checkbox'] {
         column-gap: 2rem;
     }
     .header--top-center {
-        grid-template-areas: 'left-icon heading icons' 'navigation navigation navigation';
+        grid-template-areas: 'left-icon heading icons''navigation navigation navigation';
     }
     .header:not(.header--middle-left) .header__inline-menu {
         margin-top: 1.05rem;
@@ -2700,7 +2733,7 @@ details[open]>.header__submenu {
     color: rgb(var(--color-foreground));
 }
 
-details[open] > .header__menu-item {
+details[open]>.header__menu-item {
     text-decoration: none;
 }
 

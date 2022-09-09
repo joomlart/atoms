@@ -39,6 +39,9 @@
           {{ 'sidebar-carousels.css' | asset_url | stylesheet_tag }}
           {{ 'flickity.js' | asset_url | script_tag }}
           <div class="cards-sidebar-carousels">
+            <div class="active-facets">
+              <h2 class="facets__heading facets__heading--vertical caption-large text-body">Collection</h2>
+            </div>
             <div class="carousel">
               {% for product in collection.products limit: section.settings.carousels_total_products %}
                 {% assign lazy_load = false %}
@@ -59,33 +62,16 @@
                 {% endfor %}
               </div>
           </div>
-          {% assign card_sidebar_nav_range = section.settings.navigation_amount %}
           {% style %}
-          @media only screen and ( min-width: 1201px ) { 
-            {% if card_sidebar_nav_range == 1 %}
             .cards-sidebar-carousels .carousel-cell {
-              width: calc(100% -10px );
+                width: 100%;
             }
-            {% elsif card_sidebar_nav_range == 2 %}
-            .cards-sidebar-carousels .carousel-cell {
-              width: calc(49% - 10px);
+            .flickity-page-dots .dot {
+              background: {{ section.settings.navigation_color }};
             }
-            {% elsif card_sidebar_nav_range == 3 %}
-            .cards-sidebar-carousels .carousel-cell {
-              width: calc(32% - 10px);
+            .flickity-button-icon {
+              color: {{ section.settings.navigation_color }};
             }
-            {% elsif card_sidebar_nav_range == 4 %}
-            .cards-sidebar-carousels .carousel-cell {
-              width: calc(24% - 10px);
-            }
-            {% endif %}
-          }
-          .flickity-page-dots .dot {
-            background: {{ section.settings.navigation_color }};
-          }
-          .flickity-button-icon {
-            color: {{ section.settings.navigation_color }};
-          }
           {% endstyle %}
           <script>
             var elem = document.querySelector('.cards-sidebar-carousels .carousel');
@@ -97,16 +83,16 @@
                 pageDots: {{ section.settings.enable_carousel_page_dots }},
             });
             {% if request.design_mode %}
-            document.addEventListener("shopify:section:load", function(event) {
-              var elem = document.querySelector('.cards-sidebar-carousels .carousel');
-              var flkty = new Flickity( elem, {
-                contain: true,
-                imagesLoaded: true,
-                lazyLoad: 2,
-                wrapAround: false,
-                pageDots: {{ section.settings.enable_carousel_page_dots }},
-              });
-            });
+              document.addEventListener("shopify:section:load", function(event) {
+                var elem = document.querySelector('.cards-sidebar-carousels .carousel');
+                var flkty = new Flickity( elem, {
+                  contain: true,
+                  imagesLoaded: true,
+                  lazyLoad: 2,
+                  wrapAround: false,
+                  pageDots: {{ section.settings.enable_carousel_page_dots }},
+                });
+             });
             {% endif %}
           </script>
         {% endif %}
@@ -117,8 +103,8 @@
         <facet-filters-form class="facets facets-vertical-sort small-hide no-js-hidden">
           <form class="facets-vertical-form" id="FacetSortForm">
             <div class="product-mode">
-              <span><button id="btn-1" type="button">a</button></span>
-              <span><button id="btn-2" type="button">b</button></span>
+              <div class="mode grid-mode" id="grid-mode">{% render 'icon-grid' %}</div>
+              <div class="mode list-mode" id="list-mode">{% render 'icon-list' %}</div>
             </div>
             <div class="product-count-vertical light" role="status">
               <h2 class="product-count__text text-body">
@@ -250,23 +236,23 @@
 
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', (event) => {
-    const btn1 = document.getElementById('btn-1');
-    const btn2 = document.getElementById('btn-2');
+    const gridMode = document.getElementById('grid-mode');
+    const listMode = document.getElementById('list-mode');
     const productGrid = document.getElementById('product-grid');
 
-    if (btn1){
-      btn1.addEventListener('click', function () {
-        productGrid.classList.add('classA');
-        if (productGrid.classList.contains('classB')){
-          productGrid.classList.remove('classB');
+    if (gridMode){
+      gridMode.addEventListener('click', function () {
+        productGrid.classList.add('product-grid-mode');
+        if (productGrid.classList.contains('product-list-mode')){
+          productGrid.classList.remove('product-list-mode');
         }
       })
     }
-    if (btn2){
-      btn2.addEventListener('click', function () {
-        productGrid.classList.add('classA');
-        if (productGrid.classList.contains('classA')){
-          productGrid.classList.remove('classA');
+    if (listMode){
+      listMode.addEventListener('click', function () {
+        productGrid.classList.add('product-list-mode');
+        if (productGrid.classList.contains('product-grid-mode')){
+          productGrid.classList.remove('product-grid-mode');
         }
       })
     }

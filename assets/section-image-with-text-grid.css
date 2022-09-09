@@ -106,6 +106,9 @@
         max-width: 100%;
         padding: 16px;
     }
+    .image-with-text-grid .grid__item .image-with-text__content .image-with-text__heading {
+        font-size: 32px;
+    }
     .image-with-text-grid .grid__item .image-with-text__content .image-with-text__text {
         display: none;
     }
