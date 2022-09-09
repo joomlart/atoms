@@ -3,20 +3,7 @@
 {% assign categories = section.settings.blog_categories | split: ',' %}
 
 <div class="blog-categories">
-  {{ blog }}
-  <br>
-  <h3 style="color:red">{{ blogs }}</h3>
-
-  {% for article in blogs.category-blog %}
-    {{ article }}
-    <!-- {{- article.title | link_to: article.url }} -->
-  {% endfor %}
-
   {%- for blog in section.blogs -%}
-    <h3 style="color:red">{{ blog }}</h3>
-    <br>
-    <h3 style="color:red">{{ blog.title }}</h3>
-    <br>
     {{ blog.title | link_to: blog.url }}
     {% for article in blog.articles %}
       {{ article.title }}
