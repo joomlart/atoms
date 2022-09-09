@@ -163,40 +163,39 @@
       {%- if section.settings.enable_boxed_banner -%}
         {{ 'section-image-with-text-grid.css' | asset_url | stylesheet_tag }}
         <div id="boxed-banner-{{ section.id }}" class="image-with-text image-with-text-grid">
-          <div class="page-width section-{{ section.id }}-padding isolate">
-            <div class="grid grid--1-col">
-              <div class="grid__item">
-                {%- if section.settings.boxed_banner_image != blank -%}
-                <div class="media media--{{ section.settings.boxed_banner_image_ratio }} media--transparent {% if section.settings.boxed_banner_image == blank %} placeholder{% endif %}">
-                  {%-liquid
-                    assign image_height = section.settings.boxed_banner_image.width | divided_by: section.settings.boxed_banner_image.aspect_ratio
-                    assign image_class = ""
-                    assign sizes = "100%"
-                  -%}
-                  {{ section.settings.boxed_banner_image | image_url: width: 1500 | image_tag:
-                    loading: 'lazy',
-                    width: section.settings.boxed_banner_image.width,
-                    height: image_height,
-                    class: image_class,
-                    sizes: sizes,
-                    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
-                    alt: section.settings.boxed_banner_image.alt | escape
-                  }}
-                </div>
-                {%- endif -%}
-        
-                <div class="image-with-text__content">
-                  <div class="inner">
-                    <{{ section.settings.boxed_banner_heading }} class="image-with-text__heading">
-                      {{ section.settings.boxed_banner_title }}
-                    </{{ section.settings.boxed_banner_heading }}>
-                    <div class="image-with-text__text rte">{{ section.settings.boxed_banner_content }}</div>
-                    <a role="link" aria-disabled="true" href="{{ section.settings.boxed_banner_link }}" class="image-with-text__link">
-                      {{ section.settings.boxed_banner_link_text }}{%- render 'icon-chevron-right' -%}
-                    </a>
-                  </div>
+          <div class="grid grid--1-col">
+            <div class="grid__item">
+              {%- if section.settings.boxed_banner_image != blank -%}
+              <div class="media media--{{ section.settings.boxed_banner_image_ratio }} media--transparent {% if section.settings.boxed_banner_image == blank %} placeholder{% endif %}">
+                {%-liquid
+                  assign image_height = section.settings.boxed_banner_image.width | divided_by: section.settings.boxed_banner_image.aspect_ratio
+                  assign image_class = ""
+                  assign sizes = "100%"
+                -%}
+                {{ section.settings.boxed_banner_image | image_url: width: 1500 | image_tag:
+                  loading: 'lazy',
+                  width: section.settings.boxed_banner_image.width,
+                  height: image_height,
+                  class: image_class,
+                  sizes: sizes,
+                  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                  alt: section.settings.boxed_banner_image.alt | escape
+                }}
+              </div>
+              {%- endif -%}
+      
+              <div class="image-with-text__content">
+                <div class="inner">
+                  <{{ section.settings.boxed_banner_heading }} class="image-with-text__heading">
+                    {{ section.settings.boxed_banner_title }}
+                  </{{ section.settings.boxed_banner_heading }}>
+                  <div class="image-with-text__text rte">{{ section.settings.boxed_banner_content }}</div>
+                  <a role="link" aria-disabled="true" href="{{ section.settings.boxed_banner_link }}" class="image-with-text__link">
+                    {{ section.settings.boxed_banner_link_text }}{%- render 'icon-chevron-right' -%}
+                  </a>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       {%- endif -%}

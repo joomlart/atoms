@@ -22,31 +22,32 @@
 }
 
 .image-with-text-grid .grid__item .content {
-    padding: var(--grid-desktop-horizontal-spacing);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    align-items: center;
     bottom: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
+    justify-content: center;
+    left: 0;
+    padding: var(--grid-desktop-horizontal-spacing);
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
 }
 
 .image-with-text-grid .grid__item .image-with-text__content {
+    align-items: center;
+    bottom: 0;
     color: rgb(var(--color-foreground));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    left: 0;
     padding: var(--grid-desktop-horizontal-spacing);
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: left;
     text-align: left;
-    flex-wrap: wrap;
+    top: 0;
 }
 
 .image-with-text-grid .grid__item .image-with-text__content .image-with-text__heading {
