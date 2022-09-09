@@ -173,6 +173,7 @@
               {{ slide.img_desc1 }}, {{ slide.img_desc2 }}, {{ slide.img_desc3 }}
             {%- endcapture -%}
             {%- assign img_descs = img_descs | split: ", " -%}
+            {{ slide.img_desc1 }}
 
             <!-- handle label link for image-->
             {%- capture img_link_labels -%}
