@@ -226,5 +226,8 @@
 
 .collage__item--slideshow .slideshow__controls {
   border:  0;
+}
+
+.collage__item--slideshow slideshow-component:not(.page-width) .slider-buttons {
   bottom:  3.2rem;
 }
