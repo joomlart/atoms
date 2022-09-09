@@ -216,7 +216,7 @@
 
 .has-sidebar .list-tag ul li a:hover {
   background-color: var(--color-base-accent-1);
-  color: #fff;
+  color: var(--color-base-background-1);
 }
 
 
