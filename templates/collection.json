@@ -37,7 +37,7 @@
         "enable_sidebar_top_seller": true,
         "enable_carousel_page_dots": true,
         "carousels_total_products": 8,
-        "navigation_amount": 1,
+        "navigation_amount": 4,
         "navigation_color": "#000000"
       }
     }
