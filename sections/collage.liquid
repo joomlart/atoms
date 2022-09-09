@@ -55,7 +55,7 @@
                 </div>
                 {% if block.settings.static_img_title != blank and block.settings.static_img_desc != blank %}
                   <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
-                    <div class="inner ja-content-inner">
+                    <div class="slideshow__text banner__box content-container content-container--full-width-mobile slideshow__text--center slideshow__text-mobile--center">
                       <h3 class="ja-img-title">{{ block.settings.static_img_title | escape }}</h3>
                       <p class="ja-img-desc">{{ block.settings.static_img_desc | escape }}</p>
                     {%- if block.settings.static_img_link_label != blank -%}
@@ -357,8 +357,8 @@
                           {%- endif -%}
                         </div>
                         {% if img_title != blank and img_desc != blank %}
-                        <div class="content ja-content">
-                          <div class="inner ja-content-inner">
+                        <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
+                          <div class="slideshow__text banner__box content-container content-container--full-width-mobile slideshow__text--center slideshow__text-mobile--center">
                               <h3 class="ja-img-title">{{ img_title | escape }}</h3>
                               <p class="ja-img-desc">{{ img_desc | escape }}</p>
                             {%- if img_link_label != blank -%}
