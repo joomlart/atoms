@@ -3,6 +3,10 @@
   {% if section.settings.blog_show_tags %}
     <h3 class="mod-title">Tags</h3>
     <ul>
+        {{ blog.articles }}
+        <br>
+        {{ blog.url }}
+        <br>
       {% if blog.all_tags.size >= 1 %}
         {%- for tag in blog.all_tags -%}
           <li>
