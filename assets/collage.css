@@ -202,6 +202,13 @@
 .collage__item--slideshow .slider.slider--everywhere .slider__slide h3 {
   color: rgb(var(--color-foreground));
   font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 1.4;
+  margin-bottom: 1.6rem;
+}
+
+.collage__item--slideshow .slider.slider--everywhere .slider__slide p {
+  color: rgb(var(--color-foreground),0.8);
 }
 
 .collage__item--slideshow .slider.slider--everywhere .slider__slide .banner__box {
@@ -209,7 +216,7 @@
   align-items: start;
   max-width: 50%;
   min-width: 50%;
-  padding:  0;
+  padding:  0 5rem 0 0;
 }
 
 .collage__item--slideshow .slider.slider--everywhere .slider__slide .link {
