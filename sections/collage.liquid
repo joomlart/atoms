@@ -334,8 +334,6 @@
                           {%- assign img_link_label = img_link_labels[idx] -%}
                           {%- assign img_link = img_links[idx] -%}
                           {%- assign img_desc = img_descs[idx] -%}
-                            {{ img_desc }}
-                            <br>
 
                           <img srcset="{%- if img_width >= 375 -%}{{ img_width_375 }} 375w,{%- endif -%}
                             {%- if img_width >= 550 -%}{{ img_width_550 }} 550w,{%- endif -%}
@@ -363,6 +361,8 @@
                           <div class="slideshow__text banner__box content-container content-container--full-width-mobile slideshow__text--center slideshow__text-mobile--center">
                               <h3 class="ja-img-title">{{ img_title | escape }}</h3>
                               {{ img_desc | escape }}
+                            <br>
+                            {{ img_desc }}
                             {%- if img_link_label != blank -%}
                               <a class="link animate-arrow ja-link-label"
                               {% if img_link == blank %}role="link" aria-disabled="true"
