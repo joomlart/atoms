@@ -57,7 +57,7 @@
                   <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
                     <div class="slideshow__text banner__box content-container content-container--full-width-mobile slideshow__text--center slideshow__text-mobile--center">
                       <h3 class="ja-img-title">{{ block.settings.static_img_title | escape }}</h3>
-                      <p class="ja-img-desc">{{ block.settings.static_img_desc | escape }}</p>
+                      {{ block.settings.static_img_desc }}
                     {%- if block.settings.static_img_link_label != blank -%}
                       <a class="link animate-arrow ja-link-label" {% if block.settings.static_img_link == blank %}
                         role="link" aria-disabled="true"{% else %} href="{{ block.settings.static_img_link }}"{% endif %}>
@@ -360,9 +360,7 @@
                         <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
                           <div class="slideshow__text banner__box content-container content-container--full-width-mobile slideshow__text--center slideshow__text-mobile--center">
                               <h3 class="ja-img-title">{{ img_title | escape }}</h3>
-                              {{ img_desc | escape }}
-                            <br>
-                            {{ img_desc }}
+                              {{ img_desc }}
                             {%- if img_link_label != blank -%}
                               <a class="link animate-arrow ja-link-label"
                               {% if img_link == blank %}role="link" aria-disabled="true"
