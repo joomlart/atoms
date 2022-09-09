@@ -7,8 +7,9 @@
   <br>
   <h3 style="color:red">{{ blogs }}</h3>
 
-  {% for article in blogs.category-blog.articles %}
-    {{- article.title | link_to: article.url }}
+  {% for article in blogs.category-blog %}
+    {{ article }}
+    <!-- {{- article.title | link_to: article.url }} -->
   {% endfor %}
 
   {%- for blog in section.blogs -%}
