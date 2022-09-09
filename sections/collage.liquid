@@ -64,7 +64,7 @@
                         {{ block.settings.static_img_link_label | escape }}<span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
                       </a>
                     {%- endif -%}
-                  </div>
+                    </div>
                   </div>
                 {% endif %}
               </div>
@@ -334,6 +334,8 @@
                           {%- assign img_link_label = img_link_labels[idx] -%}
                           {%- assign img_link = img_links[idx] -%}
                           {%- assign img_desc = img_descs[idx] -%}
+                            {{ img_desc }}
+                            <br>
 
                           <img srcset="{%- if img_width >= 375 -%}{{ img_width_375 }} 375w,{%- endif -%}
                             {%- if img_width >= 550 -%}{{ img_width_550 }} 550w,{%- endif -%}
