@@ -173,7 +173,6 @@
               {{ slide.img_desc1 }}, {{ slide.img_desc2 }}, {{ slide.img_desc3 }}
             {%- endcapture -%}
             {%- assign img_descs = img_descs | split: ", " -%}
-            {{ slide.img_desc1 }}
 
             <!-- handle label link for image-->
             {%- capture img_link_labels -%}
@@ -361,7 +360,7 @@
                         <div class="content ja-content">
                           <div class="inner ja-content-inner">
                               <h3 class="ja-img-title">{{ img_title | escape }}</h3>
-                              <p class="ja-img-desc">{{ img_desc | escape }}</p>
+                              {{ img_desc | escape }}
                             {%- if img_link_label != blank -%}
                               <a class="link animate-arrow ja-link-label"
                               {% if img_link == blank %}role="link" aria-disabled="true"
@@ -374,24 +373,6 @@
                         </div>
                         {% endif %}
                       </div>
-                  {%- else -%}
-                  <style>
-                    #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after {
-                      opacity: {{ slide.image_overlay_opacity | divided_by: 100.0 }};
-                    }
-                  </style>
-                  <div class="slideshow__slide grid__item grid--1-col slider__slide"
-                       id="Slide-{{ section.id }}-1"
-                          {{ block.shopify_attributes }}
-                       role="group"
-                       aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
-                       aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-                       tabindex="-1"
-                  >
-                    <div class="slideshow__media banner__media media placeholder">
-                      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-                    </div>
-                  </div>
                   {%- endfor -%}
                 </div>
 
