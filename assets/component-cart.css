@@ -1,3 +1,6 @@
+.reset-opacity {
+  color: rgba(var(--color-foreground));
+}
 .cart {
   position: relative;
   display: block;

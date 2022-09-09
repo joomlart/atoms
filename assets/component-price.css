@@ -1,7 +1,7 @@
 .price {
-    font-size: 1.3rem;
-    line-height: calc(2 + 0.5 / var(--font-body-scale));
-    color: rgb(var(--color-base-accent-1));
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: calc(2 + 0/ var(--font-body-scale));
 }
 
 .price>* {
@@ -14,7 +14,7 @@
 }
 
 .price--end {
-    text-align: right;
+    text-align: center;
 }
 
 .price .price-item {
