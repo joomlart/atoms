@@ -210,12 +210,12 @@
 .has-sidebar .list-tag ul li a{
   padding: .4rem .8rem;
   background-color: #eee;
-  color: #212121;
+  color: var(--color-base-accent-1);
   text-decoration: none;
 }
 
 .has-sidebar .list-tag ul li a:hover {
-  background-color: #212121;
+  background-color: var(--color-base-accent-1);
   color: #fff;
 }
 
@@ -245,7 +245,7 @@
 }
 
 .has-sidebar .latest-blog-posts-list .post-item h5 a{
-  color: #212121;
+  color: var(--color-base-accent-1);
   text-decoration: none;
   font-size: 1.4rem;
   font-weight: 500;
@@ -261,7 +261,7 @@
 }
 
 .has-sidebar .not-found {
-  color: #212121;
+  color: var(--color-base-accent-1);
   font-weight: 700;
   padding: .4rem .8rem;
   background-color: #eee;

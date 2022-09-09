@@ -10,7 +10,7 @@
   padding-bottom: 5rem;
   padding-top: 5rem;
   display: block;
-  border-top: 2px solid #212121;
+  border-top: 2px solid var(--color-base-accent-1);
 }
 
 @media screen and (max-width: 749px) {

@@ -303,12 +303,12 @@ blockquote {
 .previous_next_buttons .btn {
   padding: 1.6rem 3.2rem;
   background-color: #eee;
-  color: #212121;
+  color: var(--color-base-accent-1);
   text-decoration: none;
 }
 
 .previous_next_buttons .btn:hover {
-  background-color: #212121;
+  background-color: var(--color-base-accent-1);
   color: #fff;
 }
 
@@ -335,7 +335,7 @@ blockquote {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #212121;
+  color: var(--color-base-accent-1);
 }
 
 .social-media li svg {

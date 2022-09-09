@@ -100,7 +100,7 @@
 }
 
 .collection__title .inner {
-  border-top: 2px solid #212121;
+  border-top: 2px solid var(--color-base-accent-1);
   border-bottom: 1px solid rgba(52,58,64,.12);
   padding: 1.6rem 0;
   display: -webkit-box;

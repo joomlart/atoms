@@ -1,18 +1,21 @@
 .cart-items td,
 .cart-items th {
-  padding: 0;
-  border: none;
+  padding: 1.6rem;
+  border: 1px solid #ddd;
 }
 
 .cart-items th {
-  text-align: left;
-  padding-bottom: 1.8rem;
-  opacity: 0.85;
-  font-weight: normal;
+  background-color: var(--gradient-base-background-2);
+  color: var(--gradient-base-accent-1);
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+  padding: .8rem 1.6rem;
 }
 
 .cart-item__quantity-wrapper {
   display: flex;
+  justify-content: center;
 }
 
 .cart-item__totals {
@@ -273,10 +276,6 @@ cart-remove-button .icon-remove {
 
   .cart-items thead th:first-child {
     width: 50%;
-  }
-
-  .cart-items th + th {
-    padding-left: 4rem;
   }
 
   .cart-items td {
