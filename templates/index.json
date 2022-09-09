@@ -15,17 +15,17 @@
             "accessibility_info": "Slideshow about our brand",
             "img1": "shopify:\/\/shop_images\/banner-5.jpg",
             "img_title1": "Winter\/Spring Clothing 2020 Collections",
-            "img_desc1": "Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.",
+            "img_desc1": "<p>Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.<\/p>",
             "img_link_label1": "Shop Collection",
             "img_link1": "shopify:\/\/collections\/shop-mens",
             "img2": "shopify:\/\/shop_images\/banner-9.jpg",
             "img_title2": "Winter\/Spring Clothing 2020 Collections",
-            "img_desc2": "Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.",
+            "img_desc2": "<p>Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.<\/p>",
             "img_link_label2": "Shop Collection",
             "img_link2": "shopify:\/\/collections\/shop-women",
             "img3": "shopify:\/\/shop_images\/banner-10.jpg",
             "img_title3": "Winter\/Spring Clothing 2020 Collections",
-            "img_desc3": "Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.",
+            "img_desc3": "<p>Cursus elit, iaculis platea integer nisl sapien egestas. Bitae donec ornare iaculis mauris nec.<\/p>",
             "img_link_label3": "Shop Collection",
             "img_link3": "shopify:\/\/collections\/best-seller"
           }
@@ -440,6 +440,58 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16626870708ea865f0": {
+      "type": "slideshow",
+      "blocks": {
+        "16626870707f450645-0": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "16626870707f450645-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16626870707f450645-0",
+        "16626870707f450645-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
@@ -452,6 +504,7 @@
     "166131584236e6d07c",
     "166174667909d0a0d7",
     "1661322877e178c8dc",
-    "16613283351e6dfff3"
+    "16613283351e6dfff3",
+    "16626870708ea865f0"
   ]
 }
