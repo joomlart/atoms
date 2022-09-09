@@ -26,7 +26,6 @@
   }
 
 {%- endstyle -%}
-
 <div class="section-{{ section.id }}-padding">
   <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
@@ -162,17 +161,54 @@
         </facet-filters-form>
       {%- endif -%}
       {%- if section.settings.enable_boxed_banner -%}
-      {{ 'catalog-collection-card.css' | asset_url | stylesheet_tag }}
-      <div id="banner-{{ section.id }}" class="collection__boxed__banner">
+        {{ 'section-image-with-text-grid.css' | asset_url | stylesheet_tag }}
+      {% comment %} <div id="banner-{{ section.id }}" class="collection__boxed__banner image-with-text">
           <div class="collection__boxed__banner__media" style="padding-bottom: 50%;background-image: url('{{ section.settings.boxed_banner_image | image_url }}')">
               <div class="collection__boxed__banner__content">
-                  <a class="link-wrap" href="{{ section.settings.banner_link_text }}"></a>
+                  <a class="link-wrap" href="{{ section.settings.boxed_banner_link }}"></a>
                   <{{ section.settings.boxed_banner_heading }} class="heading">{{ section.settings.boxed_banner_title }}</{{ section.settings.boxed_banner_heading }}>
                   <p class="description">{{ section.settings.boxed_banner_content }}</p>
-                  <a class="link-uppercase " href="{{ section.settings.boxed_banner_link_text }}">{{ section.settings.boxed_banner_link_text }}{%- render 'icon-chevron-right' -%}</a>
+                  <a class="link-uppercase " href="{{ section.settings.boxed_banner_link }}">{{ section.settings.boxed_banner_link_text }}{%- render 'icon-chevron-right' -%}</a>
               </div>
           </div>
-      </div>      
+      </div> {% endcomment %}
+      <div id="boxed-banner-{{ section.id }}" class="image-with-text image-with-text-grid">
+        <div class="page-width section-{{ section.id }}-padding isolate">
+          <div class="grid grid--1-col">
+            <div class="grid__item">
+              {%- if section.settings.boxed_banner_image != blank -%}
+              <div class="media media--{{ section.settings.boxed_banner_image_ratio }} media--transparent {% if section.settings.boxed_banner_image == blank %} placeholder{% endif %}">
+                {%-liquid
+                  assign image_height = section.settings.boxed_banner_image.width | divided_by: section.settings.boxed_banner_image.aspect_ratio
+                  assign image_class = ""
+                  assign sizes = "100%"
+                -%}
+                {{ section.settings.boxed_banner_image | image_url: width: 1500 | image_tag:
+                  loading: 'lazy',
+                  width: section.settings.boxed_banner_image.width,
+                  height: image_height,
+                  class: image_class,
+                  sizes: sizes,
+                  widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                  alt: section.settings.boxed_banner_image.alt | escape
+                }}
+              </div>
+              {%- endif -%}
+      
+              <div class="content">
+                <div class="inner">
+                  <{{ section.settings.boxed_banner_heading }} class="image-with-text__heading">
+                    {{ section.settings.boxed_banner_title }}
+                  </{{ section.settings.boxed_banner_heading }}>
+                  <div class="image-with-text__text rte">{{ section.settings.boxed_banner_content }}</div>
+                  <a role="link" aria-disabled="true" href="{{ section.settings.boxed_banner_link }}" class="button">
+                    {{ section.settings.boxed_banner_link_text }}{%- render 'icon-chevron-right' -%}
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
       {%- endif -%}
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
@@ -420,31 +456,27 @@
     },
     {
       "type": "select",
-      "id": "boxed_banner_color_scheme",
+      "id": "boxed_banner_image_ratio",
       "options": [
         {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
+          "value": "portrait",
+          "label": "t:sections.main-collection-product-grid.settings.boxed_banner_image_ratio.options__2.label"
         },
         {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
+          "value": "square",
+          "label": "t:sections.main-collection-product-grid.settings.boxed_banner_image_ratio.options__3.label"
         },
         {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
+          "value": "34",
+          "label": "t:sections.main-collection-product-grid.settings.boxed_banner_image_ratio.options__4.label"
         },
         {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
+          "value": "43",
+          "label": "t:sections.main-collection-product-grid.settings.boxed_banner_image_ratio.options__1.label"
         }
       ],
-      "default": "background-1",
-      "label": "t:sections.main-collection-product-grid.settings.boxed_banner_color_scheme.label"
+      "default": "34",
+      "label": "t:sections.main-collection-product-grid.settings.boxed_banner_image_ratio.options__4.label"
     },
     {
       "type": "select",

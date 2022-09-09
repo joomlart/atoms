@@ -24,11 +24,11 @@
 }
 
 .collection-hero__text-wrapper {
-    color: var(--color-base-background-1);
+    color: #fff;
 }
 
 .collection-hero__text-wrapper h1 {
-    color: var(--color-base-background-1);
+    color: #fff;
 }
 
 @media screen and (min-width: 750px) {
