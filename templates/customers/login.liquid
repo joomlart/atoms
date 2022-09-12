@@ -1,12 +1,6 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
 
-
-
-<div class="page-width masthead">
-  <div class="customer-page-name">
-    {%- render 'breadcrumb' -%}
-  </div>
-</div>
+{%- render 'breadcrumb' -%}
 <div class="customer login">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
