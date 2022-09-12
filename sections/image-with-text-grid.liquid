@@ -54,6 +54,8 @@
               alt: block.settings.image.alt | escape
             }}
           </div>
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {%- endif -%}
 
           <div class="content">
