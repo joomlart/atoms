@@ -276,17 +276,18 @@
 /* Bog Categories */
 
 .has-sidebar .blog-categories li {
+  align-items: center;
+  display: flex;
   text-transform: capitalize;
+  padding: .4rem 0;
 }
 
-.has-sidebar .blog-categories span{
-  width: 20px;
-  height: inherit;
-  line-height: inherit;
-  display: inline-block;
+.has-sidebar .blog-categories li a {
+  text-decoration: none;
+  color: var(--gradient-base-accent-1);
 }
 
-.has-sidebar .blog-categories span svg{
-  margin-top: .8rem;
+.has-sidebar .blog-categories li a:hover {
+  color: var(--color-base-accent-3);
 }
 

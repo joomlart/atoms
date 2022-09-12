@@ -10,7 +10,7 @@
       {% if title_link == "blog" %}
         {% for categories in link.links %}
           <li class="category-item">
-            <span> {% render 'icon-doc' %}</span>
+            <span class="icon-svg"> {% render 'icon-tag' %}</span>
           {{ categories.url | link_to: categories.url }}
           </li>
         {% endfor %}
