@@ -1,12 +1,5 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
-
-{% comment %} Breadcrumb {% endcomment %}
-<div class="page-width masthead-address ">
-  <div class="customer-page-name">
-    {%- render 'breadcrumb' -%}
-  </div>
-</div>
-
+{%- render 'breadcrumb' -%}
 <div class="page-width customer account">
   {% comment %} Title {% endcomment %}
   <div>

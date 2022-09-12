@@ -7,11 +7,6 @@
   padding-bottom: 0 !important;
 }
 
-/* Breadcrumb */
-.main-blog .breadcrumbs {
-  padding: 0;
-}
-
 /* Title Page */
 .title--primary {
   max-width: 64rem;
@@ -215,8 +210,8 @@
 }
 
 .has-sidebar .list-tag ul li a:hover {
-  background-color: var(--color-base-accent-1);
-  color: var(--color-base-background-1);
+  background-color: var(--gradient-base-accent-1);
+  color: var(--gradient-base-background-1);
 }
 
 
