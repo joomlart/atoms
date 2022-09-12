@@ -3,7 +3,7 @@
 {% assign categories = section.settings.blog_categories | split: ',' %}
 
 <div class="blog-categories">
-  {% if section.settings.blog_categories != "" %}
+  {% if section.settings.blog_categories %}
     <h3 class="mod-title">Categories</h3>
     {% for link in linklists.main-menu.links -%}
       {% assign title_link = link.title | downcase %}
