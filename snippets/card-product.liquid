@@ -178,7 +178,9 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+          {%- if show_product_description -%}
           <p class="card__desc">{{ card_product.description | truncatewords: 8, "..." }}</p>
+          {%- endif -%}
           <div class="card-information">
             
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
