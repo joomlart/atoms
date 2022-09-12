@@ -83,7 +83,8 @@
                 show_vendor: section.settings.show_vendor,
                 show_rating: section.settings.show_rating,
                 show_quick_add: section.settings.enable_quick_add,
-                section_id: section.id
+                section_id: section.id,
+                show_product_description: section.settings.show_product_description
               %}
             </div>
             {%- endfor -%}
@@ -220,6 +221,12 @@
       "default": false,
       "label": "t:sections.featured-collection-list.settings.show_rating.label",
       "info": "t:sections.featured-collection-list.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_description",
+      "label": "t:sections.featured-collection.settings.show_product_description.label",
+      "default": false
     },
     {
       "type": "checkbox",

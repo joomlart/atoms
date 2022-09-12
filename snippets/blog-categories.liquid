@@ -3,12 +3,12 @@
 {% assign categories = section.settings.blog_categories | split: ',' %}
 
 <div class="blog-categories">
-  {%- for blog in section.blogs -%}
+  {% comment %} {%- for blog in section.blogs -%}
     {{ blog.title | link_to: blog.url }}
     {% for article in blog.articles %}
       {{ article.title }}
     {% endfor %} 
-  {%- endfor -%}
+  {%- endfor -%} {% endcomment %}
   {% comment %} {%- for title in blogs.category-blog.title -%}
     {{- title }}
   {%- endfor -%} {% endcomment %}

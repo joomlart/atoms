@@ -100,8 +100,8 @@
 }
 
 .collection__title .inner {
-  border-top: 2px solid #212121;
-  border-bottom: 1px solid rgba(52,58,64,.12);
+  border-top: 2px solid rgba(var(--color-base-accent-1));
+  border-bottom: 1px solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
   padding: 1.6rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +185,11 @@
   color: rgb(var(--color-foreground));
   font-weight: 700;
   font-size: 3.06rem;
+}
+
+.collection .card-information > .price {
+  font-size: 1.3rem;
+  color: rgb(var(--color-base-accent-1));
 }
 
 .collection-product-list .card,

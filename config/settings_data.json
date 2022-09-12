@@ -78,7 +78,7 @@
     "drawer_shadow_horizontal_offset": 0,
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
-    "badge_position": "top left",
+    "badge_position": "bottom left",
     "badge_corner_radius": 0,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
@@ -97,7 +97,7 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "currency_code_enabled": true,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "sections": {
@@ -184,8 +184,8 @@
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true,
-          "margin_top": 36,
-          "padding_top": 36,
+          "margin_top": 16,
+          "padding_top": 16,
           "padding_bottom": 36
         }
       },
