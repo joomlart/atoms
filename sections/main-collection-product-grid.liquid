@@ -222,7 +222,8 @@
                     show_rating: section.settings.show_rating,
                     lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
+                    section_id: section.id,
+                    show_product_description: section.settings.show_product_description
 
                   %}
                 </li>
@@ -336,6 +337,12 @@
       "id": "enable_quick_add",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_description",
+      "label": "t:sections.main-collection-product-grid.settings.show_product_description.label",
+      "default": false
     },
     {
       "type": "header",
