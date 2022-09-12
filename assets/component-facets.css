@@ -992,6 +992,12 @@ input.mobile-facets__checkbox {
         width: 16px;
         height: 16px;
         display: flex;
+        cursor: pointer;
+        opacity: .3;
+    }
+    .product-mode .mode:hover,
+    .product-mode .mode.active {
+        opacity: 1;
     }
     .product-count-vertical {
         margin-left: 0;
