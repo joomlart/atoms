@@ -545,10 +545,6 @@ a.product__text {
   .product--thumbnail_slider .product__media-list {
     margin-left: 0;
   }
-
-  .product__media-list .product__media-item {
-    width: 100%;
-  }
 }
 
 .product__media-icon .icon {
@@ -963,6 +959,11 @@ a.product__text {
 
 .product__media-list .media > * {
   overflow: hidden;
+}
+
+.product__media-list .product__media-item {
+  width: 100%;
+  max-width: 100%;
 }
 
 .thumbnail-list {
