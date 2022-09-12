@@ -2439,7 +2439,7 @@ input[type='checkbox'] {
 }
 
 .header__heading-link:hover .h2 {
-    color: rgb(var(--color-foreground));
+    color: rgb(var(--color-base-accent-1));
 }
 
 .header__heading-link .h2 {

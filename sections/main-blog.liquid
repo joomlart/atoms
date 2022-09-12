@@ -17,9 +17,8 @@
 {%- endstyle -%}
 
 {%- paginate blog.articles by 7 -%}
+  {%- render 'breadcrumb'- %}
   <div class="main-blog page-width section-{{ section.id }}-padding reset-opacity">
-    {%- render 'breadcrumb'- %}
-    
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
     {% for block in section.blocks %}

@@ -23,11 +23,7 @@
   <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 {%- endunless -%}
 
-<div class="page-width">
-  <div class="customer-page-name">
-    {%- render 'breadcrumb' -%}
-  </div>
-</div>
+{%- render 'breadcrumb' -%}
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %} reset-opacity">
   <div class="title-wrapper-with-link">
