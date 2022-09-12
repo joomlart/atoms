@@ -37,13 +37,18 @@
         {%- if section.settings.enable_sidebar_top_seller -%}
           {{ 'flickity.css' | asset_url | stylesheet_tag }}
           {{ 'sidebar-carousels.css' | asset_url | stylesheet_tag }}
+          {% comment %}theme-check-disable{% endcomment %}
           {{ 'flickity.js' | asset_url | script_tag }}
+          {% comment %}theme-check-disable{% endcomment %}
           <div class="cards-sidebar-carousels">
             <div class="active-facets">
               <h2 class="facets__heading facets__heading--vertical caption-large text-body">Collection</h2>
             </div>
             <div class="carousel">
-              {% for product in collection.products limit: section.settings.carousels_total_products %}
+              {% for 
+                product in collection.products 
+                limit: section.settings.carousels_total_products 
+              %}
                 {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}
