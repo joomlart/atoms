@@ -214,8 +214,9 @@
 }
 
 .reset-opacity {
-  color: rgba(var(--color-foreground));
+    color: rgba(var(--color-foreground));
 }
+
 
 /* base */
 
@@ -1090,9 +1091,17 @@ summary::-webkit-details-marker {
     flex-shrink: 0;
 }
 
+.grid__item .card__desc {
+    display: none;
+}
+
 .product-list-mode .grid__item {
     width: 100% !important;
     max-width: 100% !important;
+}
+
+.product-list-mode .grid__item .card__desc {
+    display: block;
 }
 
 @media screen and (min-width: 750px) {
