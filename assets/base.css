@@ -213,6 +213,9 @@
     --font-body-family: "HKGrotesk";
 }
 
+.reset-opacity {
+  color: rgba(var(--color-foreground));
+}
 
 /* base */
 
