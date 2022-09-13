@@ -55,6 +55,8 @@
             <div class="inner">
             {%- if block.settings.collection.title != blank -%}
               <h2 class="title {{ section.settings.heading_size }}">{{ block.settings.collection.title | escape }}</h2>
+            {%- else -%}
+              <h2 class="title {{ section.settings.heading_size }}">{{ 'sections.featured_collection_list.collection_name' | t }}</h2>
             {%- endif -%}
 
             {%- if block.settings.show_view_all and more_in_collection -%}
@@ -87,6 +89,21 @@
                 show_product_description: section.settings.show_product_description
               %}
             </div>
+            {%- else -%}
+              {%- for i in (1..4) -%}
+                <div class="collection-product">
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id,
+                    show_product_description: section.settings.show_product_description
+                  %}
+                </div>
+              {%- endfor -%}
             {%- endfor -%}
           </div>
         </div>
