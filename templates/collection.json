@@ -13,7 +13,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
+        "products_per_page": 12,
         "columns_desktop": 3,
         "image_ratio": "portrait",
         "show_secondary_image": true,
@@ -36,10 +36,10 @@
         "boxed_banner_link_text": "Shop Collection",
         "boxed_banner_link": "",
         "enable_sidebar_top_seller": true,
-        "enable_carousel_page_dots": true,
         "carousels_total_products": 8,
-        "navigation_amount": 4,
-        "navigation_color": "#000000"
+        "auto_rotate": false,
+        "slider_visual": "dots",
+        "change_slides_speed": 5
       }
     }
   },
