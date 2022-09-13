@@ -1,4 +1,5 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+
 {%- render 'breadcrumb' -%}
 <article class="article-template reset-opacity" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
@@ -87,9 +88,12 @@
     <div class="page-width footer-article">
       {% comment %} Tag Article {% endcomment %}
       <div class="tag-article">
+        <ul>
+          <h5>Tags:</h5>
         {% for tag in article.tags %}
-          tag
+          <li>#{{ tag }}</li>
         {% endfor %}
+      </ul>
       </div>
       {% comment %} Share {% endcomment %}
       <div class="social-media">
