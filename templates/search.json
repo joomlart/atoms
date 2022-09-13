@@ -3,8 +3,8 @@
     "main": {
       "type": "main-search",
       "settings": {
-        "columns_desktop": 2,
-        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "image_ratio": "portrait",
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": true,
