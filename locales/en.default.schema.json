@@ -1564,8 +1564,26 @@
         "enable_sidebar_top_seller": {
           "label": "Enable Sidebar Block - Top Seller"
         },
-        "enable_carousel_page_dots": {
-          "label": "Enable Page Dots"
+        "carousels_total_products": {
+          "label": "Total Products To Show"
+        },
+        "auto_rotate": {
+          "label": "Auto Play"
+        },
+        "slider_visual": {
+          "label": "Slider Visual",
+          "options__1": {
+            "label": "Dots"
+          },
+          "options__2": {
+            "label": "Counter"
+          },
+          "options__3": {
+            "label": "Numbers"
+          }
+        },
+        "change_slides_speed": {
+          "label": "Speed"
         },
         "image_ratio": {
           "label": "Image ratio",
