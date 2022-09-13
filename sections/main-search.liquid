@@ -61,6 +61,7 @@
 {%- endstyle -%}
 
 <div class="template-search{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %} section-{{ section.id }}-padding">
+  {% comment %} Header Search {% endcomment %}
   <div class="template-search__header page-width center">
 
     {% comment %} Title {% endcomment %}
@@ -141,6 +142,7 @@
     {%- endif -%}
   </div>
 
+  {% comment %} Filter & Result {% endcomment %}
   {%- if search.performed -%}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' and search.filters != empty -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
@@ -283,7 +285,7 @@
     {
       "type": "range",
       "id": "columns_desktop",
-      "min": 1,
+      "min": 2,
       "max": 5,
       "step": 1,
       "default": 4,
