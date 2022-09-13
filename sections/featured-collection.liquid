@@ -106,7 +106,7 @@
                 %}
               </li>
             {%- else -%}
-              {%- for i in (1..4) -%}
+              {%- for i in (1..columns_desktop) -%}
                 <li class="grid__item">
                   {% render 'card-product', show_vendor: section.settings.show_vendor %}
                 </li>
