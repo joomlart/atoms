@@ -315,7 +315,7 @@
                            aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                            tabindex="-1"
                       >
-                        <div class="slideshow__media banner__media media {% if img == blank %} placeholder{% endif %}">
+                        <div class="slideshow__media banner__media media{% if img == blank %} ja-placeholder{% endif %}">
                           {% if img != blank %}
                             {%- liquid
                               assign idx = forloop.index | minus: 1
@@ -432,7 +432,7 @@
                         <div class="slideshow__control-wrapper">
                           {%- for block_ in (1..total_img) -%}
                             <button class="slider-counter__link slider-counter__link--{{ slide.slider_visual }} link"
-                                    aria-label="{{ 'block.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                                    aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                                     aria-controls="Slider-{{ section.id }}">
                               {%- if slide.slider_visual == 'numbers' -%}
                                 {{ forloop.index }}
