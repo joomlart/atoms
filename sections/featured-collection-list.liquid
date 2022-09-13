@@ -55,6 +55,8 @@
             <div class="inner">
             {%- if block.settings.collection.title != blank -%}
               <h2 class="title {{ section.settings.heading_size }}">{{ block.settings.collection.title | escape }}</h2>
+            {%- else -%}
+              <h2 class="title {{ section.settings.heading_size }}">{{ 'sections.featured_collection_list.collection_name' | t }}</h2>
             {%- endif -%}
 
             {%- if block.settings.show_view_all and more_in_collection -%}
