@@ -166,7 +166,7 @@
             <!-- handle image title -->
             {%- capture img_titles -%}
               {{ slide.img_title1 }}, {{ slide.img_title2 }}, {{ slide.img_title3 }}
-            {%- endcapture-%}
+            {%- endcapture -%}
             {%- assign img_titles = img_titles | split: ", " -%}
 
             {%- capture img_descs -%}
@@ -177,28 +177,29 @@
             <!-- handle label link for image-->
             {%- capture img_link_labels -%}
               {{ slide.img_link_label1 }}, {{ slide.img_link_label2 }}, {{ slide.img_link_label3 }}
-            {%- endcapture-%}
+            {%- endcapture -%}
             {%- assign img_link_labels = img_link_labels | split: ", " -%}
 
             <!-- handle image link -->
             {%- capture img_links -%}
               {{ slide.img_link1 }}, {{ slide.img_link2 }}, {{ slide.img_link3 }}
-            {%- endcapture-%}
+            {%- endcapture -%}
             {%- assign img_links = img_links | split: ", " -%}
 
               <!-- clone some image fields to an array -->
               <!-- init an image array -->
               {%- capture images -%}
                 {{ slide.img1 }}, {{ slide.img2 }}, {{ slide.img3 }}
-              {%- endcapture-%}
-              {% assign images = images | split: ", " %}
-
-              {%- assign total_img = 0 -%}
-              {%- for img in images -%}
-                {% if img != blank %}
-                  {%- assign total_img = total_img | plus: 1 -%}
-                {% endif %}
-              {%- endfor -%}
+              {%- endcapture -%}
+            {% liquid
+              assign images = images | split: ", "
+              assign total_img = 0
+              for img in images
+                if img != blank
+                  assign total_img = total_img | plus: 1
+                endif
+              endfor
+            -%}
 
               <!-- init an image width array -->
               {%- capture imgs_width -%}
@@ -316,24 +317,25 @@
                       >
                         <div class="slideshow__media banner__media media {% if img == blank %} placeholder{% endif %}">
                           {% if img != blank %}
-                          {%- assign idx = forloop.index | minus: 1 -%}
-                          {%- assign img_width = imgs_width[idx] | plus: 0 -%}
-                          {%- assign img_aspect_ratio = imgs_aspect_ratio[idx] | plus: 0 -%}
-                          {%- assign img_alt = imgs_alt[idx] -%}
-                          {%- assign img_url = imgs_url[idx] -%}
-                          {%- assign img_width_375 = imgs_width_375[idx] -%}
-                          {%- assign img_width_550 = imgs_width_550[idx] -%}
-                          {%- assign img_width_750 = imgs_width_750[idx] -%}
-                          {%- assign img_width_1100 = imgs_width_1100[idx] -%}
-                          {%- assign img_width_1500 = imgs_width_1500[idx] -%}
-                          {%- assign img_width_1780 = imgs_width_1780[idx] -%}
-                          {%- assign img_width_2000 = imgs_width_2000[idx] -%}
-                          {%- assign img_width_3000 = imgs_width_3000[idx] -%}
-                          {%- assign img_width_3840 = imgs_width_3840[idx] -%}
-                          {%- assign img_title = img_titles[idx] -%}
-                          {%- assign img_link_label = img_link_labels[idx] -%}
-                          {%- assign img_link = img_links[idx] -%}
-                          {%- assign img_desc = img_descs[idx] -%}
+                            {%- liquid
+                              assign idx = forloop.index | minus: 1
+                              assign img_width = imgs_width[idx] | plus: 0
+                              assign img_aspect_ratio = imgs_aspect_ratio[idx] | plus: 0
+                              assign img_alt = imgs_alt[idx]
+                              assign img_url = imgs_url[idx]
+                              assign img_width_375 = imgs_width_375[idx]
+                              assign img_width_550 = imgs_width_550[idx]
+                              assign img_width_750 = imgs_width_750[idx]
+                              assign img_width_1100 = imgs_width_1100[idx]
+                              assign img_width_1500 = imgs_width_1500[idx]
+                              assign img_width_1780 = imgs_width_1780[idx]
+                              assign img_width_2000 = imgs_width_2000[idx]
+                              assign img_width_3000 = imgs_width_3000[idx]
+                              assign img_width_3840 = imgs_width_3840[idx]
+                              assign img_title = img_titles[idx]
+                              assign img_link_label = img_link_labels[idx]
+                              assign img_link = img_links[idx]
+                              assign img_desc = img_descs[idx] -%}
 
                           <img srcset="{%- if img_width >= 375 -%}{{ img_width_375 }} 375w,{%- endif -%}
                             {%- if img_width >= 550 -%}{{ img_width_550 }} 550w,{%- endif -%}
@@ -415,7 +417,7 @@
                 {%-endif-%}
 
                 <!-- handle button next & back for no auto-slide -->
-                {%- if total_img > 1 and slide.auto_rotate == false-%}
+                {%- if total_img > 1 and slide.auto_rotate == false -%}
                   <div id="slide-control" class="slideshow__controls ja-image-slide slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
                     <button type="button" class="slider-button slider-button--prev" name="previous"
                             aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
