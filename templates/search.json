@@ -3,8 +3,8 @@
     "main": {
       "type": "main-search",
       "settings": {
-        "columns_desktop": 2,
-        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "image_ratio": "portrait",
         "show_secondary_image": true,
         "show_vendor": true,
         "show_rating": true,
@@ -12,7 +12,7 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "article_show_date": true,
-        "article_show_author": false,
+        "article_show_author": true,
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 36
