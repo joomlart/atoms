@@ -3,7 +3,7 @@
     "main": {
       "type": "main-search",
       "settings": {
-        "columns_desktop": 2,
+        "columns_desktop": 4,
         "image_ratio": "square",
         "show_secondary_image": true,
         "show_vendor": true,
