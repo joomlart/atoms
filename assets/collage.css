@@ -251,4 +251,8 @@
   .collage__item--slideshow .banner--mobile-bottom:not(.banner--stacked) .banner__content {
     padding: 5rem;
   }
+
+  .collage__item--slideshow .slider.slider--everywhere .slider__slide .banner__box {
+    padding: 0;
+  }
 }
