@@ -135,7 +135,7 @@
                       <div class="slideshow__control-wrapper">
                         {%- for block_ in (1..section.settings.carousels_total_products) -%}
                           <button class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link"
-                                  aria-label="{{ 'block.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                                  aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
                                   aria-controls="Slider-{{ section.id }}">
                             {%- if section.settings.slider_visual == 'numbers' -%}
                               {{ forloop.index }}
@@ -331,6 +331,8 @@
 
 <script type="text/javascript">
   window.addEventListener('DOMContentLoaded', (event) => {
+    const listModeClass = 'product-list-mode';
+    const gridModeClass = 'product-grid-mode';
     const gridMode = document.getElementById('grid-mode');
     const listMode = document.getElementById('list-mode');
     const productGrid = document.getElementById('product-grid');
@@ -341,10 +343,11 @@
 
     if (gridMode){
       gridMode.addEventListener('click', function () {
-        productGrid.classList.add('product-grid-mode');
+        eraseCookie('activeListMode');
+        productGrid.classList.add(gridModeClass);
         gridMode.classList.add('active');
-        if (productGrid.classList.contains('product-list-mode')){
-          productGrid.classList.remove('product-list-mode');
+        if (productGrid.classList.contains(listModeClass)){
+          productGrid.classList.remove(listModeClass);
         }
         if (listMode.classList.contains('active')){
           listMode.classList.remove('active');
@@ -353,17 +356,62 @@
     }
     if (listMode){
       listMode.addEventListener('click', function () {
-        productGrid.classList.add('product-list-mode');
+        setCookie('activeListMode', listModeClass, 2);
+        productGrid.classList.add(listModeClass);
         listMode.classList.add('active');
-        if (productGrid.classList.contains('product-grid-mode')){
-          productGrid.classList.remove('product-grid-mode');
+        if (productGrid.classList.contains(gridModeClass)){
+          productGrid.classList.remove(gridModeClass);
         }
         if (gridMode.classList.contains('active')){
           gridMode.classList.remove('active');
         }
       })
     }
+
+    var x = getCookie('activeListMode');
+    if(x){
+      if (x === listModeClass){
+        productGrid.classList.remove(gridModeClass);
+        productGrid.classList.add(listModeClass);
+        listMode.classList.add('active');
+        if (gridMode.classList.contains('active')){
+          gridMode.classList.remove('active');
+        }
+      }
+    }
+
   });
+
+  function setCookie(name, value, days) {
+    var expires = '';
+    if(days){
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  function getCookie(name) {
+    var nameEq = name + '=';
+    if(document.cookie.length) {
+      const cookieAttrs = document.cookie.split(';');
+      for (var i = 0; i < cookieAttrs.length; i++) {
+        var attr = cookieAttrs[i];
+        while (attr.charAt(0) === ' '){
+          attr = attr.substring(1, attr.length);
+          if(attr.indexOf(nameEq) === 0){
+            return attr.substring(nameEq.length, attr.length);
+          }
+        }
+      }
+    }
+    return null;
+  }
+
+  function eraseCookie(name) {
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
 </script>
 
 
