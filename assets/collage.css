@@ -232,6 +232,10 @@
   position: absolute;
 }
 
+.collage__item--slideshow .banner--adapt_image.banner--mobile-bottom .banner__media.slideshow--placeholder {
+  background-color: rgba(var(--color-base-accent-1));
+}
+
 .collage__item--slideshow .slideshow__controls {
   border:  0;
 }
