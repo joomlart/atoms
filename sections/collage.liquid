@@ -316,27 +316,27 @@
                            tabindex="-1"
                       >
                         <div class="slideshow__media banner__media media{% if img == blank %} ja-placeholder{% endif %}">
-                          {% if img != blank %}
-                            {%- liquid
-                              assign idx = forloop.index | minus: 1
-                              assign img_width = imgs_width[idx] | plus: 0
-                              assign img_aspect_ratio = imgs_aspect_ratio[idx] | plus: 0
-                              assign img_alt = imgs_alt[idx]
-                              assign img_url = imgs_url[idx]
-                              assign img_width_375 = imgs_width_375[idx]
-                              assign img_width_550 = imgs_width_550[idx]
-                              assign img_width_750 = imgs_width_750[idx]
-                              assign img_width_1100 = imgs_width_1100[idx]
-                              assign img_width_1500 = imgs_width_1500[idx]
-                              assign img_width_1780 = imgs_width_1780[idx]
-                              assign img_width_2000 = imgs_width_2000[idx]
-                              assign img_width_3000 = imgs_width_3000[idx]
-                              assign img_width_3840 = imgs_width_3840[idx]
-                              assign img_title = img_titles[idx]
-                              assign img_link_label = img_link_labels[idx]
-                              assign img_link = img_links[idx]
-                              assign img_desc = img_descs[idx] -%}
+                          {%- liquid
+                            assign idx = forloop.index | minus: 1
+                            assign img_width = imgs_width[idx] | plus: 0
+                            assign img_aspect_ratio = imgs_aspect_ratio[idx] | plus: 0
+                            assign img_alt = imgs_alt[idx]
+                            assign img_url = imgs_url[idx]
+                            assign img_width_375 = imgs_width_375[idx]
+                            assign img_width_550 = imgs_width_550[idx]
+                            assign img_width_750 = imgs_width_750[idx]
+                            assign img_width_1100 = imgs_width_1100[idx]
+                            assign img_width_1500 = imgs_width_1500[idx]
+                            assign img_width_1780 = imgs_width_1780[idx]
+                            assign img_width_2000 = imgs_width_2000[idx]
+                            assign img_width_3000 = imgs_width_3000[idx]
+                            assign img_width_3840 = imgs_width_3840[idx]
+                            assign img_title = img_titles[idx]
+                            assign img_link_label = img_link_labels[idx]
+                            assign img_link = img_links[idx]
+                            assign img_desc = img_descs[idx] -%}
 
+                          {% if img != blank %}
                           <img srcset="{%- if img_width >= 375 -%}{{ img_width_375 }} 375w,{%- endif -%}
                             {%- if img_width >= 550 -%}{{ img_width_550 }} 550w,{%- endif -%}
                             {%- if img_width >= 750 -%}{{ img_width_750 }} 750w,{%- endif -%}
@@ -358,11 +358,14 @@
                             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
                           {%- endif -%}
                         </div>
-                        {% if img_title != blank and img_desc != blank %}
                         <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
                           <div class="slideshow__text banner__box content-container content-container--full-width-mobile slideshow__text--center slideshow__text-mobile--center">
+                            {%- if img_title != blank -%}
                               <h3 class="ja-img-title">{{ img_title | escape }}</h3>
+                            {%- endif -%}
+                            {%- if img_desc -%}
                               {{ img_desc }}
+                            {%- endif -%}
                             {%- if img_link_label != blank -%}
                               <a class="link animate-arrow ja-link-label"
                               {% if img_link == blank %}role="link" aria-disabled="true"
@@ -373,13 +376,13 @@
                             {%- endif -%}
                           </div>
                         </div>
-                        {% endif %}
                       </div>
                   {%- endfor -%}
                 </div>
 
                 <!-- handle button next & back for auto slide -->
-                {%- if slide.auto_rotate and total_img > 1 -%}
+                {%- if slide.auto_rotate -%}
+                  {%- assign total_img = 3 -%}
                   <div id="auto-slide-control" class="slideshow__controls ja-image-slide auto-slide slideshow__controls--top slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
                     <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">
                       {% render 'icon-caret' %}</button>
@@ -417,7 +420,8 @@
                 {%-endif-%}
 
                 <!-- handle button next & back for no auto-slide -->
-                {%- if total_img > 1 and slide.auto_rotate == false -%}
+                {%- if slide.auto_rotate == false -%}
+                  {%- assign total_img = 3 -%}
                   <div id="slide-control" class="slideshow__controls ja-image-slide slider-buttons no-js-hidden{% if block.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
                     <button type="button" class="slider-button slider-button--prev" name="previous"
                             aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
@@ -428,7 +432,7 @@
                         <span aria-hidden="true"> / </span>
                         <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
                         <span class="slider-counter--total">{{ total_img }}</span>
-                      {%- else-%}
+                      {%- else -%}
                         <div class="slideshow__control-wrapper">
                           {%- for block_ in (1..total_img) -%}
                             <button class="slider-counter__link slider-counter__link--{{ slide.slider_visual }} link"
