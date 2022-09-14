@@ -126,9 +126,9 @@
             "type": "account",
             "settings": {
               "login": "Login",
-              "link-login": "",
+              "link-login": "http:\/\/dev.joomlart.com\/jadev2_data\/longer\/auto\/qs.atoms.1661741728\/index.php\/homepage\/fashion-lifestyle",
               "register": "Register",
-              "link-register": ""
+              "link-register": "http:\/\/dev.joomlart.com\/jadev2_data\/longer\/auto\/qs.atoms.1661741728\/index.php\/homepage\/fashion-lifestyle"
             }
           }
         },
