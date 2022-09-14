@@ -67,6 +67,24 @@
                   </summary>
                   <div class="accordion__content rte" id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}" role="region" aria-labelledby="Summary-{{ block.id }}-{{ section.id }}">
                     {{ block.settings.row_content }}
+                    {%- if block.settings.image != blank -%}
+                      <div class="media media--{{ block.settings.image_ratio }} media--transparent {% if block.settings.image == blank %} placeholder{% endif %}">
+                        {%-liquid
+                          assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio
+                          assign image_class = ""
+                          assign sizes = "100%"
+                        -%}
+                        {{ block.settings.image | image_url: width: 1500 | image_tag:
+                          loading: 'lazy',
+                          width: block.settings.image.width,
+                          height: image_height,
+                          class: image_class,
+                          sizes: sizes,
+                          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                          alt: block.settings.image.alt | escape
+                        }}
+                      </div>
+                      {%- endif -%}
                     {{ block.settings.page.content }}
                   </div>
                 </details>
@@ -490,6 +508,35 @@
           "type": "richtext",
           "id": "row_content",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.row_content.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.image.label"
+        },
+        {
+          "type": "select",
+          "id": "image_ratio",
+          "options": [
+            {
+              "value": "portrait",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.image_ratio.options__2.label"
+            },
+            {
+              "value": "square",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.image_ratio.options__3.label"
+            },
+            {
+              "value": "34",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.image_ratio.options__4.label"
+            },
+            {
+              "value": "43",
+              "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.image_ratio.options__1.label"
+            }
+          ],
+          "default": "43",
+          "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.image_ratio.options__4.label"
         },
         {
           "type": "page",
