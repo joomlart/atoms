@@ -269,6 +269,10 @@
   grid-template-columns: 3fr 7fr;
 }
 
+.has-sidebar .blog-placeholder h5{
+  padding: var(--grid-desktop-horizontal-spacing);
+}
+
 /* Bog Categories */
 
 .has-sidebar .blog-categories li {
@@ -291,4 +295,6 @@
   max-width: 33.3%;
   text-align: center;
 }
-
+.main-blog .has-sidebar .item-placeholder {
+  max-width: 50%;
+}
