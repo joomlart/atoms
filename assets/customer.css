@@ -1,9 +1,30 @@
 .customer {
   color: rgba(var(--color-foreground),1);
 }
+
+/* Title */
+.customer h1 {
+  font-weight: 600;
+  font-size: calc(var(--font-body-scale) * 4.2rem);
+  line-height: 1.143;
+  margin: 0 auto 1.6rem;
+}
+
+@media screen and (max-width: 550px) {
+  .customer h1 {
+  font-size: calc(var(--font-body-scale) * 3.2rem);
+  }
+}
+/* Breadcrumb */
+.center-breadcrumb {
+  text-align: center;
+}
+
+
 .btn-signin:hover, .btn-register:hover {
   opacity: 0.85;
 }
+
 .customer:not(.account):not(.order):not(.addresses) {
   margin: auto;
   max-width: 40rem;
@@ -371,11 +392,6 @@
   width: 100%;
 }
 
-.action-login {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1.6rem;
-}
 #forgot_password {
   text-decoration: none;
   margin: auto;
@@ -386,11 +402,11 @@
 }
 
 #create_account {
-  width: unset;
   margin-top: 1.6rem;
   text-decoration: none;
   transition: all .35s;
   opacity: 1;
+  width:  unset;
 }
 
 #create_account:hover {
@@ -432,6 +448,16 @@
 .customer.login form > button {
   width: 100%;
 }
+
+/* ===== Create Account
+======================== */
+
+.btn-register {
+  width: 100%;
+}
+
+/* ===== Detail Account
+======================== */
 
 .activate button[name='decline'],
 .addresses li > button,
@@ -543,9 +569,9 @@
 }
 
 .account .btn-logout {
-  padding: 1.6rem 3.2rem;
   background-color: var(--gradient-base-accent-1);
   color: var(--gradient-base-background-1);
+  padding: 1.6rem 3.2rem;
   text-decoration: none;
 }
 
@@ -721,7 +747,8 @@
   font-size: 1.3rem;
 }
 
-/* Addresses */
+/* ===== Addresses
+======================== */
 
 .addresses li > button {
   margin-left: 0.5rem;
@@ -764,7 +791,6 @@ label[for='AddressProvinceNew'] {
   .addresses ul[role="list"] {
     max-width: 50%;
   }
-  
 }
 
 .addresses ul {
@@ -833,10 +859,6 @@ li[data-address] > h2, .edit-address > h2 {
   margin-top: 1.5rem;
 }
 
-.btn-register {
-  width: 100%;
-}
-
 .customer-address-default li {
   display: flex;
   padding: 1.4rem;
@@ -850,22 +872,4 @@ li[data-address] > h2, .edit-address > h2 {
   color: var(--gradient-base-accent-1);
   width: 15rem;
   font-weight: 700;
-}
-
-/* Title */
-.customer h1 {
-  font-weight: 600;
-  font-size: calc(var(--font-body-scale) * 4.2rem);
-  line-height: 1.143;
-  margin: 0 auto 1.6rem;
-}
-
-@media screen and (max-width: 550px) {
-  .customer h1 {
-  font-size: calc(var(--font-body-scale) * 3.2rem);
-  }
-}
-
-.center-breadcrumb {
-  text-align: center;
 }
