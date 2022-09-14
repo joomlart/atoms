@@ -209,10 +209,6 @@
     --shadow-visible: var(--media-shadow-visible);
 }
 
-::root {
-    --font-body-family: "HKGrotesk";
-}
-
 .reset-opacity {
     color: rgba(var(--color-foreground));
 }
