@@ -287,3 +287,8 @@
   color: var(--color-base-accent-3);
 }
 
+.main-blog .item-placeholder {
+  max-width: 33.3%;
+  text-align: center;
+}
+
