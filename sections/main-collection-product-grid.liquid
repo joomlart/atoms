@@ -335,36 +335,35 @@
     const listMode = document.getElementById('list-mode');
     const productGrid = document.getElementById('product-grid');
 
+    if (!gridMode.classList.contains('active') && !listMode.classList.contains('active')){
+      gridMode.classList.add('active');
+    }
+
     if (gridMode){
-      _addClass(gridMode, productGrid, ['product-grid-mode', 'active'], 'product-list-mode')
+      gridMode.addEventListener('click', function () {
+        productGrid.classList.add('product-grid-mode');
+        gridMode.classList.add('active');
+        if (productGrid.classList.contains('product-list-mode')){
+          productGrid.classList.remove('product-list-mode');
+        }
+        if (listMode.classList.contains('active')){
+          listMode.classList.remove('active');
+        }
+      })
     }
     if (listMode){
-      _addClass(listMode, productGrid, ['product-list-mode', 'active'], 'product-grid-mode')
+      listMode.addEventListener('click', function () {
+        productGrid.classList.add('product-list-mode');
+        listMode.classList.add('active');
+        if (productGrid.classList.contains('product-grid-mode')){
+          productGrid.classList.remove('product-grid-mode');
+        }
+        if (gridMode.classList.contains('active')){
+          gridMode.classList.remove('active');
+        }
+      })
     }
   });
-
-  function _addClass(btn, element, addClass, removeClass) {
-    btn.addEventListener('click', function () {
-      if(addClass.length){
-        if (Array.isArray(addClass)) {
-          for (let i = 0; i < addClass.length; i++) {
-            element.classList.add(addClass[i]);
-          }
-        }else {
-          element.classList.add(addClass);
-        }
-      }
-      if (removeClass.length && element.classList.contains(removeClass)){
-        if (Array.isArray(removeClass)){
-          for (let j = 0; j < removeClass.length; j++){
-            element.classList.remove(removeClass[j]);
-          }
-        }else {
-          element.classList.remove(removeClass);
-        }
-      }
-    })
-  }
 </script>
 
 
