@@ -405,7 +405,7 @@ a.product__text {
     overflow: visible;
 }
 
-.product__accordion .accordion__content img {
+.product__accordion .accordion__content .media img {
     position: static;
 }
 
