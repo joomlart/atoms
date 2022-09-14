@@ -334,22 +334,35 @@
     const productGrid = document.getElementById('product-grid');
 
     if (gridMode){
-      gridMode.addEventListener('click', function () {
-        productGrid.classList.add('product-grid-mode');
-        if (productGrid.classList.contains('product-list-mode')){
-          productGrid.classList.remove('product-list-mode');
-        }
-      })
+      _addClass(gridMode, productGrid, ['product-grid-mode', 'active'], 'product-list-mode')
     }
     if (listMode){
-      listMode.addEventListener('click', function () {
-        productGrid.classList.add('product-list-mode');
-        if (productGrid.classList.contains('product-grid-mode')){
-          productGrid.classList.remove('product-grid-mode');
-        }
-      })
+      _addClass(listMode, productGrid, ['product-list-mode', 'active'], 'product-grid-mode')
     }
   });
+
+  function _addClass(btn, element, addClass, removeClass) {
+    btn.addEventListener('click', function () {
+      if(addClass.length){
+        if (Array.isArray(addClass)) {
+          for (let i = 0; i < addClass.length; i++) {
+            element.classList.add(addClass[i]);
+          }
+        }else {
+          element.classList.add(addClass);
+        }
+      }
+      if (removeClass.length && element.classList.contains(removeClass)){
+        if (Array.isArray(removeClass)){
+          for (let j = 0; j < removeClass.length; j++){
+            element.classList.remove(removeClass[j]);
+          }
+        }else {
+          element.classList.remove(removeClass);
+        }
+      }
+    })
+  }
 </script>
 
 
