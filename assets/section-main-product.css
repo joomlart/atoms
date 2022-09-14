@@ -401,6 +401,14 @@ a.product__text {
     padding: 0 1rem;
 }
 
+.product__accordion .accordion__content .media--transparent {
+    overflow: visible;
+}
+
+.product__accordion .accordion__content img {
+    position: static;
+}
+
 .product .price .badge {
     margin-bottom: 0.5rem;
 }
