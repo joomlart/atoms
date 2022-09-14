@@ -312,6 +312,12 @@ blockquote {
   text-decoration: none;
 }
 
+@media screen and (max-width: 350px) {
+  .previous_next_buttons .btn {
+    padding: 1.2rem 1.6rem;
+  }
+}
+
 .previous_next_buttons .btn:hover {
   background-color: rgba(var(--color-base-accent-1));
   color: rgba(var(--color-base-background-1));

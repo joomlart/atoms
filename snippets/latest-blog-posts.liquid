@@ -32,7 +32,7 @@ Edit the 2 values right below: what's your blog handle and how many articles do 
                 height="64"
                 alt="{{ article.image.alt | escape }}">
             </div>
-            <h5>{{ article.title | link_to: article.url }}</h5>
+            {{ article.title | link_to: article.url }}
           </div>
         {% endfor %}
       {%- elsif blog.articles.size == 0 -%}
