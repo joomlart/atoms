@@ -342,6 +342,52 @@ a.product__text {
     padding-top: 36px;
 }
 
+.spr-starrating {
+    margin-top: 32px;
+}
+
+.spr-starrating .spr-stars span {
+    margin-top: 2px;
+    display: block;
+}
+
+#shopify-product-reviews .spr-container {
+    border: 0;
+    padding: 16px 0 0 0;
+    border-top: 1px solid rgba(var(--color-foreground), 0.08);
+}
+
+#shopify-product-reviews .spr-header .spr-header-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0 0 16px;
+    text-align: center;
+}
+
+#shopify-product-reviews .spr-header .spr-summary {
+    text-align: center;
+}
+
+#shopify-product-reviews .spr-header .spr-summary-actions {
+    clear: both;
+    display: block;
+}
+
+#shopify-product-reviews .spr-header .spr-summary-actions-newreview {
+    float: none;
+}
+
+#shopify-product-reviews .spr-header .spr-starrating {
+    margin-top: 0;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+#shopify-product-reviews .spr-header .spr-summary-caption {
+    margin-bottom: 12px;
+}
+
 @media screen and (min-width: 750px) {
     #shopify-product-reviews,
     .product__page__width {
