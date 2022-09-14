@@ -40,9 +40,11 @@
           {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}  
 
           <slideshow-component class="grid-slider-sidebar slider-mobile-gutter" role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}" aria-label="{{ section.settings.accessibility_info | escape }}">
+            {%- if collection.products.size != 0 -%}
             <div class="active-facets">
               <h2 class="facets__heading facets__heading--vertical caption-large text-body">Collection</h2>
             </div>
+            {%- endif -%}
             <div class="slideshow grid grid--1-col grid-slider"
               id="Slider-{{ section.id }}"
               aria-live="polite"
