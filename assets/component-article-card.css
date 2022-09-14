@@ -50,8 +50,9 @@
 .article-card .card__heading {
   font-size: calc(var(--font-heading-scale) * 2rem);
   font-weight: 600;
-  line-height: 3.2rem;
+  line-height: calc(1 + .6/var(--font-heading-scale));
   margin-bottom: 1.6rem;
+  letter-spacing: 0;
 }
 
 .article-card .card__heading:hover {
@@ -68,6 +69,7 @@
   color: #9E9E9E;
   margin-bottom: .8rem;
   font-size: calc(var(--font-heading-scale) * 1.1rem);
+  line-height: calc(1 + 0.6/var(--font-body-scale));
   text-transform: uppercase;
 }
 
