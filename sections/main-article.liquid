@@ -67,10 +67,10 @@
         <header class="page-width" {{ block.shopify_attributes }}>
           <h1 class="article-template__title" itemprop="headline">{{ article.title | escape }}</h1>
           {%- if block.settings.blog_show_date -%}
-            <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
+            <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
           {%- endif -%}
           {%- if block.settings.blog_show_author -%}
-            <span class="caption-with-letter-spacing" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="" itemprop="author" itemscope itemtype="http://schema.org/Person">
               <span itemprop="name">{{ article.author }}</span>
             </span>
           {%- endif -%}
@@ -139,15 +139,15 @@
     </div>
   {%- endif -%}
 
-  <div class="article-template__back element-margin-top center">
+  <div class="article-template__back element-margin-top center page-width">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
       {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
     </a>
   </div>
   {%- if blog.comments_enabled? -%}
-    <div class="article-template__comment-wrapper">
-      <div id="comments" class="page-width">
+    <div class="article-template__comment-wrapper page-width">
+      <div id="comments">
         {%- if article.comments_count > 0 -%}
           {%- assign anchorId = '#Comments-' | append: article.id -%}
 
@@ -157,7 +157,7 @@
               {%- if comment.status == 'pending' and comment.content -%}
                 <article id="{{ comment.id }}" class="article-template__comments-comment">
                   <div class="left">
-                    <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span>
+                    <span class="circle-divider">{{ comment.author }}</span>
                   </div>
                   {{ comment.content }}
                 </article>
@@ -166,7 +166,7 @@
               {%- for comment in article.comments -%}
                 <article id="{{ comment.id }}" class="article-template__comments-comment">
                   <div class="left">
-                    <span class="circle-divider caption-with-letter-spacing">{{ comment.author }}</span><span class="caption-with-letter-spacing">{{ comment.created_at | time_tag: format: 'date' }}</span>
+                    <span class="circle-divider">{{ comment.author }}</span><span>{{ comment.created_at | time_tag: format: 'date' }}</span>
                   </div>
                   {{ comment.content }}
                 </article>

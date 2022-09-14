@@ -46,6 +46,7 @@
   text-underline-offset: 0.3rem;
 }
 
+/* Title Blog */
 .article-card .card__heading {
   font-size: calc(var(--font-heading-scale) * 2rem);
   font-weight: 600;
@@ -71,10 +72,10 @@
 }
 
 .article-card__footer {
-  letter-spacing: 0.1rem;
-  font-size: 1.4rem;
-  display: flex;
   align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
 }
 
 .article-card__footer:not(:last-child) {
