@@ -202,8 +202,7 @@
 .collage__item--slideshow .slider.slider--everywhere .slider__slide h3 {
   color: rgb(var(--color-foreground));
   font-weight: 700;
-  font-size: 3.6rem;
-  line-height: 1.4;
+  font-size: calc(var(--font-heading-scale) * 2.1rem);
   margin-bottom: 1.6rem;
 }
 

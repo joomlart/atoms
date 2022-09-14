@@ -50,7 +50,6 @@
 .article-card .card__heading {
   font-size: calc(var(--font-heading-scale) * 2rem);
   font-weight: 600;
-  line-height: 3.2rem;
   margin-bottom: 1.6rem;
 }
 

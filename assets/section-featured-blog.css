@@ -99,7 +99,7 @@
 }
 
 .blog .title-wrapper-with-link .inner .h2 {
-  font-size: 1.8rem;
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
 }
 
 .blog .title-wrapper-with-link .inner {
