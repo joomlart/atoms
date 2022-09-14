@@ -121,11 +121,21 @@
               "text": "Welcome to our store",
               "link": "http:\/\/dev.joomlart.com\/jadev2_data\/longer\/auto\/qs.atoms.1661741728\/index.php\/homepage\/fashion-lifestyle"
             }
+          },
+          "884b9a93-7ad3-4d0b-b0fc-ded287c862ca": {
+            "type": "account",
+            "settings": {
+              "login": "Login",
+              "link-login": "",
+              "register": "Register",
+              "link-register": ""
+            }
           }
         },
         "block_order": [
           "announcement-bar-0",
-          "b95a1f90-2421-4b71-9d55-777ae9982d3b"
+          "b95a1f90-2421-4b71-9d55-777ae9982d3b",
+          "884b9a93-7ad3-4d0b-b0fc-ded287c862ca"
         ],
         "settings": {
           "color_scheme": "background-1",
