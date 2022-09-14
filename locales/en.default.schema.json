@@ -397,6 +397,19 @@
               "label": "Link"
             }
           }
+        },
+        "account": {
+          "name": "Account",
+          "settings": {
+            "login": {
+              "name": "Login",
+              "link": "Link"
+            },
+            "register": {
+              "name": "register",
+              "link": "Link"
+            }
+          }
         }
       }
     },
