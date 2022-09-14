@@ -90,7 +90,7 @@
               %}
             </div>
             {%- else -%}
-              {%- for i in (1..4) -%}
+              {%- for i in (1..columns_desktop) -%}
                 <div class="collection-product">
                   {% render 'card-product',
                     card_product: product,
