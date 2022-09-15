@@ -284,6 +284,12 @@
       "view_all_label": "Wyświetl wszystkie produkty w kolekcji {{ collection_name }}",
       "slider": "Suwak"
     },
+    "featured_collection_list": {
+      "view_all": "Wyświetl wszystkie",
+      "view_all_label": "Wyświetl wszystkie produkty w kolekcji {{ collection_name }}",
+      "slider": "Suwak",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Wyświetl wszystkie"
     },

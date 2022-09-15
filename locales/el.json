@@ -270,6 +270,12 @@
       "view_all_label": "Προβολή όλων των προϊόντων στη συλλογή {{ collection_name }}",
       "slider": "Ρυθμιστικό"
     },
+    "featured_collection_list": {
+      "view_all": "Προβολή όλων",
+      "view_all_label": "Προβολή όλων των προϊόντων στη συλλογή {{ collection_name }}",
+      "slider": "Ρυθμιστικό",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Προβολή όλων"
     },

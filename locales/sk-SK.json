@@ -284,6 +284,12 @@
       "view_all_label": "Pozrite si všetky produkty z kolekcie {{ collection_name }}",
       "slider": "Jazdec"
     },
+    "featured_collection_list": {
+      "view_all": "Zobraziť všetko",
+      "view_all_label": "Pozrite si všetky produkty z kolekcie {{ collection_name }}",
+      "slider": "Jazdec",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Zobraziť všetko"
     },

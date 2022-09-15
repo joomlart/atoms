@@ -270,6 +270,12 @@
       "view_all_label": "{{ collection_name }}コレクションの商品をすべて表示する",
       "slider": "スライダー"
     },
+    "featured_collection_list": {
+      "view_all": "すべてを表示する",
+      "view_all_label": "{{ collection_name }}コレクションの商品をすべて表示する",
+      "slider": "スライダー",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "すべてを表示する"
     },

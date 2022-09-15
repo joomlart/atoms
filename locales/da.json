@@ -270,6 +270,12 @@
       "view_all_label": "Se alle produkter i kollektionen {{ collection_name }}",
       "slider": "Diasshow"
     },
+    "featured_collection_list": {
+      "view_all": "Se alle",
+      "view_all_label": "Se alle produkter i kollektionen {{ collection_name }}",
+      "slider": "Diasshow",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Se alle"
     },

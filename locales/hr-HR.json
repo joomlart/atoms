@@ -277,6 +277,12 @@
       "view_all_label": "Prikaži sve proizvode iz kolekcije {{ collection_name }}",
       "slider": "Kliznik"
     },
+    "featured_collection_list": {
+      "view_all": "Prikaži sve",
+      "view_all_label": "Prikaži sve proizvode iz kolekcije {{ collection_name }}",
+      "slider": "Kliznik",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Prikaži sve"
     },

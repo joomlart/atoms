@@ -270,6 +270,12 @@
       "view_all_label": "Vis alle produktene i {{ collection_name }}-samlingen",
       "slider": "Glidefelt"
     },
+    "featured_collection_list": {
+      "view_all": "Vis alle",
+      "view_all_label": "Vis alle produktene i {{ collection_name }}-samlingen",
+      "slider": "Glidefelt",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Vis alle"
     },

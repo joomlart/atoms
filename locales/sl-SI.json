@@ -284,6 +284,12 @@
       "view_all_label": "Prikaži vse izdelke v zbirki {{ collection_name }}",
       "slider": "Drsnik"
     },
+    "featured_collection_list": {
+      "view_all": "Prikaži vse",
+      "view_all_label": "Prikaži vse izdelke v zbirki {{ collection_name }}",
+      "slider": "Drsnik",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Prikaži vse"
     },

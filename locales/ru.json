@@ -284,6 +284,12 @@
       "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\"",
       "slider": "Ползунок"
     },
+    "featured_collection_list": {
+      "view_all": "Посмотреть все",
+      "view_all_label": "Посмотреть все продукты в коллекции \"{{ collection_name }}\"",
+      "slider": "Ползунок",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Посмотреть все"
     },

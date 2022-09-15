@@ -270,6 +270,12 @@
       "view_all_label": "Näytä kaikki tuotteet kokoelmassa {{ collection_name }}",
       "slider": "Liukusäädin"
     },
+    "featured_collection_list": {
+      "view_all": "Näytä kaikki",
+      "view_all_label": "Näytä kaikki tuotteet kokoelmassa {{ collection_name }}",
+      "slider": "Liukusäädin",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Näytä kaikki"
     },

@@ -284,6 +284,12 @@
       "view_all_label": "Žr. visus kolekcijos „{{ collection_name }}“ gaminius",
       "slider": "Slankiklis"
     },
+    "featured_collection_list": {
+      "view_all": "Žr. viską",
+      "view_all_label": "Žr. visus kolekcijos „{{ collection_name }}“ gaminius",
+      "slider": "Slankiklis",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Žr. viską"
     },

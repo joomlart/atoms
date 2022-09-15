@@ -270,6 +270,12 @@
       "view_all_label": "Bekijk alle producten in de collectie {{ collection_name }}",
       "slider": "Schuifregelaar"
     },
+    "featured_collection_list": {
+      "view_all": "Alles bekijken",
+      "view_all_label": "Bekijk alle producten in de collectie {{ collection_name }}",
+      "slider": "Schuifregelaar",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Alles bekijken"
     },

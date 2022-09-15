@@ -270,6 +270,12 @@
       "view_all_label": "Lihat semua produk dalam koleksi {{ collection_name }}",
       "slider": "Slider"
     },
+    "featured_collection_list": {
+      "view_all": "Lihat semua",
+      "view_all_label": "Lihat semua produk dalam koleksi {{ collection_name }}",
+      "slider": "Slider",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Lihat semua"
     },

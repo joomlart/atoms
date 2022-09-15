@@ -277,6 +277,12 @@
       "view_all_label": "Afișați toate produsele din colecția {{ collection_name }}",
       "slider": "Glisor"
     },
+    "featured_collection_list": {
+      "view_all": "Afișați tot",
+      "view_all_label": "Afișați toate produsele din colecția {{ collection_name }}",
+      "slider": "Glisor",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Afișați tot"
     },

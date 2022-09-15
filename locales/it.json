@@ -277,6 +277,12 @@
       "view_all_label": "Visualizza tutti i prodotti della collezione {{ collection_name }}",
       "slider": "Cursore"
     },
+    "featured_collection_list": {
+      "view_all": "Visualizza tutto",
+      "view_all_label": "Visualizza tutti i prodotti della collezione {{ collection_name }}",
+      "slider": "Cursore",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Visualizza tutto"
     },

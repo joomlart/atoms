@@ -270,6 +270,12 @@
       "view_all_label": "Visa alla produkter i produktserien {{ collection_name }}",
       "slider": "Bild"
     },
+    "featured_collection_list": {
+      "view_all": "Visa alla",
+      "view_all_label": "Visa alla produkter i produktserien {{ collection_name }}",
+      "slider": "Bild",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Visa alla"
     },
