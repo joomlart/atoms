@@ -284,6 +284,12 @@
       "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}",
       "slider": "Posuvník"
     },
+    "featured_collection_list": {
+      "view_all": "Zobrazit vše",
+      "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}",
+      "slider": "Posuvník",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Zobrazit vše"
     },

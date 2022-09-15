@@ -270,6 +270,12 @@
       "view_all_label": "Покажи всички продукти в колекция {{ collection_name }}",
       "slider": "Плъзгач"
     },
+    "featured_collection_list": {
+      "view_all": "Покажи всички",
+      "view_all_label": "Покажи всички продукти в колекция {{ collection_name }}",
+      "slider": "Плъзгач",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Покажи всички"
     },
