@@ -50,10 +50,7 @@
 .article-card .card__heading {
   font-size: calc(var(--font-heading-scale) * 2rem);
   font-weight: 600;
-<<<<<<< HEAD
-=======
   line-height: calc(1 + .6/var(--font-heading-scale));
->>>>>>> abd1f8f1073b8b42a31044be249103f245a13d85
   margin-bottom: 1.6rem;
   letter-spacing: 0;
 }
