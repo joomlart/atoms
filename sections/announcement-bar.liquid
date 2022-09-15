@@ -1,5 +1,5 @@
 {% style %}
-.account {
+.account-top {
   align-items: center;
   display: flex;
   justify-content: flex-end;
@@ -49,7 +49,7 @@
             {%- endif -%}
           </div>
         {%- when 'account' -%}
-          <div class="announcement-bar-item grid__item account" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+          <div class="announcement-bar-item grid__item account-top" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
             {%- if block.settings.login != blank -%}
               {%- if block.settings.link-login != blank -%}
                 <a href="{{ block.settings.link-login }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
