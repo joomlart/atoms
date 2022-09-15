@@ -41,12 +41,8 @@
       -%}
       <div class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ columns_desktop }}-col-desktop grid--{{ columns_mobile }}-col-tablet-down {% if show_mobile_slider %} slider slider--mobile grid--peek{% endif %}" role="list" aria-label="{{ 'sections.featured_collection.slider' | t }}" id="Slider-{{ section.id }}">
       {%- for block in section.blocks -%}
-        {%- assign empty_column = '' -%}
         {%- liquid
-          assign products_to_display = block.settings.collection.all_products_count
-
           if block.settings.collection.all_products_count > block.settings.products_to_show
-            assign products_to_display = section.settings.products_to_show
             assign more_in_collection = true
           endif
         -%}
