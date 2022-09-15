@@ -399,14 +399,14 @@
           }
         },
         "account": {
-          "name": "Account",
+          "name": "Links",
           "settings": {
             "login": {
               "name": "Login",
               "link": "Link"
             },
             "register": {
-              "name": "register",
+              "name": "Register",
               "link": "Link"
             }
           }
