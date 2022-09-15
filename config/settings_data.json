@@ -119,9 +119,9 @@
             "type": "account",
             "settings": {
               "login": "Login",
-              "link-login": "http:\/\/dev.joomlart.com\/jadev2_data\/longer\/auto\/qs.atoms.1661741728\/index.php\/homepage\/fashion-lifestyle",
+              "link-login": "https:\/\/joomlart-atoms.myshopify.com\/account\/login",
               "register": "Register",
-              "link-register": "http:\/\/dev.joomlart.com\/jadev2_data\/longer\/auto\/qs.atoms.1661741728\/index.php\/homepage\/fashion-lifestyle"
+              "link-register": "https:\/\/joomlart-atoms.myshopify.com\/account\/register"
             }
           }
         },
