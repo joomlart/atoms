@@ -277,6 +277,12 @@
       "view_all_label": "Ver todos os produtos da coleção {{ collection_name }}",
       "slider": "Controle deslizante"
     },
+    "featured_collection_list": {
+      "view_all": "Ver tudo",
+      "view_all_label": "Ver todos os produtos da coleção {{ collection_name }}",
+      "slider": "Controle deslizante",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "Ver tudo"
     },

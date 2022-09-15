@@ -270,6 +270,12 @@
       "view_all_label": "ดูสินค้าทั้งหมดในคอลเลกชัน {{ collection_name }}",
       "slider": "แถบเลื่อน"
     },
+    "featured_collection_list": {
+      "view_all": "ดูทั้งหมด",
+      "view_all_label": "ดูสินค้าทั้งหมดในคอลเลกชัน {{ collection_name }}",
+      "slider": "แถบเลื่อน",
+      "collection_name": "Collection Name"
+    },
     "collection_list": {
       "view_all": "ดูทั้งหมด"
     },
