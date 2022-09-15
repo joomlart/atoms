@@ -24,10 +24,15 @@
 }
 
 .collection-hero__text-wrapper {
-    color: #fff;
+    color: #333;
 }
 
 .collection-hero__text-wrapper h1 {
+    color: #333;
+}
+
+.collection-hero.collection-hero--with-image .collection-hero__text-wrapper h1,
+.collection-hero.collection-hero--with-image .collection-hero__text-wrapper {
     color: #fff;
 }
 
