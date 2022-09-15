@@ -1,3 +1,31 @@
+{% style %}
+.account {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.announcement-bar__link {
+  align-items: center;
+  display: flex;
+  padding: 0;
+  width: unset;
+}
+
+.announcement-bar__link:not(:last-child):after {
+  content: '|';
+  display: inline-block;
+  margin: 0 .8rem;
+} 
+.announcement-bar__link:hover {
+  background: transparent;
+  color: var(--color-base-accent-3);
+}
+
+.announcement-bar__message {
+  margin-top: .4rem
+}
+{% endstyle %}
 <div class="announcement-bar color-{{ section.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
   <div class="page-width">
     <div class="grid grid--2-col-desktop">
@@ -16,6 +44,31 @@
                     {%- endif -%}
                   </p>
               {%- if block.settings.link != blank -%}
+                </a>
+              {%- endif -%}
+            {%- endif -%}
+          </div>
+        {%- when 'account' -%}
+          <div class="announcement-bar-item grid__item account" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+            {%- if block.settings.login != blank -%}
+              {%- if block.settings.link-login != blank -%}
+                <a href="{{ block.settings.link-login }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+              {%- endif -%}
+                  <p class="announcement-bar__message h6">
+                    {{ block.settings.login | escape }}
+                  </p>
+              {%- if block.settings.link-login != blank -%}
+                </a>
+              {%- endif -%}
+            {%- endif -%}
+            {%- if block.settings.register != blank -%}
+              {%- if block.settings.link-register != blank -%}
+                <a href="{{ block.settings.link-register }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+              {%- endif -%}
+                  <p class="announcement-bar__message h6">
+                    {{ block.settings.register | escape }}
+                  </p>
+              {%- if block.settings.link-register != blank -%}
                 </a>
               {%- endif -%}
             {%- endif -%}
