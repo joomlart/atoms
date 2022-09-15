@@ -336,6 +336,7 @@
     const gridMode = document.getElementById('grid-mode');
     const listMode = document.getElementById('list-mode');
     const productGrid = document.getElementById('product-grid');
+    var currentCollection = getCurrentCollection();
 
     if (!gridMode.classList.contains('active') && !listMode.classList.contains('active')){
       gridMode.classList.add('active');
@@ -343,7 +344,7 @@
 
     if (gridMode){
       gridMode.addEventListener('click', function () {
-        eraseCookie('activeListMode');
+        eraseCookie(`${currentCollection}-mode`);
         productGrid.classList.add(gridModeClass);
         gridMode.classList.add('active');
         if (productGrid.classList.contains(listModeClass)){
@@ -355,8 +356,11 @@
       })
     }
     if (listMode){
+      // var data = '{"id": "1", "class": "listModeClass"}';
+      // console.log(JSON.parse('{"id": "1", "class": "listModeClass"}'));
+      var data = `{"collection": "${currentCollection}", "class": "${listModeClass}"}`;
       listMode.addEventListener('click', function () {
-        setCookie('activeListMode', listModeClass, 2);
+        setCookie(`${currentCollection}-mode`, data, 2);
         productGrid.classList.add(listModeClass);
         listMode.classList.add('active');
         if (productGrid.classList.contains(gridModeClass)){
@@ -368,10 +372,13 @@
       })
     }
 
-    var x = getCookie('activeListMode');
-    if(x){
-      if (x === listModeClass){
-        productGrid.classList.remove(gridModeClass);
+    var cookieContent = getCookie(`${currentCollection}-mode`);
+
+    if(cookieContent){
+      cookieContent = JSON.parse(cookieContent);
+
+      if (cookieContent.collection === currentCollection){
+        // productGrid.classList.remove(gridModeClass);
         productGrid.classList.add(listModeClass);
         listMode.classList.add('active');
         if (gridMode.classList.contains('active')){
@@ -382,6 +389,33 @@
 
   });
 
+  function getAllSubCollections() {
+    var collections = ['all'];
+    {%- for link in linklists.main-menu.links -%}
+      {%- if link.links != blank -%}
+        {%- for subLink in link.links -%}
+          var subLink = "{{ subLink.url }}";
+          var collection = subLink.split('/')[2];
+          collections.push(collection);
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    return collections;
+  }
+
+  function getCurrentCollection() {
+    const crumb_list = document.querySelector('ol.breadcrumbs__list');
+    const crumb_links = crumb_list.querySelectorAll('a.breadcrumbs__link');
+    var currCollect = '';
+    crumb_links.forEach(function (el, idx, obj) {
+      if (el.href.includes('collections')){
+        currCollect = el.href.split('collections/')[1];
+      }
+    })
+    return currCollect;
+  }
+  
   function setCookie(name, value, days) {
     var expires = '';
     if(days){
@@ -389,24 +423,13 @@
       date.setTime(date.getTime() + (days*24*60*60*1000));
       expires = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    document.cookie = name + "=" + (JSON.stringify(value) || "") + expires + "; path=/";
   }
 
   function getCookie(name) {
-    var nameEq = name + '=';
-    if(document.cookie.length) {
-      const cookieAttrs = document.cookie.split(';');
-      for (var i = 0; i < cookieAttrs.length; i++) {
-        var attr = cookieAttrs[i];
-        while (attr.charAt(0) === ' '){
-          attr = attr.substring(1, attr.length);
-          if(attr.indexOf(nameEq) === 0){
-            return attr.substring(nameEq.length, attr.length);
-          }
-        }
-      }
-    }
-    return null;
+    var result = document.cookie.match(new RegExp(name + '=([^;]+)'));
+    result && (result = JSON.parse(result[1]));
+    return result;
   }
 
   function eraseCookie(name) {
