@@ -120,6 +120,10 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
   padding: 1.5rem 0;
 }
 
+cart-drawer-items {
+  padding-right: 2rem;
+}
+
 cart-drawer-items.is-empty + .drawer__footer {
   display: none;
 }
@@ -251,6 +255,10 @@ cart-drawer-items {
   border: 0;
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
   background-color: transparent;
+}
+
+.cart-drawer .cart-items #CartDrawer-ColumnTotal {
+  padding-right: 0;
 }
 
 .cart-drawer .cart-item:last-child {
