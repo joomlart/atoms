@@ -97,7 +97,7 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "currency_code_enabled": true,
-    "cart_type": "page",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
     "checkout_sidebar_background_color": "#fafafa",
