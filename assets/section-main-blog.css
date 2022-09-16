@@ -137,6 +137,11 @@
 /*=== Show Sidebar
 ========================*/
 
+.scroll-sidebar {
+  position: sticky;
+  top: 15rem;
+}
+
 .has-sidebar {
   display: grid;
 }
