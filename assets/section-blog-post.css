@@ -1,4 +1,4 @@
-.article-template > *:not(:first-child) {
+.article-template > .page-width:not(.blog-masthead) {
   max-width: 90rem;
 }
 .article-template > *:first-child:not(.article-template__hero-container) {
