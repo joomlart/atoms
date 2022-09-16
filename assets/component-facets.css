@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 990px) {
     .facet-filters {
-        padding-left: 3rem;
+        padding-left: 0;
     }
 }
 
