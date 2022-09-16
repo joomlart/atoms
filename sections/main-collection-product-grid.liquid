@@ -120,7 +120,7 @@
                 </noscript>
               {%- endif -%}
               <!-- handle button next & back for no auto-slide -->
-              {%- if section.settings.carousels_total_products > 1 and section.settings.auto_rotate == false-%}
+              {%- if section.settings.carousels_total_products > 1 and section.settings.auto_rotate == false -%}
                 <div id="slide-control" class="slideshow__controls slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
                   <button type="button" class="slider-button slider-button--prev" name="previous"
                           aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
@@ -131,7 +131,7 @@
                       <span aria-hidden="true"> / </span>
                       <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
                       <span class="slider-counter--total">{{ section.settings.carousels_total_products }}</span>
-                    {%- else-%}
+                    {%- else -%}
                       <div class="slideshow__control-wrapper">
                         {%- for block_ in (1..section.settings.carousels_total_products) -%}
                           <button class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link"
