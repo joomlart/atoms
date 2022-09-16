@@ -5,15 +5,10 @@
       "blocks": {
         "3d43cea5-6fd1-422f-8935-fe576ab72db8": {
           "type": "masthead",
+          "disabled": true,
           "settings": {
             "masthead-title": "Blogs",
             "description": "Cursus elit, iaculis platea integer nisl sapien egestas. Itae donec ornare iaculis mauris nec ultrices ullamcorper tempus dignissim."
-          }
-        },
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "medium"
           }
         },
         "bb646369-fa26-4a54-9523-51fa8da87946": {
@@ -21,6 +16,12 @@
           "settings": {
             "blog_show_date": true,
             "blog_show_author": false
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "medium"
           }
         },
         "content": {
@@ -37,14 +38,14 @@
       },
       "block_order": [
         "3d43cea5-6fd1-422f-8935-fe576ab72db8",
-        "featured_image",
         "bb646369-fa26-4a54-9523-51fa8da87946",
+        "featured_image",
         "content",
         "share"
       ],
       "settings": {
         "show_previous_next_buttons": true,
-        "show_social_media": true
+        "show_footer_article": true
       }
     }
   },
