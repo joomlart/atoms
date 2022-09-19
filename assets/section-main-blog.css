@@ -146,7 +146,7 @@
   display: grid;
 }
 
-.has-sidebar .sidebar > div {
+.has-sidebar .sidebar .scroll-sidebar > div {
   margin-bottom: 2rem;
 }
 
