@@ -100,6 +100,7 @@
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/Screenshot-2022-09-19-143032.png",
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_accent_color": "#212121",
