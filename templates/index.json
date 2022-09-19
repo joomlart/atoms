@@ -33,8 +33,9 @@
         "e012a95f-f1f0-4cc3-84dd-f889ab9c7f1e": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/woman-standing-in-front-of-yellow-background.jpg",
+            "image": "shopify:\/\/shop_images\/banner-9.jpg",
             "image_padding": false,
+            "heading_size": "h1",
             "static_img_title": "75%",
             "static_img_desc": "<p>Final summer sale<\/p>",
             "static_img_link_label": "",
