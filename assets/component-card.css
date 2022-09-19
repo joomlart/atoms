@@ -325,3 +325,10 @@
 .card-article-info {
     margin-top: 1rem;
 }
+
+@media (max-width:  749px) {
+    .card .card__content .quick-add,
+    .card-wrapper:hover .card__content .quick-add {
+        display: none;
+    }
+}
