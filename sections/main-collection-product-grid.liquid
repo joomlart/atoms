@@ -52,8 +52,10 @@
               data-autoplay="{{ section.settings.auto_rotate }}"
               data-speed="{{ section.settings.change_slides_speed }}"
             >
+              {% assign products_by_price = collection.products | sort: "price" %}
+              
               {% for 
-                product in collection.products 
+                product in products_by_price 
                 limit: section.settings.carousels_total_products 
               %}
                 <div class="slideshow__slide grid__item grid--1-col slider__slide"
