@@ -252,7 +252,7 @@
 
 @media (max-width:  749px) {
   .collage__item--slideshow .banner--mobile-bottom:not(.banner--stacked) .banner__content {
-    padding: 5rem;
+    padding: 2rem 2rem 5rem;
   }
 
   .collage__item--slideshow .slider.slider--everywhere .slider__slide .banner__box {
