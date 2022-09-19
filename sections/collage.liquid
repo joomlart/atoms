@@ -53,11 +53,14 @@
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                   {%- endif -%}
                 </div>
+
                 {% if block.settings.static_img_title != blank and block.settings.static_img_desc != blank %}
-                  <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
-                    <div class="slideshow__text banner__box content-container content-container--full-width-mobile slideshow__text--center slideshow__text-mobile--center">
+                  <div class="content">
+                    <div class="inner">
+                    {%- if block.settings.static_img_title != blank -%}
                       <h3 class="ja-img-title">{{ block.settings.static_img_title | escape }}</h3>
-                      {{ block.settings.static_img_desc }}
+                    {%- endif -%}
+                    {{ block.settings.static_img_desc }}
                     {%- if block.settings.static_img_link_label != blank -%}
                       <a class="link animate-arrow ja-link-label" {% if block.settings.static_img_link == blank %}
                         role="link" aria-disabled="true"{% else %} href="{{ block.settings.static_img_link }}"{% endif %}>

@@ -184,6 +184,44 @@
   box-shadow: none;
 }
 
+.collage-card .content {
+  --color-foreground: 255, 255, 255;
+  --color-button: 255, 255, 255;
+  --color-button-text: 0, 0, 0;
+  --font-heading-scale: 1.7;
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  left: 0;
+  padding: var(--grid-desktop-horizontal-spacing);
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.collage-card .content .ja-img-title {
+  color: rgb(var(--color-foreground));
+  font-weight: 700;
+  margin-bottom: 16px;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.collage-card .content p {
+  color: rgb(var(--color-foreground));
+}
+
+.collage-card .content .link {
+  color: rgb(var(--color-foreground));
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .collage .collage-card-spacing img {
   object-fit: contain;
 }
