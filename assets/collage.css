@@ -213,6 +213,8 @@
 
 .collage-card .content p {
   color: rgb(var(--color-foreground));
+  text-transform: uppercase;
+  margin:  0;
 }
 
 .collage-card .content .link {
