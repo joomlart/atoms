@@ -53,9 +53,6 @@
 }
 
 @media screen and (max-width: 990px) {
-  .content-masthead {
-    text-align: center;
-  }
   .content-masthead h2 {
     font-size: calc(var(--font-heading-scale) * 3rem);
   }
