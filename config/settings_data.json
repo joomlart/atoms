@@ -200,7 +200,7 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo": "{{ shop.brand.logo }}",
+          "logo": "shopify:\/\/shop_images\/Untitled_90c66207-55a2-4d12-9ad4-7263ea4e7397.png",
           "logo_max_width": 100,
           "color_scheme": "background-1"
         }
