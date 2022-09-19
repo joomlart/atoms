@@ -46,6 +46,7 @@ slideshow-component .slideshow.banner {
 
 .slideshow__text > * {
   max-width: 100%;
+  word-break: break-word;
 }
 
 @media screen and (max-width: 749px) {
