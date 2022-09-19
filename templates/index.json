@@ -35,8 +35,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/woman-standing-in-front-of-yellow-background.jpg",
             "image_padding": false,
-            "static_img_title": "Final summer sale",
-            "static_img_desc": "<p>75%<\/p>",
+            "static_img_title": "75%",
+            "static_img_desc": "<p>Final summer sale<\/p>",
             "static_img_link_label": "",
             "static_img_link": ""
           }
