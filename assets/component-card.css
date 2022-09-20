@@ -62,6 +62,18 @@
     display: block;
 }
 
+.card-wrapper:hover .card__content .quick-add .quick-add__submit {
+    background-color: rgb(0, 0, 0);
+}
+
+.card-wrapper:hover .card__content .quick-add .quick-add__submit:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.card-wrapper:hover .card__content .quick-add .quick-add__submit:after {
+    box-shadow: none;
+}
+
 .card--card .card__inner .card__media {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -326,7 +338,7 @@
     margin-top: 1rem;
 }
 
-@media (max-width:  749px) {
+@media (max-width: 749px) {
     .card .card__content .quick-add,
     .card-wrapper:hover .card__content .quick-add {
         display: none;
