@@ -21,13 +21,18 @@
 }
 
 @media screen and (min-width: 990px){
+  .contact-information + .contact-form {
+    padding-left: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 990px){
   .contact-information {
     width: 33.333%;
   }
 
   .contact-form {
     width: calc(66.667% - var(--grid-desktop-horizontal-spacing));
-    padding-left: 1.2rem;
   }
 }
 
