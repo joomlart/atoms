@@ -425,6 +425,7 @@
 
 #recover:target {
   display: block;
+  box-shadow: 0;
 }
 
 #recover:target + div {
