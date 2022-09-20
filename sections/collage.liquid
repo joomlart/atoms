@@ -53,11 +53,16 @@
                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
                   {%- endif -%}
                 </div>
+
                 {% if block.settings.static_img_title != blank and block.settings.static_img_desc != blank %}
-                  <div class="slideshow__text-wrapper banner__content banner__content--middle-left">
-                    <div class="slideshow__text banner__box content-container content-container--full-width-mobile slideshow__text--center slideshow__text-mobile--center">
-                      <h3 class="ja-img-title">{{ block.settings.static_img_title | escape }}</h3>
-                      {{ block.settings.static_img_desc }}
+                  <div class="content">
+                    <div class="inner">
+                    {{ block.settings.static_img_desc }}
+
+                    {%- if block.settings.static_img_title != blank -%}
+                      <h3 class="ja-img-title  {{ block.settings.heading_size }}">{{ block.settings.static_img_title | escape }}</h3>
+                    {%- endif -%}
+                    
                     {%- if block.settings.static_img_link_label != blank -%}
                       <a class="link animate-arrow ja-link-label" {% if block.settings.static_img_link == blank %}
                         role="link" aria-disabled="true"{% else %} href="{{ block.settings.static_img_link }}"{% endif %}>
@@ -523,7 +528,7 @@
           "label": "t:sections.all.heading_size.options__3.label"
         }
       ],
-      "default": "h1",
+      "default": "h2",
       "label": "t:sections.all.heading_size.label"
     },
     {
@@ -632,6 +637,26 @@
         {
           "type": "header",
           "content": "t:sections.custom.blocks.empty.name"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
         },
         {
           "type": "text",
