@@ -423,9 +423,11 @@
   display: none;
 }
 
-#recover:target {
+#recover:target, .form__message {
   display: block;
-  box-shadow: 0;
+  box-shadow: none;
+  border: 0;
+  outline: 0;
 }
 
 #recover:target + div {
