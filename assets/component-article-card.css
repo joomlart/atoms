@@ -49,7 +49,7 @@
 /* Title Blog */
 .article-card .card__heading {
   font-size: calc(var(--font-heading-scale) * 2rem);
-  font-weight: 600;
+  font-weight: 500;
   line-height: calc(1 + .6/var(--font-heading-scale));
   margin-bottom: 1.6rem;
   letter-spacing: 0;
