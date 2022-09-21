@@ -355,6 +355,7 @@
     },
     "166378704421cd1173": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -385,6 +386,7 @@
     },
     "16613283351e6dfff3": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "1661328335d795b744-0": {
           "type": "column",
