@@ -1,8 +1,12 @@
-.article-template > .page-width:not(.blog-masthead) {
+.article-template > .page-width , .page-width.reset-opacity {
   max-width: 90rem;
 }
 .article-template > *:first-child:not(.article-template__hero-container) {
   margin-top: var(--grid-desktop-vertical-spacing);
+}
+
+.article-template__content > * {
+  font-size: 1.6rem;
 }
 
 /* ========== Features Image
