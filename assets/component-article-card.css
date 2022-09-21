@@ -103,7 +103,22 @@
   }
 }
 
+/* Ratio Image 2:1  */
 .article-card__image--small .ratio::before {
+  padding-bottom: 50%;
+}
+
+/* Ratio Image 3:2 */
+.article-card__image--medium .ratio::before {
+  padding-bottom: 66.66%;
+}
+
+/* Ratio Image 3:4 */
+.article-card__image--large .ratio::before {
+  padding-bottom: 133.33%;
+}
+
+/* .article-card__image--small .ratio::before {
   padding-bottom: 11rem;
 }
 
@@ -113,9 +128,9 @@
 
 .article-card__image--large .ratio::before {
   padding-bottom: 33rem;
-}
+} */
 
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
   .article-card__image--small .ratio::before {
     padding-bottom: 14.3rem;
   }
@@ -141,7 +156,7 @@
   .article-card__image--large .ratio::before {
     padding-bottom: 40.7rem;
   }
-}
+} */
 
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
