@@ -14,6 +14,8 @@
   }
 {%- endstyle -%}
 
+{% render 'breadcrumb' %}
+
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="contact page-width  section-{{ section.id }}-padding">
 
@@ -263,7 +265,7 @@
           "label": "Mobile Number"
         },
         {
-          "type": "text",
+          "type": "url",
           "id": "web-address",
           "label": "Website Address"
         }
