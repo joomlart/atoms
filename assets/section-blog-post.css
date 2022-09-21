@@ -1,4 +1,4 @@
-.article-template > .page-width , .page-width.reset-opacity {
+.article-template > .page-width ,.page-width.reset-opacity {
   max-width: 90rem;
 }
 .article-template > *:first-child:not(.article-template__hero-container) {
