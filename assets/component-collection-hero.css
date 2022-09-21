@@ -25,6 +25,7 @@
 
 .collection-hero__text-wrapper {
     color: #333;
+    margin: auto;
 }
 
 .collection-hero__text-wrapper h1 {
@@ -71,10 +72,10 @@
         margin-bottom: 2rem;
     }
     .collection-hero__description {
-        max-width: 66.67%;
+        max-width: 100%;
     }
     .collection-hero--with-image .collection-hero__description {
-        max-width: 100%;
+        max-width: 66.67%;
     }
 }
 
