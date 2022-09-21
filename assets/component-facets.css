@@ -195,8 +195,8 @@
 }
 
 .facets__summary {
-    color: rgba(var(--color-foreground), 0.75);
-    font-size: 1.4rem;
+    color: rgba(var(--color-base-accent-1));
+    font-size: 1.5rem;
     padding: 0 1.75rem 0 0;
     margin-bottom: 1.5rem;
 }
@@ -209,7 +209,7 @@
 
 .facets__disclosure[open] .facets__summary,
 .facets__summary:hover {
-    color: rgb(var(--color-foreground));
+    color: rgb(var(--color-base-accent-1));
 }
 
 .facets__disclosure[open] .facets__display,
@@ -995,7 +995,7 @@ input.mobile-facets__checkbox {
         width: 26rem;
     }
     .facets__disclosure-vertical {
-        border-top: solid rgba(var(--color-foreground), 0.1);
+        border-top: 1px solid rgba(var(--color-foreground), 0.1);
         margin-right: 0;
     }
     .facets-vertical .facets__summary {
