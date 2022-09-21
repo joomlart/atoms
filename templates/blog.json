@@ -16,7 +16,7 @@
       "settings": {
         "layout": "grid",
         "show_image": true,
-        "image_height": "medium",
+        "image_height": "large",
         "show_date": true,
         "show_author": true,
         "padding_top": 0,
