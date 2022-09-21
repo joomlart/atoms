@@ -5,6 +5,10 @@
   margin-top: var(--grid-desktop-vertical-spacing);
 }
 
+.article-template__content > * {
+  font-size: 1.6rem;
+}
+
 /* ========== Features Image
 ============================ */
 .article-template__hero-container {
