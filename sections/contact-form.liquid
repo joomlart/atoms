@@ -17,7 +17,7 @@
 {% render 'breadcrumb' %}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="contact page-width  section-{{ section.id }}-padding">
+  <div class="contact page-width  section-{{ section.id }}-padding reset-opacity">
 
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -63,7 +63,7 @@
             {%- endif -%}
 
             {%- if block.settings.web-address -%}
-              <p class="contact-more"><span>{% render 'icon-global' %}</span>{{ block.settings.web-address | escape }}</p>
+              <p class="contact-more"><span>{% render 'icon-global' %}</span><a href="{{ block.settings.web-address | escape }}" class="link-web">{{ block.settings.web-address | escape }}</a></p>
             {%- endif -%}
           </div>
 
