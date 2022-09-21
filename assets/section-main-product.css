@@ -382,6 +382,11 @@ a.product__text {
     margin-top: 0;
     justify-content: center;
     margin-bottom: 8px;
+    color: #ffc107;
+    font-size: 10px;
+    display: flex;
+    gap: 2px;
+    margin-bottom: 12px;
 }
 
 #shopify-product-reviews .spr-header .spr-summary-caption {
@@ -411,6 +416,19 @@ a.product__text {
     box-shadow: none;
     outline: none;
     border-color: rgba(var(--color-foreground));
+}
+
+.spr-review-header-starratings {
+    color: #ffc107;
+    font-size: 10px;
+    display: flex;
+    gap: 2px;
+    margin-bottom: 12px;
+}
+
+#shopify-product-reviews .spr-review-footer {
+    display: flex;
+    text-align: left;
 }
 
 @media screen and (min-width: 750px) {
@@ -1092,15 +1110,19 @@ a.product__text {
     }
     .thumbnail-slider .thumbnail-list.slider--tablet-up {
         display: flex;
-        padding: 0.5rem;
+        padding: 0.5rem 0.1rem;
         flex: 1;
-        scroll-padding-left: 0.5rem;
+        scroll-padding-left: 0.1rem;
+    }
+    .thumbnail-slider .thumbnail-list.slider--tablet-up .image-thumbnail {
+        height: auto;
     }
     .product__media-wrapper .slider-mobile-gutter .slider-button {
         display: none;
     }
     .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-        width: calc(25% - 0.8rem);
+        width: 74px;
+        min-height: 109px;
     }
     .product--thumbnail_slider .slider-mobile-gutter .slider-button {
         display: flex;
@@ -1109,10 +1131,12 @@ a.product__text {
 
 @media screen and (min-width: 900px) {
     .product--small .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-        width: calc(25% - 0.8rem);
+        width: 74px;
+        min-height: 109px;
     }
     .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-        width: calc(20% - 0.8rem);
+        width: 74px;
+        min-height: 109px;
     }
 }
 
@@ -1138,23 +1162,23 @@ a.product__text {
 }
 
 .thumbnail[aria-current] {
-    box-shadow: 0 0 0rem 0.1rem rgb(var(--color-foreground));
-    border-color: rgb(var(--color-foreground));
+    box-shadow: none;
+    border-color: rgb(var(--color-base-accent-1));
 }
 
 .thumbnail[aria-current]:focus-visible {
-    box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0rem 0.5rem rgba(var(--color-foreground), 0.5);
+    box-shadow: none;
 }
 
 .thumbnail[aria-current]:focus,
 .thumbnail.focused {
     outline: 0;
-    box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0rem 0.5rem rgba(var(--color-foreground), 0.5);
+    box-shadow: none;
 }
 
 .thumbnail[aria-current]:focus:not(:focus-visible) {
     outline: 0;
-    box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
+    box-shadow: none;
 }
 
 .thumbnail img {
