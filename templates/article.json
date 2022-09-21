@@ -3,13 +3,6 @@
     "main": {
       "type": "main-article",
       "blocks": {
-        "3d43cea5-6fd1-422f-8935-fe576ab72db8": {
-          "type": "masthead",
-          "settings": {
-            "masthead-title": "Blogs",
-            "description": "Cursus elit, iaculis platea integer nisl sapien egestas. Itae donec ornare iaculis mauris nec ultrices ullamcorper tempus dignissim."
-          }
-        },
         "bb646369-fa26-4a54-9523-51fa8da87946": {
           "type": "title",
           "settings": {
@@ -36,7 +29,6 @@
         }
       },
       "block_order": [
-        "3d43cea5-6fd1-422f-8935-fe576ab72db8",
         "bb646369-fa26-4a54-9523-51fa8da87946",
         "featured_image",
         "content",
