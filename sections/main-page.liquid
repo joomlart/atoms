@@ -17,10 +17,18 @@
     }
   }
 
-  .contact-heading h1 {
+  .page-title {
+    font-size: calc(var(--font-heading-scale) * 4.8rem);
+    font-weight: 700;
     margin: 0;
-    font-weight: 600;
-    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  @media screen and (max-width: 990px) {
+    .page-title {
+      font-size: calc(var(--font-heading-scale) * 3rem);
+    }
   }
 {%- endstyle -%}
 
