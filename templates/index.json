@@ -80,6 +80,7 @@
         },
         "166123731380862203-2": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-2.jpg",
             "title": "Mid Season Sale! Up to -50%",
@@ -96,8 +97,8 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
-        "item_ratio": "square",
-        "columns_desktop": 3,
+        "item_ratio": "43",
+        "columns_desktop": 2,
         "column_alignment": "left",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -169,8 +170,8 @@
         "description_style": "uppercase",
         "collection": "best-seller",
         "show_card_collection": false,
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "link",
