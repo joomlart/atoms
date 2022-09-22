@@ -1,5 +1,11 @@
 {
   "sections": {
+    "1663821762badf5565": {
+      "type": "breadcrumb",
+      "settings": {
+        "title": "Breadcrumb"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -36,6 +42,7 @@
     }
   },
   "order": [
+    "1663821762badf5565",
     "main",
     "form"
   ]
