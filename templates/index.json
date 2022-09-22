@@ -17,7 +17,7 @@
             "img_title1": "Winter\/Spring Clothing 2020 Collections",
             "img_desc1": "<p>Winter has here, which means only one thing in the world of fashion: layers.<\/p>",
             "img_link_label1": "Shop Collection",
-            "img_link1": "shopify:\/\/collections\/shop-mens",
+            "img_link1": "shopify:\/\/collections\/mens",
             "img2": "shopify:\/\/shop_images\/banner-9.jpg",
             "img_title2": "Winter\/Spring Clothing 2020 Collections",
             "img_desc2": "<p>Winter has here, which means only one thing in the world of fashion: layers.<\/p>",
@@ -66,7 +66,7 @@
             "image": "shopify:\/\/shop_images\/banner-4.jpg",
             "title": "Final Clearance Up to 80% Off",
             "link_label": "Shop men",
-            "link": "shopify:\/\/collections\/shop-mens"
+            "link": "shopify:\/\/collections\/mens"
           }
         },
         "166123731380862203-1": {
@@ -199,7 +199,7 @@
         "description": "<p>Final Clearance Up to 80% Off\t<\/p>",
         "show_description": false,
         "description_style": "uppercase",
-        "collection": "shop-mens",
+        "collection": "mens",
         "show_card_collection": false,
         "products_to_show": 3,
         "columns_desktop": 4,
