@@ -3,7 +3,6 @@
     "166382168102e080c5": {
       "type": "breadcrumb",
       "settings": {
-        "title": "Breadcrumb"
       }
     },
     "banner": {
@@ -18,6 +17,7 @@
     },
     "1663780649f65a75db": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1663780649b7414a57-0": {
           "type": "heading",
