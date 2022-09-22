@@ -1500,13 +1500,13 @@
             "label": "Adapt to image"
           },
           "options__2": {
-            "label": "Small"
+            "label": "Small (Ratio 2:1)"
           },
           "options__3": {
-            "label": "Medium"
+            "label": "Medium (Ratio 3:2)"
           },
           "options__4": {
-            "label": "Large"
+            "label": "Large (Ratio 3:4)"
           },
           "info": "For best results, use an image with a 3:2 aspect ratio. [Learn more](https:\/\/help.shopify.com\/manual\/shopify-admin\/productivity-tools\/image-editor#understanding-image-aspect-ratio)"
         }
