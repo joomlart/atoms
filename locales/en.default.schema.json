@@ -587,7 +587,12 @@
             }
         },
         "breadcrumb": {
-            "name": "Breadcrumb"
+            "name": "Breadcrumb",
+            "settings": {
+                "title": {
+                    "label": "Heading"
+                }
+            }
         },
         "featured-blog": {
             "name": "Blog posts",
