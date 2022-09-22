@@ -15,47 +15,6 @@
         "hero_align_content": "left"
       }
     },
-    "1663780649f65a75db": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1663780649b7414a57-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Best Seller<\/p>",
-            "heading_size": "hxl"
-          }
-        },
-        "39288e70-4169-416b-aac3-d87175150be7": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "7ad1313f-43ef-4421-8ebf-da118fb13e0c": {
-          "type": "caption",
-          "disabled": true,
-          "settings": {
-            "caption": "Add a tagline",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        }
-      },
-      "block_order": [
-        "1663780649b7414a57-0",
-        "39288e70-4169-416b-aac3-d87175150be7",
-        "7ad1313f-43ef-4421-8ebf-da118fb13e0c"
-      ],
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "accent-2",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -84,7 +43,6 @@
   "order": [
     "166382168102e080c5",
     "banner",
-    "1663780649f65a75db",
     "product-grid"
   ]
 }

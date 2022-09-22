@@ -190,6 +190,7 @@
 .collection .card-information > .price {
   font-size: 1.6rem;
   color: rgb(var(--color-base-accent-1));
+  font-weight: 400;
 }
 
 .collection-product-list .card,
