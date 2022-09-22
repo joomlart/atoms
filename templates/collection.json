@@ -11,7 +11,7 @@
         "show_collection_description": true,
         "show_collection_image": false,
         "show_collection_full_width": false,
-        "color_scheme": "background-1",
+        "color_scheme": "none",
         "hero_align_content": "left"
       }
     },
