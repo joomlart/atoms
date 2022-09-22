@@ -293,3 +293,22 @@
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+
+/* Icon */
+.multicolumn-card-title-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.multicolumn-card-title-wrap.top {
+  display: block;
+}
+
+.multicolumn-card-title-wrap.left .icon {
+  margin-right: 1.2rem;
+}
+
+.multicolumn-card-title-wrap.right .icon {
+  margin-left: 1.2rem;
+  order:  2;
+}
