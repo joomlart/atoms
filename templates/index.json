@@ -113,6 +113,7 @@
           "type": "column",
           "settings": {
             "title": "Free Shipping Orders $60+",
+            "icon": "truck",
             "text": "",
             "link_label": "",
             "link": ""
@@ -122,6 +123,7 @@
           "type": "column",
           "settings": {
             "title": "30-days free return policy",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link": ""
@@ -131,6 +133,7 @@
           "type": "column",
           "settings": {
             "title": "100% Secure Payments",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link": ""
@@ -393,6 +396,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/client-1.png",
             "title": "",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link": ""
@@ -403,6 +407,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/client-2.png",
             "title": "",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link": ""
@@ -413,6 +418,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/client-3.png",
             "title": "",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link": ""
@@ -423,6 +429,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/client-4.png",
             "title": "",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link": ""
@@ -433,6 +440,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/client-5.png",
             "title": "",
+            "icon": "check_mark",
             "text": "",
             "link_label": "",
             "link": ""
