@@ -262,15 +262,6 @@
     "166131584236e6d07c": {
       "type": "image-with-text-grid",
       "blocks": {
-        "1661315842627cf75e-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/02_copy.jpg",
-            "title": "",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/latest-products"
-          }
-        },
         "1661315842627cf75e-1": {
           "type": "column",
           "settings": {
@@ -278,6 +269,15 @@
             "title": "",
             "link_label": "",
             "link": "shopify:\/\/collections\/women"
+          }
+        },
+        "1661315842627cf75e-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/02_722d2347-3e61-4d00-83d6-ff9607e4f7b3.jpg",
+            "title": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/latest-products"
           }
         },
         "1661315842627cf75e-2": {
@@ -291,8 +291,8 @@
         }
       },
       "block_order": [
-        "1661315842627cf75e-0",
         "1661315842627cf75e-1",
+        "1661315842627cf75e-0",
         "1661315842627cf75e-2"
       ],
       "settings": {
