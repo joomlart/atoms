@@ -434,14 +434,14 @@ a.product__text {
 @media screen and (min-width: 750px) {
     #shopify-product-reviews,
     .product__page__width {
-        max-width: 80%;
+        max-width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 .product__accordion .accordion__content {
-    padding: 0 1rem;
+    padding: 0;
 }
 
 .product__accordion .accordion__content .media--transparent {
@@ -450,6 +450,7 @@ a.product__text {
 
 .product__accordion .accordion__content .media img {
     position: static;
+    border:  0;
 }
 
 .product .price .badge {
@@ -1258,4 +1259,9 @@ a.product__text {
     width: 1.2rem;
     margin-left: 1.2rem;
     flex-shrink: 0;
+}
+
+.spr-review-content .spr-review-content-body {
+  font-size: 1.6rem; 
+  line-height: calc(1 + .3/var(--font-body-scale));
 }

@@ -5,10 +5,10 @@
 /* Title Page */
 .page--title{
   max-width: 64rem;
-  font-size: calc(var(--font-heading-scale) * 4.8rem);
+  font-size: calc(var(--font-heading-scale) * 3.6rem);
   font-weight: 700;
   margin: 0;
-  line-height: 1.25;
+  line-height: calc(1 + .25/var(--font-heading-scale));
   letter-spacing: -0.02em;
 }
 
