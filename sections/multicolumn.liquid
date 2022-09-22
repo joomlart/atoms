@@ -86,9 +86,7 @@
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
-                {%- if block.settings.title != blank -%}
-                  <h3>{{ block.settings.title | escape }}</h3>
-                {%- endif -%}
+                <div class="multicolumn-card-title-wrap">{% render 'icon-accordion', icon: block.settings.icon %}{%- if block.settings.title != blank -%}<h3>{{ block.settings.title | escape }}</h3>{%- endif -%}</div>
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
@@ -533,7 +531,7 @@
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__44.label"
             }
           ],
-          "default": "check_mark",
+          "default": "none",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.label"
         },
         {
