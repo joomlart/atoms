@@ -22,7 +22,7 @@
             "img_title2": "Winter\/Spring Clothing 2020 Collections",
             "img_desc2": "<p>Winter has here, which means only one thing in the world of fashion: layers.<\/p>",
             "img_link_label2": "Shop Collection",
-            "img_link2": "shopify:\/\/collections\/shop-women",
+            "img_link2": "shopify:\/\/collections\/women",
             "img3": "shopify:\/\/shop_images\/banner-10.jpg",
             "img_title3": "Winter\/Spring Clothing 2020 Collections",
             "img_desc3": "<p>Winter has here, which means only one thing in the world of fashion: layers.<\/p>",
@@ -75,7 +75,7 @@
             "image": "shopify:\/\/shop_images\/banner-3.jpg",
             "title": "Spring\/Winter Collections",
             "link_label": "Shop women",
-            "link": "shopify:\/\/collections\/shop-women"
+            "link": "shopify:\/\/collections\/women"
           }
         },
         "166123731380862203-2": {
@@ -230,7 +230,7 @@
         "description": "<p>Final Clearance Up to 80% Off\t<\/p>",
         "show_description": false,
         "description_style": "uppercase",
-        "collection": "shop-women",
+        "collection": "women",
         "show_card_collection": false,
         "products_to_show": 3,
         "columns_desktop": 3,
@@ -270,7 +270,7 @@
             "image": "shopify:\/\/shop_images\/banner-6.jpg",
             "title": "Final Sale. Up to 80%!",
             "link_label": "Shop now",
-            "link": "shopify:\/\/collections\/shop-women"
+            "link": "shopify:\/\/collections\/women"
           }
         },
         "1661315842627cf75e-2": {
@@ -324,7 +324,7 @@
         "90f844b0-cf2e-4cb4-a4f2-e03d6522e79a": {
           "type": "column",
           "settings": {
-            "collection": "shop-women",
+            "collection": "women",
             "products_to_show": 4,
             "show_view_all": false,
             "view_all_style": "link"
