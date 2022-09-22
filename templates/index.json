@@ -123,7 +123,7 @@
           "type": "column",
           "settings": {
             "title": "30-days free return policy",
-            "icon": "check_mark",
+            "icon": "dairy_free",
             "text": "",
             "link_label": "",
             "link": ""
@@ -133,7 +133,7 @@
           "type": "column",
           "settings": {
             "title": "100% Secure Payments",
-            "icon": "check_mark",
+            "icon": "plane",
             "text": "",
             "link_label": "",
             "link": ""
