@@ -297,7 +297,6 @@
 /* Icon */
 .multicolumn-card-title-wrap {
   display: flex;
-  justify-content: center;
 }
 
 .multicolumn-list__item.center .multicolumn-card-title-wrap {
