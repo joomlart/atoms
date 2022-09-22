@@ -87,7 +87,7 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.icon != 'none' -%}
-                <div class="multicolumn-card-title-wrap left">
+                <div class="multicolumn-card-title-wrap {{ block.settings.icon_position }}">
                   {% render 'icon-accordion', icon: block.settings.icon %}
                 {%- endif -%}
                   {%- if block.settings.title != blank -%}
@@ -543,6 +543,26 @@
           ],
           "default": "none",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.label"
+        },
+        {
+          "type": "select",
+          "id": "icon_position",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.multicolumn.blocks.column.settings.icon_position.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.multicolumn.blocks.column.settings.icon_position.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.multicolumn.blocks.column.settings.icon_position.options__3.label"
+            }
+          ],
+          "default": "left",
+          "label": "t:sections.multicolumn.blocks.column.settings.icon_position.label"
         },
         {
           "type": "richtext",
