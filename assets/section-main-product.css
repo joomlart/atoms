@@ -441,7 +441,7 @@ a.product__text {
 }
 
 .product__accordion .accordion__content {
-    padding: 0 1rem;
+    padding: 0;
 }
 
 .product__accordion .accordion__content .media--transparent {
@@ -450,6 +450,7 @@ a.product__text {
 
 .product__accordion .accordion__content .media img {
     position: static;
+    border:  0;
 }
 
 .product .price .badge {
