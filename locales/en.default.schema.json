@@ -592,6 +592,9 @@
                 "title": {
                     "label": "Breadcrumb"
                 }
+            },
+            "presets": {
+                "name": "Breadcrumb"
             }
         },
         "featured-blog": {
