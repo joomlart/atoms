@@ -590,7 +590,7 @@
             "name": "Breadcrumb",
             "settings": {
                 "title": {
-                    "label": "Heading"
+                    "label": "Breadcrumb"
                 }
             }
         },
