@@ -999,9 +999,9 @@ input.mobile-facets__checkbox {
         margin-right: 0;
     }
     .facets-vertical .facets__summary {
-        padding-top: 1.5rem;
+        padding-top: 1rem;
         margin-bottom: 0;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
     }
     .facets__heading--vertical {
         color: rgba(var(--color-base-accent-1));
