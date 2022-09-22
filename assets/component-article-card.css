@@ -68,8 +68,7 @@
 .article-card__info {
   color: #9E9E9E;
   margin-bottom: .8rem;
-  font-size: calc(var(--font-heading-scale) * 1.1rem);
-  line-height: calc(1 + 0.6/var(--font-body-scale));
+  font-size: calc(var(--font-heading-scale) * 1.2rem);
   text-transform: uppercase;
 }
 
@@ -117,46 +116,6 @@
 .article-card__image--large .ratio::before {
   padding-bottom: 133.33%;
 }
-
-/* .article-card__image--small .ratio::before {
-  padding-bottom: 11rem;
-}
-
-.article-card__image--medium .ratio::before {
-  padding-bottom: 22rem;
-}
-
-.article-card__image--large .ratio::before {
-  padding-bottom: 33rem;
-} */
-
-/* @media screen and (min-width: 750px) {
-  .article-card__image--small .ratio::before {
-    padding-bottom: 14.3rem;
-  }
-
-  .article-card__image--medium .ratio::before {
-    padding-bottom: 21.9rem;
-  }
-
-  .article-card__image--large .ratio::before {
-    padding-bottom: 27.5rem;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .article-card__image--small .ratio::before {
-    padding-bottom: 17.7rem;
-  }
-
-  .article-card__image--medium .ratio::before {
-    padding-bottom: 30.7rem;
-  }
-
-  .article-card__image--large .ratio::before {
-    padding-bottom: 40.7rem;
-  }
-} */
 
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
