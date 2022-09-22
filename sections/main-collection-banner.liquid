@@ -15,10 +15,10 @@
       <div style="background: url('{{ collection.image | image_url: width: 1500 }}') top center no-repeat; background-size: cover; min-height: 385px; align-items: center; display: flex; width: 100%; margin-top: 40px;"> 
     {%- endif -%}
       <div class="collection-hero__text-wrapper">
-        <h1 class="collection-hero__title">
+        <h2 class="collection-hero__title">
           <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
           {{- collection.title | escape -}}
-        </h1>
+        </h2>
         {%- if section.settings.show_collection_description -%}
           <div class="collection-hero__description rte">{{ collection.description }}</div>
         {%- endif -%}
