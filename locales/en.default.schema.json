@@ -2210,6 +2210,18 @@
             },
             "link": {
               "label": "Link"
+            },
+            "icon_position": {
+              "label": "Icon Position",
+              "options__1": {
+                "label": "Left"
+              },
+              "options__2": {
+                "label": "Center"
+              },
+              "options__3": {
+                "label": "Right"
+              }
             }
           }
         }

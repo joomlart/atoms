@@ -300,6 +300,10 @@
   justify-content: center;
 }
 
+.multicolumn-list__item.center .multicolumn-card-title-wrap {
+  justify-content: center;
+}
+
 .multicolumn-card-title-wrap.top {
   display: block;
 }
