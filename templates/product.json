@@ -113,7 +113,7 @@
         "share"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "gallery_layout": "thumbnail",
         "media_size": "small",
         "mobile_thumbnails": "hide",
