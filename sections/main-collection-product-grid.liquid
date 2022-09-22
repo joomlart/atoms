@@ -26,7 +26,6 @@
   }
 
 {%- endstyle -%}
-
 <div class="section-{{ section.id }}-padding">
   <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
     {{ 'component-facets.css' | asset_url | stylesheet_tag }}
