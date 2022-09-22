@@ -2,12 +2,53 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
         "show_collection_full_width": false,
+        "color_scheme": "background-2",
+        "hero_align_content": "left"
+      }
+    },
+    "1663780649f65a75db": {
+      "type": "rich-text",
+      "blocks": {
+        "1663780649b7414a57-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Best Seller<\/p>",
+            "heading_size": "hxl"
+          }
+        },
+        "39288e70-4169-416b-aac3-d87175150be7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "7ad1313f-43ef-4421-8ebf-da118fb13e0c": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "1663780649b7414a57-0",
+        "39288e70-4169-416b-aac3-d87175150be7",
+        "7ad1313f-43ef-4421-8ebf-da118fb13e0c"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "background-1",
-        "hero_align_content": "center"
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "product-grid": {
@@ -26,16 +67,8 @@
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 0,
-        "padding_bottom": 36,
-        "enable_boxed_banner": true,
-        "boxed_banner_image": "shopify:\/\/shop_images\/lt1-item-1_3ff7f225-06f8-4c88-95ab-3e7e44179bd6.jpg",
-        "boxed_banner_image_ratio": "43",
-        "boxed_banner_heading": "h2",
-        "boxed_banner_title": "Winter\/Spring Clothing 2022 Collections",
-        "boxed_banner_content": "Cursus elit iaculis platea integer nisl sapien egestas  Bitae donec ornare iaculis mauris nec.",
-        "boxed_banner_link_text": "Shop Collection",
-        "boxed_banner_link": "",
-        "enable_sidebar_top_seller": true,
+        "padding_bottom": 24,
+        "enable_sidebar_top_seller": false,
         "carousels_total_products": 3,
         "auto_rotate": false,
         "slider_visual": "dots",
@@ -45,6 +78,7 @@
   },
   "order": [
     "banner",
+    "1663780649f65a75db",
     "product-grid"
   ]
 }

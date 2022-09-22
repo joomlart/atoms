@@ -125,3 +125,7 @@
 .blog .title-wrapper-with-link .inner .link {
   text-decoration: none;
 }
+
+.blog__posts .card-wrapper .card--media .ratio::before {
+  padding-bottom: 66.66%;
+}

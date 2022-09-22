@@ -3,22 +3,23 @@
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
-    "colors_accent_2": "#334fb4",
+    "colors_accent_2": "#c16452",
     "gradient_accent_2": "",
-    "colors_text": "#616161",
+    "colors_accent_3": "#c16452",
+    "colors_text": "#212121",
     "colors_outline_button_labels": "#212121",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#f5f5f5",
     "gradient_background_2": "",
-    "type_header_font": "assistant_n6",
+    "type_header_font": "karla_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "karla_n4",
     "body_scale": 100,
-    "page_width": 1400,
+    "page_width": 1300,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 32,
-    "spacing_grid_vertical": 32,
+    "spacing_grid_horizontal": 24,
+    "spacing_grid_vertical": 12,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -27,7 +28,7 @@
     "buttons_shadow_vertical_offset": 4,
     "buttons_shadow_blur": 5,
     "variant_pills_border_thickness": 1,
-    "variant_pills_border_opacity": 55,
+    "variant_pills_border_opacity": 50,
     "variant_pills_radius": 40,
     "variant_pills_shadow_opacity": 0,
     "variant_pills_shadow_horizontal_offset": 0,
@@ -56,7 +57,7 @@
     "text_boxes_radius": 0,
     "text_boxes_shadow_opacity": 0,
     "text_boxes_shadow_horizontal_offset": 0,
-    "text_boxes_shadow_vertical_offset": 4,
+    "text_boxes_shadow_vertical_offset": 0,
     "text_boxes_shadow_blur": 5,
     "media_border_thickness": 1,
     "media_border_opacity": 5,
@@ -79,9 +80,9 @@
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
     "badge_position": "top left",
-    "badge_corner_radius": 0,
+    "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
-    "sold_out_badge_color_scheme": "inverse",
+    "sold_out_badge_color_scheme": "background-1",
     "accent_icons": "text",
     "social_twitter_link": "https:\/\/twitter.com\/shopify",
     "social_facebook_link": "https:\/\/facebook.com\/shopify",
@@ -97,7 +98,7 @@
     "predictive_search_show_price": false,
     "favicon": "shopify:\/\/shop_images\/favicon.png",
     "currency_code_enabled": true,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Untitled.png",
@@ -113,26 +114,24 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "P: +1 800 123 6891 M: no-reply@gmail.com",
+              "text": "Free U.S. Shipping Orders $60+ | Free Returns & Exchanges",
               "link": ""
             }
           },
-          "13e4ace9-3410-4447-8d25-b76d7fe7da76": {
-            "type": "account",
+          "d849346f-21a7-43b0-9431-c2e09faa5b6a": {
+            "type": "announcement",
             "settings": {
-              "login": "Login",
-              "link-login": "https:\/\/joomlart-atoms.myshopify.com\/account\/login",
-              "register": "Register",
-              "link-register": "https:\/\/joomlart-atoms.myshopify.com\/account\/register"
+              "text": "Welcome to our store",
+              "link": ""
             }
           }
         },
         "block_order": [
           "announcement-bar-0",
-          "13e4ace9-3410-4447-8d25-b76d7fe7da76"
+          "d849346f-21a7-43b0-9431-c2e09faa5b6a"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
           "mod_class": ""
         }
       },
@@ -140,14 +139,15 @@
         "type": "header",
         "settings": {
           "color_scheme": "background-1",
+          "logo": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
           "logo_text": "Atoms",
           "logo_font": "helvetica_n4",
-          "logo_width": 80,
+          "logo_width": 100,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
-          "enable_sticky_header": true,
+          "enable_sticky_header": false,
           "margin_bottom": 0,
           "padding_top": 24,
           "padding_bottom": 24
@@ -192,9 +192,9 @@
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true,
-          "margin_top": 16,
-          "padding_top": 16,
-          "padding_bottom": 36
+          "margin_top": 0,
+          "padding_top": 24,
+          "padding_bottom": 24
         }
       },
       "main-password-header": {
