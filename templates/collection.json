@@ -1,5 +1,11 @@
 {
   "sections": {
+    "166382168102e080c5": {
+      "type": "breadcrumb",
+      "settings": {
+        "title": "Breadcrumb"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
@@ -8,12 +14,6 @@
         "show_collection_full_width": false,
         "color_scheme": "background-2",
         "hero_align_content": "left"
-      }
-    },
-    "166382168102e080c5": {
-      "type": "breadcrumb",
-      "settings": {
-        "title": "Breadcrumb"
       }
     },
     "1663780649f65a75db": {
@@ -82,8 +82,8 @@
     }
   },
   "order": [
-    "banner",
     "166382168102e080c5",
+    "banner",
     "1663780649f65a75db",
     "product-grid"
   ]
