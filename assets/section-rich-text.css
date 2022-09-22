@@ -85,8 +85,14 @@
     justify-content: flex-end;
 }
 
-.rich-text__blocks .rich-text__text {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-}
+
+/* .rich-text__blocks .rich-text__text {
+  background: #6655efc2;
+  border-radius: 30px;
+  color: rgb(var(--color-button-text)); 
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding: 6px 25px;
+} */
