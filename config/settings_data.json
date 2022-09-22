@@ -118,19 +118,17 @@
               "link": ""
             }
           },
-          "13e4ace9-3410-4447-8d25-b76d7fe7da76": {
-            "type": "account",
+          "d849346f-21a7-43b0-9431-c2e09faa5b6a": {
+            "type": "announcement",
             "settings": {
-              "login": "Login",
-              "link-login": "https:\/\/joomlart-atoms.myshopify.com\/account\/login",
-              "register": "Register",
-              "link-register": "https:\/\/joomlart-atoms.myshopify.com\/account\/register"
+              "text": "Welcome to our store",
+              "link": ""
             }
           }
         },
         "block_order": [
           "announcement-bar-0",
-          "13e4ace9-3410-4447-8d25-b76d7fe7da76"
+          "d849346f-21a7-43b0-9431-c2e09faa5b6a"
         ],
         "settings": {
           "color_scheme": "accent-1",
