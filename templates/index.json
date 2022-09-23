@@ -274,7 +274,7 @@
         "1661315842627cf75e-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/02_722d2347-3e61-4d00-83d6-ff9607e4f7b3.jpg",
+            "image": "shopify:\/\/shop_images\/01_f4b600f0-7026-4525-bac6-4b0ddfebe296.jpg",
             "title": "",
             "link_label": "",
             "link": "shopify:\/\/collections\/latest-products"
@@ -600,7 +600,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/02_722d2347-3e61-4d00-83d6-ff9607e4f7b3.jpg",
-            "title": "Column",
+            "title": "",
             "link_label": "",
             "link": ""
           }
