@@ -20,7 +20,7 @@
         "show_date": true,
         "show_author": true,
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 24,
         "show_sidebar": false,
         "blog_show_tags": false,
         "blog_show_lastest_post": false,
