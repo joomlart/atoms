@@ -156,8 +156,12 @@
                       endif
                     endcapture
                     assign media_index = media_index | plus: 1
+                    assign media_title = media | remove: "products/"
+                    assign media_title = media_title | remove: ".jpg"
                   -%}
-                   <li id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}" class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}" data-target="{{ section.id }}-{{ media.id }}"  data-media-position="{{ media_index }}">
+                  <li id="Slide-Thumbnails-{{ section.id }}-{{ forloop.index }}" {%- if media_title -%} title="{{ media_title }}" {%- endif -%}
+                      class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains media.src %} thumbnail-list_item--variant{% endif %}"
+                      data-target="{{ section.id }}-{{ media.id }}"  data-media-position="{{ media_index }}">
                     {%- if media.media_type == 'model' -%}
                       <span class="thumbnail__badge" aria-hidden="true">
                         {%- render 'icon-3d-model' -%}
@@ -589,6 +593,8 @@
         return (msie > 0 || trident > 0);
       }
 
+      // openAdditionalInfo();
+
       if (!isIE()) return;
       const hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
       const noScriptInputWrapper = document.createElement('div');
@@ -599,6 +605,42 @@
       document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
         hiddenInput.value = event.currentTarget.value;
       });
+
+      function openAdditionalInfo() {
+        // const pageAccord = document.getElementsByClassName('product__accordion')[0];
+        // if (!pageAccord) return;
+        const allProductsAccor = document.querySelectorAll('div.product__accordion');
+  
+        if (allProductsAccor.length) {
+          allProductsAccor.forEach(function (el, idx, arr) {
+            if (idx === 0) {
+              el.querySelector('details').setAttribute('open', ' ');
+              el.classList.add('active');
+            }
+            // remove svg caret icon
+            el.querySelector('summary>svg.icon').remove();
+      
+            el.addEventListener('click', function (event) {
+              // add and remove active class for product accordion
+              el.classList.add('active');
+              for (let i = 0; i < arr.length; i++) {
+                if (arr[i] !== el) {
+                  if (arr[i].classList.contains('active')) {
+                    arr[i].classList.remove('active');
+                  }
+                }
+              }
+              allProductsAccor.forEach(function (el1, idx, arr) {
+                event.preventDefault();
+                if (el1.querySelector('details').hasAttribute('open')) {
+                  el1.querySelector('details').removeAttribute('open');
+                }
+                el.querySelector('details').setAttribute('open', ' ');
+              });
+            });
+          });
+        }
+      }
     });
   </script>
 

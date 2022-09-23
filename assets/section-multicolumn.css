@@ -297,11 +297,18 @@
 /* Icon */
 .multicolumn-card-title-wrap {
   display: flex;
+}
+
+.multicolumn-list__item.center .multicolumn-card-title-wrap {
   justify-content: center;
 }
 
-.multicolumn-card-title-wrap.top {
+.multicolumn-card-title-wrap.center {
   display: block;
+}
+
+.multicolumn-card-title-wrap.center .icon {
+  margin-bottom: 1.2rem;
 }
 
 .multicolumn-card-title-wrap.left .icon {
