@@ -213,7 +213,8 @@
   margin-left: calc(var(--grid-desktop-horizontal-spacing) / 2);
 }
 
-.collection-product-list .collection-products .collection-product {
+.collection-product-list .card .card__information {
+  padding-top: 0;
 }
 
 .collection-product-list .collection-products .collection-product + .collection-product {
