@@ -188,7 +188,7 @@
           "newsletter_enable": true,
           "newsletter_heading": "Stay in touch.",
           "newsletter_intro": "Sign up for our newsletter to stay up-to-date on the latest fashion trends, receive special offers and get exclusive early access to new products.",
-          "show_social": false,
+          "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true,
