@@ -72,6 +72,7 @@
         },
         "166123731380862203-1": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-3.jpg",
             "title": "Spring\/Winter Collections",
@@ -81,11 +82,10 @@
         },
         "166123731380862203-2": {
           "type": "column",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner-2.jpg",
-            "title": "Mid Season Sale! Up to -50%",
-            "link_label": "Shop Shoes",
+            "image": "shopify:\/\/shop_images\/Banner_1.jpg",
+            "title": "",
+            "link_label": "",
             "link": "shopify:\/\/collections\/best-seller"
           }
         }
