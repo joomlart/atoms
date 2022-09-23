@@ -84,12 +84,12 @@
           -%}
         </div>
       {% endif %}
-      </div>
     </div>
     {%- if paginate.pages > 1 -%}
       {%- render 'pagination', paginate: paginate -%}
     {%- endif -%}
   </div>
+  {% comment %} End {% endcomment %}
 {%- endpaginate -%}
 
 {% schema %}
