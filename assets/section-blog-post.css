@@ -218,7 +218,7 @@ header > span {
 
 /* Show Comment */
 .article-template__comment-wrapper {
-  margin-top: 5rem;
+  margin: 5rem auto;
 }
 
 .article-template__comment-wrapper h2 {

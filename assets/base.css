@@ -3034,3 +3034,17 @@ details-disclosure>details {
 .font-body-bold {
     font-weight: var(--font-body-weight-bold);
 }
+
+/* Polycy Pages */
+.shopify-policy__container { 
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 0 1.5rem var(--grid-desktop-vertical-spacing);
+}
+
+@media screen and (min-width: 750px) {
+    .shopify-policy__container {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+}
