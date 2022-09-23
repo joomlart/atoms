@@ -177,8 +177,8 @@
         "description_style": "uppercase",
         "collection": "best-seller",
         "show_card_collection": false,
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "link",
@@ -307,22 +307,43 @@
         "padding_bottom": 24
       }
     },
+    "16639099959fcc61f9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivials",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "latest-products",
+        "show_card_collection": false,
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "desktop_layout": "left",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_product_description": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "166174667909d0a0d7": {
       "type": "featured-collection-list",
       "blocks": {
         "c0c352b6-f98b-489e-b2ee-379ef60ee895": {
           "type": "column",
           "settings": {
-            "collection": "latest-products",
-            "products_to_show": 4,
-            "show_view_all": true,
-            "view_all_style": "link"
-          }
-        },
-        "d7836411-2b14-4093-8746-427e56b28804": {
-          "type": "column",
-          "settings": {
-            "collection": "best-seller",
+            "collection": "mens",
             "products_to_show": 4,
             "show_view_all": true,
             "view_all_style": "link"
@@ -336,12 +357,21 @@
             "show_view_all": true,
             "view_all_style": "link"
           }
+        },
+        "d7836411-2b14-4093-8746-427e56b28804": {
+          "type": "column",
+          "settings": {
+            "collection": "best-seller",
+            "products_to_show": 4,
+            "show_view_all": true,
+            "view_all_style": "link"
+          }
         }
       },
       "block_order": [
         "c0c352b6-f98b-489e-b2ee-379ef60ee895",
-        "d7836411-2b14-4093-8746-427e56b28804",
-        "90f844b0-cf2e-4cb4-a4f2-e03d6522e79a"
+        "90f844b0-cf2e-4cb4-a4f2-e03d6522e79a",
+        "d7836411-2b14-4093-8746-427e56b28804"
       ],
       "settings": {
         "heading_size": "h2",
@@ -393,6 +423,7 @@
     },
     "16613283351e6dfff3": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "1661328335d795b744-0": {
           "type": "column",
@@ -489,6 +520,7 @@
     "1661247543e28986d1",
     "1661247551f65e1395",
     "166131584236e6d07c",
+    "16639099959fcc61f9",
     "166174667909d0a0d7",
     "166378704421cd1173",
     "1661322877e178c8dc",
