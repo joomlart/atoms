@@ -1265,3 +1265,7 @@ a.product__text {
     font-size: 1.6rem;
     line-height: calc(1 + .3/var(--font-body-scale));
 }
+
+.shopify-block[data-block-handle="star_rating"] {
+    margin-bottom: 32px;
+}
