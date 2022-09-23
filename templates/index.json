@@ -540,6 +540,7 @@
     },
     "1663955354d4347362": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "166395535416c40f12-0": {
           "type": "slide",
@@ -592,6 +593,54 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "16639553608d564cc0": {
+      "type": "image-with-text-grid",
+      "blocks": {
+        "166395536082863daf-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/02_722d2347-3e61-4d00-83d6-ff9607e4f7b3.jpg",
+            "title": "Column",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "166395536082863daf-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01_30bdc4ff-3ce7-4ee4-bae5-dd67d157b822.jpg",
+            "title": "Column",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "166395536082863daf-2": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166395536082863daf-0",
+        "166395536082863daf-1",
+        "166395536082863daf-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "item_ratio": "43",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1661322877e178c8dc": {
       "type": "featured-blog",
       "settings": {
@@ -624,6 +673,7 @@
     "166378704421cd1173",
     "16613283351e6dfff3",
     "1663955354d4347362",
+    "16639553608d564cc0",
     "1661322877e178c8dc"
   ]
 }
