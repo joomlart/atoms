@@ -16,18 +16,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-
-  .page-title {
-    font-size: calc(var(--font-heading-scale) * 3.6rem);
-    margin: 0 0 var(--grid-desktop-vertical-spacing);
-
-  }
-
-  @media screen and (min-width: 990px) {
-    .page-title {
-      padding-top: 2.4rem;
-    }
-  }
 {%- endstyle -%}
 
 <div class="page-width section-{{ section.id }}-padding {{ section.settings.suffix-class }}">
