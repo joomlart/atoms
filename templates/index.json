@@ -18,9 +18,9 @@
             "img_desc1": "<p>Winter has here, which means only one thing in the world of fashion: layers.<\/p>",
             "img_link_label1": "Shop Collection",
             "img_link1": "shopify:\/\/collections\/mens",
-            "img2": "shopify:\/\/shop_images\/banner-9.jpg",
-            "img_title2": "Winter\/Spring Clothing 2020 Collections",
-            "img_desc2": "<p>Winter has here, which means only one thing in the world of fashion: layers.<\/p>",
+            "img2": "shopify:\/\/shop_images\/Banner_1.jpg",
+            "img_title2": "",
+            "img_desc2": "",
             "img_link_label2": "Shop Collection",
             "img_link2": "shopify:\/\/collections\/women",
             "img3": "shopify:\/\/shop_images\/banner-10.jpg",
@@ -72,7 +72,6 @@
         },
         "166123731380862203-1": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/banner-3.jpg",
             "title": "Spring\/Winter Collections",
@@ -82,6 +81,7 @@
         },
         "166123731380862203-2": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Banner_1.jpg",
             "title": "",
