@@ -337,6 +337,49 @@
         "padding_bottom": 24
       }
     },
+    "166395389104be1881": {
+      "type": "rich-text",
+      "blocks": {
+        "1663953891ec7b9c09-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "1663953891ec7b9c09-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1663953891ec7b9c09-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1663953891ec7b9c09-0",
+        "1663953891ec7b9c09-1",
+        "1663953891ec7b9c09-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "image": "{{ shop.brand.logo }}",
+        "full_width": false,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "166174667909d0a0d7": {
       "type": "featured-collection-list",
       "blocks": {
@@ -521,6 +564,7 @@
     "1661247551f65e1395",
     "166131584236e6d07c",
     "16639099959fcc61f9",
+    "166395389104be1881",
     "166174667909d0a0d7",
     "166378704421cd1173",
     "1661322877e178c8dc",
