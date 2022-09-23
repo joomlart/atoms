@@ -18,6 +18,7 @@
 }
 
 .list-menu__item--active:hover {
+  color:  var(--color-base-accent-3);
 }
 
 .list-menu--disclosure.localization-selector {
