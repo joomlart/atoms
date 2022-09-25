@@ -279,7 +279,7 @@
         "desktop_layout": "left",
         "image_ratio": "adapt",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "show_product_description": false,
         "enable_quick_add": true,
