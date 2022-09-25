@@ -60,6 +60,7 @@
     },
     "166123731426fbd8a6": {
       "type": "image-with-text-grid",
+      "disabled": true,
       "blocks": {
         "166123731380862203-0": {
           "type": "column",
