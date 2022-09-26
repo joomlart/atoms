@@ -6,19 +6,7 @@
 }
 
 .rating-options .rating-count {
-    width: 64px;
-    height: 3px;
-    background: #eee;
-    font-size: 0;
-    position: relative;
-}
-
-.rating-options .rating-count:after {
-    content: "";
-    width: 22px;
-    background-color: #99c144;
-    height: 3px;
-    float: right;
+    color: rgba(var(--color-base-text),0.5);
 }
 
 .rating {
