@@ -1537,6 +1537,9 @@ button.shopify-payment-button__button--unbranded {
     padding: 1.2rem 2.6rem;
 }
 
+.shopify-payment-button__button {
+    text-transform: uppercase;
+}
 
 /* Button - other */
 

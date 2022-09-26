@@ -410,6 +410,7 @@
   transition: all .35s;
   opacity: 1;
   width:  unset;
+  text-transform: uppercase;
 }
 
 #create_account:hover {
