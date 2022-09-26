@@ -49,7 +49,6 @@
 /* Title Blog */
 .article-card .card__heading {
   font-size: calc(var(--font-heading-scale) * 2rem);
-  font-weight: 500;
   line-height: calc(1 + .25/var(--font-heading-scale));
   margin-bottom: 1.6rem;
   letter-spacing: 0;
@@ -90,6 +89,7 @@
 .article-card__excerpt {
   width: 100%;
   margin-top: 1.2rem;
+  margin-bottom: 0;
 }
 
 .article-card__link:not(:only-child) {

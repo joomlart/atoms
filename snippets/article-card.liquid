@@ -76,16 +76,16 @@
             </div>
             <h3 class="card__heading{% if show_excerpt %} {% endif %}">
               <a href="{{ article.url }}" class="full-unstyled-link">
-                {{ article.title | truncate: 50 | escape }}
+                {{ article.title | escape }}
               </a>
             </h3>
             {%- if show_excerpt -%}
               {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                 <p class="article-card__excerpt rte-width">
                   {%- if article.excerpt.size > 0 -%}
-                    {{ article.excerpt | strip_html | truncatewords: 30 }}
+                    {{ article.excerpt | strip_html | truncatewords: 20 }}
                   {%- else -%}
-                    {{ article.content | strip_html | truncatewords: 30 }}
+                    {{ article.content | strip_html | truncatewords: 20 }}
                   {%- endif -%}
                 </p>
               {%- endif -%}
@@ -115,7 +115,7 @@
           </div>
           <h3 class="card__heading{% if show_excerpt %} h4{% endif %}">
             <a href="{{ article.url }}" class="full-unstyled-link">
-              {{ article.title | truncate: 50 | escape }}
+              {{ article.title | escape }}
             </a>
           </h3>
           {%- if show_excerpt -%}

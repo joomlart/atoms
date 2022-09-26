@@ -16,8 +16,6 @@
 
 /* Sub Description Title */
 .description {
-  color: rgb(var(--color-base-text));
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
   margin: 2rem 0 0;
   max-width: 55rem;
   line-height: calc(1 + 0.7/var(--font-body-scale) );
