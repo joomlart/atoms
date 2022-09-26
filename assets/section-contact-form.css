@@ -22,7 +22,7 @@
 }
 
 .contact-information + .contact-form {
-  margin-top: var(--grid-desktop-vertical-spacing);
+  margin-top: calc(var(--grid-desktop-vertical-spacing)*2);
 }
 
 @media screen and (min-width: 990px){
