@@ -2363,6 +2363,9 @@
           },
           "options__4": {
             "label": "Width\/Height : 3\/4"
+          },
+          "options__5": {
+            "label": "Width\/Height : 16\/9"
           }
         },
         "columns_desktop": {

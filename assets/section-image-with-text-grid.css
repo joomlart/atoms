@@ -22,6 +22,10 @@
     padding-bottom: 66.666%;
 }
 
+.image-with-text-grid .grid__item .media--169 {
+    padding-bottom: 56.25%;
+}
+
 .image-with-text-grid .grid__item .content {
     align-items: center;
     bottom: 0;
