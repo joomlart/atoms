@@ -1,6 +1,6 @@
 .page-title {
   font-size: calc(var(--font-heading-scale) * 3.6rem);
-  margin: 0 0 var(--grid-desktop-vertical-spacing);
+  margin: 0;
 
 }
 
