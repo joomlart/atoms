@@ -195,6 +195,10 @@
   .footer-block__newsletter:not(:only-child) .newsletter-form__message--success {
     left: auto;
   }
+
+  .footer__list-social.list-social {
+    width: 25%;
+  }
 }
 
 .footer-block__newsletter + .footer__list-social {
@@ -370,6 +374,11 @@ noscript .localization-selector.link {
 @media screen and (min-width: 750px) {
   .footer__payment {
     margin-top: 0;
+    width: 25%;
+  }
+
+  .footer__payment .list-payment {  
+    justify-content: flex-start;
   }
 }
 

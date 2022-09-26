@@ -2421,6 +2421,12 @@ input[type='checkbox'] {
     line-height: 0;
 }
 
+@media screen and (min-width: 750px) {
+    .header>.header__heading-link {
+        width: 25%;
+    }
+}
+
 .header__heading,
 .header__heading-link {
     grid-area: heading;
@@ -2479,6 +2485,14 @@ input[type='checkbox'] {
     display: flex;
     grid-area: icons;
     justify-self: end;
+}
+
+@media screen and (min-width: 750px) {
+    .header__icons {
+        width: 25%;
+        justify-content: end;
+    }
+
 }
 
 .header__icon:not(.header__icon--summary),
