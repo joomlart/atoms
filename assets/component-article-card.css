@@ -82,10 +82,6 @@
 }
 
 .article-card__footer:last-child {
-  margin-top: auto;
-}
-
-.article-card__footer + .article-card__excerpt {
   margin-top: 2rem;
 }
 
