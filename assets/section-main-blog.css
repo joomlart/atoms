@@ -4,7 +4,6 @@
 
 /* Title Page */
 .page--title{
-  font-size: calc(var(--font-heading-scale) * 3.6rem);
   margin: 0;
 }
 

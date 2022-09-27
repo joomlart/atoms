@@ -19,7 +19,7 @@
 {%- paginate blog.articles by 6 -%}
   {%- render 'breadcrumb'- %}
   <div class="main-blog page-width section-{{ section.id }}-padding reset-opacity">
-    <h1 class="page--title">{{ blog.title | escape }}</h1>
+    <h1 class="page--title h2">{{ blog.title | escape }}</h1>
 
     {% for block in section.blocks %}
       {% case block.type %}

@@ -67,7 +67,6 @@
 /* Title */
 .article-template__title {
   margin: 0;
-  font-size: calc(var(--font-heading-scale) * 3.6rem);
 }
 
 /* Date Publish */
