@@ -85,7 +85,7 @@
   margin-top: auto;
 }
 
-.article-card__footer + .article-card__excerpt {
+.article-card__excerpt + .article-card__footer {
   margin-top: 2rem;
 }
 
