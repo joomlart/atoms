@@ -171,7 +171,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Best Selling Products",
-        "heading_size": "h2",
+        "heading_size": "h4",
         "description": "<p>Final Clearance Up to 80% Off\t<\/p>",
         "show_description": false,
         "description_style": "uppercase",
