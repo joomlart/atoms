@@ -2434,12 +2434,13 @@ input[type='checkbox'] {
     line-height: 0;
 }
 
-.header>.header__heading-link {
+.header > .header__heading-link {
     line-height: 0;
 }
 
 @media screen and (min-width: 750px) {
-    .header>.header__heading-link {
+    .header > .header__heading,
+    .header > .header__heading-link {
         width: 25%;
     }
 }
