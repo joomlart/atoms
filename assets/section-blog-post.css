@@ -67,9 +67,7 @@
 /* Title */
 .article-template__title {
   margin: 0;
-  font-weight: 700;
   font-size: calc(var(--font-heading-scale) * 3.6rem);
-  letter-spacing: 0;
 }
 
 /* Date Publish */
