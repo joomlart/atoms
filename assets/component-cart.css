@@ -17,11 +17,6 @@
   }
 }
 
-/* Title */
-cart-items .title {
-  font-size: 3.6rem;
-}
-
 /* Continue Shopping */
 cart-items .continue-shopping {
   color: var(--color-base-accent-3);

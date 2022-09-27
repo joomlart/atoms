@@ -4,7 +4,6 @@
 
 /* Title */
 .customer h1 {
-  font-size: calc(var(--font-body-scale) * 3.6rem);
   margin: 0 auto 1.6rem;
 }
 
@@ -525,13 +524,11 @@
 
 :is(.account, .order) h2 {
   margin: 4rem auto 1rem;
-  font-size: calc(var(--font-body-scale) * 3rem);
 }
 
 @media screen and (min-width: 990px) {
   :is(.account, .order) h2 {
     margin-top: 0;
-    font-size: calc(var(--font-body-scale) * 3.6rem);
   }
 }
 
@@ -818,14 +815,8 @@ li[data-address] {
 
 li[data-address] > h2, .edit-address > h2 {
   text-align: left;
-  font-size: calc(var(--font-heading-scale) * 3rem);
-  margin-bottom: 0;
-}
 
-@media only screen and (min-width: 750px) {
-  li[data-address] > h2, .edit-address > h2 {
-    font-size: calc(var(--font-heading-scale) * 3.6rem);
-  }
+  margin-bottom: 0;
 }
 
 .addresses ul p {
