@@ -95,7 +95,7 @@
   text-transform: uppercase;
 }
 
-.collection__title .inner .h2 {
+.collection__title .inner .h4 {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
 }
 
