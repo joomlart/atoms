@@ -39,7 +39,8 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<slideshow-component class="section-{{ section.id }}-padding slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}" role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}" aria-label="{{ section.settings.accessibility_info | escape }}">
+<div class="section-{{ section.id }}-padding">
+<slideshow-component class="slider-mobile-gutter{% if section.settings.layout == 'grid' %} page-width{% endif %}{% if section.settings.show_text_below %} mobile-text-below{% endif %}" role="region" aria-roledescription="{{ 'sections.slideshow.carousel' | t }}" aria-label="{{ section.settings.accessibility_info | escape }}">
   {%- if section.settings.auto_rotate and section.blocks.size > 1 -%}
     <div class="slideshow__controls slideshow__controls--top slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-caret' %}</button>
@@ -188,6 +189,7 @@
     </noscript>
   {%- endif -%}
 </slideshow-component>
+</div>
 
 {%- if request.design_mode -%}
   <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
@@ -339,19 +341,19 @@
           "id": "heading_size",
           "options": [
             {
-              "value": "h2",
+              "value": "h3",
               "label": "t:sections.all.heading_size.options__1.label"
             },
             {
-              "value": "h1",
+              "value": "h2",
               "label": "t:sections.all.heading_size.options__2.label"
             },
             {
-              "value": "h0",
+              "value": "h1",
               "label": "t:sections.all.heading_size.options__3.label"
             }
           ],
-          "default": "h1",
+          "default": "h3",
           "label": "t:sections.all.heading_size.label"
         },
         {
