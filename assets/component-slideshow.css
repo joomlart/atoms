@@ -55,6 +55,13 @@ slideshow-component .slideshow.banner {
   margin-bottom: 1.6rem;
 }
 
+.banner--desktop-transparent .link {
+  color: rgb(var(--color-foreground));
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .slideshow__text > * {
   max-width: 100%;
   word-break: break-word;

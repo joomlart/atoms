@@ -2833,6 +2833,9 @@
           },
           "options__4": {
             "label": "Large"
+          },           
+          "options__5": {             
+            "label": "Width\/Height : 16\/9"           
           }
         },
         "slider_visual": {

@@ -139,7 +139,11 @@
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
               <div class="banner__buttons">
-                <a{% if block.settings.link %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="{% if section.settings.link_style == 'link' %}link hightlight-link link--text{% elsif section.settings.link_style == 'solid' %}button{% else %}button button--secondary{% endif %}">{{ block.settings.button_label | escape }}</a>
+                <a{% if block.settings.link %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="{% if block.settings.link_style == 'link' %}link hightlight-link animate-arrow link--text{% elsif block.settings.link_style == 'solid' %}button{% else %}button button--secondary{% endif %}">{{ block.settings.button_label | escape }}
+                  {% if block.settings.link_style == 'link' %}
+                    <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                  {% endif %}
+                </a>
               </div>
             {%- endif -%}
           </div>
@@ -236,6 +240,10 @@
         {
           "value": "large",
           "label": "t:sections.slideshow.settings.slide_height.options__4.label"
+        },
+        {
+          "value": "169",
+          "label": "t:sections.slideshow.settings.slide_height.options__5.label"
         }
       ],
       "default": "adapt_image",
