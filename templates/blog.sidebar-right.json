@@ -21,7 +21,8 @@
         "show_author": true,
         "padding_top": 0,
         "padding_bottom": 24,
-        "show_sidebar": true,
+        "show_sidebar_right": true,
+        "show_sidebar_left": false,
         "blog_show_tags": true,
         "blog_show_lastest_post": true,
         "blog_categories": true
