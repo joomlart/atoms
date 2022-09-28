@@ -119,6 +119,7 @@
       ],
       "settings": {
         "enable_sticky_info": false,
+        "enable_media_gallery_slider": true,
         "gallery_layout": "thumbnail",
         "media_size": "small",
         "mobile_thumbnails": "hide",
