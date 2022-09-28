@@ -75,50 +75,6 @@
         "padding_bottom": 24
       }
     },
-    "166116152195c6e261": {
-      "type": "collage",
-      "blocks": {
-        "7b8a977f-7274-4cb4-8e20-7141b1325a98": {
-          "type": "slideshow",
-          "settings": {
-            "layout": "full_bleed",
-            "slider_visual": "dots",
-            "auto_rotate": false,
-            "slide_control": true,
-            "change_slides_speed": 3,
-            "show_text_below": true,
-            "accessibility_info": "Slideshow about our brand",
-            "img1": "shopify:\/\/shop_images\/fashion-model-in-black-white.jpg",
-            "img_title1": "WINTER\/SPRING CLOTHING 2022 COLLECTIONS",
-            "img_desc1": "<p>Winter has here, which means only one thing in the world of fashion: layers.<\/p>",
-            "img_link_label1": "Shop Collection",
-            "img_link1": "shopify:\/\/collections\/mens",
-            "img2": "shopify:\/\/shop_images\/model-in-latte-colored-hoodie.jpg",
-            "img_title2": "OVER. S19",
-            "img_desc2": "<p>Nightcrawler - New Spring drops from Over.<\/p>",
-            "img_link_label2": "Shop the Collection",
-            "img_link2": "",
-            "img3": "shopify:\/\/shop_images\/1ec80773ae8f353216fa2eed9f590604.jpg",
-            "img_title3": "ONYX COLORS FOR SUBTLE ELEGANCE",
-            "img_desc3": "<p>Style your products and shop pages, add a cart widget to your header, and convert clicks into sales.<\/p>",
-            "img_link_label3": "Shop Now",
-            "img_link3": ""
-          }
-        }
-      },
-      "block_order": [
-        "7b8a977f-7274-4cb4-8e20-7141b1325a98"
-      ],
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "color_scheme": "background-1",
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
     "166123731426fbd8a6": {
       "type": "image-with-text-grid",
       "blocks": {
@@ -666,7 +622,6 @@
   },
   "order": [
     "1663955354d4347362",
-    "166116152195c6e261",
     "166123731426fbd8a6",
     "1661246556b905fdde",
     "1661247508792d2166",
