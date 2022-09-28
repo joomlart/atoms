@@ -347,15 +347,16 @@
     },
     "166378704421cd1173": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "video_url": "https:\/\/vimeo.com\/375445745",
+        "video_url": "https:\/\/vimeo.com\/573432038",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "16639553608d564cc0": {
