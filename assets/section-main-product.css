@@ -1211,7 +1211,7 @@ a.product__text {
     border-color: rgb(var(--color-base-accent-1));
 } */
 
-.thumbnail-list__item {
+.flickity-slider .thumbnail-list__item img {
     box-shadow: none;
     border: 1px solid transparent;
 }
@@ -1220,13 +1220,14 @@ a.product__text {
     width: 100%;
     max-width: 100%;
     height: auto;
+    border: 0;
 }
 
 .thumbnail-list__item .thumbnail.global-media-settings .image-thumbnail {
     width: auto;
 }
 
-.thumbnail-list__item.is-selected {
+.flickity-slider .thumbnail-list__item.is-selected img {
     border: 1px solid rgb(var(--color-base-accent-1));
 }
 
