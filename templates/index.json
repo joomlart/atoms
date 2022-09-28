@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/fashion-model-in-black-white.jpg",
             "heading": "WINTER\/SPRING CLOTHING 2022 COLLECTIONS",
-            "heading_size": "h2",
+            "heading_size": "h3",
             "subheading": "Winter has here, which means only one thing in the world of fashion: layers.",
             "button_label": "Shop Collection",
             "link": "shopify:\/\/collections",
@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/model-in-latte-colored-hoodie.jpg",
             "heading": "Image slide",
-            "heading_size": "h2",
+            "heading_size": "h3",
             "subheading": "Tell your brand's story through images",
             "button_label": "Shop Men",
             "link": "shopify:\/\/collections\/mens",
@@ -44,7 +44,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/1ec80773ae8f353216fa2eed9f590604.jpg",
             "heading": "Image slide",
-            "heading_size": "h2",
+            "heading_size": "h3",
             "subheading": "Tell your brand's story through images",
             "button_label": "Shop Women",
             "link": "shopify:\/\/collections\/women",
