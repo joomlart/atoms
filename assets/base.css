@@ -748,7 +748,7 @@ hr {
 }
 
 .full-unstyled-link:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .placeholder {
@@ -2440,15 +2440,9 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 750px) {
-<<<<<<< HEAD
     .header>.header__heading,
     .header>.header__heading-link {
-        width: 25%;
-=======
-    .header > .header__heading,
-    .header > .header__heading-link {
         width: 20%;
->>>>>>> 6eb9477c54cdb09d4334eb2bd7c094eb3a0eee1f
     }
 }
 
