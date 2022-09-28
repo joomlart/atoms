@@ -95,16 +95,6 @@
             "link_label": "Shop women",
             "link": "shopify:\/\/collections\/women"
           }
-        },
-        "166123731380862203-2": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_1.jpg",
-            "title": "",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/best-seller"
-          }
         }
       },
       "block_order": [
