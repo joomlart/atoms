@@ -77,10 +77,6 @@
     color: rgb(var(--color-foreground));
 }
 
-.image-with-text-grid .grid__item .inner {
-    max-width: 50%;
-}
-
 .image-with-text-grid .grid__item .content .link {
     color: rgb(var(--color-foreground));
     font-weight: 700;
@@ -131,6 +127,10 @@
     .image-with-text-grid .grid__item .image-with-text__content {
         max-width: 100%;
         padding: 16px;
+    }
+
+    .image-with-text-grid .grid__item .inner {
+        max-width: 50%;
     }
 }
 
