@@ -124,14 +124,20 @@
   padding: var(--grid-desktop-vertical-spacing) 0 0;
 }
 
-.sidebar-left .sidebar {
-  order: -1;
+@media screen and (min-width: 990px) {
+  .has-sidebar .sidebar {
+    padding: 0 0 0 var(--grid-desktop-vertical-spacing);
+  }
 }
 
 @media screen and (min-width: 990px) {
-  .sidebar-right .sidebar {
-    padding: 0 0 0 var(--grid-desktop-vertical-spacing);
-  }
+  .sidebar-left .sidebar {
+    order: -1;
+  } 
+}
+
+.sidebar-left .sidebar {
+  padding-left: 0;
 }
 
 /* Modlue Title */
