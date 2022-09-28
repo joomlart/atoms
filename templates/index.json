@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/fashion-model-in-black-white.jpg",
             "heading": "WINTER\/SPRING CLOTHING 2022 COLLECTIONS",
-            "heading_size": "h3",
+            "heading_size": "h2",
             "subheading": "Winter has here, which means only one thing in the world of fashion: layers.",
             "button_label": "Shop Collection",
             "link": "shopify:\/\/collections",
@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/model-in-latte-colored-hoodie.jpg",
             "heading": "OUR ICONIC DUNGAREES, ARE BACK IN STOCK",
-            "heading_size": "h1",
+            "heading_size": "h2",
             "subheading": "Unisex and oversized, with extra-big pockets",
             "button_label": "Shop Men",
             "link": "shopify:\/\/collections\/mens",
