@@ -341,6 +341,7 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
+    color: rgb(var(--color-foreground),0.8);
   }
 
   .banner--desktop-transparent .button--secondary {
@@ -413,7 +414,6 @@
 
 .banner__heading {
   font-weight: var(--font-body-weight-bold);
-  line-height: 60px;
   margin-bottom: 32px;
   margin-top: 0;
 }
