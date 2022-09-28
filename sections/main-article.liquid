@@ -1,7 +1,7 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
 {%- render 'breadcrumb' -%}
-<article class="article-template reset-opacity" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when '@app' -%}

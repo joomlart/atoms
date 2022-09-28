@@ -18,7 +18,7 @@
 
 {%- paginate blog.articles by 6 -%}
   {%- render 'breadcrumb'- %}
-  <div class="main-blog page-width section-{{ section.id }}-padding reset-opacity">
+  <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="page--title h2">{{ blog.title | escape }}</h1>
 
     {% for block in section.blocks %}
@@ -28,7 +28,7 @@
       {% endcase %}
     {% endfor %}
 
-    <div class="wrap-inner {% if section.settings.show_sidebar %}grid has-sidebar{% endif %}">
+    <div class="wrap-inner {% if section.settings.show_sidebar_right %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.show_sidebar_left %}grid has-sidebar sidebar-left{% endif %}">
       {%- if blog.articles_count > 0 -%}
         <div class="list-blogs">
           <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
@@ -62,7 +62,7 @@
           </div>
         </div>
       {% endif %}
-      {%- if section.settings.show_sidebar -%}
+      {%- if section.settings.show_sidebar_right or section.settings.show_sidebar_left -%}
         <div class="sidebar">
           <div class="scroll-sidebar">
           {%- liquid
@@ -192,9 +192,15 @@
     },
     {
       "type": "checkbox",
-      "id": "show_sidebar",
+      "id": "show_sidebar_right",
       "default": false,
-      "label": "Show Sidebar"
+      "label": "Show Sidebar Right"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sidebar_left",
+      "default": false,
+      "label": "Show Sidebar Left"
     },
     {
       "type": "checkbox",

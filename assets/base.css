@@ -209,11 +209,6 @@
     --shadow-visible: var(--media-shadow-visible);
 }
 
-.reset-opacity {
-    color: rgba(var(--color-foreground));
-}
-
-
 /* base */
 
 .no-js:not(html) {
