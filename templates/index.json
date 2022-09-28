@@ -271,6 +271,66 @@
         "padding_bottom": 36
       }
     },
+    "16639099959fcc61f9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivials",
+        "heading_size": "h4",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "latest-products",
+        "show_card_collection": false,
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "desktop_layout": "left",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "show_product_description": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "166395389104be1881": {
+      "type": "rich-text",
+      "blocks": {
+        "1663953891ec7b9c09-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "1663953891ec7b9c09-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1663953891ec7b9c09-0",
+        "1663953891ec7b9c09-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "16639553608d564cc0": {
       "type": "image-with-text-grid",
       "blocks": {
@@ -326,80 +386,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "16639099959fcc61f9": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New Arrivials",
-        "heading_size": "h4",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "latest-products",
-        "show_card_collection": false,
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "desktop_layout": "left",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": true,
-        "show_rating": false,
-        "show_product_description": false,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
-    "166395389104be1881": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1663953891ec7b9c09-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "1663953891ec7b9c09-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1663953891ec7b9c09-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1663953891ec7b9c09-0",
-        "1663953891ec7b9c09-1",
-        "1663953891ec7b9c09-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "image": "{{ shop.brand.logo }}",
-        "full_width": false,
-        "padding_top": 48,
-        "padding_bottom": 48
       }
     },
     "166378704421cd1173": {
@@ -640,9 +626,9 @@
     "1661247508792d2166",
     "1661247543e28986d1",
     "1661247551f65e1395",
-    "16639553608d564cc0",
     "16639099959fcc61f9",
     "166395389104be1881",
+    "16639553608d564cc0",
     "166378704421cd1173",
     "166174667909d0a0d7",
     "166131584236e6d07c",
