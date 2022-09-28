@@ -28,7 +28,7 @@
       {% endcase %}
     {% endfor %}
 
-    <div class="wrap-inner {% if section.settings.show_sidebar_right %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.show_sidebar_left %}grid has-sidebar sidebar-left{% endif %}">
+    <div class="wrap-inner {% if section.settings.show_sidebar_right == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.show_sidebar_left == "left"%}grid has-sidebar sidebar-left{% endif %}">
       {%- if blog.articles_count > 0 -%}
         <div class="list-blogs">
           <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
@@ -201,10 +201,10 @@
         },
         {
           "value": "right",
-          "label": "right"
+          "label": "Right"
         }
       ],
-      "default": "left"
+      "default": "right"
     },
     {
       "type": "checkbox",
