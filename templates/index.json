@@ -86,8 +86,8 @@
             "link_label": "Shop men",
             "link": "shopify:\/\/collections\/mens",
             "link_style": "link",
-            "desktop_content_position": "middle-left",
-            "desktop_content_alignment": "right"
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "166123731380862203-1": {
