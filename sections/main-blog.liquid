@@ -28,7 +28,7 @@
       {% endcase %}
     {% endfor %}
 
-    <div class="wrap-inner {% if section.settings.show_sidebar_right == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.show_sidebar_left == "left" %}grid has-sidebar sidebar-left{% endif %}">
+    <div class="wrap-inner {% if section.settings.show_sidebar_right == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.show_sidebar_left == "left"%}grid has-sidebar sidebar-left{% endif %}">
       {%- if blog.articles_count > 0 -%}
         <div class="list-blogs">
           <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
@@ -62,7 +62,7 @@
           </div>
         </div>
       {% endif %}
-      {%- if section.settings.show_sidebar_right != blank or section.settings.show_sidebar_left != blank -%}
+      {%- if section.settings.sidebar != blank -%}
         <div class="sidebar">
           <div class="scroll-sidebar">
           {%- liquid
