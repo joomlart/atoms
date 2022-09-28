@@ -129,7 +129,7 @@
 }
 
 @media screen and (min-width: 990px) {
-  .has-sidebar .sidebar {
+  .sidebar-right .sidebar {
     padding: 0 0 0 var(--grid-desktop-vertical-spacing);
   }
 }
