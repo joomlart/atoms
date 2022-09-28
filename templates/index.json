@@ -84,7 +84,10 @@
             "image": "shopify:\/\/shop_images\/model-in-sunglasses-and-summer-clothes.jpg",
             "title": "Silk Bodysuits Made For Day & Night",
             "link_label": "Shop men",
-            "link": "shopify:\/\/collections\/mens"
+            "link": "shopify:\/\/collections\/mens",
+            "link_style": "link",
+            "desktop_content_position": "middle-left",
+            "desktop_content_alignment": "right"
           }
         },
         "166123731380862203-1": {
@@ -93,14 +96,16 @@
             "image": "shopify:\/\/shop_images\/mens-fashion-close-up-of-shirt-and-belt.jpg",
             "title": "Spring\/Winter Collections",
             "link_label": "Shop women",
-            "link": "shopify:\/\/collections\/women"
+            "link": "shopify:\/\/collections\/women",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         }
       },
       "block_order": [
         "166123731380862203-0",
-        "166123731380862203-1",
-        "166123731380862203-2"
+        "166123731380862203-1"
       ],
       "settings": {
         "title": "",
@@ -349,7 +354,10 @@
             "image": "shopify:\/\/shop_images\/02_722d2347-3e61-4d00-83d6-ff9607e4f7b3.jpg",
             "title": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "166395536082863daf-1": {
@@ -358,7 +366,10 @@
             "image": "shopify:\/\/shop_images\/18492827_5963987.jpg",
             "title": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "166395536082863daf-2": {
@@ -367,7 +378,10 @@
           "settings": {
             "title": "Column",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         }
       },
@@ -464,7 +478,10 @@
             "image": "shopify:\/\/shop_images\/Ver_1.jpg",
             "title": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/women"
+            "link": "shopify:\/\/collections\/women",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "1661315842627cf75e-0": {
@@ -473,7 +490,10 @@
             "image": "shopify:\/\/shop_images\/18431022_tp239-blogbanner-01-s80-p-385-326.jpg",
             "title": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/latest-products"
+            "link": "shopify:\/\/collections\/latest-products",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "1661315842627cf75e-2": {
@@ -482,7 +502,10 @@
           "settings": {
             "title": "Column",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         }
       },
