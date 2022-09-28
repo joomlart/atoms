@@ -21,10 +21,10 @@
         "show_author": true,
         "padding_top": 0,
         "padding_bottom": 24,
-        "show_sidebar": false,
-        "blog_show_tags": false,
-        "blog_show_lastest_post": false,
-        "blog_categories": false
+        "show_sidebar": true,
+        "blog_show_tags": true,
+        "blog_show_lastest_post": true,
+        "blog_categories": true
       }
     }
   },
