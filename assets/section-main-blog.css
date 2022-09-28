@@ -124,6 +124,10 @@
   padding: var(--grid-desktop-vertical-spacing) 0 0;
 }
 
+.sidebar-left .sidebar {
+  order: -1;
+}
+
 @media screen and (min-width: 990px) {
   .has-sidebar .sidebar {
     padding: 0 0 0 var(--grid-desktop-vertical-spacing);
