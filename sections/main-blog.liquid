@@ -191,16 +191,20 @@
       "default": 36
     },
     {
-      "type": "checkbox",
-      "id": "show_sidebar_right",
-      "default": false,
-      "label": "Show Sidebar Right"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_sidebar_left",
-      "default": false,
-      "label": "Show Sidebar Left"
+      "type": "select",
+      "id": "sidebar",
+      "label": "Choose Position Sidebar",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        }
+      ],
+      "default": "middle"
     },
     {
       "type": "checkbox",
