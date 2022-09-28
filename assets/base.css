@@ -746,6 +746,10 @@ hr {
     display: block;
 }
 
+.full-unstyled-link:hover {
+  text-decoration: underline;
+}
+
 .placeholder {
     background-color: rgba(var(--color-foreground), 0.04);
     color: rgba(var(--color-foreground), 0.55);
