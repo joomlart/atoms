@@ -12,7 +12,7 @@
             "subheading": "Winter has here, which means only one thing in the world of fashion: layers.",
             "button_label": "Shop Collection",
             "link": "shopify:\/\/collections",
-            "link_style": "link",
+            "link_style": "solid",
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
