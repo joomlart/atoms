@@ -2885,8 +2885,17 @@
             "link": {
               "label": "Button link"
             },
-            "secondary_style": {
-              "label": "Use outline button style"
+            "link_style": {
+              "label": "Link style",
+              "solid": {
+                "label": "Solid"
+              },
+              "link": {
+                "label": "Link"
+              },
+              "outline": {
+                "label": "Outline"
+              }
             },
             "box_align": {
               "label": "Desktop content position",
