@@ -139,7 +139,7 @@
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
               <div class="banner__buttons">
-                <a{% if block.settings.link %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="button {% if block.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %}">{{ block.settings.button_label | escape }}</a>
+                <a{% if block.settings.link %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="{% if section.settings.link_style == 'link' %}link hightlight-link link--text{% elsif section.settings.link_style == 'solid' %}button{% else %}button button--secondary{% endif %}">{{ block.settings.button_label | escape }}</a>
               </div>
             {%- endif -%}
           </div>
@@ -375,10 +375,24 @@
           "label": "t:sections.slideshow.blocks.slide.settings.link.label"
         },
         {
-          "type": "checkbox",
-          "id": "button_style_secondary",
-          "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
-          "default": false
+          "type": "select",
+          "id": "link_style",
+          "label": "t:sections.slideshow.blocks.slide.settings.link_style.label",
+          "options": [
+            {
+              "value": "solid",
+              "label": "t:sections.slideshow.blocks.slide.settings.link_style.solid.label"
+            },
+            {
+              "value": "outline",
+              "label": "t:sections.slideshow.blocks.slide.settings.link_style.outline.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.slideshow.blocks.slide.settings.link_style.link.label"
+            }
+          ],
+          "default": "solid"
         },
         {
           "type": "select",
