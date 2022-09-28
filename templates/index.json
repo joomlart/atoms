@@ -250,7 +250,7 @@
         "show_description": false,
         "description_style": "uppercase",
         "collection": "women",
-        "show_card_collection": false,
+        "show_card_collection": true,
         "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
@@ -299,36 +299,6 @@
         "swipe_on_mobile": false,
         "padding_top": 24,
         "padding_bottom": 24
-      }
-    },
-    "166395389104be1881": {
-      "type": "rich-text",
-      "blocks": {
-        "1663953891ec7b9c09-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "1663953891ec7b9c09-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1663953891ec7b9c09-0",
-        "1663953891ec7b9c09-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": false,
-        "padding_top": 48,
-        "padding_bottom": 48
       }
     },
     "16639553608d564cc0": {
@@ -386,20 +356,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "166378704421cd1173": {
-      "type": "video",
-      "disabled": true,
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "video_url": "https:\/\/vimeo.com\/573432038",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 24,
-        "padding_bottom": 24
       }
     },
     "166174667909d0a0d7": {
@@ -627,9 +583,7 @@
     "1661247543e28986d1",
     "1661247551f65e1395",
     "16639099959fcc61f9",
-    "166395389104be1881",
     "16639553608d564cc0",
-    "166378704421cd1173",
     "166174667909d0a0d7",
     "166131584236e6d07c",
     "1661322877e178c8dc",
