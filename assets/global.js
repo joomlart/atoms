@@ -664,10 +664,12 @@ class SlideshowComponent extends SliderComponent {
       link.classList.remove('slider-counter__link--active');
       link.removeAttribute('aria-current');
     });
-    if (this.sliderControlButtons[this.currentPage - 1]) {
-      this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
-      this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
-    }
+    // if (this.sliderControlButtons[this.currentPage - 1]) {
+    //   this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
+    //   this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
+    // }
+    this.sliderControlButtons[this.currentPage - 1].classList.add('slider-counter__link--active');
+    this.sliderControlButtons[this.currentPage - 1].setAttribute('aria-current', true);
   }
 
   autoPlayToggle() {
@@ -746,10 +748,21 @@ class SlideshowComponent extends SliderComponent {
 customElements.define('slideshow-component', SlideshowComponent);
 
 class VariantSelects extends HTMLElement {
+  // constructor() {
+  //   super();
+  //   this.addEventListener('change', this.onVariantChange);
+  // }
   constructor() {
     super();
+    this.initLoad();
     this.addEventListener('change', this.onVariantChange);
   }
+  initLoad(){
+    this.updateOptions();
+    this.updateMasterId();
+    this.updateMedia();
+  }
+
 
   onVariantChange() {
     this.updateOptions();

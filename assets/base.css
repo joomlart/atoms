@@ -209,6 +209,7 @@
     --shadow-visible: var(--media-shadow-visible);
 }
 
+
 /* base */
 
 .no-js:not(html) {
@@ -1550,6 +1551,7 @@ button.shopify-payment-button__button--unbranded {
     text-transform: uppercase;
 }
 
+
 /* Button - other */
 
 .button:disabled,
@@ -2429,13 +2431,13 @@ input[type='checkbox'] {
     line-height: 0;
 }
 
-.header > .header__heading-link {
+.header>.header__heading-link {
     line-height: 0;
 }
 
 @media screen and (min-width: 750px) {
-    .header > .header__heading,
-    .header > .header__heading-link {
+    .header>.header__heading,
+    .header>.header__heading-link {
         width: 25%;
     }
 }
@@ -2505,7 +2507,6 @@ input[type='checkbox'] {
         width: 25%;
         justify-content: end;
     }
-
 }
 
 .header__icon:not(.header__icon--summary),
@@ -2787,7 +2788,7 @@ details[open]>.header__submenu {
 
 .header__menu-item:hover span {
     transition: text-decoration-thickness var(--duration-short) ease;
-    color:  var(--color-base-accent-3);
+    color: var(--color-base-accent-3);
 }
 
 details[open]>.header__menu-item {
@@ -3062,11 +3063,13 @@ details-disclosure>details {
     font-weight: var(--font-body-weight-bold);
 }
 
+
 /* Polycy Pages */
-.shopify-policy__container { 
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 0 1.5rem calc(var(--grid-desktop-vertical-spacing)*2);
+
+.shopify-policy__container {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: 0 1.5rem calc(var(--grid-desktop-vertical-spacing)*2);
 }
 
 .shopify-policy__title {
@@ -3079,14 +3082,12 @@ details-disclosure>details {
 
 @media screen and (min-width: 750px) {
     .shopify-policy__container {
-      padding-left: 5rem;
-      padding-right: 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
-
     .shopify-policy__title {
         max-width: 66.66%;
     }
-
     .shopify-policy__body {
         max-width: 66.66%;
     }
