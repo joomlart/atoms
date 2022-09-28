@@ -12,7 +12,7 @@
             "subheading": "Winter has here, which means only one thing in the world of fashion: layers.",
             "button_label": "Shop Collection",
             "link": "shopify:\/\/collections",
-            "link_style": "link",
+            "link_style": "solid",
             "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
@@ -65,11 +65,11 @@
       ],
       "settings": {
         "layout": "grid",
-        "slide_height": "large",
+        "slide_height": "169",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "show_text_below": true,
+        "show_text_below": false,
         "accessibility_info": "",
         "padding_top": 24,
         "padding_bottom": 24
@@ -84,7 +84,10 @@
             "image": "shopify:\/\/shop_images\/model-in-sunglasses-and-summer-clothes.jpg",
             "title": "Silk Bodysuits Made For Day & Night",
             "link_label": "Shop men",
-            "link": "shopify:\/\/collections\/mens"
+            "link": "shopify:\/\/collections\/mens",
+            "link_style": "link",
+            "desktop_content_position": "middle-left",
+            "desktop_content_alignment": "right"
           }
         },
         "166123731380862203-1": {
@@ -93,24 +96,16 @@
             "image": "shopify:\/\/shop_images\/mens-fashion-close-up-of-shirt-and-belt.jpg",
             "title": "Spring\/Winter Collections",
             "link_label": "Shop women",
-            "link": "shopify:\/\/collections\/women"
-          }
-        },
-        "166123731380862203-2": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Banner_1.jpg",
-            "title": "",
-            "link_label": "",
-            "link": "shopify:\/\/collections\/best-seller"
+            "link": "shopify:\/\/collections\/women",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         }
       },
       "block_order": [
         "166123731380862203-0",
-        "166123731380862203-1",
-        "166123731380862203-2"
+        "166123731380862203-1"
       ],
       "settings": {
         "title": "",
@@ -359,7 +354,10 @@
             "image": "shopify:\/\/shop_images\/02_722d2347-3e61-4d00-83d6-ff9607e4f7b3.jpg",
             "title": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "166395536082863daf-1": {
@@ -368,7 +366,10 @@
             "image": "shopify:\/\/shop_images\/18492827_5963987.jpg",
             "title": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "166395536082863daf-2": {
@@ -377,7 +378,10 @@
           "settings": {
             "title": "Column",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         }
       },
@@ -474,7 +478,10 @@
             "image": "shopify:\/\/shop_images\/Ver_1.jpg",
             "title": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/women"
+            "link": "shopify:\/\/collections\/women",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "1661315842627cf75e-0": {
@@ -483,7 +490,10 @@
             "image": "shopify:\/\/shop_images\/18431022_tp239-blogbanner-01-s80-p-385-326.jpg",
             "title": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/latest-products"
+            "link": "shopify:\/\/collections\/latest-products",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         },
         "1661315842627cf75e-2": {
@@ -492,7 +502,10 @@
           "settings": {
             "title": "Column",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
           }
         }
       },

@@ -48,13 +48,14 @@
 
 /* Title Blog */
 .article-card .card__heading {
+  font-size: calc(var(--font-heading-scale) * 2rem);;
   line-height: calc(1 + .25/var(--font-heading-scale));
   margin-bottom: 1.6rem;
   letter-spacing: 0;
 }
 
 .article-card .card__heading:hover {
-  color: var(--color-base-accent-3);
+
 }
 
 .blog-articles .article-card .card__information,

@@ -747,6 +747,10 @@ hr {
     display: block;
 }
 
+.full-unstyled-link:hover {
+  text-decoration: underline;
+}
+
 .placeholder {
     background-color: rgba(var(--color-foreground), 0.04);
     color: rgba(var(--color-foreground), 0.55);
@@ -2436,9 +2440,15 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 750px) {
+<<<<<<< HEAD
     .header>.header__heading,
     .header>.header__heading-link {
         width: 25%;
+=======
+    .header > .header__heading,
+    .header > .header__heading-link {
+        width: 20%;
+>>>>>>> 6eb9477c54cdb09d4334eb2bd7c094eb3a0eee1f
     }
 }
 
@@ -2504,7 +2514,7 @@ input[type='checkbox'] {
 
 @media screen and (min-width: 750px) {
     .header__icons {
-        width: 25%;
+        width: 20%;
         justify-content: end;
     }
 }
