@@ -43,12 +43,12 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/1ec80773ae8f353216fa2eed9f590604.jpg",
-            "heading": "Image slide",
+            "heading": "LOVE EVERY INCH OF YOURSELF.",
             "heading_size": "h3",
             "subheading": "Tell your brand's story through images",
             "button_label": "Shop Women",
             "link": "shopify:\/\/collections\/women",
-            "link_style": "link",
+            "link_style": "solid",
             "box_align": "middle-left",
             "show_text_box": false,
             "text_alignment": "left",
@@ -457,11 +457,10 @@
     },
     "166378704421cd1173": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_EpwlbeI4vU",
+        "video_url": "https:\/\/vimeo.com\/375445745",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
