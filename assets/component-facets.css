@@ -803,13 +803,14 @@ input.mobile-facets__checkbox {
     height: 1.6rem;
     position: absolute;
     left: 2.1rem;
-    top: 1.2rem;
+    top: 2rem;
     z-index: 0;
     appearance: none;
     -webkit-appearance: none;
 }
 
 .mobile-facets__label {
+    align-items: center;
     padding: 1.5rem 2rem 1.5rem 2.5rem;
     width: 100%;
     transition: background-color 0.2s ease;
@@ -827,7 +828,7 @@ input.mobile-facets__checkbox {
 
 .mobile-facets__label .icon-checkmark {
     position: absolute;
-    top: 1.9rem;
+    top: 3rem;
     left: 2.8rem;
     visibility: hidden;
 }
