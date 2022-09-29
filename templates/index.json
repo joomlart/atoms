@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/fashion-model-in-black-white.jpg",
             "heading": "WINTER\/SPRING CLOTHING 2022 COLLECTIONS",
-            "heading_size": "h2",
+            "heading_size": "h3",
             "subheading": "",
             "button_label": "Shop Collection",
             "link": "shopify:\/\/collections",
@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/model-in-latte-colored-hoodie.jpg",
             "heading": "OUR ICONIC DUNGAREES, ARE BACK IN STOCK",
-            "heading_size": "h2",
+            "heading_size": "h3",
             "subheading": "Unisex and oversized, with extra-big pockets",
             "button_label": "Shop Men",
             "link": "shopify:\/\/collections\/mens",
@@ -44,7 +44,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/allec-gomes-V2szTzezF2c-unsplash.jpg",
             "heading": "UP TO 50% OFF STYLES",
-            "heading_size": "h2",
+            "heading_size": "h3",
             "subheading": "Our latest endeavour features designs from around the world with materials so comfortable you won't want to wear anything else every again.",
             "button_label": "Shop Women",
             "link": "shopify:\/\/collections\/women",
