@@ -14,7 +14,7 @@ slideshow-component .slideshow.banner {
   --color-foreground: 255, 255, 255;
   --color-button: 255, 255, 255;
   --color-button-text: 0, 0, 0;
-  --font-heading-scale: 1.7;
+  --font-heading-scale: 2.133;
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 0;
