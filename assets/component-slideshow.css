@@ -53,7 +53,7 @@ slideshow-component .slideshow.banner {
   }
 }
 
-.banner--desktop-transparent .banner__heading {
+.banner--desktop-transparent .banner__box .banner__heading {
   color: rgb(var(--color-foreground));
   font-weight: 700;
   margin-bottom: 1.6rem;
@@ -69,6 +69,11 @@ slideshow-component .slideshow.banner {
 .slideshow__text > * {
   max-width: 100%;
   word-break: break-word;
+}
+
+.slideshow__text.banner__box .banner__heading {
+  font-weight: 700;
+  margin-bottom: 1.6rem;
 }
 
 @media screen and (max-width: 749px) {
