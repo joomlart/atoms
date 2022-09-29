@@ -7,7 +7,6 @@
 {% comment %}
   Vertical offset from bottom of browser for the position of the button.
 {% endcomment %}
-{% assign position_from_bottom = '4em' %}
 {% assign vertical_offset_for_trigger = 300 %}
 
 <a id="BackToTop" href="#" title="Back to the top" class="back-to-top hide">
@@ -17,19 +16,15 @@
 <style>
   .back-to-top {
     position: fixed;
-    bottom: {{ position_from_bottom }};
-    right: 0px;
+    bottom: 2rem;
+    right: 2rem;
     text-decoration: none;
-    color: #999;
-    background-color: #eee;
+    color: #fff;
+    background-color: var(--color-base-accent-1);
     font-size: 16px;
-    padding: 0.3em;
-    -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    padding: 1rem;
+    width: 4.8rem;
+    height: 4.8rem
     z-index: 60000;
   }
   .back-to-top i {
