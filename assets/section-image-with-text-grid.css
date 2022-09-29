@@ -132,6 +132,12 @@
     .image-with-text-grid .grid__item .inner {
         max-width: 50%;
     }
+
+    .image-with-text-grid .button--secondary {
+      --color-button: 255, 255, 255;
+      --color-button-text: 255, 255, 255;
+      --alpha-button-background: 0;
+    }
 }
 
 @media screen and (min-width: 980px) {
