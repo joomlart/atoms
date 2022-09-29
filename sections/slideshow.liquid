@@ -137,13 +137,23 @@
                 <span>{{ block.settings.subheading | escape }}</span>
               </div>
             {%- endif -%}
-            {%- if block.settings.button_label != blank -%}
+            {%- if block.settings.button_label != blank or block.settings.button_label2 != blank -%}
               <div class="banner__buttons">
+                {%- if block.settings.button_label != blank -%}
                 <a{% if block.settings.link %} href="{{ block.settings.link }}"{% else %} role="link" aria-disabled="true"{% endif %} class="{% if block.settings.link_style == 'link' %}link hightlight-link animate-arrow link--text{% elsif block.settings.link_style == 'solid' %}button{% else %}button button--secondary{% endif %}">{{ block.settings.button_label | escape }}
                   {% if block.settings.link_style == 'link' %}
                     <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
                   {% endif %}
                 </a>
+                {%- endif -%}
+
+                {%- if block.settings.button_label2 != blank -%}
+                <a{% if block.settings.link2 %} href="{{ block.settings.link2 }}"{% else %} role="link" aria-disabled="true"{% endif %} class="{% if block.settings.link_style2 == 'link' %}link hightlight-link animate-arrow link--text{% elsif block.settings.link_style2 == 'solid' %}button{% else %}button button--secondary{% endif %}">{{ block.settings.button_label2 | escape }}
+                  {% if block.settings.link_style2 == 'link' %}
+                    <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                  {% endif %}
+                </a>
+                {%- endif -%}
               </div>
             {%- endif -%}
           </div>
@@ -385,6 +395,83 @@
         {
           "type": "select",
           "id": "link_style",
+          "label": "t:sections.slideshow.blocks.slide.settings.link_style.label",
+          "options": [
+            {
+              "value": "solid",
+              "label": "t:sections.slideshow.blocks.slide.settings.link_style.solid.label"
+            },
+            {
+              "value": "outline",
+              "label": "t:sections.slideshow.blocks.slide.settings.link_style.outline.label"
+            },
+            {
+              "value": "link",
+              "label": "t:sections.slideshow.blocks.slide.settings.link_style.link.label"
+            }
+          ],
+          "default": "solid"
+        },
+        {
+          "type": "select",
+          "id": "box_align",
+          "options": [
+            {
+              "value": "top-left",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__1.label"
+            },
+            {
+              "value": "top-center",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__2.label"
+            },
+            {
+              "value": "top-right",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__3.label"
+            },
+            {
+              "value": "middle-left",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__4.label"
+            },
+            {
+              "value": "middle-center",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__5.label"
+            },
+            {
+              "value": "middle-right",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__6.label"
+            },
+            {
+              "value": "bottom-left",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__7.label"
+            },
+            {
+              "value": "bottom-center",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__8.label"
+            },
+            {
+              "value": "bottom-right",
+              "label": "t:sections.slideshow.blocks.slide.settings.box_align.options__9.label"
+            }
+          ],
+          "default": "middle-center",
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.label",
+          "info": "t:sections.slideshow.blocks.slide.settings.box_align.info"
+        },
+        {
+          "type": "text",
+          "id": "button_label2",
+          "default": "",
+          "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
+          "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
+        },
+        {
+          "type": "url",
+          "id": "link2",
+          "label": "t:sections.slideshow.blocks.slide.settings.link.label"
+        },
+        {
+          "type": "select",
+          "id": "link_style2",
           "label": "t:sections.slideshow.blocks.slide.settings.link_style.label",
           "options": [
             {
