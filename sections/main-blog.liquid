@@ -25,7 +25,7 @@
       <p class="description">{{ section.settings.description | escape }}</p>
     {% endif %}
 
-    <div class="wrap-inner {% if section.settings.sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.sidebar == "left"%}grid has-sidebar sidebar-left{% endif %}">
+    <div class="wrap-inner {% if section.settings.sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.sidebar == "left" %}grid has-sidebar sidebar-left{% endif %}">
       {%- if blog.articles_count > 0 -%}
         <div class="list-blogs">
           <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
@@ -121,7 +121,6 @@
       "id": "description",
       "label": "Description Masthead",
       "info": "Add description below Masthead"
-      
     },
     {
       "type": "checkbox",
