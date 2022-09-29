@@ -2,29 +2,19 @@
   "sections": {
     "main": {
       "type": "main-blog",
-      "blocks": {
-        "95a36706-c326-4bfc-b6ed-6c7f7c364090": {
-          "type": "description",
-          "settings": {
-            "des-masthead": "Create a stunning blog that suits your style. Choose from a selection of easy to use templates all with flexible layouts"
-          }
-        }
-      },
-      "block_order": [
-        "95a36706-c326-4bfc-b6ed-6c7f7c364090"
-      ],
       "settings": {
         "layout": "grid",
+        "description": "Create a stunning blog that suits your style. Choose from a selection of easy to use templates all with flexible layouts",
         "show_image": true,
         "image_height": "medium",
         "show_date": true,
         "show_author": true,
-        "padding_top": 0,
-        "padding_bottom": 24,
         "sidebar": "right",
         "blog_show_tags": true,
         "blog_show_lastest_post": true,
-        "blog_categories": true
+        "blog_categories": true,
+        "padding_top": 0,
+        "padding_bottom": 24
       }
     }
   },
