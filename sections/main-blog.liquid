@@ -29,7 +29,7 @@
     {% endfor %}
 
     {% if section.settings.description != "" %}
-      <p class="description">{section.settings.description}</p>
+      <p class="description">{{ section.settings.description }}</p>
     {% endif %}}
 
     <div class="wrap-inner {% if section.settings.sidebar == "right" %}grid has-sidebar sidebar-right{% endif %} {% if section.settings.sidebar == "left"%}grid has-sidebar sidebar-left{% endif %}">
