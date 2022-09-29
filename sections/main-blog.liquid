@@ -21,13 +21,6 @@
   <div class="main-blog page-width section-{{ section.id }}-padding">
     <h1 class="page--title h2">{{ blog.title | escape }}</h1>
 
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'description' %}
-          <p class="description{{ block.shopify_attributes }}">{{ block.settings.des-masthead | escape }}</p>
-      {% endcase %}
-    {% endfor %}
-
     {% if section.settings.description != "" %}
       <p class="description">{{ section.settings.description | escape }}</p>
     {% endif %}
@@ -238,19 +231,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    }
-  ],
-  "blocks": [
-    {
-      "name": "Description Masthead",
-      "type": "description",
-      "settings": [
-        {
-          "type": "text",
-          "id": "des-masthead",
-          "label": "Description"
-        }
-      ]
     }
   ]
 }
