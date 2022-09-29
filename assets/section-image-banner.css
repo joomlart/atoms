@@ -346,7 +346,6 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
-    color: rgb(var(--color-foreground),0.8);
   }
 
   .banner--desktop-transparent .button--secondary {

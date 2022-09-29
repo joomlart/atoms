@@ -108,11 +108,13 @@ slideshow-component .slideshow.banner {
   .slideshow__text.slideshow__text--left {
     align-items: flex-start;
     text-align: left;
+    max-width: 40%;
   }
 
   .slideshow__text.slideshow__text--right {
     align-items: flex-end;
     text-align: right;
+    max-width: 40%;
   }
 }
 
