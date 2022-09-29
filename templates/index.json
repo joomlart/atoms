@@ -295,7 +295,7 @@
         "show_product_description": false,
         "enable_quick_add": true,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 24,
         "padding_bottom": 24
       }
