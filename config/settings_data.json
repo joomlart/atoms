@@ -119,7 +119,6 @@
           },
           "d849346f-21a7-43b0-9431-c2e09faa5b6a": {
             "type": "announcement",
-            "disabled": true,
             "settings": {
               "text": "Welcome to our store"
             }
