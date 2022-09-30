@@ -568,7 +568,7 @@ blockquote p:last-child::before {
 
 @media screen and (min-width: 750px) {
     .caption {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -595,7 +595,7 @@ blockquote p:last-child::before {
 .field__input,
 .form__label,
 .select__select {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: calc(2 + 0.5 / var(--font-body-scale));
     letter-spacing: 0.04rem;
 }
