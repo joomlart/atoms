@@ -93,7 +93,7 @@
 }
 
 .button--primary {
-    --color-button: 193, 171, 124;
+    --color-button: 33, 33, 33;
     --color-button-text: 255, 255, 255;
     --alpha-button-background: 1;
 }
@@ -2378,13 +2378,14 @@ input[type='checkbox'] {
     text-align: left;
 }
 
-.announcement-bar.content-align-left .announcement-bar-item + .announcement-bar-item {
+.announcement-bar.content-align-left .announcement-bar-item+.announcement-bar-item {
     text-align: right;
 }
 
 .announcement-bar.content-align-right .announcement-bar-item {
     text-align: right;
 }
+
 
 /* section-header */
 
