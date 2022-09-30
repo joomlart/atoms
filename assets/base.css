@@ -2357,10 +2357,34 @@ input[type='checkbox'] {
     color: var(--color-base-text);
 }
 
+.announcement-bar-item {
+    width: 100%;
+}
+
 .announcement-bar-item:last-child {
     text-align: right;
 }
 
+.announcement-bar-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.announcement-bar.content-align-center .announcement-bar-item {
+    text-align: center;
+}
+
+.announcement-bar.content-align-left .announcement-bar-item {
+    text-align: left;
+}
+
+.announcement-bar.content-align-left .announcement-bar-item + .announcement-bar-item {
+    text-align: right;
+}
+
+.announcement-bar.content-align-right .announcement-bar-item {
+    text-align: right;
+}
 
 /* section-header */
 
