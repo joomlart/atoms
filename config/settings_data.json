@@ -114,15 +114,13 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Free U.S. Shipping Orders $60+ | Free Returns & Exchanges",
-              "link": ""
+              "text": "Free U.S. Shipping Orders $60+ | Free Returns & Exchanges"
             }
           },
           "d849346f-21a7-43b0-9431-c2e09faa5b6a": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
-              "link": ""
+              "text": "Welcome to our store"
             }
           }
         },
@@ -132,6 +130,7 @@
         ],
         "settings": {
           "color_scheme": "accent-1",
+          "content_alignment": "left",
           "mod_class": ""
         }
       },
