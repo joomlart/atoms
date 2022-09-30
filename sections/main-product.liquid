@@ -22,9 +22,11 @@
     }
   {%- endstyle -%}
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-  {%- if section.settings.gallery_layout  == "thumbnail_slider" -%}
+  {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
+    {% comment %}theme-check-disable{% endcomment %}
     {{ 'flickity.js' | asset_url | script_tag }}
     {{ 'flickity.css' | asset_url | stylesheet_tag }}
+    {% comment %}theme-check-enable{% endcomment %}
   {%- endif -%}
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
@@ -49,7 +51,7 @@
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
           </a>
-          {% if section.settings.gallery_layout  == "thumbnail_slider"  %}
+          {% if section.settings.gallery_layout == "thumbnail_slider" %}
             <div 
               id="Slider-Gallery-{{ section.id }}" 
               class="contains-media grid grid--peek list-unstyled slider slider--mobile" 
@@ -107,13 +109,13 @@
                 </li>
               {%- endunless -%}
             {%- endfor -%}
-            {%- if section.settings.gallery_layout  == "thumbnail_slider"  -%}
+            {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
             </div>
           </div>
           {% else %}  
           </ul>
           {% endif %}
-          {%- if section.settings.gallery_layout  != "thumbnail_slider"  -%}
+          {%- if section.settings.gallery_layout != "thumbnail_slider" -%}
           <div class="slider-buttons no-js-hidden quick-add-hidden{% if media_count < 2 or section.settings.mobile_thumbnails == 'show' %} small-hide{% endif %}">
             <button
               type="button"
@@ -159,7 +161,7 @@
             id="GalleryThumbnails-{{ section.id }}"
             class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
           >
-            {%- if section.settings.gallery_layout  != "thumbnail_slider"  -%}
+            {%- if section.settings.gallery_layout != "thumbnail_slider" -%}
             <button
               type="button"
               class="slider-button slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
@@ -171,7 +173,7 @@
               {% render 'icon-caret' %}
             </button>
             {%- endif -%}
-            {%- if section.settings.gallery_layout  == "thumbnail_slider"  -%}
+            {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
             <div 
               id="Slider-Thumbnails-{{ section.id }}" 
               class="carousel thumbnail-list thumbnail-list-{{ section.settings.gallery_layout }} list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}">
@@ -194,7 +196,7 @@
                   endcapture
                   assign media_index = media_index | plus: 1
                 -%}
-                {%- if section.settings.gallery_layout  == "thumbnail_slider"  -%}
+                {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
                   <div
                     id="Slide-Thumbnails-{{ section.id }}-0"
                     class="carousel-cell thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
@@ -236,7 +238,7 @@
                       loading="lazy"
                     >
                   </button>
-                  {%- if section.settings.gallery_layout  == "thumbnail_slider"  -%}
+                  {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
                     </div>
                   {%- else -%}
                     </li>
@@ -301,12 +303,12 @@
                   </li>
                 {%- endunless -%}
               {%- endfor -%}
-              {%- if section.settings.gallery_layout  == "thumbnail_slider"  -%}
+              {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
               </div>
             {%- else -%}
             </ul>
             {%- endif -%}
-            {%- if section.settings.gallery_layout  != "thumbnail_slider"  -%}
+            {%- if section.settings.gallery_layout != "thumbnail_slider" -%}
             <button
               type="button"
               class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
@@ -829,7 +831,7 @@
     }
   </script>
 </section>
-{%- if section.settings.gallery_layout  == "thumbnail_slider" -%}
+{%- if section.settings.gallery_layout == "thumbnail_slider" -%}
 <script>
   var elem = document.querySelector('.carousel.product__media-list');
     var flkty = new Flickity( elem, {
