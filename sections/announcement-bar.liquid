@@ -25,7 +25,7 @@
 .announcement-bar__message {
 }
 {% endstyle %}
-<div class="announcement-bar color-{{ section.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
+<div class="announcement-bar color-{{ section.settings.color_scheme }} content-align-{{ section.settings.content_alignment }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
   <div class="page-width">
     <div class="grid grid--2-col-desktop">
     {%- for block in section.blocks -%}
@@ -111,6 +111,26 @@
       "label": "t:sections.all.colors.label"
     },
     {
+      "type": "select",
+      "id": "content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.announcement-bar.settings.content_alignment.options__1.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.announcement-bar.settings.content_alignment.options__2.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.announcement-bar.settings.content_alignment.options__3.label"
+        }
+      ],
+      "default": "center",
+      "label": "t:sections.announcement-bar.settings.content_alignment.label"
+    },
+    {
       "type": "text",
       "id": "mod_class",
       "label": "Module Class Suffix"
@@ -126,39 +146,6 @@
           "id": "text",
           "default": "Welcome to our store",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
-        },
-        {
-          "type": "url",
-          "id": "link",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
-        }
-      ]
-    },
-    {
-      "type": "account",
-      "name": "t:sections.announcement-bar.blocks.account.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "login",
-          "default": "Login",
-          "label": "t:sections.announcement-bar.blocks.account.settings.login.name"
-        },
-        {
-          "type": "url",
-          "id": "link-login",
-          "label": "t:sections.announcement-bar.blocks.account.settings.login.link"
-        },
-        {
-          "type": "text",
-          "id": "register",
-          "default": "Register",
-          "label": "t:sections.announcement-bar.blocks.account.settings.register.name"
-        },
-        {
-          "type": "url",
-          "id": "link-register",
-          "label": "t:sections.announcement-bar.blocks.account.settings.register.link"
         }
       ]
     }
