@@ -7,8 +7,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/fashion-model-in-black-white.jpg",
-            "heading": "WINTER\/SPRING CLOTHING 2022 COLLECTIONS",
-            "heading_size": "h3",
+            "heading": "WINTER\/SPRING CLOTHING '22 COLLECTIONS",
+            "heading_size": "h2",
             "subheading": "",
             "button_label": "Shop Collection",
             "link": "shopify:\/\/collections",
@@ -26,7 +26,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/model-in-latte-colored-hoodie.jpg",
             "heading": "OUR ICONIC DUNGAREES, ARE BACK IN STOCK",
-            "heading_size": "h3",
+            "heading_size": "h2",
             "subheading": "Unisex and oversized, with extra-big pockets",
             "button_label": "Shop Men",
             "link": "shopify:\/\/collections\/mens",
@@ -65,11 +65,11 @@
       ],
       "settings": {
         "layout": "grid",
-        "slide_height": "169",
+        "slide_height": "medium",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "show_text_below": false,
+        "show_text_below": true,
         "accessibility_info": "",
         "padding_top": 24,
         "padding_bottom": 24
@@ -203,7 +203,7 @@
         "show_product_description": false,
         "enable_quick_add": true,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 24,
         "padding_bottom": 24
       }
@@ -295,7 +295,7 @@
         "show_product_description": false,
         "enable_quick_add": true,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 24,
         "padding_bottom": 24
       }
@@ -479,7 +479,7 @@
         "show_author": false,
         "show_view_all": true,
         "padding_top": 24,
-        "padding_bottom": 48
+        "padding_bottom": 24
       }
     },
     "166411064760263243": {
@@ -544,6 +544,18 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "77673be6-3642-430f-8c4b-c943e79e2923": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vogue_1f02433b-e8e9-4e17-86e3-09e1bf60ce8b.png",
+            "title": "",
+            "icon": "none",
+            "icon_position": "center",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -551,7 +563,8 @@
         "1664110647b9e3e26c-1",
         "1664110647b9e3e26c-2",
         "c0e7e888-7c35-4237-8ade-6e2e44de8c93",
-        "f7bfe4d6-2db9-49b4-8743-9d91349f1c52"
+        "f7bfe4d6-2db9-49b4-8743-9d91349f1c52",
+        "77673be6-3642-430f-8c4b-c943e79e2923"
       ],
       "settings": {
         "title": "",
@@ -559,13 +572,13 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 5,
+        "columns_desktop": 6,
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "color_scheme": "background-1",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 24,
         "padding_bottom": 48
