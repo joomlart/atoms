@@ -23,8 +23,10 @@
   {%- endstyle -%}
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
+    {% comment %}theme-check-disable{% endcomment %}
     {{ 'flickity.js' | asset_url | script_tag }}
     {{ 'flickity.css' | asset_url | stylesheet_tag }}
+    {% comment %}theme-check-enable{% endcomment %}
   {%- endif -%}
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
