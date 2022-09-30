@@ -318,7 +318,7 @@
             "image": "shopify:\/\/shop_images\/02_722d2347-3e61-4d00-83d6-ff9607e4f7b3.jpg",
             "title": "",
             "link_label": "",
-            "link": "",
+            "link": "shopify:\/\/collections\/all",
             "link_style": "link",
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center"
