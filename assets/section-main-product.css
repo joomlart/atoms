@@ -438,6 +438,11 @@ a.product__text {
     text-align: left;
 }
 
+.spr-form-review-rating a,
+.spr-form-review-rating a:hover {
+    color: #ffc107;
+}
+
 @media screen and (min-width: 750px) {
     #shopify-product-reviews {
         max-width: 66.66%;
