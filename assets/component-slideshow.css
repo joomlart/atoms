@@ -14,7 +14,6 @@ slideshow-component .slideshow.banner {
   --color-foreground: 255, 255, 255;
   --color-button: 255, 255, 255;
   --color-button-text: 0, 0, 0;
-  --font-heading-scale: 2.133;
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 0;
@@ -49,6 +48,10 @@ slideshow-component .slideshow.banner {
 }
 
 @media screen and (min-width: 750px) {
+  slideshow-component .slideshow.banner {
+    --font-heading-scale: 2.133;
+  }
+  
   .slideshow--placeholder.banner--adapt_image {
     height: 56rem;
   }
@@ -194,8 +197,17 @@ slideshow-component .slider-buttons .slider-button {
 }
 
 @media screen and (max-width: 749px) {
+  slideshow-component.mobile-text-below .slider-counter__link--dots.slider-counter__link {
+    --color-foreground: 0, 0, 0;
+  }
+
   slideshow-component.page-width .slideshow__autoplay {
     right: 1.5rem;
+  }
+
+  slideshow-component.mobile-text-below .slider-buttons {
+    position: relative;
+    bottom: auto;
   }
 }
 
