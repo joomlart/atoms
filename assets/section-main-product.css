@@ -440,7 +440,7 @@ a.product__text {
 
 @media screen and (min-width: 750px) {
     #shopify-product-reviews {
-        max-width: 60%;
+        max-width: 66.66%;
         margin-left: auto;
         margin-right: auto;
     }
