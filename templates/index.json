@@ -10,12 +10,12 @@
             "heading": "WINTER\/SPRING CLOTHING '22 COLLECTIONS",
             "heading_size": "h2",
             "subheading": "",
-            "button_label": "Shop Collection",
-            "link": "shopify:\/\/collections",
+            "button_label": "Shop Men",
+            "link": "shopify:\/\/collections\/mens",
             "link_style": "solid",
             "box_align": "middle-center",
-            "button_label2": "",
-            "link2": "",
+            "button_label2": "Shop Women",
+            "link2": "shopify:\/\/collections\/women",
             "link_style2": "solid",
             "show_text_box": false,
             "text_alignment": "center",
@@ -110,11 +110,24 @@
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center"
           }
+        },
+        "27fc9823-2bb7-4ddb-928d-95c9f28c125e": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Column",
+            "link_label": "",
+            "link": "",
+            "link_style": "link",
+            "desktop_content_position": "middle-center",
+            "desktop_content_alignment": "center"
+          }
         }
       },
       "block_order": [
         "166123731380862203-0",
-        "166123731380862203-1"
+        "166123731380862203-1",
+        "27fc9823-2bb7-4ddb-928d-95c9f28c125e"
       ],
       "settings": {
         "title": "",
