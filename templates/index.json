@@ -590,7 +590,7 @@
       ],
       "settings": {
         "title": "",
-        "mod_class": "",
+        "mod_class": "clients-list",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
