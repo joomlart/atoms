@@ -1066,6 +1066,7 @@ input.mobile-facets__checkbox {
     }
     .product-count-vertical {
         margin-left: 0;
+        display: none;
     }
     .facets-vertical .active-facets__button-wrapper {
         margin-bottom: 2rem;
@@ -1139,5 +1140,11 @@ input.mobile-facets__checkbox {
     }
     .facets-vertical .active-facets__button-remove {
         padding: 0 1rem 1rem;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .product-count-vertical {
+        display: block;
     }
 }
