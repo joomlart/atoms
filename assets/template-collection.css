@@ -200,6 +200,10 @@
   font-size: 3.06rem;
 }
 
+@media screen and (min-width: 990px){
+  
+}
+
 .collection .card-information > .price {
   font-size: 1.6rem;
   color: rgb(var(--color-base-accent-1));

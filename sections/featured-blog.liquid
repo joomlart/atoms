@@ -29,11 +29,17 @@
     assign posts_exceed_limit = true
     assign posts_displayed = section.settings.post_limit
   endif
+
+  assign columns_mobile_int = section.settings.columns_mobile | plus: 0
+  assign show_mobile_slider = false
+  if section.settings.swipe_on_mobile and posts_displayed > columns_mobile_int
+    assign show_mobile_slider = true
+  endif
 -%}
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
-  <div class="page-width isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
+  <div class="isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
-      <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
+      <div class="blogs__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}">
         <div class="inner">
           <h2 id="SectionHeading-{{ section.id }}" class="blog__title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
 
@@ -49,9 +55,9 @@
       </div>
     {%- endunless -%}
     {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
-      <slider-component class="slider-mobile-gutter">
+      <slider-component class="slider-mobile-gutter {% if show_mobile_slider == false %} page-width {% else %} page-width-desktop{% endif %}">
         <ul id="Slider-{{ section.id }}"
-          class="blog__posts articles-wrapper contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
+          class="blog__posts articles-wrapper contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop {% if show_mobile_slider %} slider slider--mobile{% endif %}"
           role="list"
         >
           {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
@@ -60,7 +66,7 @@
             </li>
           {%- endfor -%}
         </ul>
-        {%- if posts_exceed_limit -%}
+        {%- if show_mobile_slider -%}
           <div class="slider-buttons no-js-hidden{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
             <div class="slider-counter caption">
@@ -108,19 +114,19 @@
       "id": "heading_size",
       "options": [
         {
-          "value": "h2",
+          "value": "h4",
           "label": "t:sections.all.heading_size.options__1.label"
         },
         {
-          "value": "h1",
+          "value": "h3",
           "label": "t:sections.all.heading_size.options__2.label"
         },
         {
-          "value": "h0",
+          "value": "h2",
           "label": "t:sections.all.heading_size.options__3.label"
         }
       ],
-      "default": "h1",
+      "default": "h4",
       "label": "t:sections.all.heading_size.label"
     },
     {
@@ -199,6 +205,28 @@
       "id": "show_view_all",
       "default": true,
       "label": "t:sections.featured-blog.settings.show_view_all.label"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "default": "2",
+      "label": "t:sections.featured-blog.settings.columns_mobile.label",
+      "options": [
+        {
+          "value": "1",
+          "label": "t:sections.featured-blog.settings.columns_mobile.options__1.label"
+        },
+        {
+          "value": "2",
+          "label": "t:sections.featured-blog.settings.columns_mobile.options__2.label"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "default": false,
+      "label": "t:sections.featured-blog.settings.swipe_on_mobile.label"
     },
     {
       "type": "header",
