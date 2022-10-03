@@ -619,6 +619,18 @@ table:not([class]) th {
     border: 0.1rem solid rgba(var(--color-foreground), 0.2);
 }
 
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-responsive > table {
+    width: 100%;
+}
+
 .hidden {
     display: none !important;
 }

@@ -35,6 +35,13 @@ slideshow-component .slideshow.banner {
   padding:  3rem;
 }
 
+@media screen and (max-width: 919px) {
+  .slideshow__text.banner__box {
+    max-width: 100%;
+    padding:  1rem;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .slideshow--placeholder.banner--mobile-bottom.banner--adapt_image .slideshow__media,
   .slideshow--placeholder.banner--adapt_image:not(.banner--mobile-bottom) {
@@ -194,6 +201,12 @@ slideshow-component .slider-buttons .slider-button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 919px) {
+  slideshow-component .slider-buttons {
+    bottom:  1rem;
+  }
 }
 
 @media screen and (max-width: 749px) {
