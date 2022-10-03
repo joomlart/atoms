@@ -58,6 +58,9 @@
           {%- endif -%}
           </div>
 
+          {%- if block.settings.link_label == blank and block.settings.link != blank -%}
+            <a role="link" aria-disabled="true" href="{{ block.settings.link }}">
+          {%- endif -%}
           <div class="content banner__content--{{ block.settings.desktop_content_position }} banner--content-align-{{ block.settings.desktop_content_alignment }}">
             <div class="inner">
             {%- if block.settings.title != blank -%}
@@ -68,6 +71,9 @@
             {%- endif -%}
             </div>
           </div>
+          {%- if block.settings.link_label == blank and block.settings.link != blank -%}
+            </a>
+          {%- endif -%}
         </div>
       {%- endfor -%}
     </ul>
