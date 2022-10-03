@@ -40,7 +40,7 @@
 }
 
 .customer button {
-  margin: 3.2rem 0 1.6rem;
+  margin: 1.6rem 0;
 }
 
 .customer ul {
@@ -756,12 +756,12 @@
 .addresses form button + button {
   margin-top: 0rem;
 }
-
+/* 
 @media screen and (min-width: 750px) {
   .addresses li > button:first-of-type {
     margin-top: 3rem;
   }
-}
+} */
 
 .addresses form button:first-of-type {
   margin-right: 1rem;
@@ -851,9 +851,10 @@ li[data-address] > h2, .edit-address > h2 {
 
 .customer-address-default li {
   display: flex;
-  padding: 1.4rem;
+  padding: 1.4rem 1.4rem 1.4rem 0;
   border-bottom: 1px solid #eee;
 }
+
 .customer-address-default li span {
   text-align: left;
 }
