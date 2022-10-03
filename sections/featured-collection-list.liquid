@@ -61,7 +61,8 @@
                   class="{% if block.settings.view_all_style == 'link' %}link hightlight-link link--text{% elsif block.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
                   aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: block.settings.collection.title }}"
                 >
-                  {{ 'sections.featured_collection.view_all' | t }}
+                  <span>{{ 'sections.featured_collection.view_all' | t }}</span>
+                  <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
                 </a>
               </div>
             {%- endif -%}

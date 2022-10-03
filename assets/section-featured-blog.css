@@ -129,3 +129,16 @@
 .blog__posts .card-wrapper .card--media .ratio::before {
   padding-bottom: 66.66%;
 }
+
+.blog__view-all a span:first-child{
+  float: left;
+}
+
+.blog__view-all a span.icon-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.blog__view-all a:hover span.icon-wrap svg {
+  width: 1.6rem;
+}
