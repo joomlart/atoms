@@ -300,15 +300,12 @@
     const productGrid = document.getElementById('product-grid');
     var currentCollection = getCurrentCollection();
 
+
     if (!gridMode.classList.contains('active') && !listMode.classList.contains('active')){
       gridMode.classList.add('active');
     }
 
     if (gridMode){
-      var cardHeading = document.querySelectorAll(".card__heading");
-      [].forEach.call(cardHeading, function(el){
-        el.className = el.className.replace(/\bh4\b/, "h5");
-      });
       gridMode.addEventListener('click', function () {
         eraseCookie(`${currentCollection}-mode`);
         productGrid.classList.add(gridModeClass);
@@ -328,19 +325,11 @@
     if (listMode){
       // var data = '{"id": "1", "class": "listModeClass"}';
       // console.log(JSON.parse('{"id": "1", "class": "listModeClass"}'));
-      var cardHeading = document.querySelectorAll(".card__heading");
-      [].forEach.call(cardHeading, function(el){
-        el.className = el.className.replace(/\bh5\b/, "h4");
-      });
       var data = `{"collection": "${currentCollection}", "class": "${listModeClass}"}`;
       listMode.addEventListener('click', function () {
         setCookie(`${currentCollection}-mode`, data, 2);
         productGrid.classList.add(listModeClass);
         listMode.classList.add('active');
-        var elems = document.querySelectorAll(".card__heading.h5");
-        [].forEach.call(elems, function(el) {
-          el.className = el.className.replace(/\bh5\b/, "h4");
-        });
         if (productGrid.classList.contains(gridModeClass)){
           productGrid.classList.remove(gridModeClass);
         }
@@ -351,7 +340,7 @@
     }
 
     var cookieContent = getCookie(`${currentCollection}-mode`);
-
+    
     if(cookieContent){
       cookieContent = JSON.parse(cookieContent);
 

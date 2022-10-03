@@ -620,14 +620,14 @@ table:not([class]) th {
 }
 
 .table-responsive {
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.table-responsive > table {
+.table-responsive>table {
     width: 100%;
 }
 
@@ -1120,6 +1120,10 @@ summary::-webkit-details-marker {
 .product-list-mode .grid__item {
     width: 100% !important;
     max-width: 100% !important;
+}
+
+.product-list-mode .grid__item .card__heading {
+    font-size: calc(var(--font-heading-scale) * 2rem);
 }
 
 .product-list-mode .grid__item .card__desc {
