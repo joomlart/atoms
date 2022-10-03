@@ -79,7 +79,6 @@ slideshow-component .slideshow.banner {
 
 .slideshow__text > * {
   max-width: 100%;
-  word-break: break-word;
 }
 
 .slideshow__text.banner__box .banner__heading {
