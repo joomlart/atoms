@@ -179,6 +179,7 @@
 
 .footer-block__newsletter {
   text-align: left;
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 .newsletter-form__field-wrapper {
