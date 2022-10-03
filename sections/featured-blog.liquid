@@ -55,7 +55,7 @@
       </div>
     {%- endunless -%}
     {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
-      <slider-component class="slider-mobile-gutter {% if show_mobile_slider == false %} page-width {% endif %}">
+      <slider-component class="slider-mobile-gutter {% if show_mobile_slider == false %} page-width {% else %} page-width-desktop{% endif %}">
         <ul id="Slider-{{ section.id }}"
           class="blog__posts articles-wrapper contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid--peek grid--2-col-tablet grid--{{ section.settings.columns_desktop }}-col-desktop {% if show_mobile_slider %} slider slider--mobile{% endif %}"
           role="list"
