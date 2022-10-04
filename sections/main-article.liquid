@@ -2,7 +2,7 @@
 {{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
 
 {%- render 'breadcrumb' -%}
-<article class="article-template page-width {% if section.settings.sidebar %}has-sidebar sidebar-right sidebar-article{% endif %} " itemscope itemtype="http://schema.org/BlogPosting">
+<article class="article-template page-width {% if section.settings.sidebar %}sidebar-right sidebar-article{% endif %} " itemscope itemtype="http://schema.org/BlogPosting">
 
   <div class="article-content">
     {%- for block in section.blocks -%}
