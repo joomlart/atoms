@@ -41,9 +41,6 @@
   .has-sidebar .sidebar {
     padding: 0 0 0 var(--grid-desktop-vertical-spacing);
   }
-  .has-sidebar.sidebar-article div.sidebar {
-    padding: 13rem 0 0 var(--grid-desktop-horizontal-spacing);
-  }
 }
 
 @media screen and (min-width: 990px) {

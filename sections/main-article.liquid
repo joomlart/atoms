@@ -2,9 +2,8 @@
 {{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
 
 {%- render 'breadcrumb' -%}
-<article class="article-template page-width {% if section.settings.sidebar %}has-sidebar sidebar-right sidebar-article{% endif %} " itemscope itemtype="http://schema.org/BlogPosting">
+<article class="article-template page-width  " itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div class="article-content">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -12,7 +11,7 @@
             {% render block %}
           </div>
         {%- when 'title'-%}
-          <header class="" {{ block.shopify_attributes }}>
+          <header class="article-title" {{ block.shopify_attributes }}>
             <h1 class="article-template__title h2" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_date -%}
               <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -23,7 +22,8 @@
               </span>
             {%- endif -%}
           </header>
-        
+        <div class="{% if section.settings.sidebar %} has-sidebar sidebar-right sidebar-article{% endif %}">
+        <div class="article-content">
         {%- when 'featured_image'-%}
           {%- if article.image -%}
             <div class="article-template__hero-container" {{ block.shopify_attributes }}>
@@ -266,9 +266,9 @@
         </div>
     </div>
     {%- endif -%}
-  </div>
-
-  {% render 'sidebar-blog' %}
+    </div>
+    {% render 'sidebar-blog' %}
+    </div>
 </article>
 
 <script type="application/ld+json">
