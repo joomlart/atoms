@@ -14,7 +14,7 @@
         "blog_show_lastest_post": true,
         "blog_categories": true,
         "padding_top": 0,
-        "padding_bottom": 24
+        "padding_bottom": 48
       }
     }
   },
