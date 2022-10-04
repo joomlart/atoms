@@ -34,7 +34,7 @@
         padding-right: var(--media-shadow-horizontal-offset);
     }
     .product__info-wrapper {
-        padding-left: 5rem;
+        padding-left: calc(var(--grid-desktop-vertical-spacing) * 2);
     }
     .product__info-wrapper--extra-padding {
         padding-left: 8rem;
