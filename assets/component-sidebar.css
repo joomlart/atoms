@@ -154,6 +154,10 @@
   padding: .4rem 0;
 }
 
+.has-sidebar .blog-categories li .icon-svg {
+  width: 1.2rem;
+}
+
 .has-sidebar .blog-categories li a {
   text-decoration: none;
   color: var(--gradient-base-accent-1);
