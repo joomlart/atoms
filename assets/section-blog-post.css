@@ -1,5 +1,5 @@
 @media screen and (min-width: 990px) {
-  .article-template .article-content , {
+  .article-template .article-content {
     max-width: 80rem
   }
 }
