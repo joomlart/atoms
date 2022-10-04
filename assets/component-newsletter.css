@@ -68,6 +68,7 @@
 
 .newsletter-form__button:not(:focus-visible):not(.focused) {
   box-shadow: inherit;
+  background-color: var(--color-base-accent-1);
 }
 
 .newsletter-form__button .icon {
