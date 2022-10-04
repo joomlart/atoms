@@ -312,11 +312,11 @@ fieldset.product-form__input .form__label {
 
 /* Product info */
 
-.product__info-container > *+* {
+.product__info-container>*+* {
     margin: 1.5rem 0;
 }
 
-.product__info-container > .product__view-details {
+.product__info-container>.product__view-details {
     margin-bottom: 0;
 }
 
@@ -1226,11 +1226,6 @@ a.product__text {
     outline: none;
 }
 
-.thumbnail-list-thumbnail_slider .thumbnail-list__item {
-    width: 100px;
-    height: 100px;
-}
-
 @media screen and (min-width: 750px) {
     .product--stacked .thumbnail-list {
         display: none;
@@ -1247,6 +1242,10 @@ a.product__text {
     .flickity-enabled .flickity-viewport {
         display: block;
     }
+    .thumbnail-list-thumbnail_slider .thumbnail-list__item {
+        width: 75px;
+        height: 98px;
+    }
 }
 
 .thumbnail-list_item--variant:not(:first-child) {
@@ -1262,6 +1261,10 @@ a.product__text {
     }
     .product--large .thumbnail-list .flickity-slider {
         grid-template-columns: repeat(6, 1fr);
+    }
+    .thumbnail-list-thumbnail_slider .thumbnail-list__item {
+        width: 80px;
+        height: 100px;
     }
 }
 
@@ -1302,14 +1305,17 @@ a.product__text {
     .thumbnail-slider .thumbnail-list.slider--tablet-up .image-thumbnail {
         height: auto;
     }
-    .product__media-wrapper .slider:not(.slider--everywhere):not(.slider--desktop)+.slider-buttons {
-        display: none;
-    }
     .product__media-wrapper .slider-mobile-gutter .slider-button {
         display: none;
     }
+    .product__media-wrapper .slider-tablet-gutter .slider-button {
+        display: block;
+    }
     .product--thumbnail_slider .slider-mobile-gutter .slider-button {
         display: flex;
+    }
+    .product--thumbnail_slider .slider-mobile-gutter .slider-button[disabled] {
+        opacity: 0;
     }
 }
 
@@ -1361,7 +1367,7 @@ a.product__text {
     height: 100px;
 }
 
-.thumbnail-list-thumbnail_slider .thumbnail-list__item.is-selected img {
+.thumbnail-list-thumbnail_slider .thumbnail-list__item [aria-current] img {
     border: 1px solid rgb(var(--color-base-accent-1));
 }
 

@@ -22,12 +22,6 @@
     }
   {%- endstyle -%}
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-  {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
-    {% comment %}theme-check-disable{% endcomment %}
-    {{ 'flickity.js' | asset_url | script_tag }}
-    {{ 'flickity.css' | asset_url | stylesheet_tag }}
-    {% comment %}theme-check-enable{% endcomment %}
-  {%- endif -%}
 
   {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
   {%- if first_3d_model -%}
@@ -47,24 +41,15 @@
         data-desktop-layout="{{ section.settings.gallery_layout }}"
       >
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
-        <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter">
+        <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter {% if section.settings.gallery_layout == 'thumbnail_slider' %}slider-tablet-gutter {% endif %}">
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
           </a>
-          {% if section.settings.gallery_layout == "thumbnail_slider" %}
-            <div 
-              id="Slider-Gallery-{{ section.id }}" 
-              class="contains-media grid grid--peek list-unstyled slider slider--mobile" 
-              role="list"
-            >
-              <div class="carousel product__media-list product__media-{{ section.settings.gallery_layout }}">
-             {% else %}  
           <ul
             id="Slider-Gallery-{{ section.id }}"
-            class="product__media-list product__media-{{ section.settings.gallery_layout }} contains-media grid grid--peek list-unstyled slider slider--mobile"
+            class="product__media-list product__media-{{ section.settings.gallery_layout }} contains-media grid grid--peek list-unstyled slider slider--mobile {% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
             role="list"
           >
-          {% endif %}
             {%- liquid
               assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
               assign media_count = product.media.size
@@ -109,14 +94,8 @@
                 </li>
               {%- endunless -%}
             {%- endfor -%}
-            {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
-            </div>
-          </div>
-          {% else %}  
           </ul>
-          {% endif %}
-          {%- if section.settings.gallery_layout != "thumbnail_slider" -%}
-          <div class="slider-buttons no-js-hidden quick-add-hidden{% if media_count < 2 or section.settings.mobile_thumbnails == 'show' %} small-hide{% endif %}">
+          <div class="slider-buttons no-js-hidden quick-add-hidden{% if media_count < 2 or section.settings.mobile_thumbnails == 'show' %} small-hide{% endif %} {% if section.settings.gallery_layout == 'thumbnail_slider' %} slider-buttons--tablet-up{% endif %}">
             <button
               type="button"
               class="slider-button slider-button--prev"
@@ -140,7 +119,6 @@
               {% render 'icon-caret' %}
             </button>
           </div>
-          {% endif %}
         </slider-component>
         {%- if first_3d_model -%}
           <button
@@ -159,9 +137,8 @@
         {%- if media_count > 1 and section.settings.gallery_layout != 'stacked' or section.settings.mobile_thumbnails == 'show' or section.settings.gallery_layout != 'stacked_full' -%}
           <slider-component
             id="GalleryThumbnails-{{ section.id }}"
-            class="thumbnail-slider slider-mobile-gutter quick-add-hidden{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+            class="thumbnail-slider slider-mobile-gutter {% if section.settings.gallery_layout == 'thumbnail_slider' %}slider-tablet-gutter {% endif %} quick-add-hidden{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
           >
-            {%- if section.settings.gallery_layout != "thumbnail_slider" -%}
             <button
               type="button"
               class="slider-button slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
@@ -172,17 +149,10 @@
             >
               {% render 'icon-caret' %}
             </button>
-            {%- endif -%}
-            {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
-            <div 
-              id="Slider-Thumbnails-{{ section.id }}" 
-              class="carousel thumbnail-list thumbnail-list-{{ section.settings.gallery_layout }} list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}">
-            {%- else -%}
             <ul
               id="Slider-Thumbnails-{{ section.id }}"
               class="thumbnail-list thumbnail-list-{{ section.settings.gallery_layout }} list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
             >
-            {%- endif -%}
               {%- if featured_media != null -%}
                 {%- liquid
                   capture media_index
@@ -196,21 +166,12 @@
                   endcapture
                   assign media_index = media_index | plus: 1
                 -%}
-                {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
-                  <div
+                  <li
                     id="Slide-Thumbnails-{{ section.id }}-0"
-                    class="carousel-cell thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
+                    class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
                     data-target="{{ section.id }}-{{ featured_media.id }}"
                     data-media-position="{{ media_index }}"
                   >
-                  {%- else -%}
-                    <li
-                      id="Slide-Thumbnails-{{ section.id }}-0"
-                      class="thumbnail-list__item slider__slide{% if section.settings.hide_variants and variant_images contains featured_media.src %} thumbnail-list_item--variant{% endif %}"
-                      data-target="{{ section.id }}-{{ featured_media.id }}"
-                      data-media-position="{{ media_index }}"
-                    >
-                  {%- endif -%}
                   <button
                     class="thumbnail global-media-settings global-media-settings--no-shadow {% if featured_media.preview_image.aspect_ratio > 1 %}thumbnail--wide{% else %}thumbnail--narrow{% endif %}"
                     aria-label="{%- if featured_media.media_type == 'image' -%}{{ 'products.product.media.load_image' | t: index: media_index }}{%- elsif featured_media.media_type == 'model' -%}{{ 'products.product.media.load_model' | t: index: media_index }}{%- elsif featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}{{ 'products.product.media.load_video' | t: index: media_index }}{%- endif -%}"
@@ -238,11 +199,7 @@
                       loading="lazy"
                     >
                   </button>
-                  {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
-                    </div>
-                  {%- else -%}
-                    </li>
-                  {%- endif -%}
+                </li>
               {%- endif -%}
               {%- for media in product.media -%}
                 {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
@@ -303,12 +260,7 @@
                   </li>
                 {%- endunless -%}
               {%- endfor -%}
-              {%- if section.settings.gallery_layout == "thumbnail_slider" -%}
-              </div>
-            {%- else -%}
             </ul>
-            {%- endif -%}
-            {%- if section.settings.gallery_layout != "thumbnail_slider" -%}
             <button
               type="button"
               class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
@@ -319,7 +271,6 @@
             >
               {% render 'icon-caret' %}
             </button>
-          {%- endif -%}
           </slider-component>
         {%- endif -%}
       </media-gallery>
