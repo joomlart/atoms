@@ -156,6 +156,7 @@
 
 .has-sidebar .blog-categories li .icon-svg {
   width: 1.2rem;
+  height: auto;
 }
 
 .has-sidebar .blog-categories li a {
