@@ -1,5 +1,5 @@
 @media screen and (min-width: 990px) {
-  .article-template .article-content > div:not(.article-template__hero-container) {
+  .article-template .article-content > div {
     padding-right: 10rem
   }
 }
