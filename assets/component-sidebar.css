@@ -42,7 +42,7 @@
     padding: 0 0 0 var(--grid-desktop-vertical-spacing);
   }
   .has-sidebar.sidebar-article div.sidebar {
-    padding: 13rem 0 0 var(--grid-desktop-horizontal-spacing);
+    padding: 12rem 0 0 var(--grid-desktop-horizontal-spacing);
   }
 }
 
