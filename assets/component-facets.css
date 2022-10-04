@@ -280,6 +280,10 @@
     cursor: pointer;
 }
 
+.facets__item .facet-checkbox {
+    text-transform: capitalize;
+}
+
 .facet-checkbox {
     padding: .5rem 2rem .5rem 0;
     flex-grow: 1;
