@@ -320,6 +320,7 @@ fieldset.product-form__input .form__label {
     margin-bottom: 0;
 }
 
+.product__info-container .price--on-sale .price__sale,
 .product__info-container .price__regular .price-item--regular {
     color: #dc3545;
     font-size: 24px
