@@ -110,6 +110,10 @@
     padding-right: 1.75rem;
 }
 
+.facet-filters__sort option {
+    padding: 5px;
+}
+
 .facet-filters__sort+.icon-caret {
     right: 0;
 }
@@ -1027,7 +1031,7 @@ input.mobile-facets__checkbox {
         padding-bottom: 1.5rem;
     }
     .facets-vertical .facets-wrapper {
-        padding-right: 3.2rem;
+        padding-right: var(--grid-desktop-horizontal-spacing);
     }
     .facets-vertical .facets-wrapper--no-filters {
         display: none;
