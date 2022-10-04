@@ -25,13 +25,13 @@
 .announcement-bar__message {
 }
 {% endstyle %}
-<div class="announcement-bar color-{{ section.settings.color_scheme }} content-align-{{ section.settings.content_alignment }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
+<div class="announcement-bar color-{{ section.settings.color_scheme }} gradient" role="region" aria-label="{{ 'sections.header.announcement' | t }}">
   <div class="page-width">
     <div class="announcement-bar-inner">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'announcement' -%}
-          <div class="announcement-bar-item" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+          <div class="announcement-bar-item item-align-{{ block.settings.content_alignment }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
             {%- if block.settings.text != blank -%}
               {%- if block.settings.link != blank -%}
                 <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
@@ -86,26 +86,6 @@
       "label": "t:sections.all.colors.label"
     },
     {
-      "type": "select",
-      "id": "content_alignment",
-      "options": [
-        {
-          "value": "left",
-          "label": "t:sections.announcement-bar.settings.content_alignment.options__1.label"
-        },
-        {
-          "value": "center",
-          "label": "t:sections.announcement-bar.settings.content_alignment.options__2.label"
-        },
-        {
-          "value": "right",
-          "label": "t:sections.announcement-bar.settings.content_alignment.options__3.label"
-        }
-      ],
-      "default": "center",
-      "label": "t:sections.announcement-bar.settings.content_alignment.label"
-    },
-    {
       "type": "text",
       "id": "mod_class",
       "label": "Module Class Suffix"
@@ -121,6 +101,26 @@
           "id": "text",
           "default": "Welcome to our store",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "content_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.announcement-bar.blocks.content_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.announcement-bar.blocks.content_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.announcement-bar.blocks.content_alignment.options__3.label"
+            }
+          ],
+          "default": "center",
+          "label": "t:sections.announcement-bar.blocks.content_alignment.label"
         }
       ]
     }

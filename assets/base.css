@@ -2392,19 +2392,15 @@ input[type='checkbox'] {
     justify-content: space-between;
 }
 
-.announcement-bar.content-align-center .announcement-bar-item {
+.announcement-bar-item.item-align-center {
     text-align: center;
 }
 
-.announcement-bar.content-align-left .announcement-bar-item {
+.announcement-bar-item.item-align-left  {
     text-align: left;
 }
 
-.announcement-bar.content-align-left .announcement-bar-item+.announcement-bar-item {
-    text-align: right;
-}
-
-.announcement-bar.content-align-right .announcement-bar-item {
+.announcement-bar-item.item-align-right  {
     text-align: right;
 }
 
