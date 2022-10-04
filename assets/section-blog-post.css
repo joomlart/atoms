@@ -1,6 +1,6 @@
 @media screen and (min-width: 990px) {
-  .article-template .article-content > div {
-    padding-right: 10rem
+  .article-template .article-content , {
+    max-width: 80rem
   }
 }
 
