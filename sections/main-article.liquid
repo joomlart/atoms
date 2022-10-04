@@ -1,7 +1,8 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'component-sidebar.css' | asset_url | stylesheet_tag }}
 
 {%- render 'breadcrumb' -%}
-<article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="article-template page-width {% if section.settings.sidebar %}has-sidebar sidebar-right sidebar-article{% endif %} " itemscope itemtype="http://schema.org/BlogPosting">
 
   <div class="article-content">
     {%- for block in section.blocks -%}
@@ -13,7 +14,7 @@
         
         {%- when 'featured_image'-%}
           {%- if article.image -%}
-            <div class="article-template__hero-container page-width" {{ block.shopify_attributes }}>
+            <div class="article-template__hero-container" {{ block.shopify_attributes }}>
               <div class="article-template__hero-{{ block.settings.image_height }} media"
                 itemprop="image"
                 {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}
@@ -37,7 +38,7 @@
           {%- endif -%}
 
         {%- when 'title'-%}
-          <header class="page-width" {{ block.shopify_attributes }}>
+          <header class="" {{ block.shopify_attributes }}>
             <h1 class="article-template__title h2" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_date -%}
               <span class="circle-divider" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</span>
@@ -50,7 +51,7 @@
           </header>
 
         {%- when 'content'-%}
-          <div class="article-template__content page-width rte" itemprop="articleBody" {{ block.shopify_attributes }}>
+          <div class="article-template__content rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
           </div>
 
@@ -58,7 +59,7 @@
     {%- endfor -%}
 
     {%- if section.settings.show_footer_article -%}
-      <div class="page-width footer-article">
+      <div class="footer-article">
         {% comment %} Tag Article {% endcomment %}
         <div class="tag-article ">
           <ul>
@@ -102,7 +103,7 @@
 
     
     {%- if section.settings.show_previous_next_buttons -%}
-      <div class="page-width previous_next_buttons">
+      <div class="previous_next_buttons">
         <a href="{{ blog.previous_article }}" class="btn">
           Previous Post     
         </a>
@@ -112,14 +113,14 @@
       </div>
     {%- endif -%}
 
-    <div class="article-template__back element-margin-top center page-width">
+    <div class="article-template__back element-margin-top center ">
       <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
         <span class="icon-wrap">{% render 'icon-arrow' %}</span>
         {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
       </a>
     </div>
     {%- if blog.comments_enabled? -%}
-      <div class="article-template__comment-wrapper page-width">
+      <div class="article-template__comment-wrapper">
         <div id="comments">
           {%- if article.comments_count > 0 -%}
             {%- assign anchorId = '#Comments-' | append: article.id -%}
@@ -268,28 +269,7 @@
     {%- endif -%}
   </div>
 
-  {%- if section.settings.sidebar -%}
-    <div class="sidebar article-sidebar">
-      <div class="scroll-sidebar">
-      {%- liquid
-        if section.settings.blog_show_lastest_post
-          render 'latest-blog-posts'
-        endif
-      -%}
-
-      {%- liquid
-        if section.settings.blog_show_tags
-        render 'tags'
-        endif
-      -%}
-
-      {%- liquid
-        if section.settings.blog_categories
-        render 'blog-categories'
-        endif
-      -%}
-    </div>
-  {% endif %}
+  {% render 'sidebar-blog' %}
 </article>
 
 <script type="application/ld+json">
