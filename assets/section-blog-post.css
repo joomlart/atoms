@@ -281,6 +281,6 @@ header > span {
 
 .cmt-title {
   border-top: 1px solid var(--gradient-base-background-2);
-  padding-top: calc(2 * var(--grid-desktop-vertical-spacing);
+  padding-top: calc(2 * var(--grid-desktop-vertical-spacing));
 }
 
