@@ -1,5 +1,7 @@
-.article-template .article-content > div:not(.article-template__hero-container) {
-  padding-right: 10rem
+@media screen and (min-width: 990px) {
+  .article-template .article-content > div:not(.article-template__hero-container) {
+    padding-right: 10rem
+  }
 }
 
 .article-template > *:first-child:not(.article-template__hero-container) {
@@ -61,7 +63,7 @@
 ============================ */
 
 .article-template header {
-  margin: 1.6rem auto;
+  margin: 0 auto 1.6rem;
 }
 
 /* Title */
