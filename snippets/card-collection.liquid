@@ -66,7 +66,7 @@
             </p>
           {%- endif -%}
 
-          <h3 class="card__heading">
+          <h3 class="card__heading h4">
             <a{% if card_collection == blank %} role="link" aria-disabled="true"{% else %} href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link">
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
@@ -87,7 +87,7 @@
               {{- description | strip_html | truncatewords: 12 -}}
             </p>
           {%- endif -%}
-          <h3 class="card__heading">
+          <h3 class="card__heading h4">
             <a{% if card_collection == blank %} role="link" aria-disabled="true"{% else %} href="{{ card_collection.url }}"{% endif %} class="full-unstyled-link">
               {%- if card_collection.title != blank -%}
                 {{- card_collection.title | escape -}}
