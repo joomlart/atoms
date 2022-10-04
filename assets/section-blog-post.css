@@ -1,6 +1,7 @@
-.article-template > .page-width {
+/* .article-template > .page-width {
   max-width: 80rem;
-}
+} */
+
 .article-template > *:first-child:not(.article-template__hero-container) {
   margin-top: var(--grid-desktop-vertical-spacing);
 }
@@ -61,7 +62,6 @@
 
 .article-template header {
   margin: 1.6rem auto;
-  text-align: center;
 }
 
 /* Title */
