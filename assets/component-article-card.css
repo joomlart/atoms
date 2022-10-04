@@ -1,5 +1,5 @@
 @media screen and (max-width: 749px) {
-  .articles-wrapper .article {
+  .articles-wrapper:not(.grid--2-col-tablet) .article {
     width: 100%;
   }
 }

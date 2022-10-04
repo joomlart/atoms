@@ -1,6 +1,8 @@
-/* .article-template > .page-width {
-  max-width: 80rem;
-} */
+@media screen and (min-width: 990px) {
+  .article-template .article-content {
+    max-width: 80rem
+  }
+}
 
 .article-template > *:first-child:not(.article-template__hero-container) {
   margin-top: var(--grid-desktop-vertical-spacing);
@@ -61,7 +63,7 @@
 ============================ */
 
 .article-template header {
-  margin: 1.6rem auto;
+  margin: 0 auto 1.6rem;
 }
 
 /* Title */
