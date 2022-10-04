@@ -41,9 +41,6 @@
   .has-sidebar .sidebar {
     padding: 0 0 0 var(--grid-desktop-vertical-spacing);
   }
-  .has-sidebar.sidebar-article div.sidebar {
-    padding: 13rem 0 0 var(--grid-desktop-horizontal-spacing);
-  }
 }
 
 @media screen and (min-width: 990px) {
@@ -59,12 +56,12 @@
 /* Modlue Title */
 
 .has-sidebar .mod-title{
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0 0 1.6rem 0;
   text-transform: uppercase;
   padding: 0;
-  letter-spacing: 0;
+  letter-spacing: 0.04rem;
 }
 
 /* Tags */
@@ -152,6 +149,11 @@
   display: flex;
   text-transform: capitalize;
   padding: .4rem 0;
+}
+
+.has-sidebar .blog-categories li .icon-svg {
+  width: 1.2rem;
+  height: auto;
 }
 
 .has-sidebar .blog-categories li a {

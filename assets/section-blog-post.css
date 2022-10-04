@@ -63,7 +63,8 @@
 ============================ */
 
 .article-template header {
-  margin: 0 auto 1.6rem;
+  margin-bottom: 1.6rem;
+  max-width: 80rem;
 }
 
 /* Title */
@@ -277,5 +278,10 @@ header > span {
 
 .article-template__back:last-child {
   margin-bottom: 3.2rem;
+}
+
+.cmt-title {
+  border-top: .1rem solid rgba(var(--color-foreground),.08);
+  padding-top: calc(2 * var(--grid-desktop-vertical-spacing));
 }
 
