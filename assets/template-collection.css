@@ -84,6 +84,11 @@
   }
 }
 
+.collection__view-all a {
+  display: flex;
+  align-items: center;
+}
+
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
@@ -93,8 +98,7 @@
 }
 
 .collection__view-all a span.icon-wrap {
-  display: flex;
-  align-items: center;
+  margin-left: .8rem
 }
 
 .collection__view-all a:hover span.icon-wrap svg {
