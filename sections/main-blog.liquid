@@ -20,7 +20,7 @@
 {%- paginate blog.articles by 6 -%}
   {%- render 'breadcrumb'- %}
   <div class="main-blog page-width section-{{ section.id }}-padding">
-    <h1 class="page--title h2">{{ blog.title | escape }}</h1>
+    <h1 class="page--title h1">{{ blog.title | escape }}</h1>
 
     {% if section.settings.description != "" %}
       <p class="description">{{ section.settings.description | escape }}</p>
@@ -60,7 +60,7 @@
           </div>
         </div>
       {% endif %}
-      {%- if section.settings.sidebar != blank -%}
+      {%- if section.settings.sidebar != "full" -%}
         <div class="sidebar">
           <div class="scroll-sidebar">
           {%- liquid
