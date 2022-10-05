@@ -53,6 +53,10 @@
   padding-left: 0;
 }
 
+.sidebar-left .pagination-wrapper {
+  grid-column: 2/4
+}
+
 /* Modlue Title */
 
 .has-sidebar .mod-title{
