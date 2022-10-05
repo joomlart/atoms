@@ -9,7 +9,7 @@
         "image_height": "medium",
         "show_date": true,
         "show_author": true,
-        "sidebar": "right",
+        "sidebar": "left",
         "blog_show_tags": true,
         "blog_show_lastest_post": true,
         "blog_categories": true,
