@@ -7,7 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "<p>FAQs<\/p>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1": {
@@ -29,18 +29,9 @@
         "padding_top": 24,
         "padding_bottom": 24
       }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "suffix-class": "faqs-heading"
-      }
     }
   },
   "order": [
-    "b196a01e-f1bc-4e66-a068-4a8605559b96",
-    "main"
+    "b196a01e-f1bc-4e66-a068-4a8605559b96"
   ]
 }
