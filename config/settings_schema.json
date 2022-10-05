@@ -13,7 +13,7 @@
       {
         "type": "select",
         "id": "header_layout",
-        "label": "t:settings_schema.header.settings.header_layout.layout",
+        "label": "t:settings_schema.header.settings.header_layout.label",
         "options": [
           {
             "value": "01",
