@@ -337,9 +337,11 @@
     "header": {
       "name": "Header",
       "settings": {
-        "label": "Header Layout",
-        "label__1": "Header 01",
-        "label__2": "Header 02"
+        "header_layout": {
+          "label": "Header Layout",
+          "label__1": "Header 01",
+          "label__2": "Header 02"
+        }
       }
     }
   },
