@@ -8,6 +8,27 @@
     "theme_support_url": "https:\/\/joomlart.com\/"
   },
   {
+    "name": "t:settings_schema.header.settings.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "header_layout",
+        "label": "t:settings_schema.header.settings.header_layout.layout",
+        "options": [
+          {
+            "value": "01",
+            "label": "t:settings_schema.header.settings.header_layout.label__1"
+          },
+          {
+            "value": "02",
+            "label": "t:settings_schema.header.settings.header_layout.label__2"
+          }
+        ],
+        "default": "01"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
