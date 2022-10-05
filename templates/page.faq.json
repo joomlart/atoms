@@ -1,5 +1,35 @@
 {
   "sections": {
+    "b196a01e-f1bc-4e66-a068-4a8605559b96": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>FAQs<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-0",
+        "template--14995343081545__b196a01e-f1bc-4e66-a068-4a8605559b96-166496376312dfa138-1"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -10,6 +40,7 @@
     }
   },
   "order": [
+    "b196a01e-f1bc-4e66-a068-4a8605559b96",
     "main"
   ]
 }
