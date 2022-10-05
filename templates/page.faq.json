@@ -54,18 +54,18 @@
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "“Do you guys offer a refund or exchange?”",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>To save your time and reach our support quickly, please follow below steps:<br\/>\t<br\/><br\/>\t<\/p><p>Create a staff account for us (with Themes permission and Settings permission) <a href=\"http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members\">http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members<\/a><br\/>\tCapture screenshot or video for the issue you get.<br\/>\t<br\/>\tSpecify which template and version you are using.<br\/>\t<br\/>\tDescribe clearly how to reproduce the issue.<br\/>\t<br\/>\tSend all information (staff account, screenshot, video, template name and version, description of the issues, link) to <br\/>\t<a href=\"mailto:email@domain.com\">email@domain.com<\/a><\/p>",
             "page": ""
           }
         },
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "“Would assistance be available to upload the template if needed?”",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes, we will assist you to install the template if needed<\/p>",
             "page": ""
           }
         }
