@@ -57,6 +57,11 @@ slider-component.slider-component-full-width {
     .slider.slider--mobile.contains-content-container .slider__slide {
         --focus-outline-padding: 0rem;
     }
+    .product--thumbnail_slider .slider-buttons {
+        width: auto;
+        left: 1.5rem;
+        right: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 750px) {
@@ -302,6 +307,47 @@ slider-component.slider-component-full-width {
     justify-content: center;
 }
 
+.product--thumbnail_slider .slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    height: 2px;
+}
+
+.product--thumbnail_slider .slider-counter {
+    display: none;
+}
+
+.product--thumbnail_slider .slider-button .icon {
+    height: 2rem;
+}
+
+.product--thumbnail_slider .thumbnail-slider.slider-tablet-gutter .slider-button {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 2;
+}
+
+.product--thumbnail_slider .thumbnail-slider.slider-tablet-gutter .slider-button[disabled] {
+    opacity: 0;
+}
+
+.product--thumbnail_slider .thumbnail-slider.slider-tablet-gutter .slider-button .icon {
+    height: 1rem;
+}
+
+.product--thumbnail_slider .thumbnail-slider.slider-tablet-gutter .slider-button.slider-button--prev {
+    left: 0;
+}
+
+.product--thumbnail_slider .thumbnail-slider.slider-tablet-gutter .slider-button.slider-button--next {
+    right: 0;
+}
+
 @media screen and (min-width: 990px) {
     .slider:not(.slider--everywhere):not(.slider--desktop)+.slider-buttons {
         display: none;
@@ -321,39 +367,8 @@ slider-component.slider-component-full-width {
     .slider--mobile+.slider-buttons {
         display: none;
     }
-    .slider--tablet-up+.slider-buttons {
-        display: flex;
-        justify-content: space-between;
-        margin-top: -1px;
-        position: absolute;
-        top: 50%;
+    .product--thumbnail_slider .slider-buttons {
         width: 100%;
-        z-index: 2;
-        height: 2px;
-    }
-    .slider-buttons--tablet-up .slider-counter {
-        display: none;
-    }
-    .slider-buttons--tablet-up .slider-button .icon {
-        height: 2rem;
-    }
-    .thumbnail-slider.slider-tablet-gutter .slider-button {
-        position: absolute;
-        top: 50%;
-        margin-top: -22px;
-        z-index: 2;
-    }
-    .thumbnail-slider.slider-tablet-gutter .slider-button[disabled] {
-        opacity: 0;
-    }
-    .thumbnail-slider.slider-tablet-gutter .slider-button .icon {
-        height: 1rem;
-    }
-    .thumbnail-slider.slider-tablet-gutter .slider-button.slider-button--prev {
-        left: 0;
-    }
-    .thumbnail-slider.slider-tablet-gutter .slider-button.slider-button--next {
-        right: 0;
     }
 }
 

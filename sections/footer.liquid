@@ -36,7 +36,15 @@
   }
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+{%- liquid
+  if section.settings.footer_type == "footer-type-1"
+    assign footer_type = 'ftype-1'
+  else
+    assign footer_type = 'ftype-2'
+  endif
+-%}
+
+<footer class="{{ footer_type }} footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   <div class="page-width"> 
     <div class="inner"> 
       {%- if section.blocks.size > 0 or section.settings.newsletter_enable -%}
@@ -485,6 +493,22 @@
     }
   ],
   "settings": [
+    {
+      "type": "select",
+      "id": "footer_type",
+      "options": [
+        {
+          "value": "footer-type-1",
+          "label": "t:sections.footer.settings.footer-type-1.label"
+        },
+        {
+          "value": "footer-type-2",
+          "label": "t:sections.footer.settings.footer-type-2.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    },
     {
       "type": "select",
       "id": "color_scheme",
