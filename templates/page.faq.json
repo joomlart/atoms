@@ -1,21 +1,15 @@
 {
   "sections": {
-    "1663821762badf5565": {
-      "type": "breadcrumb",
-      "settings": {
-      }
-    },
     "main": {
       "type": "main-page",
       "settings": {
         "padding_top": 0,
         "padding_bottom": 0,
-        "suffix-class": "contact-heading"
+        "suffix-class": "faqs-heading"
       }
     }
   },
   "order": [
-    "1663821762badf5565",
     "main"
   ]
 }
