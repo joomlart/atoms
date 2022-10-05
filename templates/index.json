@@ -1,5 +1,23 @@
 {
   "sections": {
+    "fd1d5e30-131a-4d3c-a78a-f820e3345fc6": {
+      "type": "header-1",
+      "settings": {
+        "color_scheme": "background-1",
+        "logo": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
+        "logo_text": "atoms.",
+        "logo_font": "helvetica_n4",
+        "logo_width": 100,
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "show_line_separator": true,
+        "enable_sticky_header": true,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "1663955354d4347362": {
       "type": "slideshow",
       "blocks": {
@@ -610,6 +628,7 @@
     }
   },
   "order": [
+    "fd1d5e30-131a-4d3c-a78a-f820e3345fc6",
     "1663955354d4347362",
     "166123731426fbd8a6",
     "1661246556b905fdde",
