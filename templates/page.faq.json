@@ -36,18 +36,18 @@
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "“Will your template be fully compatible with Shopify?”",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes it will be<\/p>",
             "page": ""
           }
         },
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "“What is included in the theme package?”",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Please make sure that you follow below steps:<br\/><\/p><p>1)<\/p><p>2)<\/p><p>3)<\/p><p><\/p>",
             "page": ""
           }
         },
