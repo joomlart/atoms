@@ -36,17 +36,10 @@
   }
 {%- endstyle -%}
 
-{%- liquid
-  if section.settings.footer_type == "footer-type-1"
-    assign footer_type = 'ftype-1'
-  else
-    assign footer_type = 'ftype-2'
-  endif
--%}
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'footer-type-1' -%}
-    <footer class="{{ footer_type }} footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+    <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
       <div class="page-width"> 
         <div class="inner"> 
           {%- if section.blocks.size > 0 or section.settings.newsletter_enable -%}
@@ -428,6 +421,19 @@
           "id": "text",
           "default": "Welcome Footer Type 1",
           "label": "t:sections.footer.blocks.footer-type-1.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Quick links",
+          "label": "t:sections.footer.blocks.link_list.settings.heading.label"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "default": "footer",
+          "label": "t:sections.footer.blocks.link_list.settings.menu.label",
+          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
         }
       ]
     },
