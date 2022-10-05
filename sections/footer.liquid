@@ -38,13 +38,14 @@
 
 {%- liquid
   if section.settings.footer_type == "footer-type-1"
-    assign footer_type = 'ftype-1'
+    assign footer_type = 'Footer 1'
   else
-    assign footer_type = 'ftype-2'
+    assign footer_type = 'Footer 2'
   endif
 -%}
+{{ footer_type }}
 
-<footer class="{{ footer_type }} footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   <div class="page-width"> 
     <div class="inner"> 
       {%- if section.blocks.size > 0 or section.settings.newsletter_enable -%}
