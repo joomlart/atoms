@@ -159,9 +159,13 @@
   float: left;
 }
 
-.blog__view-all a span.icon-wrap {
+.blog__view-all a {
   display: flex;
   align-items: center;
+}
+
+.blog__view-all a span.icon-wrap {
+  margin-left: .8rem
 }
 
 .blog__view-all a:hover span.icon-wrap svg {
