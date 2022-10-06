@@ -1,6 +1,6 @@
 {
   "current": {
-    "header_layout": "02",
+    "header_layout": "01",
     "footer_layout": "02",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
@@ -228,7 +228,7 @@
           "enable_sticky_header": false,
           "margin_bottom": 0,
           "padding_top": 24,
-          "padding_bottom": 24
+          "padding_bottom": 0
         }
       },
       "footer-02": {
