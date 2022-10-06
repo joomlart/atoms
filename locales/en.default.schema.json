@@ -2822,7 +2822,7 @@
           }
         },
         "image": {
-          "name": "image",
+          "name": "Image",
           "settings": {
             "text": {
               "label": "Image"
