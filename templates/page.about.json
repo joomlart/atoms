@@ -241,6 +241,7 @@
         "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-3"
       ],
       "settings": {
+        "class_suffix": "",
         "caption": "",
         "heading": "Collapsible content",
         "heading_size": "h1",
@@ -265,14 +266,9 @@
             "heading_size": "h1"
           }
         },
-        "b4323898-0727-45c6-8fb7-5c2990efde93": {
-          "type": "signature",
-          "settings": {
-            "img-signature": "shopify:\/\/shop_images\/female-yoga-fashion-with-yoga-mat.jpg"
-          }
-        },
         "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "",
             "button_link": "",
@@ -287,13 +283,19 @@
           "settings": {
             "text": "<p>Atoms caters to thoughtful shoppers who appreciate unique designs and top quality pieces you just can’t find anywhere else. We are constantly curating fresh new collections and looking for the next big thing our customers will love. Founded in Chicago in 2015, we are proud to be your Online Clothing Shop that you can rely on for our expert service and care.<\/p><p>In 2015, we opened the ways to our leader store in Chicago, US. In this space we work crosswise over various mediums from fashion and photography to accommodation. There’s nothing we won’t do. Joint efforts are constantly invited and sustained.  <\/p><p><br\/>Summer 2016 saw the dispatch of ‘Atoms’ ‘s eponymous mark, which centers around quality, wearability and present day effortlessness. We cherish the sentiment of unisex garments, so we plan in light of the two sexual orientations. The mark exists outside of fashion seasons. We will continue adding to the line consistently, so keep your eyes stripped.  <\/p><p><br\/>2018 imprints the beginning of our first worldwide endeavor. Venturing into the US advertise, ‘Atoms’ has arrived in a standout amongst L.A’s most looked for after retail areas, Platform. Exhibiting our most cherished British brands and banding together with any semblance of Psychic Sisters, an energizing new section is standing by. <\/p>"
           }
+        },
+        "b4323898-0727-45c6-8fb7-5c2990efde93": {
+          "type": "signature",
+          "settings": {
+            "img-signature": "shopify:\/\/shop_images\/female-yoga-fashion-with-yoga-mat.jpg"
+          }
         }
       },
       "block_order": [
         "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0",
-        "b4323898-0727-45c6-8fb7-5c2990efde93",
         "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-2",
-        "4682a639-6655-4fc0-b29d-3105b6eaa917"
+        "4682a639-6655-4fc0-b29d-3105b6eaa917",
+        "b4323898-0727-45c6-8fb7-5c2990efde93"
       ],
       "settings": {
         "class_suffix": "",
