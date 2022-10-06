@@ -595,7 +595,8 @@
     }
 
     connectedCallback() {
-      this.header = document.getElementById('shopify-section-header');
+      this.header = document.getElementById('shopify-section-header')
+        || document.getElementById('shopify-section-header-02');
       this.headerBounds = {};
       this.currentScrollTop = 0;
       this.preventReveal = false;

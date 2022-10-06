@@ -241,6 +241,7 @@
         "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-3"
       ],
       "settings": {
+        "class_suffix": "",
         "caption": "",
         "heading": "Collapsible content",
         "heading_size": "h1",
@@ -271,17 +272,6 @@
             "img-signature": "shopify:\/\/shop_images\/female-yoga-fashion-with-yoga-mat.jpg"
           }
         },
-        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
         "4682a639-6655-4fc0-b29d-3105b6eaa917": {
           "type": "text",
           "settings": {
@@ -292,7 +282,6 @@
       "block_order": [
         "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0",
         "b4323898-0727-45c6-8fb7-5c2990efde93",
-        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-2",
         "4682a639-6655-4fc0-b29d-3105b6eaa917"
       ],
       "settings": {
@@ -300,7 +289,6 @@
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "background-1",
-        "image": "shopify:\/\/shop_images\/model-in-latte-colored-hoodie.jpg",
         "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
