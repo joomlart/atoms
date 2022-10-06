@@ -29,6 +29,11 @@
             "text": "<p>Suspendisse mollis vitae nibh ut tristique. Vivamus a mi scelerisque risus tempor fermentum at a tortor. Ut bibendum nisi tristique dolor tempus, sed cursus sapien malesuada. Cras ornare leo nec hendrerit aliquam. Sed ut aliquam purus, in consectetur justo. Proin consequat dapibus est id sagittis. Vestibulum vitae facilisis turpis, in commodo lacus. Nunc pharetra lorem in quam semper, et lacinia purus posuere.<\/p><p><\/p>"
           }
         },
+        "fdebaa4e-e6c4-4a72-b3e7-9ae77aa1f48a": {
+          "type": "signature",
+          "settings": {
+          }
+        },
         "3c967c88-06f1-4c30-a5cc-d6237a1e7d02": {
           "type": "heading",
           "settings": {
@@ -46,6 +51,7 @@
       "block_order": [
         "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-0",
         "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-1",
+        "fdebaa4e-e6c4-4a72-b3e7-9ae77aa1f48a",
         "3c967c88-06f1-4c30-a5cc-d6237a1e7d02",
         "62a1492a-852e-4161-bb9c-2d1120782da5"
       ],
