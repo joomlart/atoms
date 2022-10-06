@@ -298,9 +298,10 @@
       "settings": {
         "class_suffix": "",
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "background-1",
-        "full_width": true,
+        "image": "shopify:\/\/shop_images\/model-in-latte-colored-hoodie.jpg",
+        "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -311,14 +312,14 @@
         "template--14995394134089__42f447c2-ad66-4245-a53b-f6d519f38d08-1665039897e5706844-0": {
           "type": "heading",
           "settings": {
-            "heading": "It pains me physically to see woman victimized, rendered pathetic by fashion.",
-            "heading_size": "h2"
+            "heading": "Commitment To Quality",
+            "heading_size": "h1"
           }
         },
         "template--14995394134089__42f447c2-ad66-4245-a53b-f6d519f38d08-1665039897e5706844-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>If you do this, something will change, what will change is that you will change, your life will change, and if you can change you, you can perhaps change the world.<\/p>",
             "text_style": "body"
           }
         }
@@ -330,12 +331,56 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/footwear-close-up-man-tying-shoelace.jpg",
         "height": "adapt",
-        "desktop_image_width": "large",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1f3eb8b5-2a36-4aa3-a3f9-386da90a8279": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-0",
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-1",
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/a-store-owner-checks-her-customer-orders.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -412,6 +457,7 @@
     "85071847-bc9b-4a63-8f7b-e890b5dde5f6",
     "d907dfba-3a8d-4c3a-a756-aca10721690e",
     "42f447c2-ad66-4245-a53b-f6d519f38d08",
+    "1f3eb8b5-2a36-4aa3-a3f9-386da90a8279",
     "4020a671-d28b-484f-a33b-4d16d118204e"
   ]
 }
