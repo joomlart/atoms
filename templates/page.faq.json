@@ -78,6 +78,7 @@
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-3"
       ],
       "settings": {
+        "class_suffix": "faqs-page",
         "caption": "",
         "heading": "",
         "heading_size": "h1",
