@@ -1,21 +1,21 @@
 {
   "sections": {
+    "61f849a9-f600-4591-8f82-0e40cc947bc5": {
+      "type": "breadcrumb",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28,
-        "suffix-class": ""
-      }
-    },
-    "61f849a9-f600-4591-8f82-0e40cc947bc5": {
-      "type": "breadcrumb",
-      "settings": {
+        "suffix-class": "about-us"
       }
     }
   },
   "order": [
-    "main",
-    "61f849a9-f600-4591-8f82-0e40cc947bc5"
+    "61f849a9-f600-4591-8f82-0e40cc947bc5",
+    "main"
   ]
 }
