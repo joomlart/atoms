@@ -52,6 +52,7 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'signature' -%}
+            <img src="{{ block.settings.signature | img_url: 'large' }}" alt="Team photo">
 <!--               <img
                 srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
                   {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
