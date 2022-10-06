@@ -2167,6 +2167,9 @@
         "title": {
           "label": "Heading"
         },
+        "sub-title": {
+          "label": "Sub Heading"
+        },
         "image_width": {
           "label": "Image width",
           "options__1": {
