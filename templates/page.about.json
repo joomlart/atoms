@@ -99,6 +99,7 @@
       ],
       "settings": {
         "title": "",
+        "sub-title": "This is description section",
         "mod_class": "about-us",
         "heading_size": "h1",
         "image_width": "full",
@@ -162,6 +163,7 @@
       ],
       "settings": {
         "title": "Founders",
+        "sub-title": "Cursus elit, iaculis platea integer nisl sapien egestas. Itae donec ornare iaculis mauris nec ultrices ullamcorper tempus dignissim. Purus odio blandit sem.",
         "mod_class": "",
         "heading_size": "h1",
         "image_width": "full",
