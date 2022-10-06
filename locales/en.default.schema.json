@@ -2821,7 +2821,7 @@
         "signature": {
           "name": "Signature",
           "settings": {
-            "img-signature": {
+            "text": {
               "label": "Signature"
             } 
           }
