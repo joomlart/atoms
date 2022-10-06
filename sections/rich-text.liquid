@@ -18,7 +18,7 @@
   }
 {%- endstyle -%}
 
-<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %} {% if section.settings.class_suffix != blank %} {{ section.settings.class_suffix }} {% endif %}}}">
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %} {% if section.settings.class_suffix != blank %} {{ section.settings.class_suffix }} {% endif %}}">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank %} placeholder{% endif %}">
       {%-liquid
