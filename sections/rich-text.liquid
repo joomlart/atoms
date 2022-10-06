@@ -52,7 +52,7 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'signature' -%}
-              <img
+<!--               <img
                 srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
                   {%- if section.settings.image.width >= 360 -%}{{ section.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
                   {%- if section.settings.image.width >= 535 -%}{{ section.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
@@ -66,7 +66,7 @@
                 loading="lazy"
                 width="{{ section.settings.image.width }}"
                 height="{{ section.settings.image.height }}"
-              >
+              > -->
             {%- when 'text' -%}
               <div class="rich-text__text rte" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
