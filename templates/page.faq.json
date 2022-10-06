@@ -38,7 +38,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "“Will your template be fully compatible with Shopify?”",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Yes it will be<\/p>",
             "page": ""
           }
@@ -47,7 +47,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "“What is included in the theme package?”",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Please make sure that you follow below steps:<br\/><\/p><p>1)<\/p><p>2)<\/p><p>3)<\/p><p><\/p>",
             "page": ""
           }
@@ -56,7 +56,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "“Do you guys offer a refund or exchange?”",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>To save your time and reach our support quickly, please follow below steps:<br\/>\t<br\/><br\/>\t<\/p><p>Create a staff account for us (with Themes permission and Settings permission) <a href=\"http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members\">http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members<\/a><br\/>\tCapture screenshot or video for the issue you get.<br\/>\t<br\/>\tSpecify which template and version you are using.<br\/>\t<br\/>\tDescribe clearly how to reproduce the issue.<br\/>\t<br\/>\tSend all information (staff account, screenshot, video, template name and version, description of the issues, link) to <br\/>\t<a href=\"mailto:email@domain.com\">email@domain.com<\/a><\/p>",
             "page": ""
           }
@@ -65,7 +65,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "“Would assistance be available to upload the template if needed?”",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Yes, we will assist you to install the template if needed<\/p>",
             "page": ""
           }
