@@ -228,7 +228,7 @@
           "enable_sticky_header": false,
           "margin_bottom": 0,
           "padding_top": 24,
-          "padding_bottom": 24
+          "padding_bottom": 0
         }
       },
       "footer-02": {
