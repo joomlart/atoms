@@ -111,3 +111,15 @@
     }
   }
 }
+
+/* FAQs Page */
+.faqs-page .accordion__title {
+  text-transform: none;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 750px) {
+  .faqs-page .collapsible-content__wrapper {
+    max-width: 66.66%;
+  }
+}

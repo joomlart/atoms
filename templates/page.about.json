@@ -16,18 +16,25 @@
     },
     "e1b16e84-d0de-4e41-832c-19f193d45304": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-0": {
           "type": "heading",
           "settings": {
             "heading": "<p>With more than 136 stores spanning 43 states and growing, Trex is a nationally recognized active wear manufacturer and retailer. We’re passionate about active lifestyles – and it goes way beyond apparel.<\/p><p><\/p>",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-1": {
           "type": "text",
           "settings": {
             "text": "<p>Suspendisse mollis vitae nibh ut tristique. Vivamus a mi scelerisque risus tempor fermentum at a tortor. Ut bibendum nisi tristique dolor tempus, sed cursus sapien malesuada. Cras ornare leo nec hendrerit aliquam. Sed ut aliquam purus, in consectetur justo. Proin consequat dapibus est id sagittis. Vestibulum vitae facilisis turpis, in commodo lacus. Nunc pharetra lorem in quam semper, et lacinia purus posuere.<\/p><p><\/p>"
+          }
+        },
+        "cb835af2-4a4e-4d09-ae56-a417928af4d0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         },
         "fdebaa4e-e6c4-4a72-b3e7-9ae77aa1f48a": {
@@ -53,6 +60,7 @@
       "block_order": [
         "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-0",
         "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-1",
+        "cb835af2-4a4e-4d09-ae56-a417928af4d0",
         "fdebaa4e-e6c4-4a72-b3e7-9ae77aa1f48a",
         "3c967c88-06f1-4c30-a5cc-d6237a1e7d02",
         "62a1492a-852e-4161-bb9c-2d1120782da5"
@@ -69,15 +77,17 @@
     },
     "36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--14995394134089__36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d-1665028966e9fd8022-0": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/img_1.png",
-            "title": "",
+            "title": "Column",
             "icon": "none",
             "icon_position": "left",
-            "text": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -86,10 +96,10 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/img_2.png",
-            "title": "",
+            "title": "Column",
             "icon": "none",
             "icon_position": "left",
-            "text": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -114,8 +124,8 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "c2226033-ccef-431c-a8c4-0d86cf576b7b": {
@@ -182,6 +192,260 @@
         "padding_top": 24,
         "padding_bottom": 24
       }
+    },
+    "85071847-bc9b-4a63-8f7b-e890b5dde5f6": {
+      "type": "collapsible-content",
+      "disabled": true,
+      "blocks": {
+        "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-0",
+        "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-1",
+        "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-2",
+        "template--14995394134089__85071847-bc9b-4a63-8f7b-e890b5dde5f6-1665039483436617b5-3"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d907dfba-3a8d-4c3a-a756-aca10721690e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>With more than 136 stores spanning 43 states and growing, Atoms is a nationally recognized active wear manufacturer and retailer. We’re passionate about active lifestyles – and it goes way beyond apparel.<br\/><\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "b4323898-0727-45c6-8fb7-5c2990efde93": {
+          "type": "signature",
+          "settings": {
+            "img-signature": "shopify:\/\/shop_images\/female-yoga-fashion-with-yoga-mat.jpg"
+          }
+        },
+        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "4682a639-6655-4fc0-b29d-3105b6eaa917": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Atoms caters to thoughtful shoppers who appreciate unique designs and top quality pieces you just can’t find anywhere else. We are constantly curating fresh new collections and looking for the next big thing our customers will love. Founded in Chicago in 2015, we are proud to be your Online Clothing Shop that you can rely on for our expert service and care.<\/p><p>In 2015, we opened the ways to our leader store in Chicago, US. In this space we work crosswise over various mediums from fashion and photography to accommodation. There’s nothing we won’t do. Joint efforts are constantly invited and sustained.  <\/p><p><br\/>Summer 2016 saw the dispatch of ‘Atoms’ ‘s eponymous mark, which centers around quality, wearability and present day effortlessness. We cherish the sentiment of unisex garments, so we plan in light of the two sexual orientations. The mark exists outside of fashion seasons. We will continue adding to the line consistently, so keep your eyes stripped.  <\/p><p><br\/>2018 imprints the beginning of our first worldwide endeavor. Venturing into the US advertise, ‘Atoms’ has arrived in a standout amongst L.A’s most looked for after retail areas, Platform. Exhibiting our most cherished British brands and banding together with any semblance of Psychic Sisters, an energizing new section is standing by. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0",
+        "b4323898-0727-45c6-8fb7-5c2990efde93",
+        "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-2",
+        "4682a639-6655-4fc0-b29d-3105b6eaa917"
+      ],
+      "settings": {
+        "class_suffix": "",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "image": "shopify:\/\/shop_images\/model-in-latte-colored-hoodie.jpg",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "42f447c2-ad66-4245-a53b-f6d519f38d08": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14995394134089__42f447c2-ad66-4245-a53b-f6d519f38d08-1665039897e5706844-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Commitment To Quality",
+            "heading_size": "h1"
+          }
+        },
+        "template--14995394134089__42f447c2-ad66-4245-a53b-f6d519f38d08-1665039897e5706844-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you do this, something will change, what will change is that you will change, your life will change, and if you can change you, you can perhaps change the world.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__42f447c2-ad66-4245-a53b-f6d519f38d08-1665039897e5706844-0",
+        "template--14995394134089__42f447c2-ad66-4245-a53b-f6d519f38d08-1665039897e5706844-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/footwear-close-up-man-tying-shoelace.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1f3eb8b5-2a36-4aa3-a3f9-386da90a8279": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-0",
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-1",
+        "template--14995394134089__1f3eb8b5-2a36-4aa3-a3f9-386da90a8279-1665039897e5706844-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/a-store-owner-checks-her-customer-orders.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4020a671-d28b-484f-a33b-4d16d118204e": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--14995394134089__4020a671-d28b-484f-a33b-4d16d118204e-1665039897bbf99d52-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14995394134089__4020a671-d28b-484f-a33b-4d16d118204e-1665039897bbf99d52-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--14995394134089__4020a671-d28b-484f-a33b-4d16d118204e-1665039897bbf99d52-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "icon": "none",
+            "icon_position": "left",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14995394134089__4020a671-d28b-484f-a33b-4d16d118204e-1665039897bbf99d52-0",
+        "template--14995394134089__4020a671-d28b-484f-a33b-4d16d118204e-1665039897bbf99d52-1",
+        "template--14995394134089__4020a671-d28b-484f-a33b-4d16d118204e-1665039897bbf99d52-2"
+      ],
+      "settings": {
+        "title": "",
+        "sub-title": "",
+        "mod_class": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
     }
   },
   "order": [
@@ -189,6 +453,11 @@
     "main",
     "e1b16e84-d0de-4e41-832c-19f193d45304",
     "36d9fbf9-6b92-4f05-94d4-fd26f60cbb1d",
-    "c2226033-ccef-431c-a8c4-0d86cf576b7b"
+    "c2226033-ccef-431c-a8c4-0d86cf576b7b",
+    "85071847-bc9b-4a63-8f7b-e890b5dde5f6",
+    "d907dfba-3a8d-4c3a-a756-aca10721690e",
+    "42f447c2-ad66-4245-a53b-f6d519f38d08",
+    "1f3eb8b5-2a36-4aa3-a3f9-386da90a8279",
+    "4020a671-d28b-484f-a33b-4d16d118204e"
   ]
 }
