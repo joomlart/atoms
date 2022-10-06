@@ -57,6 +57,7 @@
         "62a1492a-852e-4161-bb9c-2d1120782da5"
       ],
       "settings": {
+        "class_suffix": "about-us",
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "background-1",
