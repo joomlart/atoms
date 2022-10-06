@@ -248,6 +248,11 @@ html.no-js .no-js-hidden {
     margin: 0 auto;
 }
 
+.faqs-page {
+    max-width: var(--page-width);
+    margin-left: 0;
+}
+
 @media screen and (min-width: 750px) {
     .page-width {
         padding: 0 5rem;
@@ -260,6 +265,10 @@ html.no-js .no-js-hidden {
     }
     .page-width-tablet {
         padding: 0 5rem;
+    }
+
+    .faqs-page { 
+        max-width: 66.66%;
     }
 }
 
