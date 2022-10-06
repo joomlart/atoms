@@ -122,10 +122,10 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/img_3.png",
-            "title": "Column",
+            "title": "Jane Cooper",
             "icon": "none",
             "icon_position": "left",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Master Chef<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -145,10 +145,11 @@
         "template--14995394134089__c2226033-ccef-431c-a8c4-0d86cf576b7b-1665028966e9fd8022-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "image": "shopify:\/\/shop_images\/img_3.png",
+            "title": "Jane Cooper",
             "icon": "none",
             "icon_position": "left",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Master Chef<\/p>",
             "link_label": "",
             "link": ""
           }
