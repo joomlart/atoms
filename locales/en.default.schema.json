@@ -2817,6 +2817,14 @@
               "label": "Use outline button style"
             }
           }
+        },
+        "signature": {
+          "name": "Signature",
+          "settings": {
+            "img-signature": {
+              "label": "Signature"
+            } 
+          }
         }
       },
       "presets": {
