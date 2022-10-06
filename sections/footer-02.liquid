@@ -261,6 +261,26 @@
             {%- endif -%}
           </div>
           <div class="footer__column footer__column--info">
+            <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+              {%- if section.settings.logo != blank -%}
+                {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
+                {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
+                {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
+                  class: 'header__heading-logo',
+                  height: logo_height,
+                  width: section.settings.logo_width,
+                  alt: logo_alt
+                }}
+              {%- else if section.settings.logo_text != blank -%}
+                <span class="h2 logo_text">{{ section.settings.logo_text }}</span>
+              {%- else -%}
+                <span class="h2">{{ shop.name }}</span>
+              {%- endif -%}
+            </a>
+            <div class="footer__copyright caption">
+              <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+              <small class="copyright__content">{{ powered_by_link }}</small>
+            </div>
             {%- if section.settings.payment_enable -%}
               <div class="footer__payment">
                 <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
@@ -273,10 +293,6 @@
                 </ul>
               </div>
             {%- endif -%}
-            <div class="footer__copyright caption">
-              <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-              <small class="copyright__content">{{ powered_by_link }}</small>
-            </div>
           </div>
         </div>
       </div>
@@ -488,6 +504,53 @@
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__7.content"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "t:sections.header.settings.logo_text.label"
+    },
+    {
+      "type": "font_picker",
+      "id": "logo_font",
+      "label": "Logo font",
+      "default": "helvetica_n4"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 250,
+      "step": 10,
+      "default": 100,
+      "unit": "t:sections.header.settings.logo_width.unit",
+      "label": "t:sections.header.settings.logo_width.label"
+    },
+    {
+      "type": "select",
+      "id": "logo_position",
+      "options": [
+        {
+          "value": "middle-left",
+          "label": "t:sections.header.settings.logo_position.options__1.label"
+        },
+        {
+          "value": "top-left",
+          "label": "t:sections.header.settings.logo_position.options__2.label"
+        },
+        {
+          "value": "top-center",
+          "label": "t:sections.header.settings.logo_position.options__3.label"
+        }
+      ],
+      "default": "middle-left",
+      "label": "t:sections.header.settings.logo_position.label",
+      "info": "t:sections.header.settings.logo_position.info"
     },
     {
       "type": "checkbox",
