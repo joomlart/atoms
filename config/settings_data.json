@@ -229,6 +229,50 @@
           "padding_top": 24,
           "padding_bottom": 24
         }
+      },
+      "footer-02": {
+        "type": "footer-02",
+        "blocks": {
+          "footer-4": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Main Menu",
+              "menu": "main-menu"
+            }
+          },
+          "footer-5": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Other Pages",
+              "menu": "others-page"
+            }
+          },
+          "footer-6": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "footer-4",
+          "footer-5",
+          "footer-6"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Stay in touch.",
+          "newsletter_intro": "Sign up for our newsletter to stay up-to-date on the latest fashion trends, receive special offers and get exclusive early access to new products.",
+          "show_social": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 0,
+          "padding_bottom": 24
+        }
       }
     },
     "content_for_index": [
