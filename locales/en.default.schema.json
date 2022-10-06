@@ -2821,11 +2821,11 @@
             }
           }
         },
-        "signature": {
-          "name": "Signature",
+        "image": {
+          "name": "image",
           "settings": {
             "text": {
-              "label": "Signature"
+              "label": "Image"
             }
           }
         }

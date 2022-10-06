@@ -51,11 +51,11 @@
               <p class="rich-text__caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}" {{ block.shopify_attributes }}>
                 {{ block.settings.caption | escape }}
               </p>
-            {%- when 'signature' -%}
+            {%- when 'image' -%}
             <img 
-              src="{{ block.settings.img-signature | img_url: 'large' }}" 
+              src="{{ block.settings.image | img_url: 'large' }}" 
               loading="lazy"
-              width="100%"
+              width="100"
               height="auto"
               alt="Team photo"
               class="signature-img"
@@ -339,14 +339,14 @@
       ]
     },
     {
-      "type": "signature",
-      "name": "t:sections.rich-text.blocks.signature.name",
+      "type": "image",
+      "name": "t:sections.rich-text.blocks.image.name",
       "limit": 1,
       "settings": [
         {
           "type": "image_picker",
-          "id": "img-signature",
-          "label": "t:sections.rich-text.blocks.signature.settings.text.label"
+          "id": "image",
+          "label": "t:sections.rich-text.blocks.image.settings.text.label"
         }
       ]
     }
