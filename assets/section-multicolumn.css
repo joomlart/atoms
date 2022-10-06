@@ -320,6 +320,11 @@
   order:  2;
 }
 
+/* Clients */
+.clients-list .multicolumn-card-spacing {
+  padding-top: 0;
+}
+
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .clients-list .grid--2-col-tablet-down .grid__item {
     width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
