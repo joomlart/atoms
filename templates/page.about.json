@@ -37,12 +37,6 @@
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         },
-        "fdebaa4e-e6c4-4a72-b3e7-9ae77aa1f48a": {
-          "type": "signature",
-          "settings": {
-            "img-signature": "shopify:\/\/shop_images\/img.png"
-          }
-        },
         "3c967c88-06f1-4c30-a5cc-d6237a1e7d02": {
           "type": "heading",
           "settings": {
@@ -61,7 +55,6 @@
         "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-0",
         "template--14995394134089__e1b16e84-d0de-4e41-832c-19f193d45304-1665024988449975a7-1",
         "cb835af2-4a4e-4d09-ae56-a417928af4d0",
-        "fdebaa4e-e6c4-4a72-b3e7-9ae77aa1f48a",
         "3c967c88-06f1-4c30-a5cc-d6237a1e7d02",
         "62a1492a-852e-4161-bb9c-2d1120782da5"
       ],
@@ -266,12 +259,6 @@
             "heading_size": "h1"
           }
         },
-        "b4323898-0727-45c6-8fb7-5c2990efde93": {
-          "type": "signature",
-          "settings": {
-            "img-signature": "shopify:\/\/shop_images\/female-yoga-fashion-with-yoga-mat.jpg"
-          }
-        },
         "4682a639-6655-4fc0-b29d-3105b6eaa917": {
           "type": "text",
           "settings": {
@@ -281,7 +268,6 @@
       },
       "block_order": [
         "template--14995394134089__d907dfba-3a8d-4c3a-a756-aca10721690e-16650398972b716996-0",
-        "b4323898-0727-45c6-8fb7-5c2990efde93",
         "4682a639-6655-4fc0-b29d-3105b6eaa917"
       ],
       "settings": {
@@ -289,6 +275,7 @@
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "background-1",
+        "image": "shopify:\/\/shop_images\/female-yoga-fashion-with-yoga-mat.jpg",
         "full_width": false,
         "padding_top": 40,
         "padding_bottom": 52
