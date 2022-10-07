@@ -1572,6 +1572,10 @@ button.shopify-payment-button__button--unbranded {
     border: 0;
 }
 
+.shopify-challenge__button {
+  margin-top: var(--grid-desktop-vertical-spacing);
+}
+
 .button--tertiary {
     font-size: 1.2rem;
     padding: 1rem 1.5rem;
