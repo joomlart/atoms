@@ -262,7 +262,7 @@
         "44929001-e0af-4679-92e9-15be36596752": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/female-yoga-fashion-with-yoga-mat.jpg"
+            "image": "shopify:\/\/shop_images\/korie-cull-IzIME1jwjCY-unsplash.jpg"
           }
         },
         "4682a639-6655-4fc0-b29d-3105b6eaa917": {
@@ -337,6 +337,7 @@
         "template--14995394134089__4020a671-d28b-484f-a33b-4d16d118204e-1665039897bbf99d52-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/img_3.png",
             "title": "Column",
             "icon": "none",
             "icon_position": "left",
@@ -358,6 +359,7 @@
         },
         "template--14995394134089__4020a671-d28b-484f-a33b-4d16d118204e-1665039897bbf99d52-2": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Column",
             "icon": "none",
@@ -369,6 +371,7 @@
         },
         "98175df6-41b4-48bc-9989-a05eb5d4c888": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "title": "Column",
             "icon": "none",
@@ -390,9 +393,9 @@
         "sub-title": "",
         "mod_class": "",
         "heading_size": "h1",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "square",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
