@@ -300,6 +300,7 @@
     const productGrid = document.getElementById('product-grid');
     var currentCollection = getCurrentCollection();
 
+    if (!gridMode && !listMode){return;}
 
     if (!gridMode.classList.contains('active') && !listMode.classList.contains('active')){
       gridMode.classList.add('active');

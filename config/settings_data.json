@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "01",
-    "footer_layout": "02",
+    "footer_layout": "01",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
@@ -145,7 +145,6 @@
           "logo_text": "Atoms",
           "logo_font": "helvetica_n4",
           "logo_width": 100,
-          "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
@@ -221,7 +220,6 @@
           "logo_text": "Atoms",
           "logo_font": "helvetica_n4",
           "logo_width": 100,
-          "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
