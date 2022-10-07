@@ -37,36 +37,36 @@
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-0": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "“Will your template be fully compatible with Shopify?”",
+            "heading": "How do I add a new product?",
             "icon": "none",
-            "row_content": "<p>Yes it will be<\/p>",
+            "row_content": "<p>1. From your Shopify admin, go to <strong>Products<\/strong>.<\/p><p>2. Click <strong>Add product<\/strong>.<\/p><p>3. Enter a title for your product, along with additional details.<\/p><p>4. Click <strong>Save<\/strong>.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/add-update-products\" target=\"_blank\">Learn more about adding products<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=Qks-MlwP6c4\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"How to add a product\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "“What is included in the theme package?”",
+            "heading": "How can I change the product page layout?",
             "icon": "none",
-            "row_content": "<p>Please make sure that you follow below steps:<br\/><\/p><p>1)<\/p><p>2)<\/p><p>3)<\/p><p><\/p>",
+            "row_content": "<p>You can create an alternate template to change the layout of content on your online store, and then apply the template to specific products, collections, blogs, or pages. This tutorial involves editing the code for your theme.<\/p><p><a href=\"https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/theme-structure\/templates\" target=\"_blank\">Learn more about creating alternate templates<\/a><\/p><p><\/p>",
             "page": ""
           }
         },
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "“Do you guys offer a refund or exchange?”",
+            "heading": "How do I add collections?",
             "icon": "none",
-            "row_content": "<p>To save your time and reach our support quickly, please follow below steps:<br\/>\t<br\/><br\/>\t<\/p><p>Create a staff account for us (with Themes permission and Settings permission) <a href=\"http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members\">http:\/\/docs.shopify.com\/manual\/settings\/account\/staff-members<\/a><br\/>\tCapture screenshot or video for the issue you get.<br\/>\t<br\/>\tSpecify which template and version you are using.<br\/>\t<br\/>\tDescribe clearly how to reproduce the issue.<br\/>\t<br\/>\tSend all information (staff account, screenshot, video, template name and version, description of the issues, link) to <br\/>\t<a href=\"mailto:email@domain.com\">email@domain.com<\/a><\/p>",
+            "row_content": "<p>You can create two types of collections: automated collections and manual collections.<\/p><p>An <a href=\"https:\/\/help.shopify.com\/manual\/products\/collections\/automated-collections\/index\" target=\"_blank\">automated collection<\/a> uses selection conditions to automatically include matching products. You can define as many selection conditions as you want. You can also specify whether products need to meet all of the conditions or any of the conditions to be included in the collection. When you add a new product that matches the selection conditions for a collection, the product is automatically added to the collection.<\/p><p>A <a href=\"https:\/\/help.shopify.com\/manual\/products\/collections\/manual-shopify-collection\" target=\"_blank\">manual collection<\/a> includes only the products that you choose individually. Because of this, the collection always contains the same products unless you specifically add or remove products.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/collections\" target=\"_blank\">Learn more about collections<\/a><a href=\"https:\/\/www.youtube.com\/watch?v=HigPf0MCMLA\" target=\"_blank\"><span style=\"text-decoration:underline\">Watch \"What is a Shopify Collection\"<\/span><br\/><br\/><\/a><\/p>",
             "page": ""
           }
         },
         "template--14995343081545__be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d-16649640701c64a35d-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "“Would assistance be available to upload the template if needed?”",
+            "heading": "What size should my product images be?",
             "icon": "none",
-            "row_content": "<p>Yes, we will assist you to install the template if needed<\/p>",
+            "row_content": "<p>Your product images can be any size up to 5760 x 5760 px, or 20 megapixels. Product images need to have a file size smaller than 20 MB to be added to Shopify.<\/p><p><a href=\"https:\/\/help.shopify.com\/en\/manual\/products\/product-variant-images#image-sizes\" target=\"_blank\">Learn more about product image sizes<\/a><\/p>",
             "page": ""
           }
         }
