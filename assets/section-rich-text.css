@@ -89,44 +89,7 @@
   padding-top: 1rem;
 }
 
-/* About Us */
-.about-us .rich-text__blocks > h2 {
-  font-weight: 700;
-  line-height: calc(1 + .3/var(--font-body-scale));
-  letter-spacing: -0.01em;
-  text-align: center;
-}
-
-.about-us .rich-text__text {
-  font-size: calc(var(--font-body-scale) * 1.8rem);
-  line-height: 32px;
-  line-height: calc(1 + .8/var(--font-body-scale));
-  text-align: center;
-  margin-top: 1.6rem;
-}
-
-.about-us .rich-text__text p {
-  margin-bottom: 0;
-}
-
-.about-us .signature-img {
-  margin-top: 3.2rem;
-}
-
-.about-us .signature-img + h2 {
-  font-size: 2rem;
-  margin-top: 1.6rem;
-  line-height: calc(1 + .6/var(--font-body-scale));
-}
-
-.about-us .rich-text__text:last-child {
-  font-size: calc(var(--font-body-scale) * 1.4rem);
-  line-height: calc(1 + .8/var(--font-body-scale));
-  color: #9e9e9e;
-  margin-top: .8rem;
-}
-
-.about-us .rich-text__text:last-child p {
-  padding: 0;
+.img-second {
+  margin-top: var(--grid-desktop-vertical-spacing);
 }
 

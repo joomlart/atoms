@@ -52,13 +52,16 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'image' -%}
+            {%-liquid
+              assign width_image_2 = "100%"
+            -%}
             <img 
               src="{{ block.settings.image | img_url: 'large' }}" 
               loading="lazy"
-              width="100%"
+              width="{{ width_image_2 }}"
               height="auto"
               alt="Team photo"
-              class="signature-img"
+              class="img-second"
             >
             {%- when 'text' -%}
               <div class="rich-text__text rte" {{ block.shopify_attributes }}>
