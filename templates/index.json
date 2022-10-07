@@ -130,8 +130,8 @@
         "27fc9823-2bb7-4ddb-928d-95c9f28c125e"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
+        "title": "Banner List",
+        "heading_size": "h2",
         "item_ratio": "169",
         "columns_desktop": 2,
         "columns_mobile": "1",
