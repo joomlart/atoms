@@ -2555,6 +2555,11 @@ input[type='checkbox'] {
     }
 }
 
+@media screen and (max-width: 749px) {
+    .header__heading-link {
+        padding:  0;
+    }
+}
 
 /* Header icons */
 

@@ -162,6 +162,15 @@ slideshow-component .slideshow.banner {
     border-bottom-right-radius: var(--text-boxes-radius);
     border-bottom-left-radius: var(--text-boxes-radius);
   }
+
+  .slideshow:not(.banner--mobile-bottom) .slideshow__text-wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slideshow__text.banner__box .banner__heading {
+    margin-bottom: 0;
+  }
 }
 
 .spaced-section--full-width:last-child slideshow-component:not(.page-width) .slideshow__controls {
