@@ -73,7 +73,7 @@
         "e1060bfc-75f4-426b-b95f-72555e63ec82"
       ],
       "settings": {
-        "layout": "grid",
+        "layout": "full_bleed",
         "slide_height": "small",
         "slider_visual": "dots",
         "auto_rotate": false,
@@ -184,6 +184,7 @@
       ],
       "settings": {
         "title": "",
+        "sub-title": "",
         "mod_class": "border-darker",
         "heading_size": "h1",
         "image_width": "full",
@@ -592,6 +593,7 @@
       ],
       "settings": {
         "title": "",
+        "sub-title": "",
         "mod_class": "clients-list",
         "heading_size": "h1",
         "image_width": "full",
