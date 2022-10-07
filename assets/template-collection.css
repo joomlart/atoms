@@ -40,7 +40,22 @@
 
 @media screen and (max-width: 989px) {
   .collection .slider--tablet.product-grid {
-    scroll-padding-left: 1.5rem;
+    scroll-padding-left: 0;
+  }
+
+  .collection .slider-component-mobile {
+    overflow: hidden;
+  }
+
+  .collection .grid--peek.slider .grid__item:last-of-type {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .collection .slider-component-mobile {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -252,8 +267,11 @@
 }
 
 @media screen and (max-width: 749px) {
-  .collection-product-list slider-component.page-width {
-    padding-left: 0;
-    padding-right: 0;
+  .collection-product-list .grid--peek.slider .grid__item:first-of-type {
+    margin-left: 0;
+  }
+
+  .collection-product-list .slider.slider--mobile {
+    scroll-padding-left: 0;
   }
 }
