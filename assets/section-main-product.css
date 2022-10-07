@@ -481,6 +481,11 @@ a.product__text {
 
 .product__accordion .accordion__content {
     padding: 0;
+    font-size: 1.4rem;
+}
+
+.product__accordion .accordion__content h3 {
+    font-size: 1.6rem;
 }
 
 .product__accordion .accordion__content .media--transparent {
