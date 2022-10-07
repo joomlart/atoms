@@ -7,11 +7,6 @@
   margin: 0 auto 1.6rem;
 }
 
-@media screen and (max-width: 550px) {
-  .customer h1 {
-  font-size: calc(var(--font-body-scale) * 3.6rem);
-  }
-}
 /* Breadcrumb */
 .center-breadcrumb {
   text-align: center;

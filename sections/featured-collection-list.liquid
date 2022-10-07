@@ -34,7 +34,7 @@
 -%}
 <div class="color-{{ section.settings.color_scheme }} isolate gradient">
   <div class="collection-product-list collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
-    <slider-component class="page-width page-width-desktop slider-mobile-gutter">
+    <slider-component class="page-width page-width-desktop slider-mobile-gutter {% if show_mobile_slider %} slider-component-mobile{% endif %}">
       {%-liquid
         assign columns_desktop = section.settings.columns_desktop
         assign columns_mobile = section.settings.columns_mobile
@@ -47,6 +47,8 @@
           endif
         -%}
         <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item {% if show_mobile_slider %} slider__slide{% endif %}">
+
+          {%- unless block.settings.collection.title == blank -%}
           <div class="collection__title title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}">
             <div class="inner">
             {%- if block.settings.collection.title != blank -%}
@@ -68,6 +70,7 @@
             {%- endif -%}
             </div>
           </div>
+          {%- endunless -%}
 
           <div class="collection-products">
             {%- liquid
