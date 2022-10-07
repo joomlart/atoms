@@ -14,6 +14,14 @@
 }
 
 @media only screen and (max-width: 749px) {
+  .banner--169:not(.banner--mobile-bottom):before {
+    display: block !important;
+  }
+
+  .banner--169:not(.banner--mobile-bottom) .banner__buttons {
+    display: none;
+  }
+
   .banner--content-align-mobile-right .banner__box {
     text-align: right;
   }
@@ -211,9 +219,11 @@
 
   .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
     background: transparent;
+    font-size: 1.4rem;
     --color-foreground: 255, 255, 255;
     --color-button: 255, 255, 255;
     --color-button-text: 0, 0, 0;
+    --color-base-accent-1:  255, 255, 255;
   }
 
   .banner:not(.banner--mobile-bottom) .banner__box {
