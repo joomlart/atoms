@@ -2414,6 +2414,11 @@ input[type='checkbox'] {
     text-align: right;
 }
 
+@media screen and (max-width: 749px) {
+    .announcement-bar-item.item-align-left {
+        display: none;
+    }
+}
 
 /* section-header */
 
@@ -2557,11 +2562,11 @@ input[type='checkbox'] {
     display: flex;
     grid-area: icons;
     justify-self: end;
+    width: 20%;
 }
 
 @media screen and (min-width: 750px) {
     .header__icons {
-        width: 20%;
         justify-content: end;
     }
 }
@@ -2612,6 +2617,11 @@ input[type='checkbox'] {
 @media screen and (max-width: 989px) {
     menu-drawer~.header__icons .header__icon--account {
         display: none;
+    }
+
+    .header__icon, .header__icon--cart .icon {
+        width: 3rem;
+        height: 3rem;
     }
 }
 
