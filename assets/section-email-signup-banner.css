@@ -6,6 +6,10 @@
   display: inline-block;
 }
 
+.email-signup-banner:not(.banner--desktop-transparent) .email-signup-banner__box {
+  padding: 3rem;
+}
+
 @media only screen and (min-width: 750px) {
   .email-signup-banner:not(.banner--desktop-transparent) .email-signup-banner__box {
     width: 100%;
@@ -13,16 +17,17 @@
 }
 
 .email-signup-banner__box {
-  max-width: 70rem;
+  max-width: 55rem;
 }
 
 .email-signup-banner__box .email-signup-banner__heading {
-  margin-bottom: 1.6rem;
+  margin-bottom: .8rem;
+  font-weight: 700;
 }
 
 .email-signup-banner__box > * + .newsletter__subheading {
   color: rgb(var(--color-foreground));
-  margin-top: 2rem;
+  margin-top: .8rem;
   font-size: calc(var(--font-body-scale) * 1.8rem);
   line-height: calc(1 + 0.6/var(--font-body-scale));
   letter-spacing: 0;
