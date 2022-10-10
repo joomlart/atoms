@@ -1,15 +1,15 @@
-.image-with-text-grid .inner .title {
+.image-with-text-grid .title-wrapper .inner .title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.image-with-text-grid .inner .h4 {
+.image-with-text-grid .title-wrapper .inner .h4 {
   font-size: calc(var(--font-heading-scale) * 1.8rem);
 }
 
-.image-with-text-grid .inner {
+.image-with-text-grid .title-wrapper .inner {
   border-top: 2px solid rgba(var(--color-base-accent-1));
   border-bottom: 1px solid rgba(var(--color-foreground),var(--text-boxes-border-opacity));
   padding: 1.6rem 0;
@@ -25,7 +25,7 @@
   justify-content: space-between;
 }
 
-.image-with-text-grid .inner:not(:only-child) {
+.image-with-text-grid .title-wrapper .inner:not(:only-child) {
   margin-bottom: 1rem;
 }
 
