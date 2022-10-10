@@ -103,7 +103,7 @@
         "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "layout": "section",
         "color_scheme": "background-1",
         "container_color_scheme": "background-1",
