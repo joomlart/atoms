@@ -30,7 +30,10 @@
   header-drawer {
     width: 20%;
     justify-self: start;
-    margin-left: -1.2rem;
+  }
+
+  .off-canvas span {
+    justify-content: flex-start;
   }
 
   .header__heading-logo {
@@ -128,7 +131,7 @@
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details id="Details-menu-drawer-container" class="menu-drawer-container">
-          <summary class="header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
+          <summary class="off-canvas header__icon header__icon--menu header__icon--summary link focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
             <span>
               {% render 'icon-hamburger' %}
               {% render 'icon-close' %}
