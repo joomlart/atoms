@@ -3057,6 +3057,18 @@
             "label": "Right"
           }
         },
+        "align_content": {
+          "label": "Align Content",
+          "options__1": {
+            "label": "Left"
+          },
+          "options__2": {
+            "label": "Center"
+          },
+          "options__3": {
+            "label": "Right"
+          }
+        },
         "layout": {
           "label": "Layout",
           "options__1": {
