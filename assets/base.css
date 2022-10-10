@@ -2623,6 +2623,12 @@ input[type='checkbox'] {
     margin-right: -1.2rem;
 }
 
+@media screen and (max-width: 749px) {
+  .header__icon--cart {
+    margin-right: -0.2rem;
+  }
+}
+
 @media screen and (max-width: 989px) {
   a.header__icon--cart {
       width: 3.6rem;
