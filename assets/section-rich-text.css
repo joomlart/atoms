@@ -97,3 +97,10 @@
 .about-us .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
   width: 100%;
 }
+
+@media screen and (max-width: 750px) {
+  .rich-text__heading {
+    font-size: calc(var(--font-body-scale) * 2.4rem);
+  }
+}
+
