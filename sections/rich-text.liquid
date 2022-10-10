@@ -52,13 +52,10 @@
                 {{ block.settings.caption | escape }}
               </p>
             {%- when 'image' -%}
-            {%-liquid
-              assign width_image_2 = "100%"
-            -%}
             <img 
               src="{{ block.settings.image | img_url: 'large' }}" 
               loading="lazy"
-              width="{{ width_image_2 }}"
+              width="auto"
               height="auto"
               alt="Team photo"
               class="img-second"
