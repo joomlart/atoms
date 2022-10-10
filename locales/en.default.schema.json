@@ -3057,8 +3057,8 @@
             "label": "Right"
           }
         },
-        "align_content": {
-          "label": "Align Content",
+        "content_alignment": {
+          "label": "Content alignment",
           "options__1": {
             "label": "Left"
           },
