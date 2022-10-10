@@ -123,3 +123,12 @@
     max-width: 66.66%;
   }
 }
+
+.content_alignment-center {
+  margin: auto;
+}
+
+.content_alignment-right {
+  margin-right: 0;
+  margin-left: auto;
+}
