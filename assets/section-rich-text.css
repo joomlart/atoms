@@ -91,5 +91,6 @@
 
 .img-second {
   margin-top: var(--grid-desktop-vertical-spacing);
+  max-width: 100%
 }
 
