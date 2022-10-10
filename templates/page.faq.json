@@ -1,5 +1,10 @@
 {
   "sections": {
+    "292fd3d9-f618-4284-9370-955d059efefe": {
+      "type": "breadcrumb",
+      "settings": {
+      }
+    },
     "b196a01e-f1bc-4e66-a068-4a8605559b96": {
       "type": "rich-text",
       "blocks": {
@@ -116,6 +121,7 @@
     }
   },
   "order": [
+    "292fd3d9-f618-4284-9370-955d059efefe",
     "b196a01e-f1bc-4e66-a068-4a8605559b96",
     "be0b4efd-08c2-4c02-9b11-ec5c9ab55e4d"
   ]
