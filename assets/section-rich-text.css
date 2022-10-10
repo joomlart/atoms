@@ -85,9 +85,9 @@
     font-weight: 500;
 }
 
-.rich-text__blocks .rich-text__text p {
+/* .rich-text__blocks .rich-text__text p {
   padding-top: 1rem;
-}
+} */
 
 .img-second {
   margin-top: var(--grid-desktop-vertical-spacing);
