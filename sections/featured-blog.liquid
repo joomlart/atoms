@@ -80,7 +80,7 @@
         {%- endif -%}
       </slider-component>
     {%- else -%}
-      <div class="blog-placeholder">
+      <slider-component class="slider-mobile-gutter {% if show_mobile_slider == false %} page-width {% else %} page-width-desktop{% endif %}">
         <div class="placeholder media media--landscape">
           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
@@ -92,7 +92,7 @@
             {{ 'sections.featured_blog.onboarding_content' | t }}
           </p>
         </div>
-      </div>
+      </slider-component>
     {%- endif -%}
   </div>
 </div>

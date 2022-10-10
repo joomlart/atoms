@@ -48,7 +48,6 @@
         -%}
         <div id="Slide-{{ section.id }}-{{ forloop.index }}" class="grid__item {% if show_mobile_slider %} slider__slide{% endif %}">
 
-          {%- unless block.settings.collection.title == blank -%}
           <div class="collection__title title-wrapper title-wrapper--no-top-margin{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}">
             <div class="inner">
             {%- if block.settings.collection.title != blank -%}
@@ -70,7 +69,6 @@
             {%- endif -%}
             </div>
           </div>
-          {%- endunless -%}
 
           <div class="collection-products">
             {%- liquid
@@ -92,16 +90,36 @@
             {%- else -%}
               {%- for i in (1..columns_desktop) -%}
                 <div class="collection-product">
-                  {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id,
-                    show_product_description: section.settings.show_product_description
-                  %}
+                  <div class="card-wrapper underline-links-hover">
+                    <div class="card card--standard card--media" style="--ratio-percent: 125.0%;">
+                      <div class="card__inner color-background-2 gradient ratio" style="--ratio-percent: 125.0%;">
+                        <div class="card__media">
+                            <div class="media media--transparent media--hover-effect">
+                              
+                            </div>
+                        </div>
+                      </div>
+                      <div class="card__content">
+                        <div class="card__information"><h3 class="card__heading h5" id="title-template--14957954105417__166174667909d0a0d7-6850348122185">
+                            <a href="#">
+                              {{ 'onboarding.product_title' | t }}
+                            </a>
+                          </h3>
+                          <div class="card-information">
+                            <div class="price ">
+                              <div class="price__container"><div class="price__regular">
+                                  <span class="visually-hidden visually-hidden--inline">Regular price</span>
+                                  <span class="price-item price-item--regular">
+                                    {% render 'price' %}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               {%- endfor -%}
             {%- endfor -%}
