@@ -94,6 +94,6 @@
   max-width: 100%
 }
 
-about-us .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
+.about-us .rich-text:not(.rich-text--full-width) .rich-text__wrapper {
   width: 100%;
 }
