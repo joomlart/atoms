@@ -171,10 +171,10 @@
         "1661246556ab0fcc05-2"
       ],
       "settings": {
-        "title": "test",
+        "title": "",
         "sub-title": "",
         "mod_class": "border-darker",
-        "heading_size": "h1",
+        "heading_size": "h4",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
