@@ -47,6 +47,12 @@
           "settings": {
             "text": "<p>Summer 2016 saw the dispatch of ‘Atoms’ ‘s eponymous mark, which centers around quality, wearability and present day effortlessness. We cherish the sentiment of unisex garments, so we plan in light of the two sexual orientations. The mark exists outside of fashion seasons. We will continue adding to the line consistently, so keep your eyes stripped.<\/p>"
           }
+        },
+        "2f0a103f-07e5-4a08-ab83-2aa0bcf050bc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2018 imprints the beginning of our first worldwide endeavor. Venturing into the US advertise, ‘Atoms’ has arrived in a standout amongst L.A’s most looked for after retail areas, Platform. Exhibiting our most cherished British brands and banding together with any semblance of Psychic Sisters, an energizing new section is standing by.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -54,7 +60,8 @@
         "44929001-e0af-4679-92e9-15be36596752",
         "4682a639-6655-4fc0-b29d-3105b6eaa917",
         "400a6ab5-7b62-492c-818e-fc31d57eda3f",
-        "96e9d6a0-f261-46c6-823d-f5906f0bc94f"
+        "96e9d6a0-f261-46c6-823d-f5906f0bc94f",
+        "2f0a103f-07e5-4a08-ab83-2aa0bcf050bc"
       ],
       "settings": {
         "class_suffix": "about-us",
