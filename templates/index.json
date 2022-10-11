@@ -110,24 +110,11 @@
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center"
           }
-        },
-        "27fc9823-2bb7-4ddb-928d-95c9f28c125e": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "title": "Column",
-            "link_label": "",
-            "link": "",
-            "link_style": "link",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "center"
-          }
         }
       },
       "block_order": [
         "166123731380862203-0",
-        "166123731380862203-1",
-        "27fc9823-2bb7-4ddb-928d-95c9f28c125e"
+        "166123731380862203-1"
       ],
       "settings": {
         "title": "",
@@ -288,24 +275,11 @@
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center"
           }
-        },
-        "166395536082863daf-2": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "title": "Column",
-            "link_label": "",
-            "link": "",
-            "link_style": "link",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "center"
-          }
         }
       },
       "block_order": [
         "166395536082863daf-0",
-        "166395536082863daf-1",
-        "166395536082863daf-2"
+        "166395536082863daf-1"
       ],
       "settings": {
         "title": "",
@@ -398,24 +372,11 @@
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center"
           }
-        },
-        "1661315842627cf75e-2": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "title": "Column",
-            "link_label": "",
-            "link": "",
-            "link_style": "link",
-            "desktop_content_position": "middle-center",
-            "desktop_content_alignment": "center"
-          }
         }
       },
       "block_order": [
         "1661315842627cf75e-1",
-        "1661315842627cf75e-0",
-        "1661315842627cf75e-2"
+        "1661315842627cf75e-0"
       ],
       "settings": {
         "title": "",
