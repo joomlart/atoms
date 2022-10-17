@@ -348,6 +348,18 @@
           "label__2": "Footer 02"
         }
       }
+    },
+    "general": {
+      "name": "General",
+      "settings": {
+        "header__1": {
+          "content": "Back to top"
+        },
+        "backtoptop": {
+          "label": "Back to top?",
+          "info": "A back to top button"
+        }
+      }
     }
   },
   "sections": {
