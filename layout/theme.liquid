@@ -238,6 +238,11 @@
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
 
+    {% render 'popup' %}
+
+    <div class="background-overlay">
+    </div>
+
     {% if settings.show_backtotop %}
     {% render 'back-to-the-top' %}
     {%- endif -%}
