@@ -121,7 +121,7 @@
             "type": "announcement",
             "settings": {
               "text": "Free U.S. Shipping Orders $60+ | Free Returns & Exchanges",
-              "content_alignment": "left"
+              "content_alignment": "center"
             }
           }
         },
