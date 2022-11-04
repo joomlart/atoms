@@ -194,7 +194,7 @@
           "68870e20-c4f3-4f7a-acc3-b65972c531af": {
             "type": "text",
             "settings": {
-              "show_heading": true,
+              "show_heading": false,
               "heading": "Heading",
               "show_subtext": true,
               "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
