@@ -71,13 +71,6 @@
     left: 0;
   }
 
-  .gallery_full_width .product--thumbnail_slider .slider-main-photo {
-    max-width: var(--page-width);
-    width: calc(100%);
-    margin: auto;
-    padding: 0 5rem;
-  }
-
   .gallery_full_width .product--thumbnail_slider .slider-thumb-photo {
     max-width: 441px;
     width: 441px;
@@ -176,11 +169,15 @@
     margin: auto;
     padding: 0;
   }
+  .gallery_full_width .product--thumbnail_slider media-gallery {
+    position: relative;
+  }
   .gallery_full_width .product--thumbnail_slider .product__media-wrapper {
     width: 100%;
     margin: auto;
     max-width: 100%;
-    padding: 0;
+    padding: var(--grid-desktop-vertical-spacing) 0;
+    background: #f2f2f2;
   }
   .gallery_full_width
     .product--thumbnail_slider
@@ -189,11 +186,11 @@
     left: 0;
   }
 
-  .gallery_full_width .product--thumbnail_slider .slider-main-photo {
-    max-width: var(--page-width);
+  .gallery_full_width .product--thumbnail_slider .product__media-list {
+    max-width: 550px;
     width: calc(100%);
     margin: auto;
-    padding: 0 5rem;
+    padding: 0;
   }
 
   .gallery_full_width .product--thumbnail_slider .slider-thumb-photo {
@@ -201,6 +198,16 @@
     width: 441px;
     display: block;
     margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .gallery_full_width
+    .product--thumbnail_slider
+    .slider-thumb-photo
+    .thumbnail-list {
+    margin-bottom: 16px;
   }
 
   .gallery_full_width
@@ -216,7 +223,7 @@
     .product--thumbnail_slider
     .product__media-wrapper
     .media--34 {
-    aspect-ratio: calc(3 / 4);
+    /* aspect-ratio: calc(3 / 4); */
     padding-bottom: 133.333%;
   }
 
@@ -225,7 +232,7 @@
     .product__media-wrapper
     .media--43 {
     padding-bottom: 75%;
-    aspect-ratio: calc(4 / 3);
+    /* aspect-ratio: calc(4 / 3); */
   }
 
   .gallery_full_width
@@ -233,7 +240,7 @@
     .product__media-wrapper
     .media--169 {
     padding-bottom: 56.25%;
-    aspect-ratio: calc(16 / 9);
+    /* aspect-ratio: calc(16 / 9); */
   }
 
   .gallery_full_width
@@ -248,7 +255,8 @@
     .product--thumbnail_slider:not(.product--no-media)
     .product__info-wrapper
     .product__info-container {
-    max-width: inherit;
+    max-width: 46%;
+    margin: auto;
   }
 }
 
