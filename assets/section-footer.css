@@ -184,6 +184,10 @@
   }
 }
 
+.footer-01 .footer-block--main .footer__content__left .footer__list-social {
+  justify-content: flex-start;
+}
+
 .footer__list-social:empty,
 .footer-block--newsletter:empty {
   display: none;
