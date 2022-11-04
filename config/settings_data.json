@@ -191,30 +191,18 @@
               "alignment": ""
             }
           },
-          "f621b165-c8eb-4293-9427-352de6210839": {
-            "type": "text",
-            "settings": {
-              "show_heading": true,
-              "heading": "Heading",
-              "show_subtext": true,
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          },
-          "0fa98934-9072-475f-88a2-ba8c7d89be88": {
-            "type": "text",
-            "settings": {
-              "show_heading": true,
-              "heading": "Heading",
-              "show_subtext": true,
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-            }
-          },
           "73cee245-4184-4443-8838-81aee70ec48e": {
             "type": "newsletter",
             "settings": {
               "newsletter_enable": true,
               "newsletter_heading": "Subscribe to our emails",
               "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
+            }
+          },
+          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84": {
+            "type": "social",
+            "settings": {
+              "show_social": true
             }
           }
         },
@@ -223,13 +211,11 @@
           "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
           "footer-0",
           "2973bd8e-f167-403a-a4b0-35a394865560",
-          "f621b165-c8eb-4293-9427-352de6210839",
-          "0fa98934-9072-475f-88a2-ba8c7d89be88",
-          "73cee245-4184-4443-8838-81aee70ec48e"
+          "73cee245-4184-4443-8838-81aee70ec48e",
+          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84"
         ],
         "settings": {
           "color_scheme": "background-1",
-          "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true,
