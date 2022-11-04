@@ -182,6 +182,15 @@
               "menu": "footer"
             }
           },
+          "2973bd8e-f167-403a-a4b0-35a394865560": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
+              "image_width": 100,
+              "alignment": ""
+            }
+          },
           "f621b165-c8eb-4293-9427-352de6210839": {
             "type": "text",
             "settings": {
@@ -207,25 +216,16 @@
               "newsletter_heading": "Subscribe to our emails",
               "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
             }
-          },
-          "2973bd8e-f167-403a-a4b0-35a394865560": {
-            "type": "logo_image",
-            "settings": {
-              "show_logo": true,
-              "image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
-              "image_width": 100,
-              "alignment": ""
-            }
           }
         },
         "block_order": [
           "footer-1",
           "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
           "footer-0",
+          "2973bd8e-f167-403a-a4b0-35a394865560",
           "f621b165-c8eb-4293-9427-352de6210839",
           "0fa98934-9072-475f-88a2-ba8c7d89be88",
-          "73cee245-4184-4443-8838-81aee70ec48e",
-          "2973bd8e-f167-403a-a4b0-35a394865560"
+          "73cee245-4184-4443-8838-81aee70ec48e"
         ],
         "settings": {
           "color_scheme": "background-1",
