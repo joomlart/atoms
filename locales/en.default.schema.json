@@ -1027,13 +1027,6 @@
         "enable_video_looping": {
           "label": "Enable video looping"
         }
-        ,
-        "heading_other": {
-          "content": "Other"
-        },
-        "addition_class": {
-          "content": "Addition Class"
-        }
       },
       "presets": {
         "name": "Featured product"
@@ -2150,6 +2143,12 @@
         },
         "enable_video_looping": {
           "label": "Enable video looping"
+        },
+        "heading_other": {
+          "content": "Other"
+        },
+        "addition_class": {
+          "content": "Addition Class"
         }
       }
     },
