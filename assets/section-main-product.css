@@ -255,7 +255,7 @@
     .product--thumbnail_slider:not(.product--no-media)
     .product__info-wrapper
     .product__info-container {
-    max-width: 46%;
+    max-width: 550px;
     margin: auto;
   }
 }
