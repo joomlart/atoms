@@ -124,10 +124,6 @@
                     >
                   {% endif %}
 
-                    {%- if block.settings.heading != blank -%}
-                      <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
-                    {%- endif -%}
-
                     {%- case block.type -%}
                       {%- when 'text' -%}
                         <div class="footer-block__details-content rte">
@@ -139,6 +135,9 @@
                 <div class="grid grid__item grid--2-col-tablet-down {{ footer_grid_class }}">
                 {%- for block in section.blocks -%}
                   <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.heading != blank -%}
+                      <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+                    {%- endif -%}
                     {%- case block.type -%}  
                     {%- when 'link_list' -%}
                         {%- if block.settings.menu != blank -%}
