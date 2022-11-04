@@ -1071,6 +1071,14 @@
               "label": "Intro"
             }
           }
+        },
+        "social": {
+          "name": "Social",
+          "settings": {
+            "show_social": {
+              "label": "Show social media icons"
+            }
+          }
         }
       },
       "settings": {
@@ -1081,9 +1089,6 @@
         "header__2": {
           "content": "Social media icons",
           "info": "To display your social media accounts, link them in your theme settings."
-        },
-        "show_social": {
-          "label": "Show social media icons"
         },
         "header__3": {
           "content": "Country\/region selector"
