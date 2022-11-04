@@ -1,11 +1,13 @@
 {% comment %}theme-check-disable UndefinedObject{% endcomment %}
-{{ 'section-footer-2.css' | asset_url | stylesheet_tag }}
+{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-payment.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-list-social.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'disclosure.css' | asset_url }}" media="print" onload="this.media='all'">
 
+<noscript>{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-list-social.css' | asset_url | stylesheet_tag }}</noscript>
@@ -34,140 +36,224 @@
   }
 {%- endstyle -%}
 
-<footer class="footer footer-02 color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+<footer class="footer footer-01 color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   <div class="page-width"> 
     <div class="inner"> 
-    <div class="footer__content-top">
-      {%- if section.blocks.size > 0 -%}
-        {%- liquid
-          if section.blocks.size == 9
-            assign footer_grid_class = 'grid--3-col-tablet'
-          elsif section.blocks.size > 6
-            assign footer_grid_class = 'grid--4-col-desktop'
-          elsif section.blocks.size > 4
-            assign footer_grid_class = 'grid--3-col-tablet'
-          endif
-        -%}
-        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col-tablet">
-          <div class="grid__item grid grid--2-col-tablet-down {{ footer_grid_class }}">
-              {%- for block in section.blocks -%}
-                <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
-                  {%- if block.settings.heading != blank -%}
-                    <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
-                  {%- endif -%}
-
-                  {%- case block.type -%}
-                    {%- when 'text' -%}
-                      <div class="footer-block__details-content rte">
-                        {{ block.settings.subtext }}
-                      </div>
-                    {%- when 'link_list' -%}
-                      {%- if block.settings.menu != blank -%}
-                        <ul class="footer-block__details-content list-unstyled">
-                          {%- for link in block.settings.menu.links -%}
-                            <li>
-                              <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                                {{ link.title }}
-                              </a>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
+      {%- if section.blocks.size > 0 or section.settings.newsletter_enable -%}
+        {% comment %} Footer Content Top {% endcomment %}
+        <div class="footer__content-top">
+          {%- if section.blocks.size > 0 -%}
+            {%- liquid
+              if section.blocks.size == 9
+                assign footer_grid_class = 'grid--3-col-tablet'
+              elsif section.blocks.size > 6
+                assign footer_grid_class = 'grid--4-col-desktop'
+              elsif section.blocks.size > 4
+                assign footer_grid_class = 'grid--3-col-tablet'
+              endif
+            -%}
+            <div class="footer__blocks-wrapper">
+              <div class="footer-block footer-block--newsletter">
+                <div class="footer-block__newsletter">
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {%- when 'newsletter' -%}
+                      <div class="newsletter__content">
+                      {%- if block.settings.newsletter_heading != blank -%}
+                        <h2 class="footer-block__heading h3">{{ block.settings.newsletter_heading | escape }}</h2>
                       {%- endif -%}
-                    {%- when 'image' -%}
-                      <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                        {%- if block.settings.image != blank -%}
-                          {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
-                          <img
-                            srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                            src="{{ block.settings.image | image_url: width: 400 }}"
-                            alt="{{ block.settings.image.alt | escape }}"
-                            loading="lazy"
-                            width="{{ block.settings.image.width }}"
-                            height="{{ block.settings.image.height }}"
-                            style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                          >
-                        {%- else -%}
-                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                        {%- endif -%}
-                      </div>
-                    {%- endcase -%}
-                </div>
-              {%- endfor -%}
-              {%- if section.settings.show_social -%}
-                <div class="footer-block grid__item footer-block--menu" {{ block.shopify_attributes }}>
-                  <h2 class="footer-block__heading">Social</h2>
-                  <ul class="footer-block__details-content list-unstyled" role="list">
-                    {%- if settings.social_twitter_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_twitter_link }}" class="link link--text list-menu__item list-menu__item--link">
-                          <span>{{ 'general.social.links.twitter' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_facebook_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_facebook_link }}" class="link link--text list-menu__item list-menu__item--link" >
-                          <span>{{ 'general.social.links.facebook' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_pinterest_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_pinterest_link }}" class="link link--text list-menu__item list-menu__item--link" >
-                          <span>{{ 'general.social.links.pinterest' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_instagram_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_instagram_link }}" class="link link--text list-menu__item list-menu__item--link" >
-                          <span>{{ 'general.social.links.instagram' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_tiktok_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_tiktok_link }}" class="link link--text list-menu__item list-menu__item--link" >
-                          <span>{{ 'general.social.links.tiktok' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_tumblr_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_tumblr_link }}" class="link link--text list-menu__item list-menu__item--link" >
-                          <span>{{ 'general.social.links.tumblr' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_snapchat_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_snapchat_link }}" class="link link--text list-menu__item list-menu__item--link" >
-                          <span>{{ 'general.social.links.snapchat' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_youtube_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_youtube_link }}" class="link link--text list-menu__item list-menu__item--link" >
-                          <span>{{ 'general.social.links.youtube' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_vimeo_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_vimeo_link }}" class="link link--text list-menu__item list-menu__item--link" >
-                          <span>{{ 'general.social.links.vimeo' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                  </ul>
-                </div>
-                {%- endif -%}
-            </div>
-          </div>
-        {%- endif -%}
-      </div>
 
+                      {%- if block.settings.newsletter_intro != blank -%}
+                        <p class="footer-block__intro">{{ block.settings.newsletter_intro | escape }}</p>
+                      {%- endif -%}
+                      </div>
+                      {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <div class="newsletter-form__field-wrapper">
+                          <div class="field">
+                            <input
+                              id="NewsletterForm--{{ section.id }}"
+                              type="email"
+                              name="contact[email]"
+                              class="field__input"
+                              value="{{ form.email }}"
+                              aria-required="true"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              autocomplete="email"
+                              {% if form.errors %}
+                                autofocus
+                                aria-invalid="true"
+                                aria-describedby="ContactFooter-error"
+                              {% elsif form.posted_successfully? %}
+                                aria-describedby="ContactFooter-success"
+                              {% endif %}
+                              placeholder="{{ 'newsletter.label' | t }}"
+                              required
+                            >
+                            <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                              {{ 'newsletter.label' | t }}
+                            </label>
+                            <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                              {% render 'icon-arrow' %}
+                            </button>
+                          </div>
+                          {%- if form.errors -%}
+                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                          {%- endif -%}
+                        </div>
+                        {%- if form.posted_successfully? -%}
+                          <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+                        {%- endif -%}
+                      {%- endform -%}
+                    {% endcase %}
+                  {% endfor  %}
+                </div>
+              </div>
+              
+              <div class="footer-block--main">
+                <div class="footer__content__left"> 
+                  {% for block in section.blocks %}
+                    {% case block.type %}
+                      {%- when 'logo_image' -%}
+                        {% if block.settings.show_logo %}
+                        <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                          {%- if block.settings.image != blank -%}
+                            {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+                            <img
+                              srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+                              src="{{ block.settings.image | image_url: width: 400 }}"
+                              alt="{{ block.settings.image.alt | escape }}"
+                              loading="lazy"
+                              width="{{ block.settings.image.width }}"
+                              height="{{ block.settings.image.height }}"
+                              style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                            >
+                          {%- else -%}
+                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                          {%- endif -%}
+                        </div>
+                      {% endif %}
+                      {%- when 'text' -%}
+                        <div class="footer-block__details-content rte">
+                          {% if block.settings.show_heading %}
+                            <h2>{{ block.settings.heading }}</h2>
+                          {% endif %}
+                          {% if block.settings.show_subtext %}
+                            <p>{{ block.settings.subtext }}</p>
+                          {% endif %}
+                        </div>
+                      {%- when 'social' -%}
+                        {%- if block.settings.show_social -%}
+                          <ul class="footer__list-social list-unstyled list-social" role="list">
+                            {%- if settings.social_twitter_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
+                                  {%- render 'icon-twitter' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                            {%- if settings.social_facebook_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
+                                  {%- render 'icon-facebook' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                            {%- if settings.social_pinterest_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
+                                  {%- render 'icon-pinterest' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                            {%- if settings.social_instagram_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
+                                  {%- render 'icon-instagram' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                            {%- if settings.social_tiktok_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
+                                  {%- render 'icon-tiktok' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                            {%- if settings.social_tumblr_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
+                                  {%- render 'icon-tumblr' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                            {%- if settings.social_snapchat_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
+                                  {%- render 'icon-snapchat' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                            {%- if settings.social_youtube_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
+                                  {%- render 'icon-youtube' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                            {%- if settings.social_vimeo_link != blank -%}
+                              <li class="list-social__item">
+                                <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
+                                  {%- render 'icon-vimeo' -%}
+                                  <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                                </a>
+                              </li>
+                            {%- endif -%}
+                          </ul>
+                        {%- endif -%}
+                    {% endcase %}
+                  {% endfor %}
+                </div>
+                <div class="grid grid--2-col-tablet-down {{ footer_grid_class }} footer__content__right">
+                {%- for block in section.blocks -%}
+                  <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+                    {%- case block.type -%}  
+                    {%- when 'link_list' -%}
+                        {%- if block.settings.menu != blank -%}
+                          {%- if block.settings.heading != blank -%}
+                            <h2 class="footer-block__heading h3">{{- block.settings.heading | escape -}}</h2>
+                          {%- endif -%}
+                          <ul class="footer-block__details-content list-unstyled">
+                            {%- for link in block.settings.menu.links -%}
+                              <li>
+                                <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                                  {{ link.title }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                    {%- endcase -%}
+                  </div>
+                {%- endfor -%}
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+        {% comment %} End Footer Content Top {% endcomment %}
+      {%- endif -%}
+
+      {% comment %} Footer Content Bottom {% endcomment %}
       <div class="footer__content-bottom">
         <div class="footer__content-bottom-wrapper">
           <div class="footer__column footer__localization isolate">
@@ -261,25 +347,6 @@
             {%- endif -%}
           </div>
           <div class="footer__column footer__column--info">
-            <a href="{{ routes.root_url }}" class="footer__footer-logo link link--text focus-inset">
-              {%- if section.settings.logo != blank -%}
-                {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
-                {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
-                  height: logo_height,
-                  width: section.settings.logo_width,
-                  alt: logo_alt
-                }}
-              {%- else if section.settings.logo_text != blank -%}
-                <span class="h2 logo_text">{{ section.settings.logo_text }}</span>
-              {%- else -%}
-                <span class="h2">{{ shop.name }}</span>
-              {%- endif -%}
-            </a>
-            <div class="footer__copyright caption">
-              <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-              <small class="copyright__content">{{ powered_by_link }}</small>
-            </div>
             {%- if section.settings.payment_enable -%}
               <div class="footer__payment">
                 <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
@@ -292,9 +359,14 @@
                 </ul>
               </div>
             {%- endif -%}
+            <div class="footer__copyright caption">
+              <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+              <small class="copyright__content">{{ powered_by_link }}</small>
+            </div>
           </div>
         </div>
       </div>
+      {% comment %} End Footer Content Bottom {% endcomment %}
     </div>
   </div>
 </footer>
@@ -379,10 +451,22 @@
       "name": "t:sections.footer.blocks.text.name",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "show_heading",
+          "default": true,
+          "label": "Show Heading"
+        },
+        {
           "type": "text",
           "id": "heading",
           "default": "Heading",
           "label": "t:sections.footer.blocks.text.settings.heading.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_subtext",
+          "default": true,
+          "label": "Show Subtext"
         },
         {
           "type": "richtext",
@@ -393,9 +477,14 @@
       ]
     },
     {
-      "type": "image",
-      "name": "Image",
+      "type": "logo_image",
+      "name": "Logo Image",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_logo",
+          "label": "Show Logo Image"
+        },
         {
           "type": "image_picker",
           "id": "image",
@@ -430,6 +519,42 @@
             }
           ],
           "default": "center"
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "newsletter_enable",
+          "default": true,
+          "label": "t:sections.footer.newsletter.settings.newsletter_enable.label"
+        },
+        {
+          "type": "text",
+          "id": "newsletter_heading",
+          "default": "Subscribe to our emails",
+          "label": "t:sections.footer.newsletter.settings.newsletter_heading.label"
+        },
+        {
+          "type": "text",
+          "id": "newsletter_intro",
+          "default": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products.",
+          "label": "t:sections.footer.newsletter.settings.newsletter_intro.label"
+        }
+      ]
+    },
+    {
+      "type": "social",
+      "name": "Social",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_social",
+          "default": true,
+          "label": "t:sections.footer.blocks.social.settings.show_social.label"
         }
       ]
     }
@@ -469,14 +594,13 @@
     },
     {
       "type": "header",
-      "content": "t:sections.footer.settings.header__2.content",
-      "info": "t:sections.footer.settings.header__2.info"
+      "content": "t:sections.footer.settings.header__1.content",
+      "info": "t:sections.footer.settings.header__1.info"
     },
     {
-      "type": "checkbox",
-      "id": "show_social",
-      "default": true,
-      "label": "t:sections.footer.settings.show_social.label"
+      "type": "header",
+      "content": "t:sections.footer.settings.header__2.content",
+      "info": "t:sections.footer.settings.header__2.info"
     },
     {
       "type": "header",
@@ -503,53 +627,6 @@
     {
       "type": "header",
       "content": "t:sections.footer.settings.header__7.content"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "t:sections.header.settings.logo.label"
-    },
-    {
-      "type": "text",
-      "id": "logo_text",
-      "label": "t:sections.header.settings.logo_text.label"
-    },
-    {
-      "type": "font_picker",
-      "id": "logo_font",
-      "label": "Logo font",
-      "default": "helvetica_n4"
-    },
-    {
-      "type": "range",
-      "id": "logo_width",
-      "min": 50,
-      "max": 250,
-      "step": 10,
-      "default": 100,
-      "unit": "t:sections.header.settings.logo_width.unit",
-      "label": "t:sections.header.settings.logo_width.label"
-    },
-    {
-      "type": "select",
-      "id": "logo_position",
-      "options": [
-        {
-          "value": "middle-left",
-          "label": "t:sections.header.settings.logo_position.options__1.label"
-        },
-        {
-          "value": "top-left",
-          "label": "t:sections.header.settings.logo_position.options__2.label"
-        },
-        {
-          "value": "top-center",
-          "label": "t:sections.header.settings.logo_position.options__3.label"
-        }
-      ],
-      "default": "middle-left",
-      "label": "t:sections.header.settings.logo_position.label",
-      "info": "t:sections.header.settings.logo_position.info"
     },
     {
       "type": "checkbox",

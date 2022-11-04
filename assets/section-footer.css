@@ -192,6 +192,10 @@
   }
 }
 
+.footer-block--main .footer__content__right .footer-block__heading {
+  margin-bottom: 2.4rem;
+}
+
 .footer-01 .footer-block--main .footer__content__left .footer__list-social {
   justify-content: flex-start;
   margin-left: -1.4rem;
@@ -421,7 +425,6 @@ noscript .localization-selector.link {
 }
 
 .footer__copyright {
-  text-align: center;
   font-size: 1.5rem;
 }
 
