@@ -186,6 +186,7 @@
 
 .footer-01 .footer-block--main .footer__content__left .footer__list-social {
   justify-content: flex-start;
+  margin-left: -1.4rem;
 }
 
 .footer__list-social:empty,
