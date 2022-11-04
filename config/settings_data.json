@@ -199,6 +199,15 @@
               "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
             }
           },
+          "68870e20-c4f3-4f7a-acc3-b65972c531af": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
+          },
           "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84": {
             "type": "social",
             "settings": {
@@ -212,6 +221,7 @@
           "footer-0",
           "2973bd8e-f167-403a-a4b0-35a394865560",
           "73cee245-4184-4443-8838-81aee70ec48e",
+          "68870e20-c4f3-4f7a-acc3-b65972c531af",
           "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84"
         ],
         "settings": {
