@@ -199,6 +199,15 @@
               "show_subtext": true,
               "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
+          },
+          "0fa98934-9072-475f-88a2-ba8c7d89be88": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
           }
         },
         "block_order": [
@@ -206,13 +215,14 @@
           "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
           "footer-0",
           "1079e0ec-0bcd-40b6-8e94-603d66abc123",
-          "f621b165-c8eb-4293-9427-352de6210839"
+          "f621b165-c8eb-4293-9427-352de6210839",
+          "0fa98934-9072-475f-88a2-ba8c7d89be88"
         ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
-          "newsletter_heading": "Stay in touch.",
-          "newsletter_intro": "Sign up for our newsletter to stay up-to-date on the latest fashion trends, receive special offers and get exclusive early access to new products.",
+          "newsletter_heading": "Subscribe And Get 20% Off And Get Free Gifts And Offers",
+          "newsletter_intro": "",
           "show_social": true,
           "enable_country_selector": true,
           "enable_language_selector": true,
