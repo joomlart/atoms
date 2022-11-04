@@ -114,15 +114,25 @@
               <div class="grid grid--2-col-tablet-down">
                 <div class="grid__item"> 
                   {% for block in section.blocks %}
-                  {% if show_logo %}
-                    <img src="{{ item.image | image_url: width: 300 }}"
-                      class="logo_image"
-                      alt="{{ item.image.alt | escape }}"
-                      loading="lazy"
-                      width="150"
-                      height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
-                    >
-                  {% endif %}
+                    {% case block.type %}
+                      {%- when 'image' -%}
+                        <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                          {%- if block.settings.image != blank -%}
+                            {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+                            <img
+                              srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+                              src="{{ block.settings.image | image_url: width: 400 }}"
+                              alt="{{ block.settings.image.alt | escape }}"
+                              loading="lazy"
+                              width="{{ block.settings.image.width }}"
+                              height="{{ block.settings.image.height }}"
+                              style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                            >
+                          {%- else -%}
+                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                          {%- endif -%}
+                        </div>
+                    {% endcase %}
 
                     {%- case block.type -%}
                       {%- when 'text' -%}
@@ -151,23 +161,6 @@
                             {%- endfor -%}
                           </ul>
                         {%- endif -%}
-                      {%- when 'image' -%}
-                        <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                          {%- if block.settings.image != blank -%}
-                            {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
-                            <img
-                              srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                              src="{{ block.settings.image | image_url: width: 400 }}"
-                              alt="{{ block.settings.image.alt | escape }}"
-                              loading="lazy"
-                              width="{{ block.settings.image.width }}"
-                              height="{{ block.settings.image.height }}"
-                              style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                            >
-                          {%- else -%}
-                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                          {%- endif -%}
-                        </div>
                     {%- endcase -%}
                   </div>
                 {%- endfor -%}
