@@ -58,8 +58,10 @@
             -%}
             <div class="footer__blocks-wrapper">
               <div class="footer-block footer-block--newsletter">
-                {%- if section.settings.newsletter_enable -%}
                   <div class="footer-block__newsletter">
+                    {% for block in section.blocks  %}
+                    {% case block.type %}
+                      {%- when 'image' -%}
                     {%- if section.settings.newsletter_heading != blank -%}
                       <h2 class="footer-block__heading h1">{{ section.settings.newsletter_heading | escape }}</h2>
                     {%- endif -%}
@@ -108,7 +110,8 @@
                       {%- endif -%}
                     {%- endform -%}
                   </div>
-                {%- endif -%}
+                  {% endcase  %}
+                {% endfor  %}
               </div>
               
               <div class="grid grid--2-col-tablet-down">
@@ -473,7 +476,7 @@
       ]
     },
     {
-      "type": "image",
+      "type": "logo_image",
       "name": "Logo Image",
       "settings": [
         {
@@ -517,6 +520,30 @@
           "default": "center"
         }
       ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "newsletter_enable",
+          "default": true,
+          "label": "t:sections.footer.newsletter.settings.newsletter_enable.label"
+        },
+        {
+          "type": "text",
+          "id": "newsletter_heading",
+          "default": "Subscribe to our emails",
+          "label": "t:sections.footer.newsletter.settings.newsletter_heading.label"
+        },
+        {
+          "type": "text",
+          "id": "newsletter_intro",
+          "default": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products.",
+          "label": "t:sections.footer.newsletter.settings.newsletter_intro.label"
+        }
+      ]
     }
   ],
   "settings": [
@@ -556,24 +583,6 @@
       "type": "header",
       "content": "t:sections.footer.settings.header__1.content",
       "info": "t:sections.footer.settings.header__1.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "newsletter_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.newsletter_enable.label"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_heading",
-      "default": "Subscribe to our emails",
-      "label": "t:sections.footer.settings.newsletter_heading.label"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_intro",
-      "default": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products.",
-      "label": "t:sections.footer.settings.newsletter_intro.label"
     },
     {
       "type": "header",
