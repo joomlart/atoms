@@ -1,4 +1,4 @@
-<section id="MainProduct-{{ section.id }}" class="page-width  {{ section.settings.addition_class }} section-{{ section.id }}-padding " data-section="{{ section.id }}">
+<section id="MainProduct-{{ section.id }}" class="page-width {{ section.settings.addition_class }} section-{{ section.id }}-padding " data-section="{{ section.id }}">
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
@@ -41,7 +41,7 @@
         data-desktop-layout="{{ section.settings.gallery_layout }}"
       >
         <div id="GalleryStatus-{{ section.id }}" class="visually-hidden" role="status"></div>
-        <slider-component id="GalleryViewer-{{ section.id }}" class="slider-mobile-gutter {% if section.settings.gallery_layout == 'thumbnail_slider' %}slider-tablet-gutter {% endif %}">
+        <slider-component id="GalleryViewer-{{ section.id }}" class="slider-main-photo slider-mobile-gutter {% if section.settings.gallery_layout == 'thumbnail_slider' %}slider-tablet-gutter {% endif %}">
           <a class="skip-to-content-link button visually-hidden quick-add-hidden" href="#ProductInfo-{{ section.id }}">
             {{ "accessibility.skip_to_product_info" | t }}
           </a>
@@ -69,7 +69,7 @@
               {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
               <li
                 id="Slide-{{ section.id }}-{{ featured_media.id }}"
-                class="product__media-item grid__item slider__slide is-active{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains featured_media.src %} product__media-item--variant{% endif %}"
+                class="product__media-item grid__item  media--{{ section.settings.item_ratio }} slider__slide is-active{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains featured_media.src %} product__media-item--variant{% endif %}"
                 data-media-id="{{ section.id }}-{{ featured_media.id }}"
               >
                 {%- assign media_position = 1 -%}
@@ -137,7 +137,7 @@
         {%- if media_count > 1 and section.settings.gallery_layout != 'stacked' or section.settings.mobile_thumbnails == 'show' or section.settings.gallery_layout != 'stacked_full' -%}
           <slider-component
             id="GalleryThumbnails-{{ section.id }}"
-            class="thumbnail-slider slider-mobile-gutter {% if section.settings.gallery_layout == 'thumbnail_slider' %}slider-tablet-gutter {% endif %} quick-add-hidden{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
+            class="slider-thumb-photo thumbnail-slider slider-mobile-gutter {% if section.settings.gallery_layout == 'thumbnail_slider' %}slider-tablet-gutter {% endif %} quick-add-hidden{% if section.settings.mobile_thumbnails == 'hide' %} small-hide{% endif %}{% if media_count <= 3 %} thumbnail-slider--no-slide{% endif %}"
           >
             <button
               type="button"
@@ -1235,6 +1235,34 @@
       "default": "large",
       "label": "t:sections.main-product.settings.media_size.label",
       "info": "t:sections.main-product.settings.media_size.info"
+    },
+    {
+      "type": "select",
+      "id": "item_ratio",
+      "label": "t:sections.main-product.settings.item_ratio.label",
+      "options": [
+        {
+          "value": "portrait",
+          "label": "t:sections.main-product.settings.item_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-product.settings.item_ratio.options__3.label"
+        },
+        {
+          "value": "34",
+          "label": "t:sections.main-product.settings.item_ratio.options__4.label"
+        },
+        {
+          "value": "43",
+          "label": "t:sections.main-product.settings.item_ratio.options__1.label"
+        },
+        {
+          "value": "169",
+          "label": "t:sections.main-product.settings.item_ratio.options__5.label"
+        }
+      ],
+      "default": "169"
     },
     {
       "type": "select",
