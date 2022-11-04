@@ -188,7 +188,16 @@
               "show_logo": true,
               "image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
               "image_width": 100,
-              "alignment": "center"
+              "alignment": ""
+            }
+          },
+          "f621b165-c8eb-4293-9427-352de6210839": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
           }
         },
@@ -196,7 +205,8 @@
           "footer-1",
           "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
           "footer-0",
-          "1079e0ec-0bcd-40b6-8e94-603d66abc123"
+          "1079e0ec-0bcd-40b6-8e94-603d66abc123",
+          "f621b165-c8eb-4293-9427-352de6210839"
         ],
         "settings": {
           "color_scheme": "background-1",
