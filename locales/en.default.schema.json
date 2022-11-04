@@ -1057,18 +1057,23 @@
               "label": "Subtext"
             }
           }
+        },
+        "newsletter": {
+          "name": "Newsletter",
+          "settings": {
+            "newsletter_enable": {
+              "label": "Show email signup"
+            },
+            "newsletter_heading": {
+              "label": "Heading"
+            },
+            "newsletter_intro": {
+              "label": "Intro"
+            }
+          }
         }
       },
       "settings": {
-        "newsletter_enable": {
-          "label": "Show email signup"
-        },
-        "newsletter_heading": {
-          "label": "Heading"
-        },
-        "newsletter_intro": {
-          "label": "Intro"
-        },
         "header__1": {
           "content": "Email Signup",
           "info": "Subscribers added automatically to your “accepted marketing” customer list. [Learn more](https:\/\/help.shopify.com\/manual\/customers\/manage-customers)"
