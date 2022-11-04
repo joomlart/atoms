@@ -40,6 +40,7 @@
   <div class="page-width"> 
     <div class="inner"> 
       {%- if section.blocks.size > 0 or section.settings.newsletter_enable -%}
+        {% comment %} Footer Content Top {% endcomment %}
         <div class="footer__content-top">
           {%- if section.blocks.size > 0 -%}
             {%- liquid
@@ -50,59 +51,17 @@
               elsif section.blocks.size > 4
                 assign footer_grid_class = 'grid--3-col-tablet'
               endif
+
+              assign show_logo = section.blocks.settings.show_logo
+              assign show_heading = section.blocks.settings.show_heading
+              assign show_subtext = section.blocks.settings.show_subtext
             -%}
-            <div class="footer__blocks-wrapper grid grid--1-col grid--2-col-tablet">
-              <div class="grid__item grid grid--2-col-tablet-down {{ footer_grid_class }}">
-              {%- for block in section.blocks -%}
-                <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
-                  {%- if block.settings.heading != blank -%}
-                    <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
-                  {%- endif -%}
-
-                  {%- case block.type -%}
-                    {%- when 'text' -%}
-                      <div class="footer-block__details-content rte">
-                        {{ block.settings.subtext }}
-                      </div>
-                    {%- when 'link_list' -%}
-                      {%- if block.settings.menu != blank -%}
-                        <ul class="footer-block__details-content list-unstyled">
-                          {%- for link in block.settings.menu.links -%}
-                            <li>
-                              <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                                {{ link.title }}
-                              </a>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                      {%- endif -%}
-                    {%- when 'image' -%}
-                      <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                        {%- if block.settings.image != blank -%}
-                          {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
-                          <img
-                            srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                            src="{{ block.settings.image | image_url: width: 400 }}"
-                            alt="{{ block.settings.image.alt | escape }}"
-                            loading="lazy"
-                            width="{{ block.settings.image.width }}"
-                            height="{{ block.settings.image.height }}"
-                            style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                          >
-                        {%- else -%}
-                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                        {%- endif -%}
-                      </div>
-                    {%- endcase -%}
-                </div>
-              {%- endfor -%}
-              </div>
-
-              <div class="footer-block grid__item footer-block--newsletter">
+            <div class="footer__blocks-wrapper">
+              <div class="footer-block footer-block--newsletter">
                 {%- if section.settings.newsletter_enable -%}
                   <div class="footer-block__newsletter">
                     {%- if section.settings.newsletter_heading != blank -%}
-                      <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
+                      <h2 class="footer-block__heading h1">{{ section.settings.newsletter_heading | escape }}</h2>
                     {%- endif -%}
 
                     {%- if section.settings.newsletter_intro != blank -%}
@@ -151,11 +110,77 @@
                   </div>
                 {%- endif -%}
               </div>
+              
+              <div class="grid grid--2-col-tablet-down">
+                <div class="grid__item">
+                  {% for block in section.blocks %}
+                  {% if show_logo %}
+                    <img src="{{ item.image | image_url: width: 300 }}"
+                      class="logo_image"
+                      alt="{{ item.image.alt | escape }}"
+                      loading="lazy"
+                      width="150"
+                      height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
+                    >
+                  {% endif %}
+
+                    {%- if block.settings.heading != blank -%}
+                      <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+                    {%- endif -%}
+
+                    {%- case block.type -%}
+                      {%- when 'text' -%}
+                        <div class="footer-block__details-content rte">
+                          {{ block.settings.subtext }}
+                        </div>
+                    {% endcase %}
+                  {% endfor %}
+                </div>
+                <div class="grid grid__item grid--2-col-tablet-down {{ footer_grid_class }}">
+                {%- for block in section.blocks -%}
+                  <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+                    {%- case block.type -%}  
+                    {%- when 'link_list' -%}
+                        {%- if block.settings.menu != blank -%}
+                          <ul class="footer-block__details-content list-unstyled">
+                            {%- for link in block.settings.menu.links -%}
+                              <li>
+                                <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                                  {{ link.title }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      {%- when 'image' -%}
+                        <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                          {%- if block.settings.image != blank -%}
+                            {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+                            <img
+                              srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+                              src="{{ block.settings.image | image_url: width: 400 }}"
+                              alt="{{ block.settings.image.alt | escape }}"
+                              loading="lazy"
+                              width="{{ block.settings.image.width }}"
+                              height="{{ block.settings.image.height }}"
+                              style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                            >
+                          {%- else -%}
+                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                          {%- endif -%}
+                        </div>
+                    {%- endcase -%}
+                  </div>
+                {%- endfor -%}
+                </div>
+              </div>
             </div>
           {%- endif -%}
         </div>
+        {% comment %} End Footer Content Top {% endcomment %}
       {%- endif -%}
 
+      {% comment %} Footer Content Bottom {% endcomment %}
       <div class="footer__content-bottom">
         <div class="footer__content-bottom-wrapper">
           <div class="footer__column footer__localization isolate">
@@ -345,6 +370,7 @@
           </div>
         </div>
       </div>
+      {% comment %} End Footer Content Bottom {% endcomment %}
     </div>
   </div>
 </footer>
@@ -429,10 +455,22 @@
       "name": "t:sections.footer.blocks.text.name",
       "settings": [
         {
+          "type": "checkbox",
+          "id": "show_heading",
+          "default": true,
+          "label": "Show Heading"
+        },
+        {
           "type": "text",
           "id": "heading",
           "default": "Heading",
           "label": "t:sections.footer.blocks.text.settings.heading.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_subtext",
+          "default": true,
+          "label": "Show Subtext"
         },
         {
           "type": "richtext",
@@ -444,8 +482,13 @@
     },
     {
       "type": "image",
-      "name": "Image",
+      "name": "Logo Image",
       "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_logo",
+          "label": "Show Logo Image"
+        },
         {
           "type": "image_picker",
           "id": "image",

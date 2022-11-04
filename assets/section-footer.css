@@ -124,7 +124,6 @@
 }
 
 .footer__blocks-wrapper .footer-block--newsletter {
-  width: calc(33.333% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
 }
 
 @media screen and (max-width: 749px) {
@@ -157,12 +156,10 @@
 .footer-block__heading {
   margin-bottom: 2rem;
   margin-top: 0;
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
 }
 
 @media screen and (min-width: 990px) {
   .footer-block__heading {
-    font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
 }
 
@@ -176,8 +173,14 @@
 }
 
 .footer-block__newsletter {
-  text-align: left;
+  text-align: center;
   color: rgba(var(--color-foreground), 0.75);
+  padding: calc(var(--grid-desktop-vertical-spacing));
+}
+
+.footer .footer-block__newsletter .newsletter-form {
+  align-items: center;
+  margin: auto;
 }
 
 .newsletter-form__field-wrapper {
