@@ -153,6 +153,70 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "d29201a8-c927-4177-8bd0-a6da46a55cf8": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Main Menu",
+              "menu": "main-menu"
+            }
+          },
+          "37148d7b-c858-4ed7-890e-1f9e3f5cb40e": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
+          },
+          "665de369-9f38-429f-926b-7bb8cda2deef": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Other Pages",
+              "menu": "others-page"
+            }
+          },
+          "3e4569c6-6f50-4ccf-8ddf-672b96460779": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Support",
+              "menu": "footer"
+            }
+          },
+          "4e6c3f93-1225-49e5-bc74-44c83759666c": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image": "shopify:\/\/shop_images\/atoms-light.png",
+              "image_width": 100,
+              "alignment": "center"
+            }
+          },
+          "f50bd28d-62a7-4e4e-b0a7-de393ebf6086": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Subscribe to our emails",
+              "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
+            }
+          },
+          "e5057d3b-d94f-4c05-b0bc-f8c9927cf810": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          }
+        },
+        "block_order": [
+          "d29201a8-c927-4177-8bd0-a6da46a55cf8",
+          "37148d7b-c858-4ed7-890e-1f9e3f5cb40e",
+          "665de369-9f38-429f-926b-7bb8cda2deef",
+          "3e4569c6-6f50-4ccf-8ddf-672b96460779",
+          "4e6c3f93-1225-49e5-bc74-44c83759666c",
+          "f50bd28d-62a7-4e4e-b0a7-de393ebf6086",
+          "e5057d3b-d94f-4c05-b0bc-f8c9927cf810"
+        ],
         "settings": {
           "color_scheme": "accent-1",
           "enable_country_selector": true,
