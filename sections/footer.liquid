@@ -59,21 +59,21 @@
                     {% case block.type %}
                       {%- when 'newsletter' -%}
                       <div class="newsletter__content">
-                        {%- if block.settings.newsletter_icon != blank -%}
-                        <img
-                          srcset= "{{ block.settings.newsletter_icon | image_url: width: 40 }}"
-                          src="{{ block.settings.newsletter_icon | image_url: width: 40 }}"
-                          alt="{{ block.settings.newsletter_icon.alt | escape }}"
-                          loading="lazy"
-                          width="40"
-                          height="40"
-                          style="max-width: min(100%, 40px);"
-                        >
-                      {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                      {%- endif -%}
                       
                       {%- if block.settings.newsletter_heading != blank -%}
+                          {%- if block.settings.newsletter_icon != blank -%}
+                          <img
+                            srcset= "{{ block.settings.newsletter_icon | image_url: width: 40 }}"
+                            src="{{ block.settings.newsletter_icon | image_url: width: 40 }}"
+                            alt="{{ block.settings.newsletter_icon.alt | escape }}"
+                            loading="lazy"
+                            width="40"
+                            height="40"
+                            style="max-width: min(100%, 40px);"
+                          >
+                        {%- else -%}
+                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                        {%- endif -%}
                         <h2 class="footer-block__heading h3">{{ block.settings.newsletter_heading | escape }}</h2>
                       {%- endif -%}
 
