@@ -42,6 +42,10 @@
           {
             "value": "02",
             "label": "t:settings_schema.multilayout.settings.header_layout.label__2"
+          },
+          {
+            "value": "03",
+            "label": "t:settings_schema.multilayout.settings.header_layout.label__3"
           }
         ],
         "default": "01"
@@ -58,6 +62,10 @@
           {
             "value": "02",
             "label": "t:settings_schema.multilayout.settings.footer_layout.label__2"
+          },
+          {
+            "value": "03",
+            "label": "t:settings_schema.multilayout.settings.footer_layout.label__3"
           }
         ],
         "default": "01"
