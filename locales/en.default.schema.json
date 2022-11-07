@@ -330,6 +330,7 @@
       "settings": {
         "home_layout": {
           "label": "Home Layout",
+          "label__3": "Default",
           "label__1": "Home 01",
           "label__2": "Home 02"
         },
