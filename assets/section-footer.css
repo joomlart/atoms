@@ -192,6 +192,10 @@
   }
 }
 
+.footer .color-inverse . footer-block__heading {
+  color: #fff;
+}
+
 .footer-block--main .footer__content__right .footer-block__heading {
   margin-bottom: 2.4rem;
 }
