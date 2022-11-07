@@ -12,26 +12,6 @@
     "settings": [
       {
         "type": "select",
-        "id": "home_layout",
-        "label": "t:settings_schema.multilayout.settings.home_layout.label",
-        "options": [
-          {
-            "value": "01",
-            "label": "t:settings_schema.multilayout.settings.home_layout.label__1"
-          },
-          {
-            "value": "02",
-            "label": "t:settings_schema.multilayout.settings.home_layout.label__2"
-          },
-          {
-            "value": "03",
-            "label": "t:settings_schema.multilayout.settings.home_layout.label__3"
-          }
-        ],
-        "default": "03"
-      },
-      {
-        "type": "select",
         "id": "header_layout",
         "label": "t:settings_schema.multilayout.settings.header_layout.label",
         "info": "t:settings_schema.multilayout.settings.header_layout.info",

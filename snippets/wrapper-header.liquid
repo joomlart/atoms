@@ -1,13 +1,10 @@
-{% if settings.home_layout == '01' %}
-	{% section 'announcement-bar' %}
-	{% section 'header-03' %}
-{% elsif settings.home_layout == '02' %}
+{% if settings.header_layout == '01' %}
 	{% section 'announcement-bar' %}
 	{% section 'header' %}
-{% elsif settings.home_layout == '03' and settings.header_layout == '01' %}
-	{% section 'announcement-bar' %}
-	{% section 'header' %}
-{% elsif settings.home_layout == '03' and settings.header_layout == '02' %}
+{% elsif settings.header_layout == '02' %}
 	{% section 'announcement-bar' %}
 	{% section 'header-02' %}
+	{% elsif settings.header_layout == '03' %}
+	{% section 'announcement-bar' %}
+	{% section 'header-03' %}
 {%- endif -%}
