@@ -152,7 +152,7 @@
   padding-bottom: 1.6rem;
 }
 
-.footer .newsletter-form__field-wrapper .field__label {
+.footer-block__newsletter .newsletter-form__field-wrapper .field__label {
   top: 50%;
   transform: translateY(-50%);
 }
