@@ -61,13 +61,13 @@
                       <div class="newsletter__content">
                         {%- if block.settings.newsletter_icon != blank -%}
                         <img
-                          srcset= "{{ block.settings.newsletter_icon | image_url: width: block.settings.image_width }}, {{ block.settings.newsletter_icon | image_url: width: image_size_2x }} 2x"
-                          src="{{ block.settings.newsletter_icon | image_url: width: 400 }}"
+                          srcset= "{{ block.settings.newsletter_icon | image_url: width: 40 }}"
+                          src="{{ block.settings.newsletter_icon | image_url: width: 40 }}"
                           alt="{{ block.settings.newsletter_icon.alt | escape }}"
                           loading="lazy"
-                          width="{{ block.settings.newsletter_icon.width }}"
-                          height="{{ block.settings.newsletter_icon.height }}"
-                          style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                          width="40"
+                          height="40"
+                          style="max-width: min(100%, 40px);"
                         >
                       {%- else -%}
                         {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
