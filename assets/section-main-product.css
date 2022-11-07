@@ -292,7 +292,8 @@
     visibility: visible;
   }
   .ja-summary-scroll .product-form__buttons,
-  .ja-summary-scroll variant-selects {
+  .ja-summary-scroll variant-selects,
+  .ja-summary-scroll variant-radios {
     display: flex;
     gap: 32px;
   }
