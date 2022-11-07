@@ -330,23 +330,18 @@
       "settings": {
         "home_layout": {
           "label": "Home Layout",
-          "label__3": "Default",
           "label__1": "Home 01",
           "label__2": "Home 02"
         },
         "header_layout": {
           "label": "Header Layout",
-          "info": "Working in Home Default",
           "label__1": "Header 01",
-          "label__2": "Header 02",
-          "label__3": "Header 03"
+          "label__2": "Header 02"
         },
         "footer_layout": {
           "label": "Footer Layout",
-          "info": "Working in Home Default",
           "label__1": "Footer 01",
-          "label__2": "Footer 02",
-          "label__3": "Footer 03"
+          "label__2": "Footer 02"
         }
       }
     },
@@ -1073,6 +1068,9 @@
           "settings": {
             "newsletter_enable": {
               "label": "Show email signup"
+            },
+            "newsletter_icon": {
+              "label": "Icon"
             },
             "newsletter_heading": {
               "label": "Heading"
