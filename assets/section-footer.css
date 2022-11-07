@@ -197,7 +197,7 @@
 .footer-block__heading {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: var(--grid-desktop-vertical-spacing);
+  margin-bottom: 0;
   margin-top: 0;
 }
 
@@ -240,6 +240,13 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+  .footer-01 .footer-block__newsletter .newsletter__content {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-bottom: 3.2rem;
+  }
+
 @media screen and (min-width: 750px) {
   .footer-01 .footer-block__newsletter {
     align-items: center;
@@ -250,9 +257,6 @@
   .footer-01 .footer-block__newsletter .newsletter__content {
     width: 50%;
     text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 1.8rem;
   }
   
   .footer-01 .footer-block__newsletter .newsletter-form {
