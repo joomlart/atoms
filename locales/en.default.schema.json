@@ -336,12 +336,14 @@
         },
         "header_layout": {
           "label": "Header Layout",
+          "info": "Working in Home Default",
           "label__1": "Header 01",
           "label__2": "Header 02",
           "label__3": "Header 03"
         },
         "footer_layout": {
           "label": "Footer Layout",
+          "info": "Working in Home Default",
           "label__1": "Footer 01",
           "label__2": "Footer 02",
           "label__3": "Footer 03"
