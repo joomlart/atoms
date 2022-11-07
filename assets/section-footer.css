@@ -230,6 +230,9 @@
   .footer-01 .footer-block__newsletter .newsletter__content {
     width: 50%;
     text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
   }
   
   .footer-01 .footer-block__newsletter .newsletter-form {
