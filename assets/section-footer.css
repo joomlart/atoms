@@ -222,6 +222,7 @@
 
 @media screen and (min-width: 750px) {
   .footer-01 .footer-block__newsletter {
+    align-items: center;
     display: flex;
     gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
   }
