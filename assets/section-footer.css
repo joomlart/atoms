@@ -119,6 +119,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 6.4rem;
+  border-color: rgba(255,255,255,0.1);
 }
 
 .footer__blocks-wrapper .footer-block--newsletter {
