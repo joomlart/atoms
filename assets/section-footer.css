@@ -227,13 +227,13 @@
   }
 
   .footer-01 .footer-block__newsletter .newsletter__content {
-    width: 33.3%;
+    width: 50%;
     text-align: left;
   }
   
   .footer-01 .footer-block__newsletter .newsletter-form {
     max-width: unset;
-    width: calc(100% - 33.3%);
+    width: 50%;
   }
 }
 
