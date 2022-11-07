@@ -152,13 +152,13 @@
   padding-bottom: 1.6rem;
 }
 
-.footer-block__newsletter .newsletter-form__field-wrapper .field__label {
+.footer .newsletter-form__field-wrapper .field__label {
   top: 50%;
   transform: translateY(-50%);
 }
 
-.footer .color-accent-1 .newsletter-form__field-wrapper .newsletter-form__button.
-.footer .color-inverse .newsletter-form__field-wrapper .newsletter-form__button {
+.color-accent-1 .newsletter-form__field-wrapper .newsletter-form__button.
+.color-inverse .newsletter-form__field-wrapper .newsletter-form__button {
   background-color: rgba(255,255,255, 1);
   color: #000;
 }
