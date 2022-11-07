@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "01",
-    "footer_layout": "01",
+    "footer_layout": "03",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
@@ -373,15 +373,52 @@
               "heading": "Quick links",
               "menu": "footer"
             }
+          },
+          "d5549ec9-81ee-4220-bb6b-5ddf8bd3cc0e": {
+            "type": "text",
+            "settings": {
+              "show_heading": false,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
+          },
+          "3807b2c7-87d7-453a-b013-13dc61062737": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          },
+          "b1f6cada-6f46-4e7c-99bc-4ec19467796f": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image": "shopify:\/\/shop_images\/atoms-light.png",
+              "image_width": 100,
+              "alignment": "center"
+            }
+          },
+          "f72f4d6a-611a-41df-9948-03a3be596a9d": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_icon": "shopify:\/\/shop_images\/Vector.png",
+              "newsletter_heading": "Sign Up to Receive 15% Off Your First Order",
+              "newsletter_intro": ""
+            }
           }
         },
         "block_order": [
           "footer-03-0",
           "b090409b-ef3c-465a-8af2-e8714e5efc96",
-          "8632ce4f-7388-472c-a2a8-6794e487e2ef"
+          "8632ce4f-7388-472c-a2a8-6794e487e2ef",
+          "d5549ec9-81ee-4220-bb6b-5ddf8bd3cc0e",
+          "3807b2c7-87d7-453a-b013-13dc61062737",
+          "b1f6cada-6f46-4e7c-99bc-4ec19467796f",
+          "f72f4d6a-611a-41df-9948-03a3be596a9d"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true,
