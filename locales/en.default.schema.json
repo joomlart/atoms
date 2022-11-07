@@ -336,7 +336,8 @@
         "footer_layout": {
           "label": "Footer Layout",
           "label__1": "Footer 01",
-          "label__2": "Footer 02"
+          "label__2": "Footer 02",
+          "label__3": "Footer 03"
         }
       }
     },
