@@ -154,6 +154,38 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "73cee245-4184-4443-8838-81aee70ec48e": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Subscribe And Get 20% Off And Get Free Gifts And Offers",
+              "newsletter_intro": ""
+            }
+          },
+          "2973bd8e-f167-403a-a4b0-35a394865560": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
+              "image_width": 150,
+              "alignment": ""
+            }
+          },
+          "68870e20-c4f3-4f7a-acc3-b65972c531af": {
+            "type": "text",
+            "settings": {
+              "show_heading": false,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.<\/p>"
+            }
+          },
+          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          },
           "footer-1": {
             "type": "link_list",
             "settings": {
@@ -174,48 +206,16 @@
               "heading": "Quick links",
               "menu": "footer"
             }
-          },
-          "2973bd8e-f167-403a-a4b0-35a394865560": {
-            "type": "logo_image",
-            "settings": {
-              "show_logo": true,
-              "image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
-              "image_width": 150,
-              "alignment": ""
-            }
-          },
-          "73cee245-4184-4443-8838-81aee70ec48e": {
-            "type": "newsletter",
-            "settings": {
-              "newsletter_enable": true,
-              "newsletter_heading": "Subscribe And Get 20% Off And Get Free Gifts And Offers",
-              "newsletter_intro": ""
-            }
-          },
-          "68870e20-c4f3-4f7a-acc3-b65972c531af": {
-            "type": "text",
-            "settings": {
-              "show_heading": false,
-              "heading": "Heading",
-              "show_subtext": true,
-              "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.<\/p>"
-            }
-          },
-          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84": {
-            "type": "social",
-            "settings": {
-              "show_social": true
-            }
           }
         },
         "block_order": [
+          "73cee245-4184-4443-8838-81aee70ec48e",
+          "2973bd8e-f167-403a-a4b0-35a394865560",
+          "68870e20-c4f3-4f7a-acc3-b65972c531af",
+          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84",
           "footer-1",
           "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
-          "footer-0",
-          "2973bd8e-f167-403a-a4b0-35a394865560",
-          "73cee245-4184-4443-8838-81aee70ec48e",
-          "68870e20-c4f3-4f7a-acc3-b65972c531af",
-          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84"
+          "footer-0"
         ],
         "settings": {
           "color_scheme": "accent-1",
