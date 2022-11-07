@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "01",
-    "footer_layout": "01",
+    "footer_layout": "03",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
@@ -349,6 +349,50 @@
           "margin_bottom": 0,
           "padding_top": 20,
           "padding_bottom": 20
+        }
+      },
+      "footer-03": {
+        "type": "footer-03",
+        "blocks": {
+          "footer-03-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Main Menu",
+              "menu": "main-menu"
+            }
+          },
+          "b090409b-ef3c-465a-8af2-e8714e5efc96": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Other Pages",
+              "menu": "others-page"
+            }
+          },
+          "8632ce4f-7388-472c-a2a8-6794e487e2ef": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "footer-03-0",
+          "b090409b-ef3c-465a-8af2-e8714e5efc96",
+          "8632ce4f-7388-472c-a2a8-6794e487e2ef"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products.",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 64,
+          "padding_bottom": 64
         }
       }
     },
