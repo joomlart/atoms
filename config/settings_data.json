@@ -218,7 +218,7 @@
           "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "inverse",
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true,
