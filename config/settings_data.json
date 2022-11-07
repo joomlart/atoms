@@ -168,7 +168,7 @@
             "settings": {
               "show_logo": true,
               "image": "shopify:\/\/shop_images\/atoms-light.png",
-              "image_width": 150,
+              "image_width": 110,
               "alignment": ""
             }
           },
@@ -178,7 +178,7 @@
               "show_heading": false,
               "heading": "Heading",
               "show_subtext": true,
-              "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.<\/p>"
+              "subtext": "<p>Egestas nulla ac efficitur eleifend. Quisque dolor fringilla semper, libero hendrerit allis.<\/p>"
             }
           },
           "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84": {
