@@ -119,8 +119,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 6.4rem;
-  border-color: rgba(255,255,255,0.1);
 }
 
 .footer__blocks-wrapper .footer-block--newsletter {
@@ -218,7 +216,8 @@
 
 .footer-block__newsletter {
   color: rgba(var(--color-foreground), 0.75);
-  margin-bottom: var(--grid-desktop-vertical-spacing);
+  padding-bottom: 6.4rem;
+  border-color: rgba(255,255,255,0.1);
 }
 
 @media screen and (min-width: 750px) {
