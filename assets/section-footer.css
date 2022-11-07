@@ -6,8 +6,6 @@
 }
 
 .footer__content-top {
-  padding-bottom: 5rem;
-  padding-top: 5rem;
   display: block;
   border-top: 2px solid rgba(var(--color-base-accent-1));
 }
