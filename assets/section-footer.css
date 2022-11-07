@@ -7,7 +7,6 @@
 
 .footer__content-top {
   display: block;
-  border-top: 2px solid rgba(var(--color-base-accent-1));
 }
 
 @media screen and (max-width: 749px) {
@@ -24,11 +23,6 @@
 
   .footer-block.grid__item:first-child {
     margin-top: 0;
-  }
-
-  .footer__content-top {
-    padding-bottom: 3rem;
-    padding-top: 3rem;
   }
 }
 
@@ -151,7 +145,34 @@
   }
 }
 
+.footer .newsletter-form__field-wrapper #NewsletterForm--footer {
+  height: 5.6rem;
+  line-height: 2.4rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.footer .newsletter-form__field-wrapper .field__label {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.color-accent-1 .newsletter-form__field-wrapper .newsletter-form__button,
+.color-inverse .newsletter-form__field-wrapper .newsletter-form__button {
+  background-color: rgba(255,255,255, 1);
+  color: #000;
+}
+
 /* Footer Block Main */
+
+.footer-block--main {
+  padding: 3.2rem 0;
+}
+
+.footer-01 .footer-block--main {
+  padding: 0 0 6.4rem;
+  flex-direction: row-reverse;
+}
 
 .footer-block--main .footer__content__left {
   margin-bottom: var(--grid-desktop-vertical-spacing);
@@ -174,14 +195,14 @@
   }
 }
 
-.footer-01 .footer-block--main .footer__content__left > * {
+.footer-03 .footer-block--main .footer__content__left > * {
   text-align: left;
 }
 
 .footer-block__heading {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: var(--grid-desktop-vertical-spacing);
+  margin-bottom: 0;
   margin-top: 0;
 }
 
@@ -196,11 +217,26 @@
   color: #fff;
 }
 
-.footer-block--main .footer__content__right .footer-block__heading {
-  margin-bottom: 2.4rem;
+.footer.color-inverse .footer__content__left h2,
+.footer.color-accent-1 .footer__content__left h2 {
+  color: #fff;
+  margin: 0 0 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.footer-01 .footer-block--main .footer__content__left .footer__list-social {
+.footer
+
+.footer-block--main .footer__content__right .footer-block__heading {
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.028rem;
+}
+
+.footer-03 .footer-block--main .footer__content__left .footer__list-social {
   justify-content: flex-start;
   margin-left: -1.4rem;
 }
@@ -214,28 +250,39 @@
   justify-content: center;
 }
 
-.footer-block__newsletter {
+.footer-03 .footer-block__newsletter {
   color: rgba(var(--color-foreground), 0.75);
-  padding-bottom: 6.4rem;
+  padding-bottom: 3.2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (min-width: 750px) {
-  .footer-01 .footer-block__newsletter {
+  .footer-03 .footer-block__newsletter {
+    padding-bottom: 6.4rem;
+  }
+}
+
+.footer-03 .footer-block__newsletter .newsletter__content {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  margin-bottom: 3.2rem;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-03 .footer-block__newsletter {
     align-items: center;
     display: flex;
     gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
   }
 
-  .footer-01 .footer-block__newsletter .newsletter__content {
+  .footer-03 .footer-block__newsletter .newsletter__content {
     width: 50%;
     text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 1.8rem;
+    margin-bottom: 0;
   }
   
-  .footer-01 .footer-block__newsletter .newsletter-form {
+  .footer-03 .footer-block__newsletter .newsletter-form {
     max-width: unset;
     width: 50%;
   }
@@ -456,6 +503,11 @@ noscript .localization-selector.link {
   margin-bottom: 0;
 }
 
+.footer-block__details-content p {
+  line-height: 2.8rem;
+  margin-top: 0;
+}
+
 @media screen and (min-width: 750px) {
   .footer-block__details-content {
     margin-bottom: 0;
@@ -464,6 +516,7 @@ noscript .localization-selector.link {
   .footer-block__details-content > p,
   .footer-block__details-content > li {
     padding: 0;
+    margin-bottom: 0.8rem;
   }
 
   .footer-block:only-child li {
@@ -509,6 +562,7 @@ noscript .localization-selector.link {
   .footer-block__details-content .list-menu__item--link {
     display: inline-block;
     font-size: 1.6rem;
+    padding: 0;
   }
 
   .footer-block__details-content > :first-child .list-menu__item--link {
