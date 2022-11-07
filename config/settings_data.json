@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "01",
-    "footer_layout": "02",
+    "footer_layout": "01",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
@@ -121,7 +121,7 @@
             "type": "announcement",
             "settings": {
               "text": "Free U.S. Shipping Orders $60+ | Free Returns & Exchanges",
-              "content_alignment": "left"
+              "content_alignment": "center"
             }
           }
         },
@@ -154,6 +154,39 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "73cee245-4184-4443-8838-81aee70ec48e": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_icon": "shopify:\/\/shop_images\/Vector.png",
+              "newsletter_heading": "Sign Up to Receive 15% Off Your First Order",
+              "newsletter_intro": ""
+            }
+          },
+          "2973bd8e-f167-403a-a4b0-35a394865560": {
+            "type": "logo_image",
+            "settings": {
+              "show_logo": true,
+              "image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
+              "image_width": 150,
+              "alignment": ""
+            }
+          },
+          "68870e20-c4f3-4f7a-acc3-b65972c531af": {
+            "type": "text",
+            "settings": {
+              "show_heading": false,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.<\/p>"
+            }
+          },
+          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          },
           "footer-1": {
             "type": "link_list",
             "settings": {
@@ -174,57 +207,25 @@
               "heading": "Quick links",
               "menu": "footer"
             }
-          },
-          "2973bd8e-f167-403a-a4b0-35a394865560": {
-            "type": "logo_image",
-            "settings": {
-              "show_logo": true,
-              "image": "shopify:\/\/shop_images\/atoms-logo_ab356fac-ace1-43d8-8c8a-369c6f83533b.png",
-              "image_width": 150,
-              "alignment": ""
-            }
-          },
-          "73cee245-4184-4443-8838-81aee70ec48e": {
-            "type": "newsletter",
-            "settings": {
-              "newsletter_enable": true,
-              "newsletter_heading": "Subscribe And Get 20% Off And Get Free Gifts And Offers",
-              "newsletter_intro": ""
-            }
-          },
-          "68870e20-c4f3-4f7a-acc3-b65972c531af": {
-            "type": "text",
-            "settings": {
-              "show_heading": false,
-              "heading": "Heading",
-              "show_subtext": true,
-              "subtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.<\/p>"
-            }
-          },
-          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84": {
-            "type": "social",
-            "settings": {
-              "show_social": true
-            }
           }
         },
         "block_order": [
+          "73cee245-4184-4443-8838-81aee70ec48e",
+          "2973bd8e-f167-403a-a4b0-35a394865560",
+          "68870e20-c4f3-4f7a-acc3-b65972c531af",
+          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84",
           "footer-1",
           "d2d2e96b-3357-4d10-b4d2-a65c9178bc68",
-          "footer-0",
-          "2973bd8e-f167-403a-a4b0-35a394865560",
-          "73cee245-4184-4443-8838-81aee70ec48e",
-          "68870e20-c4f3-4f7a-acc3-b65972c531af",
-          "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84"
+          "footer-0"
         ],
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true,
           "margin_top": 0,
-          "padding_top": 0,
-          "padding_bottom": 24
+          "padding_top": 64,
+          "padding_bottom": 64
         }
       },
       "main-password-header": {
@@ -264,14 +265,14 @@
           "footer-4": {
             "type": "link_list",
             "settings": {
-              "heading": "Company",
+              "heading": "Main Page",
               "menu": "main-menu"
             }
           },
           "footer-5": {
             "type": "link_list",
             "settings": {
-              "heading": "Customer",
+              "heading": "Other Page",
               "menu": "others-page"
             }
           },

@@ -328,6 +328,11 @@
     "multilayout": {
       "name": "Multiple Layouts",
       "settings": {
+        "home_layout": {
+          "label": "Home Layout",
+          "label__1": "Home 01",
+          "label__2": "Home 02"
+        },
         "header_layout": {
           "label": "Header Layout",
           "label__1": "Header 01",
@@ -1063,6 +1068,9 @@
           "settings": {
             "newsletter_enable": {
               "label": "Show email signup"
+            },
+            "newsletter_icon": {
+              "label": "Icon"
             },
             "newsletter_heading": {
               "label": "Heading"

@@ -14,6 +14,7 @@
         "type": "select",
         "id": "header_layout",
         "label": "t:settings_schema.multilayout.settings.header_layout.label",
+        "info": "t:settings_schema.multilayout.settings.header_layout.info",
         "options": [
           {
             "value": "01",
@@ -22,6 +23,10 @@
           {
             "value": "02",
             "label": "t:settings_schema.multilayout.settings.header_layout.label__2"
+          },
+          {
+            "value": "03",
+            "label": "t:settings_schema.multilayout.settings.header_layout.label__3"
           }
         ],
         "default": "01"
@@ -30,6 +35,7 @@
         "type": "select",
         "id": "footer_layout",
         "label": "t:settings_schema.multilayout.settings.footer_layout.label",
+        "info": "t:settings_schema.multilayout.settings.footer_layout.info",
         "options": [
           {
             "value": "01",
@@ -38,6 +44,10 @@
           {
             "value": "02",
             "label": "t:settings_schema.multilayout.settings.footer_layout.label__2"
+          },
+          {
+            "value": "03",
+            "label": "t:settings_schema.multilayout.settings.footer_layout.label__3"
           }
         ],
         "default": "01"
