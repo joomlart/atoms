@@ -154,11 +154,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "d29201a8-c927-4177-8bd0-a6da46a55cf8": {
-            "type": "link_list",
+          "4e6c3f93-1225-49e5-bc74-44c83759666c": {
+            "type": "logo_image",
             "settings": {
-              "heading": "Main Menu",
-              "menu": "main-menu"
+              "show_logo": true,
+              "image": "shopify:\/\/shop_images\/atoms-light.png",
+              "image_width": 100,
+              "alignment": "center"
             }
           },
           "37148d7b-c858-4ed7-890e-1f9e3f5cb40e": {
@@ -168,6 +170,19 @@
               "heading": "Heading",
               "show_subtext": true,
               "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
+          },
+          "e5057d3b-d94f-4c05-b0bc-f8c9927cf810": {
+            "type": "social",
+            "settings": {
+              "show_social": true
+            }
+          },
+          "d29201a8-c927-4177-8bd0-a6da46a55cf8": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Main Menu",
+              "menu": "main-menu"
             }
           },
           "665de369-9f38-429f-926b-7bb8cda2deef": {
@@ -183,30 +198,15 @@
               "heading": "Support",
               "menu": "footer"
             }
-          },
-          "4e6c3f93-1225-49e5-bc74-44c83759666c": {
-            "type": "logo_image",
-            "settings": {
-              "show_logo": true,
-              "image": "shopify:\/\/shop_images\/atoms-light.png",
-              "image_width": 100,
-              "alignment": "center"
-            }
-          },
-          "e5057d3b-d94f-4c05-b0bc-f8c9927cf810": {
-            "type": "social",
-            "settings": {
-              "show_social": true
-            }
           }
         },
         "block_order": [
-          "d29201a8-c927-4177-8bd0-a6da46a55cf8",
-          "37148d7b-c858-4ed7-890e-1f9e3f5cb40e",
-          "665de369-9f38-429f-926b-7bb8cda2deef",
-          "3e4569c6-6f50-4ccf-8ddf-672b96460779",
           "4e6c3f93-1225-49e5-bc74-44c83759666c",
-          "e5057d3b-d94f-4c05-b0bc-f8c9927cf810"
+          "37148d7b-c858-4ed7-890e-1f9e3f5cb40e",
+          "e5057d3b-d94f-4c05-b0bc-f8c9927cf810",
+          "d29201a8-c927-4177-8bd0-a6da46a55cf8",
+          "665de369-9f38-429f-926b-7bb8cda2deef",
+          "3e4569c6-6f50-4ccf-8ddf-672b96460779"
         ],
         "settings": {
           "color_scheme": "accent-1",
