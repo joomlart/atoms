@@ -257,6 +257,7 @@
   .footer-01 .footer-block__newsletter .newsletter__content {
     width: 50%;
     text-align: left;
+    margin-bottom: 0;
   }
   
   .footer-01 .footer-block__newsletter .newsletter-form {
