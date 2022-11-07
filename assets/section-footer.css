@@ -192,7 +192,8 @@
   }
 }
 
-.footer.color-inverse .footer-block__heading {
+.footer.color-inverse .footer-block__heading,
+.footer.color-accent-1 .footer-block__heading {
   color: #fff;
 }
 
