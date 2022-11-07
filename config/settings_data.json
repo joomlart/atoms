@@ -189,7 +189,7 @@
             "settings": {
               "newsletter_enable": true,
               "newsletter_heading": "Subscribe And Get 20% Off And Get Free Gifts And Offers",
-              "newsletter_intro": "hgfjhkjlkjhkjhk"
+              "newsletter_intro": ""
             }
           },
           "68870e20-c4f3-4f7a-acc3-b65972c531af": {
@@ -218,7 +218,7 @@
           "b8d6d6e5-f903-4ad5-8de6-772b2d3e3d84"
         ],
         "settings": {
-          "color_scheme": "inverse",
+          "color_scheme": "accent-1",
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true,
