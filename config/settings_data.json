@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "01",
-    "footer_layout": "02",
+    "footer_layout": "01",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
@@ -193,14 +193,6 @@
               "alignment": "center"
             }
           },
-          "f50bd28d-62a7-4e4e-b0a7-de393ebf6086": {
-            "type": "newsletter",
-            "settings": {
-              "newsletter_enable": true,
-              "newsletter_heading": "Subscribe to our emails",
-              "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
-            }
-          },
           "e5057d3b-d94f-4c05-b0bc-f8c9927cf810": {
             "type": "social",
             "settings": {
@@ -214,7 +206,6 @@
           "665de369-9f38-429f-926b-7bb8cda2deef",
           "3e4569c6-6f50-4ccf-8ddf-672b96460779",
           "4e6c3f93-1225-49e5-bc74-44c83759666c",
-          "f50bd28d-62a7-4e4e-b0a7-de393ebf6086",
           "e5057d3b-d94f-4c05-b0bc-f8c9927cf810"
         ],
         "settings": {
