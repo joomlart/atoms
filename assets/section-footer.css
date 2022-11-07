@@ -161,6 +161,7 @@
   .footer-block--main {
     display: flex;
     gap: calc(var(--grid-desktop-horizontal-spacing) * 2);
+    padding: 6.4rem 0;
   }
   
   .footer-block--main .footer__content__left {
