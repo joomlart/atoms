@@ -72,7 +72,7 @@
                             style="max-width: min(100%, 40px);"
                           >
                         {%- else -%}
-                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' | image_url: width: 40 }}
+                          {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder'}}
                         {%- endif -%}
                         <h2 class="footer-block__heading h3">{{ block.settings.newsletter_heading | escape }}</h2>
                       {%- endif -%}
