@@ -275,11 +275,18 @@
               "menu": "others-page"
             }
           },
+          "b4f6e8cd-55fb-4170-afaf-1dbac07fa80c": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Legal",
+              "menu": "footer"
+            }
+          },
           "footer-6": {
             "type": "link_list",
             "settings": {
               "heading": "Support",
-              "menu": "footer"
+              "menu": "surpport"
             }
           },
           "b463e4df-97c2-4085-b0c5-7c6ccf494018": {
@@ -299,13 +306,6 @@
               "newsletter_intro": ""
             }
           },
-          "b4f6e8cd-55fb-4170-afaf-1dbac07fa80c": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Legal",
-              "menu": "footer"
-            }
-          },
           "6572be8c-c654-4a9b-9863-235f0cab64de": {
             "type": "link_list",
             "settings": {
@@ -317,10 +317,10 @@
         "block_order": [
           "footer-4",
           "footer-5",
+          "b4f6e8cd-55fb-4170-afaf-1dbac07fa80c",
           "footer-6",
           "b463e4df-97c2-4085-b0c5-7c6ccf494018",
           "0ab51a22-bfd0-4d40-8344-bacf47ebe682",
-          "b4f6e8cd-55fb-4170-afaf-1dbac07fa80c",
           "6572be8c-c654-4a9b-9863-235f0cab64de"
         ],
         "settings": {
