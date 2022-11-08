@@ -248,8 +248,12 @@
     gap: 0;
   }
 
-  .footer-02 .footer-block--main .footer__content__right > .footer-block--menu:not(:last-child) {
+  .footer-02 .footer-block--main .footer__content__right > .footer-block--menu {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+    .footer-02 .footer-block--main .footer__content__right > .footer-block--menu:last-child {
+    border-right: 0;
   }
 }
 
