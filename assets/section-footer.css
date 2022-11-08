@@ -239,7 +239,6 @@
 @media screen and (min-width: 1200px) {
   .footer-02 .footer-block--main .footer__content__right {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
     gap: 0;
   }
 
@@ -693,6 +692,7 @@ noscript .localization-selector.link {
 /* Footer 2 */
 .footer-02 .footer-block--newsletter .newsletter__content {
   text-align: center;
+  justify-content: center;
 }
 
 .footer-02 .footer-block--newsletter .newsletter-form {
