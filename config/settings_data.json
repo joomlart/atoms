@@ -261,6 +261,14 @@
       "footer-02": {
         "type": "footer-02",
         "blocks": {
+          "0ab51a22-bfd0-4d40-8344-bacf47ebe682": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Sign Up to Receive 15% Off Your First Order",
+              "newsletter_intro": ""
+            }
+          },
           "footer-4": {
             "type": "link_list",
             "settings": {
@@ -271,7 +279,7 @@
           "footer-5": {
             "type": "link_list",
             "settings": {
-              "heading": "Account Support",
+              "heading": "Account",
               "menu": "others-page"
             }
           },
@@ -289,6 +297,13 @@
               "menu": "surpport"
             }
           },
+          "6572be8c-c654-4a9b-9863-235f0cab64de": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Social",
+              "menu": "social"
+            }
+          },
           "b463e4df-97c2-4085-b0c5-7c6ccf494018": {
             "type": "logo_image",
             "settings": {
@@ -297,31 +312,16 @@
               "image_width": 110,
               "alignment": "center"
             }
-          },
-          "0ab51a22-bfd0-4d40-8344-bacf47ebe682": {
-            "type": "newsletter",
-            "settings": {
-              "newsletter_enable": true,
-              "newsletter_heading": "Sign Up to Receive 15% Off Your First Order",
-              "newsletter_intro": ""
-            }
-          },
-          "6572be8c-c654-4a9b-9863-235f0cab64de": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Social",
-              "menu": "social"
-            }
           }
         },
         "block_order": [
+          "0ab51a22-bfd0-4d40-8344-bacf47ebe682",
           "footer-4",
           "footer-5",
           "b4f6e8cd-55fb-4170-afaf-1dbac07fa80c",
           "footer-6",
-          "b463e4df-97c2-4085-b0c5-7c6ccf494018",
-          "0ab51a22-bfd0-4d40-8344-bacf47ebe682",
-          "6572be8c-c654-4a9b-9863-235f0cab64de"
+          "6572be8c-c654-4a9b-9863-235f0cab64de",
+          "b463e4df-97c2-4085-b0c5-7c6ccf494018"
         ],
         "settings": {
           "color_scheme": "accent-1",
