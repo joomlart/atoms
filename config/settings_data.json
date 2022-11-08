@@ -310,7 +310,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Social",
-              "menu": "footer"
+              "menu": "social"
             }
           }
         },
