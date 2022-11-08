@@ -582,7 +582,7 @@ noscript .localization-selector.link {
   }
 
   .footer-block__details-content > p,
-  .footer-block__details-content > li {
+  .footer-block__details-content > li:not(:last-child) {
     padding: 0;
     margin-bottom: 0.8rem;
   }
@@ -632,6 +632,12 @@ noscript .localization-selector.link {
   .footer-block__details-content > :first-child .list-menu__item--link {
     padding-top: 0;
   }
+}
+
+.footer-02 .footer-block-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-block-image > img {
