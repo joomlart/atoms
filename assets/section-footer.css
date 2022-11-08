@@ -198,9 +198,15 @@
 
 .footer-02 .footer-block--main .footer__content__right {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3.2rem;
   width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+  .footer-02 .footer-block--main .footer__content__right {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .footer-02 .footer-block--main .footer__content__right > * {
