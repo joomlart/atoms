@@ -713,6 +713,10 @@ noscript .localization-selector.link {
   margin: auto;
 }
 
+.footer .newsletter-form__button {
+  width: 5.6rem;
+}
+
 .footer-02 .footer-block--main .footer__content__left .footer__list-social {
   flex-wrap: nowrap;
 }
