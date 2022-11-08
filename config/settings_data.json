@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "01",
-    "footer_layout": "03",
+    "footer_layout": "02",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
@@ -266,7 +266,7 @@
             "settings": {
               "newsletter_enable": true,
               "newsletter_heading": "Sign Up to Receive 15% Off Your First Order",
-              "newsletter_intro": ""
+              "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
             }
           },
           "footer-4": {

@@ -703,6 +703,12 @@ noscript .localization-selector.link {
   justify-content: center;
 }
 
+@media screen and (max-width: 550px) {
+  .footer-02 .footer-block--newsletter .newsletter__content {
+    flex-direction: column;
+  }
+}
+
 .footer-02 .footer-block--newsletter .newsletter-form {
   margin: auto;
 }
