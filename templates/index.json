@@ -192,12 +192,12 @@
     "1661247508792d2166": {
       "type": "featured-collection",
       "settings": {
-        "title": "Best Selling Products",
+        "title": "Men Collections",
         "heading_size": "h4",
         "description": "<p>Final Clearance Up to 80% Off\t<\/p>",
         "show_description": false,
         "description_style": "uppercase",
-        "collection": "best-seller",
+        "collection": "mens",
         "show_card_collection": false,
         "products_to_show": 3,
         "columns_desktop": 3,
@@ -222,12 +222,12 @@
     "16639099959fcc61f9": {
       "type": "featured-collection",
       "settings": {
-        "title": "New Arrivials",
+        "title": "Women Collections",
         "heading_size": "h4",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "latest-products",
+        "collection": "women",
         "show_card_collection": false,
         "products_to_show": 8,
         "columns_desktop": 4,
