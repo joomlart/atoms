@@ -252,6 +252,13 @@
   border-radius: 0;
 }
 
+@media screen and (max-width: 989px) {
+  .multicolumn.background-none .multicolumn-card {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
 .multicolumn-card__info .link {
   text-decoration: none;
   font-size: inherit;
@@ -382,4 +389,12 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+}
+
+.multicolumn.section-instagram .grid--peek.slider .grid__item:first-of-type {
+  margin-left: 0;
+}
+
+.multicolumn.section-instagram .grid--peek.slider .grid__item:last-of-type {
+  margin-right: 0;
 }
