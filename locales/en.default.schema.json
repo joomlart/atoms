@@ -331,7 +331,8 @@
         "header_layout": {
           "label": "Header Layout",
           "label__1": "Header 01",
-          "label__2": "Header 02"
+          "label__2": "Header 02",
+          "label__3": "Header 03"
         },
         "footer_layout": {
           "label": "Footer Layout",
@@ -394,8 +395,12 @@
     "all": {
       "padding": {
         "section_padding_heading": "Section padding",
+        "block_padding_heading": "Block padding",
         "padding_top": "Top padding",
-        "padding_bottom": "Bottom padding"
+        "padding_bottom": "Bottom padding",
+        "padding_left": "Left padding",
+        "padding_right": "Right padding",
+        "image_spacing": "Image vs Content padding"
       },
       "spacing": "Spacing",
       "colors": {
@@ -437,6 +442,12 @@
         "options__4": {
           "label": "Extra large"
         }
+      },
+      "bg_colors": {
+        "label": "Background Color"
+      },
+      "text_colors": {
+        "label": "Text Color"
       }
     },
     "announcement-bar": {
@@ -670,6 +681,36 @@
         "heading": {
           "label": "Heading"
         },
+        "description": {
+          "label": "Description"
+        },
+        "show_description": {
+          "label": "Show collection description from the admin"
+        },
+        "description_style": {
+          "label": "Description style",
+          "options__1": {
+            "label": "Body"
+          },
+          "options__2": {
+            "label": "Subtitle"
+          },
+          "options__3": {
+            "label": "Uppercase"
+          }
+        },
+        "title_style": {
+          "label": "Title style",
+          "options__1": {
+            "label": "01"
+          },
+          "options__2": {
+            "label": "02"
+          },
+          "options__3": {
+            "label": "03"
+          }
+        },
         "blog": {
           "label": "Blog"
         },
@@ -751,6 +792,18 @@
           },
           "options__3": {
             "label": "Uppercase"
+          }
+        },
+        "title_style": {
+          "label": "Title style",
+          "options__1": {
+            "label": "01"
+          },
+          "options__2": {
+            "label": "02"
+          },
+          "options__3": {
+            "label": "03"
           }
         },
         "collection": {
@@ -2247,6 +2300,15 @@
         "sub-title": {
           "label": "Sub Heading"
         },
+        "layout": {
+          "label": "Layout",
+          "options__1": {
+            "label": "Full width"
+          },
+          "options__2": {
+            "label": "Grid"
+          }
+        },
         "image_width": {
           "label": "Image width",
           "options__1": {
@@ -2276,6 +2338,18 @@
         },
         "columns_desktop": {
           "label": "Number of columns on desktop"
+        },
+        "row_alignment": {
+          "label": "Row alignment",
+          "options__1": {
+            "label": "Top"
+          },
+          "options__2": {
+            "label": "Middle"
+          },
+          "options__3": {
+            "label": "Bottom"
+          }
         },
         "column_alignment": {
           "label": "Column alignment",
@@ -2333,6 +2407,18 @@
             "link_label": {
               "label": "Link label"
             },
+            "link_style": {
+              "label": "Link style",
+              "options__1": {
+                "label": "Link"
+              },
+              "options__2": {
+                "label": "Outline"
+              },
+              "options__3": {
+                "label": "Solid"
+              }
+            },
             "link": {
               "label": "Link"
             },
@@ -2346,6 +2432,15 @@
               },
               "options__3": {
                 "label": "Right"
+              }
+            },
+            "image_position": {
+              "label": "Image Position",
+              "options__1": {
+                "label": "Top"
+              },
+              "options__2": {
+                "label": "Bottom"
               }
             }
           }
