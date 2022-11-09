@@ -188,8 +188,8 @@
       opacity: 1; 
       bottom: 0;
     }
-    .ja-summary-scroll .product__text  + div,
-    .ja-summary-scroll .product__tax  + div { 
+    .ja-summary-scroll.scrolling .product__text  + div,
+    .ja-summary-scroll.scrolling .product__tax  + div { 
       display: none;
     }
   
