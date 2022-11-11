@@ -19,9 +19,9 @@
     "newsletter_popup_desc": "Sign Up for exclusive updates, \nnew arrivals & insider only discounts",
     "newsletter_popup_note": "No, thanks",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "type_header_font": "neuzeit_s_n4",
+    "type_header_font": "karla_n4",
     "heading_scale": 100,
-    "type_body_font": "neuzeit_s_n4",
+    "type_body_font": "karla_n4",
     "body_scale": 100,
     "page_width": 1300,
     "spacing_sections": 0,
@@ -120,7 +120,7 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Free U.S. Shipping Orders $60+ | Free Returns & Exchanges",
+              "text": "<p>Free U.S. Shipping Orders $60+ | Free Returns & Exchanges<\/p>",
               "content_alignment": "center"
             }
           }
@@ -129,7 +129,8 @@
           "announcement-bar-0"
         ],
         "settings": {
-          "color_scheme": "accent-1",
+          "bg_colors": "#212121",
+          "text_colors": "#FFFFFF",
           "full_width": true,
           "mod_class": ""
         }
