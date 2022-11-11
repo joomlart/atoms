@@ -19,9 +19,10 @@
     margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
 
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  .section-{{ section.id }}-padding .footer-block--main {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: {{ section.settings.padding_top | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -29,9 +30,9 @@
       margin-top: {{ section.settings.margin_top }}px;
     }
 
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+    .section-{{ section.id }}-padding .footer-block--main {
+      padding-top: {{ section.settings.padding_top | times: 2 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 2 }}px;
     }
   }
 {%- endstyle -%}
@@ -53,7 +54,15 @@
               endif
             -%}
             <div class="footer__blocks-wrapper">
-              
+              {% for block in section.blocks %}
+                {% case block.type %}
+                {%- when 'breadcrumb' -%}
+                  <div class="footer-breadcrumb {{ block.settings.alignment_breadcrumb }}">
+                    {% render 'breadcrumb' %}
+                  </div>
+                {% endcase %}
+              {% endfor %}
+            
               <div class="footer-block--main">
                 <div class="footer__content__left"> 
                   {% for block in section.blocks %}
@@ -103,6 +112,7 @@
                                 {% endif %}
                                 placeholder="{{ 'newsletter.label' | t }}"
                                 required
+                                onclick="addMove"
                               >
                               <label class="field__label" for="NewsletterForm--{{ section.id }}">
                                 {{ 'newsletter.label' | t }}
@@ -327,6 +337,32 @@
 {
   "name": "t:sections.footer.name",
   "blocks": [
+    {
+      "type": "breadcrumb",
+      "name": "t:sections.breadcrumb.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "alignment_breadcrumb",
+          "label": "t:sections.breadcrumb.settings.alignment.name.label",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.breadcrumb.settings.alignment.left.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.breadcrumb.settings.alignment.center.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.breadcrumb.settings.alignment.right.label"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    },
     {
       "type": "link_list",
       "name": "t:sections.footer.blocks.link_list.name",

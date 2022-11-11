@@ -450,6 +450,14 @@
         "label": "Text Color"
       }
     },
+    "main-404": {
+      "name": "Main 404",
+      "settings": {
+        "pick__image": {
+          "label": "Load one image 404"
+        }
+      }
+    },
     "announcement-bar": {
       "name": "Announcement bar",
       "blocks": {
@@ -669,6 +677,23 @@
       "settings": {
         "title": {
           "label": "Breadcrumb"
+        },
+        "show": {
+          "label": "Show \/ Hide Breadcrumb"
+        },
+        "alignment": {
+          "name": {
+            "label": "Aligment Breadcrumb"
+          },
+          "left": {
+            "label": "Left"
+          },
+          "center": {
+            "label": "Center"
+          },
+          "right": {
+            "label": "Right"
+          }
         }
       },
       "presets": {
@@ -893,6 +918,18 @@
       "settings": {
         "title": {
           "label": "Heading"
+        },
+        "title_style": {
+          "label": "Title style",
+          "options__1": {
+            "label": "01"
+          },
+          "options__2": {
+            "label": "02"
+          },
+          "options__3": {
+            "label": "03"
+          }
         },
         "description": {
           "label": "Description"
@@ -3181,6 +3218,9 @@
                 "label": "Bottom right"
               }
             },
+            "box_width": {
+              "label": "Box width on Desktop"
+            },
             "show_text_box": {
               "label": "Show container on desktop"
             },
@@ -3528,27 +3568,33 @@
       "preset": {
         "name": "Custom section"
       }
-    }
-  },
-  "ja-map": {
-    "name": "Map",
-    "settings": {
-      "title": {
-        "label": "Heading"
-      },
-      "address": {
-        "label": "Address",
-        "info": "eg. London, UK"
-      },
-      "zoom": {
-        "label": "Zoom"
-      },
-      "full_width": {
-        "label": "Make section full width"
-      }
     },
-    "presets": {
-      "name": "Map"
+    "ja-map": {
+      "name": "Map",
+      "settings": {
+        "title": {
+          "label": "Heading"
+        },
+        "address": {
+          "label": "Address",
+          "info": "eg. London, UK"
+        },
+        "zoom": {
+          "label": "Zoom"
+        },
+        "full_width": {
+          "label": "Make section full width"
+        },
+        "width": {
+          "label": "Width"
+        },
+        "height": {
+          "label": "Height"
+        }
+      },
+      "presets": {
+        "name": "Map"
+      }
     }
   }
 }
