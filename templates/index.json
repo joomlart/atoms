@@ -134,34 +134,49 @@
         "1661246556ab0fcc05-0": {
           "type": "column",
           "settings": {
+            "image_position": "top",
             "title": "Free Shipping Orders $60+",
             "icon": "truck",
             "icon_position": "left",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "image_spacing": 25
           }
         },
         "1661246556ab0fcc05-1": {
           "type": "column",
           "settings": {
+            "image_position": "top",
             "title": "30-days free return policy",
             "icon": "dairy_free",
             "icon_position": "left",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "image_spacing": 25
           }
         },
         "1661246556ab0fcc05-2": {
           "type": "column",
           "settings": {
+            "image_position": "top",
             "title": "100% Secure Payments",
             "icon": "plane",
             "icon_position": "left",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 32,
+            "padding_right": 32,
+            "image_spacing": 25
           }
         }
       },
@@ -175,9 +190,11 @@
         "sub-title": "",
         "mod_class": "border-darker",
         "heading_size": "h4",
+        "layout": "grid",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
+        "row_alignment": "top",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
@@ -194,9 +211,10 @@
       "settings": {
         "title": "Men Collections",
         "heading_size": "h4",
-        "description": "<p>Final Clearance Up to 80% Off\t<\/p>",
-        "show_description": false,
+        "title_style": "01",
         "description_style": "uppercase",
+        "description": "",
+        "show_description": false,
         "collection": "mens",
         "show_card_collection": false,
         "products_to_show": 3,
@@ -224,9 +242,10 @@
       "settings": {
         "title": "Women Collections",
         "heading_size": "h4",
+        "title_style": "01",
+        "description_style": "body",
         "description": "",
         "show_description": false,
-        "description_style": "body",
         "collection": "women",
         "show_card_collection": false,
         "products_to_show": 8,
@@ -258,7 +277,7 @@
             "image": "shopify:\/\/shop_images\/02_722d2347-3e61-4d00-83d6-ff9607e4f7b3.jpg",
             "title": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/all",
+            "link": "shopify:\/\/products\/clothing-and-accessory-title-for-sale-1",
             "link_style": "link",
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center"
@@ -367,7 +386,7 @@
             "image": "shopify:\/\/shop_images\/18431022_tp239-blogbanner-01-s80-p-385-326.jpg",
             "title": "",
             "link_label": "",
-            "link": "shopify:\/\/collections\/latest-products",
+            "link": "shopify:\/\/products\/columbia-tillamook-back-print-t-shirt-in-white-exclusive",
             "link_style": "link",
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center"
@@ -395,6 +414,9 @@
       "settings": {
         "heading": "From our Blog",
         "heading_size": "h4",
+        "title_style": "01",
+        "description_style": "body",
+        "description": "",
         "blog": "fashion-men",
         "post_limit": 3,
         "columns_desktop": 3,
@@ -416,72 +438,102 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/adidas-2.png",
+            "image_position": "top",
             "title": "",
             "icon": "none",
             "icon_position": "center",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 0
           }
         },
         "1664110647b9e3e26c-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/celine.png",
+            "image_position": "top",
             "title": "",
             "icon": "none",
             "icon_position": "center",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 0
           }
         },
         "1664110647b9e3e26c-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/nike-11_1.png",
+            "image_position": "top",
             "title": "",
             "icon": "none",
             "icon_position": "center",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 0
           }
         },
         "c0e7e888-7c35-4237-8ade-6e2e44de8c93": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/the-north-face-1_1.png",
+            "image_position": "top",
             "title": "",
             "icon": "none",
             "icon_position": "center",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 0
           }
         },
         "f7bfe4d6-2db9-49b4-8743-9d91349f1c52": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/michael-kors.png",
+            "image_position": "top",
             "title": "",
             "icon": "none",
             "icon_position": "center",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 0
           }
         },
         "77673be6-3642-430f-8c4b-c943e79e2923": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/vogue_1f02433b-e8e9-4e17-86e3-09e1bf60ce8b.png",
+            "image_position": "top",
             "title": "",
             "icon": "none",
             "icon_position": "center",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "link_style": "link",
+            "padding_left": 0,
+            "padding_right": 0,
+            "image_spacing": 0
           }
         }
       },
@@ -498,9 +550,11 @@
         "sub-title": "",
         "mod_class": "clients-list",
         "heading_size": "h1",
+        "layout": "grid",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 6,
+        "row_alignment": "top",
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
