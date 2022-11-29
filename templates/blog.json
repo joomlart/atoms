@@ -1,5 +1,10 @@
 {
   "sections": {
+    "dd13e4f5-3996-430b-8287-e800458480e3": {
+      "type": "breadcrumb",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-blog",
       "blocks": {
@@ -42,7 +47,7 @@
         "image_height": "medium",
         "show_date": true,
         "show_author": true,
-        "show_excerpt": false,
+        "show_excerpt": true,
         "alignment_content": "left",
         "alignment__vertical": "start",
         "show_sidebar": true,
@@ -55,6 +60,7 @@
     }
   },
   "order": [
+    "dd13e4f5-3996-430b-8287-e800458480e3",
     "main"
   ]
 }
