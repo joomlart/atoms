@@ -433,23 +433,42 @@
           "footer-04-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "EXPLORE",
               "menu": "footer"
             }
           },
-          "footer-04-1": {
+          "97c627d1-7077-4414-bc66-77c63a4c1704": {
             "type": "text",
             "settings": {
               "show_heading": true,
-              "heading": "Heading",
+              "heading": "CONTACT",
               "show_subtext": true,
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "subtext": "<p>Phone:(123) 456-7890<\/p><p>Fax: +31 71 800 99 89<\/p><p><a href=\"mailto:no-reply@gmail.com\">info@joomlart.com<\/a><\/p><p><\/p><p><\/p><p>312 North 24th Street<br\/>Brooklyn, New York 10010<br\/><a href=\"https:\/\/ja-rights.demo.joomlart.com\/#\" title=\"Get Direction\">Get Direction<\/a><\/p>"
+            }
+          },
+          "0f358f3c-19d4-40f0-8a07-be77c93dff4c": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_enable": true,
+              "newsletter_heading": "Subscribe to our emails",
+              "newsletter_intro": "Subscribe to the Joomlart newsletter to receive timely updates from your favorite products."
+            }
+          },
+          "d88ad476-d8e7-4451-8bb2-80442a2876da": {
+            "type": "intro",
+            "settings": {
+              "show_heading": true,
+              "heading": "Introduction",
+              "show_intro": true,
+              "intro": "<p>Lorem ipsum dolor sit amet, ligula dolor consectetur adipiscing elit. Sed quis ante, pulvinar lorem eget libero, lobortis ullamcorper.<\/p>"
             }
           }
         },
         "block_order": [
           "footer-04-0",
-          "footer-04-1"
+          "97c627d1-7077-4414-bc66-77c63a4c1704",
+          "0f358f3c-19d4-40f0-8a07-be77c93dff4c",
+          "d88ad476-d8e7-4451-8bb2-80442a2876da"
         ],
         "settings": {
           "color_scheme": "background-1",
