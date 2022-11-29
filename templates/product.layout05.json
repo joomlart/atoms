@@ -96,6 +96,7 @@
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Size chart",
             "icon": "clipboard",
@@ -107,6 +108,7 @@
         },
         "collapsible-row-1": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "truck",
@@ -117,6 +119,7 @@
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "HELP & ADVICE",
             "icon": "chat_bubble",
@@ -127,6 +130,7 @@
         },
         "collapsible-row-3": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
@@ -199,7 +203,7 @@
         "layout_product": "default",
         "enable_sticky_info": false,
         "media_size": "medium",
-        "gallery_layout": "thumbnail_slider",
+        "gallery_layout": "grid-3-column",
         "gallery_position": "bottom",
         "thumbnail_ratio": "34",
         "mobile_thumbnails": "hide",
