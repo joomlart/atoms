@@ -26,17 +26,51 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "14cbdda4-7ac3-4218-9825-cfaf905fdcc2": {
+          "type": "recent_post",
+          "settings": {
+            "show_block": true,
+            "heading": "Recent Post",
+            "number": 3
+          }
+        },
+        "e27d5faf-f9b8-4335-9469-274f11bd1458": {
+          "type": "category",
+          "settings": {
+            "show_block": true,
+            "heading": "Categories"
+          }
+        },
+        "91e4e8e5-fd26-4fe5-92ca-9a9dec050f91": {
+          "type": "recent-tags",
+          "settings": {
+            "show_block": true,
+            "heading": "Recent Tag",
+            "number": 3
+          }
         }
       },
       "block_order": [
         "bb646369-fa26-4a54-9523-51fa8da87946",
         "featured_image",
         "content",
-        "share"
+        "share",
+        "14cbdda4-7ac3-4218-9825-cfaf905fdcc2",
+        "e27d5faf-f9b8-4335-9469-274f11bd1458",
+        "91e4e8e5-fd26-4fe5-92ca-9a9dec050f91"
       ],
       "settings": {
+        "alignment_title": "left",
+        "show_tags": true,
+        "show_share": true,
         "show_previous_next_buttons": true,
-        "show_footer_article": true
+        "show_sidebar": true,
+        "show_collapse": true,
+        "enable_sticky": true,
+        "sidebar_position": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
