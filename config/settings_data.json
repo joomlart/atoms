@@ -1,7 +1,7 @@
 {
   "current": {
     "header_layout": "01",
-    "footer_layout": "02",
+    "footer_layout": "04",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#212121",
     "gradient_accent_1": "",
@@ -130,7 +130,7 @@
         ],
         "settings": {
           "bg_colors": "#212121",
-          "text_colors": "#FFFFFF",
+          "text_colors": "#ffffff",
           "full_width": true,
           "mod_class": ""
         }
@@ -425,6 +425,40 @@
           "margin_top": 0,
           "padding_top": 64,
           "padding_bottom": 64
+        }
+      },
+      "footer-04": {
+        "type": "footer-04",
+        "blocks": {
+          "footer-04-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-04-1": {
+            "type": "text",
+            "settings": {
+              "show_heading": true,
+              "heading": "Heading",
+              "show_subtext": true,
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-04-0",
+          "footer-04-1"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true,
+          "margin_top": 0,
+          "padding_top": 36,
+          "padding_bottom": 36
         }
       }
     },
