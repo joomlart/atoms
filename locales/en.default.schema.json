@@ -1259,6 +1259,17 @@
             }
           }
         },
+        "intro": {
+          "name": "Intro",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            },
+            "subtext": {
+              "label": "Intro"
+            }
+          }
+        },
         "newsletter": {
           "name": "Newsletter",
           "settings": {
